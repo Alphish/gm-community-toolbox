@@ -53,6 +53,7 @@
     {"id":{"name":"ui_VerrificLogView","path":"objects/ui_VerrificLogView/ui_VerrificLogView.yy",},},
     {"id":{"name":"struct_VerrificTreeNode","path":"scripts/struct_VerrificTreeNode/struct_VerrificTreeNode.yy",},},
     {"id":{"name":"struct_VerrificMethodTestStub","path":"scripts/struct_VerrificMethodTestStub/struct_VerrificMethodTestStub.yy",},},
+    {"id":{"name":"rm_Home","path":"rooms/rm_Home/rm_Home.yy",},},
     {"id":{"name":"utils_Misc","path":"scripts/utils_Misc/utils_Misc.yy",},},
     {"id":{"name":"struct_VerrificTestNode","path":"scripts/struct_VerrificTestNode/struct_VerrificTestNode.yy",},},
     {"id":{"name":"struct_VerrificSuiteNode","path":"scripts/struct_VerrificSuiteNode/struct_VerrificSuiteNode.yy",},},
@@ -69,9 +70,12 @@
     {"id":{"name":"struct_VerrificSuite","path":"scripts/struct_VerrificSuite/struct_VerrificSuite.yy",},},
     {"id":{"name":"struct_VerrificStringAssertion","path":"scripts/struct_VerrificStringAssertion/struct_VerrificStringAssertion.yy",},},
     {"id":{"name":"struct_VerrificAsserter","path":"scripts/struct_VerrificAsserter/struct_VerrificAsserter.yy",},},
+    {"id":{"name":"rm_Tests","path":"rooms/rm_Tests/rm_Tests.yy",},},
     {"id":{"name":"demo_NullishCheck","path":"rooms/demo_NullishCheck/demo_NullishCheck.yy",},},
   ],
   "RoomOrderNodes": [
+    {"roomId":{"name":"rm_Home","path":"rooms/rm_Home/rm_Home.yy",},},
+    {"roomId":{"name":"rm_Tests","path":"rooms/rm_Tests/rm_Tests.yy",},},
     {"roomId":{"name":"demo_NullishCheck","path":"rooms/demo_NullishCheck/demo_NullishCheck.yy",},},
   ],
   "TextureGroups": [
