@@ -5,7 +5,28 @@ GameMaker Community Toolbox aims to gather the most useful general-purpose funct
 
 Not only that, using the same utilities package would improve collaborations. Instead of two people independently using their own variations of common utility functions (differently named, too), they would use the same utilities. Thanks to using same function names, they would understand each other's code more easily as well.
 
+Someday, once enough features are actually gathered, I will make a release and post relevant links here (both the \*.yymps with functions only and \*.yyz with functions, demos and tests). But not today. For now, you can check out the current functionality by cloning the repository.
+
 **Note:** While GameMaker Community Toolbox is meant to be community-driven, I will still make the final decisions regarding whether to include a certain function in the package or not. This is to ensure that design guidelines will be adhered too, and also to avoid potential feature bloat, when many highly specific functions would be included.
+
+# The Process
+
+Short version: If there is a functionality you would like included, make sure it adheres to the design guidelines below, and if it does make a feature request in the [Issues section](https://github.com/Alphish/gm-community-toolbox/issues).
+
+If your feature requests gets accepted and you're feeling especially adventurous, you may go ahead and implement it yourself and then make a pull request. Or you can wait for someone else to do the implementation job.
+
+Similar process applies to requesting enhancements of existing functions or reporting bugs (though confirmed bugs will be given a higher priority).
+
+For a new function to be added to the Community Toolbox, it needs to go through the following steps:
+- **Feature Request** - A request for the functionality should be created in the [Issues section](https://github.com/Alphish/gm-community-toolbox/issues). Generally, the poster should make sure the suggested functionality adheres to design guidelines.
+- **Discussion** - Once posted, the pros and cons of adding the new functionality would be discussed, as well as get into other technical details (exact expected behaviour, set of parameters, function name). For convenience, people can upvote the features they like or downvote those they don't.
+- **Acceptance/Rejection** - After some discussion the feature would be accepted or rejected (e.g. because it's too specific, not popular enough or doesn't adhere to the design guidelines below). If the feature gets rejected, it won't be worked on any further.
+- **Implementation** - Once the feature is accepted, one or more people would begin implementing the feature on a separate feature branch. Ideally someone would actually make a comment about implementing the feature, so that efforts are more coordinated.
+- **Demo/Tests** - After the functionality is implemented, it should be followed up with creating some demonstration and/or unit tests, to better showcase how the functionality should be used.
+- **Code Review** - Once both functionality itself and its corresponding demo/tests are completed, a pull request is made from the feature branch to the `main` branch. Generally, it will be either approved as-is or it will require some additional changes.
+  - **Note:** The pull request must reference an accepted issue! Pull requests that don't do so will be closed on the spot.
+- **Merging** - Once the new changes are approved, they are merged into the `main` branch and become a part of the Community Toolbox.
+- **Release** - Some time after various changes are merged, a new release will be built and published in this repository and on other channels.
 
 # Design Guidelines
 The functionality of GameMaker Community Toolbox is meant to be simple to learn and integrate into the project. Additionally, its users should be given virtually no reasons to modify the code in this package for personal needs.
