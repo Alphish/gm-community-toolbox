@@ -14,6 +14,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"_Packages","folderPath":"folders/_Packages.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Alphish","folderPath":"folders/_Packages/Alphish.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Community Toolbox","folderPath":"folders/_Packages/Alphish/Community Toolbox.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Demo","folderPath":"folders/Demo.yy",},
   ],
   "IncludedFiles": [],
   "isEcma": false,
@@ -22,11 +23,13 @@
     "IDEVersion": "2023.4.0.84",
   },
   "resources": [
-    {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"id":{"name":"fnt_DemoInfo","path":"fonts/fnt_DemoInfo/fnt_DemoInfo.yy",},},
+    {"id":{"name":"ctrl_NullishCheck","path":"objects/ctrl_NullishCheck/ctrl_NullishCheck.yy",},},
     {"id":{"name":"utils_Misc","path":"scripts/utils_Misc/utils_Misc.yy",},},
+    {"id":{"name":"demo_NullishCheck","path":"rooms/demo_NullishCheck/demo_NullishCheck.yy",},},
   ],
   "RoomOrderNodes": [
-    {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"roomId":{"name":"demo_NullishCheck","path":"rooms/demo_NullishCheck/demo_NullishCheck.yy",},},
   ],
   "TextureGroups": [
     {"resourceType":"GMTextureGroup","resourceVersion":"1.3","name":"Default","autocrop":true,"border":2,"compressFormat":"bz2","directory":"","groupParent":null,"isScaled":true,"loadType":"default","mipsToGenerate":0,"targets":-1,},
