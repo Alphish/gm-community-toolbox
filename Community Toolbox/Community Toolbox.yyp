@@ -10,7 +10,11 @@
     "name": "Default",
   },
   "defaultScriptType": 1,
-  "Folders": [],
+  "Folders": [
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"_Packages","folderPath":"folders/_Packages.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Alphish","folderPath":"folders/_Packages/Alphish.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Community Toolbox","folderPath":"folders/_Packages/Alphish/Community Toolbox.yy",},
+  ],
   "IncludedFiles": [],
   "isEcma": false,
   "LibraryEmitters": [],
@@ -19,6 +23,7 @@
   },
   "resources": [
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"id":{"name":"utils_Misc","path":"scripts/utils_Misc/utils_Misc.yy",},},
   ],
   "RoomOrderNodes": [
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
