@@ -1,2 +1,3 @@
 # Ignore GM resource order
 *.resource_order
+*.old
