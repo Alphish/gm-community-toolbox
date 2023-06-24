@@ -2,7 +2,7 @@
   "resourceType": "GMRoom",
   "resourceVersion": "1.0",
   "name": "demo_NullishCheck",
-  "creationCodeFile": "",
+  "creationCodeFile": "rooms/demo_NullishCheck/RoomCreationCode.gml",
   "inheritCode": false,
   "inheritCreationOrder": false,
   "inheritLayers": false,
