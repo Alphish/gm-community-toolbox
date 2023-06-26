@@ -1,30 +1,26 @@
-/// @func eucmod(dvnd,dvsr)
+/// @func eucmod(dividend,divisor)
 /// @desc Calculates a remainder from the Euclidian division (the remainder will always be non-negative).
-/// @arg {Real} dvnd        The value to divide, or dividend.
-/// @arg {Real} dvsr        The value to divide by, or divisor.
+/// @arg {Real} dividend        The dividend (i.e. the value to get the remainder of).
+/// @arg {Real} divisor         The divisor (i.e. the value to divide by).
 /// @returns {Real}
-function eucmod(_dvnd,_dvsr){
-    _r = _dvnd%_dvsr;
-    if (_r > 0)
-        return _r;
-    else if (_dvsr > 0)
-        return _r + _dvsr;
+function eucmod(_dividend, _divisor) {
+    var _remainder = _dividend mod _divisor;
+    
+    if (_remainder >= 0)
+        return _remainder;
+    else if (_divisor > 0)
+        return _remainder + _divisor;
     else
-        return _r - _dvsr;
+        return _remainder - _divisor;
 }
 
-/// @func eucdiv(dvnd,dvsr)
-/// @desc Calculates an integer quotient of the Euclidian division (i.e. with non-negative remainder).
-/// @arg {Real} dvnd        The value to divide, or dividend.
-/// @arg {Real} dvsr        The value to divide by, or divisor.
+/// @func eucdiv(dividend,divisor)
+/// @desc Calculates an integer quotient of the Euclidian division (i.e. the division with always non-negative remainder).
+/// @arg {Real} dividend        The dividend (i.e. the value to be divided).
+/// @arg {Real} divisor         The divisor (i.e. the value to divide by).
 /// @returns {Real}
-function eucdiv(_dvnd,_dvsr){
-    _q = _dvnd div _dvsr;
-    
-    if (_dvnd > 0)
-        return _q;
-    else if (_dvsr > 0)
-        return _q - 1;
-    else
-        return _q + 1;
+function eucdiv(_dividend, _divisor) {
+    // remove the remainder part, then divide the rest
+    _dividend -= eucmod(_dividend, _divisor);
+    return _dividend div _divisor;
 }
