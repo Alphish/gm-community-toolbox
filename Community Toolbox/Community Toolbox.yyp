@@ -50,7 +50,7 @@
     {"id":{"name":"struct_VerrificLogRunner","path":"scripts/struct_VerrificLogRunner/struct_VerrificLogRunner.yy",},},
     {"id":{"name":"struct_VerrificNumericAssertion","path":"scripts/struct_VerrificNumericAssertion/struct_VerrificNumericAssertion.yy",},},
     {"id":{"name":"tests_IsDefinedTests","path":"scripts/tests_IsDefinedTests/tests_IsDefinedTests.yy",},},
-    {"id":{"name":"tests_EucmoddivTests","path":"scripts/tests_EucmoddivTests/tests_EucmoddivTests.yy",},},
+    {"id":{"name":"tests_EuclideanDivisionTests","path":"scripts/tests_EuclideanDivisionTests/tests_EuclideanDivisionTests.yy",},},
     {"id":{"name":"struct_VerrificFailure","path":"scripts/struct_VerrificFailure/struct_VerrificFailure.yy",},},
     {"id":{"name":"ui_VerrificLogView","path":"objects/ui_VerrificLogView/ui_VerrificLogView.yy",},},
     {"id":{"name":"struct_VerrificTreeNode","path":"scripts/struct_VerrificTreeNode/struct_VerrificTreeNode.yy",},},
