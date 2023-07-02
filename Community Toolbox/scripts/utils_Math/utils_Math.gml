@@ -32,7 +32,7 @@ function eucdiv(_dividend, _divisor) {
 #region Reaching target values
 
 /// @func lerp_angle(from,to,amount)
-/// @desc Calculates the angle interpolated between a starting and destination angle for the given amount.
+/// @desc Calculates the angle interpolated between a starting and destination angle for the given fraction amount.
 /// @arg {Real} from            The starting angle.
 /// @arg {Real} to              The destination angle.
 /// @arg {Real} amount          The amount to interpolate (0 matches the starting angle, 1 matches the destination angle).
@@ -49,12 +49,15 @@ function lerp_angle(_from, _to, _amount) {
 /// @arg {Real} [step]          The step to approach the target by (1 by default).
 /// @returns {Real}
 function approach(_current, _target, _step = 1) {
-    // for a negative step, the value moves away from the target without limit
-    if (_step <= 0)
-        return _current + _step * sign(_target - _current);
+    // for a negative step, the value moves away from the target indefinitely
+    if (_step < 0)
+        return _current + (_target <= _current ? -_step : _step);
     
     // for a positive step, the object approaches the target until reaching it
-    return _current + clamp(_target - _current, -_step, _step);
+    var _diff = _target - _current;
+    return abs(_diff) < _step
+        ? _target
+        : _current + sign(_diff) * _step;
 }
 
 /// @func approach_angle(current,target,[step])
@@ -63,14 +66,20 @@ function approach(_current, _target, _step = 1) {
 /// @arg {Real} target          The target angle.
 /// @arg {Real} [step]          The step to approach the target by (1 by default).
 function approach_angle(_current, _target, _step = 1) {
+    if (_step == 0)
+        return _current;
+    
     // for a negative step, the value approaches the opposite angle instead
     // making the step positive so that clamp receives min/max arguments in the correct order
-    if (_step <= 0) {
+    if (_step < 0) {
         _target = 180 + _target;
         _step = -_step;
     }
     
-    var _new_angle = _current + clamp(angle_difference(_target, _current), -_step, _step);
+    var _diff = angle_difference(_target, _current);
+    var _new_angle = abs(_diff) < _step
+        ? _target
+        : _current + sign(_diff) * _step;
     return eucmod(_new_angle, 360);
 }
 
