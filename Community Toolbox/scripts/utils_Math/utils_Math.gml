@@ -51,7 +51,7 @@ function lerp_angle(_from, _to, _amount) {
 function approach(_current, _target, _step = 1) {
     // for a negative step, the value moves away from the target indefinitely
     if (_step < 0)
-        return _current + (_target <= _current ? -_step : _step);
+        return _current + sign(_target - _current) * _step;
     
     // for a positive step, the object approaches the target until reaching it
     var _diff = _target - _current;
