@@ -1,4 +1,6 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+
 # Re-classify .yy files (for GMS 2 projects)
-*.yy linguist-language=GML
+*.yy linguist-language=jsonc
+*.yyp linguist-language=jsonc
