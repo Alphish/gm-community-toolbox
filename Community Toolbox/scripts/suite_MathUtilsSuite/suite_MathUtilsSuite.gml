@@ -3,4 +3,6 @@ function MathUtilsSuite() : VerrificSuiteGroup("Math utilities tests") construct
     add_methods_from(LerpAngleTests);
     add_methods_from(ApproachTests);
     add_methods_from(ApproachAngleTests);
+    add_methods_from(UnlerpTests);
+    add_methods_from(RelerpTests);
 }
