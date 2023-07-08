@@ -101,6 +101,31 @@ function RelerpTests(_run, _method) : VerrificMethodTest(_run, _method) construc
         then_result().should_be(1075);
     };
     
+    static should_throw_given_zero_width_old_range = function() {
+        given_old_range_from(35);
+        given_old_range_to(35);
+        given_amount(43);
+        given_new_range_from(1000);
+        given_new_range_to(1100);
+        given_amount(43);
+        try {
+            when_unlerp_calculated();
+            assert_fail("Exception should be thrown for a zero-width old range, but it wasn't.");
+        } catch (e) {
+            assert_pass();
+        }
+    }
+    
+    static should_relerp_given_zero_width_new_range = function() {
+        given_old_range_from(35);
+        given_old_range_to(67);
+        given_amount(43);
+        given_new_range_from(1000);
+        given_new_range_to(1000);
+        when_relerp_calculated();
+        then_result().should_be(1000);
+    }
+    
     // -----
     // Setup
     // -----
