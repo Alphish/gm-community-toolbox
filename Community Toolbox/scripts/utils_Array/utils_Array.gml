@@ -1,38 +1,38 @@
 /// @func array_max(array)
-/// @param {Array<Real>} array
-/// @desc Returns the max number value from the array.
+/// @desc Returns the highest number from the array, or 0 if the array is empty.
+/// @arg {Array<Real>} array
 /// @returns {Real}
 function array_max(_array) {
     return script_execute_ext(max, _array);
 } 
 
 /// @func array_min(array)
-/// @param {Array<Real>} array
-/// @desc Returns the min number value from the array.
+/// @desc Returns the lowest number from the array, or 0 if the array is empty.
+/// @arg {Array<Real>} array
 /// @returns {Real}
 function array_min(_array) {
     return script_execute_ext(min, _array);
 }
 
 /// @func array_mean(array)
-/// @param {Array<Real>} array
-/// @desc Adds up all of the numbers from the array, divides them by their array length, and returns that number.
+/// @desc Returns the average value of the numbers in the array, or 0 if the array is empty.
+/// @arg {Array<Real>} array
 /// @returns {Real}
 function array_mean(_array) {
     return script_execute_ext(mean, _array);
 }
 
 /// @func array_median(array)
-/// @param {Array<Real>} array
-/// @desc Returns the middle most number value from the array. 
+/// @desc Returns the middle number from the array, or 0 if the array is empty. Given an even items count, returns the larger of two middle numbers.
+/// @arg {Array<Real>} array
 /// @returns {Real}
 function array_median(_array) {
     return script_execute_ext(median, _array);
 }
 
 /// @func array_sum(array)
-/// @param {Array<Real>} array
-/// @desc Returns the sum of numbers from the array. 
+/// @desc Returns the sum of numbers from the array.
+/// @arg {Array<Real>} array
 /// @returns {Real}
 function array_sum(_array) {
     var _total = 0;
