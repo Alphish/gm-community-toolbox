@@ -86,31 +86,34 @@ function approach_angle(_current, _target, _step = 1) {
 #endregion
 
 #region Linear interpolation
-///@func unlerp(from, to, value)
-///@param {Real} from The first value.
-///@param {Real} to The second value.
-///@param {Real} value The interpolated value.
-///@return {Real}
-///@desc Return the interpolation coefficient t such that lerp(from, to, t) equals the given value.
+
+/// @func unlerp(from,to,value)
+/// @desc Returns the interpolation amount such that lerp(from, to, amount) equals the given value.
+/// @arg {Real} from        The first value.
+/// @arg {Real} to          The second value.
+/// @arg {Real} value       The interpolated value.
+/// @returns {Real}
 function unlerp(_from, _to, _value) {
     if (_from == _to) {
         throw "unlerp() range has zero width.";
     }
-    return (_value-_from)/(_to-_from);
+    return (_value - _from) / (_to - _from);
 }
 
-///@func relerp(oldfrom,oldto,oldvalue,newfrom,newto)
-///@param {Real} oldfrom The old range's first value.
-///@param {Real} oldto The old range's second value.
-///@param {Real} oldvalue The value to re-interpolate.
-///@param {Real} newfrom The new range's first value.
-///@param {Real} newto The new range's second value.
-///@return {Real}
-///@desc Given oldvalue in the old range (oldfrom, oldto), return its equivalent value in the new range (newfrom, newto).
+/// @func relerp(oldfrom,oldto,oldvalue,newfrom,newto)
+/// @desc Given an interpolated value in the old range (oldfrom, oldto), returns its equivalent value in the new range (newfrom, newto).
+/// @arg {Real} oldfrom     The old range's first value.
+/// @arg {Real} oldto       The old range's second value.
+/// @arg {Real} oldvalue    The value to re-interpolate.
+/// @arg {Real} newfrom     The new range's first value.
+/// @arg {Real} newto       The new range's second value.
+/// @returns {Real}
 function relerp(_oldfrom, _oldto, _oldvalue, _newfrom, _newto) {
     if (_oldto == _oldfrom) {
         throw "relerp() old range has zero width.";
     }
-    return _newfrom+(_newto-_newfrom)*(_oldvalue-_oldfrom)/(_oldto-_oldfrom);
+    var _amount = (_oldvalue - _oldfrom) / (_oldto - _oldfrom);
+    return _newfrom + (_newto - _newfrom) * _amount;
 }
+
 #endregion
