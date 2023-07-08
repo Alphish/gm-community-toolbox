@@ -81,6 +81,18 @@ function UnlerpTests(_run, _method) : VerrificMethodTest(_run, _method) construc
         then_result().should_be(0.75);
     };
     
+    static should_throw_given_zero_width_range = function() {
+        given_range_from(35);
+        given_range_to(35);
+        given_amount(43);
+        try {
+            when_unlerp_calculated();
+            assert_fail("Exception should be thrown for a zero-width range, but it wasn't.");
+        } catch (e) {
+            assert_pass();
+        }
+    }
+    
     // -----
     // Setup
     // -----
