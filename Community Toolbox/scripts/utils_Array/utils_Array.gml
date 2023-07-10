@@ -35,9 +35,5 @@ function array_median(_array) {
 /// @arg {Array<Real>} array
 /// @returns {Real}
 function array_sum(_array) {
-    var _total = 0;
-    for (var i = array_length(_array)-1; i >= 0; --i) {
-        _total += _array[i];
-    }
-    return _total;
+    return array_reduce(_array, function(_previous, _current) {return _previous + _current;});
 }
