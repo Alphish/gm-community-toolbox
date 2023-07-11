@@ -1,4 +1,4 @@
-track_width = 640;
+track_width = 320;
 track_height = 2;
 tick_width = 2;
 tick_height = 32;
@@ -6,7 +6,7 @@ thumb_width = 8;
 thumb_height = 40;
 
 values_count = array_length(values);
-selected_index = array_get_index(values, ctrl_ReachingTargets.id[$ variable_name]);
+selected_index = array_get_index(values, variable_owner[$ variable_name]);
 
 is_dragged = false;
 

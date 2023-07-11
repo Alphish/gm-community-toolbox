@@ -18,5 +18,5 @@ if (is_dragged) {
     var _track_x = clamp(mouse_x - x, 0, track_width);
     var _track_part = _track_x / track_width;
     selected_index = round(_track_part * (values_count - 1));
-    ctrl_UnlerpRelerp.id[$ variable_name] = values[selected_index];
+    variable_owner[$ variable_name] = values[selected_index];
 }
