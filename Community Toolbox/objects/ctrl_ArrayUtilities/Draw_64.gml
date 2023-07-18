@@ -15,3 +15,14 @@ draw_text(
     $"array_mean(array): {the_array_mean}\n" +
     $"array_sum(array): {the_array_sum}\n"
     );
+
+draw_text_ext(16, 300, description2, -1, room_width - 352);
+
+draw_text(
+    16,
+    400,
+    $"offset: {the_offset}\n" +
+	$"length: {the_length}\n\n" +
+	$"last random element: {array_last(last_random_elements)}\n\n"+
+	$"distribution: {distribution}"
+    );

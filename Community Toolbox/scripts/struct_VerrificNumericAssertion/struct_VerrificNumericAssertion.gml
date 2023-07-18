@@ -17,6 +17,16 @@ function VerrificNumericAssertion(_asserter, _actual) constructor {
         return self;
     }
     
+	/// @func should_be_in_array(expected_array,[onfailure])
+    /// @desc Asserts that the given numeric value is a member of the expected array of values.
+    /// @arg {Array<Any>} expected_array       The expected array of values.
+    /// @arg {String}     onfailure            A custom message to show in case of a failure.
+    static should_be_in_array = function(_expected_array, _onfailure = undefined) {
+        if (can_assert)
+            asserter.assert_in_array(_expected_array, actual, _onfailure);
+        return self;
+    }
+	
     // ------------
     // Value checks
     // ------------

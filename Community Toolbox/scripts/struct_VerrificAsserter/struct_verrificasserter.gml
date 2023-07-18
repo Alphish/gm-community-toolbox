@@ -335,6 +335,23 @@ function VerrificAsserter(_run) constructor {
         _onfailure ??= $"The value should be '{_expected}' but is '{_actual}' instead.";
         return assert_that(_expected == _actual, _onfailure);
     }
-    
+	
+	/// @func assert_in_array(expected_array,actual,[onfailure])
+    /// @desc Asserts that a given value is a member of an expected array.
+    /// @arg {Any} expected_array   The expected array with values.
+    /// @arg {Any} actual           The actual value.
+    /// @arg {String} onfailure     A custom message to show in case of a failure.
+    static assert_in_array = function(_expected_array, _actual, _onfailure = undefined) {
+		_onfailure ??= $"The value should be in '{_expected_array}' but is '{_actual}' instead.";
+		
+		var _condition = false;
+		
+		for (var _i=0, _n=array_length(_expected_array); _i<_n; _i++) {
+			_condition |= (_actual == _expected_array[_i]);
+		}
+		
+        return assert_that(_condition, _onfailure);
+    }
+        
     #endregion
 }
