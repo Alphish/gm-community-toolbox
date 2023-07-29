@@ -17,6 +17,16 @@ function VerrificNumericAssertion(_asserter, _actual) constructor {
         return self;
     }
     
+    /// @func should_be_one_of(items,[onfailure])
+    /// @desc Asserts that the given numeric value is equal to one of expected values.
+    /// @arg {Array} items          The possible expected values.
+    /// @arg {String} onfailure     A custom message to show in case of a failure.
+    static should_be_one_of = function(_items, _onfailure = undefined) {
+        if (can_assert)
+            asserter.assert_is_one_of(_items, actual, _onfailure);
+        return self;
+    }
+    
     // ------------
     // Value checks
     // ------------

@@ -1,6 +1,6 @@
 /// @func VerrificAsserter(run)
 /// @desc A struct for performing assertions for the given test run.
-/// @arg {Struct.VerrificTestItem} run      The test run to perform assertions on.
+/// @arg {Struct.VerrificTestRun} run       The test run to perform assertions on.
 function VerrificAsserter(_run) constructor {
     test_run = _run;
     
@@ -334,6 +334,24 @@ function VerrificAsserter(_run) constructor {
     static assert_equal = function(_expected, _actual, _onfailure = undefined) {
         _onfailure ??= $"The value should be '{_expected}' but is '{_actual}' instead.";
         return assert_that(_expected == _actual, _onfailure);
+    }
+    
+    #endregion
+    
+    // --------------------
+    // Miscellaneous checks
+    // --------------------
+    
+    #region
+    
+    /// @func assert_is_one_of(items,actual,onfailure)
+    /// @desc Asserts that a given value is equal to one of expected values.
+    /// @arg {Array} items          The possible expected values.
+    /// @arg {Any} actual           The actual value.
+    /// @arg {String} onfailure     A custom message to show in case of a failure.
+    static assert_is_one_of = function(_items, _actual, _onfailure = undefined) {
+        _onfailure ??= $"The value should be oe of '{_items}' but is '{_actual}' instead.";
+        return assert_that(array_contains(_items, _actual), _onfailure);
     }
     
     #endregion

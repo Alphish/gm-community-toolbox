@@ -341,4 +341,21 @@ function VerrificTest(_run) constructor {
     }
     
     #endregion
+    
+    // --------------------
+    // Miscellaneous checks
+    // --------------------
+    
+    #region
+    
+    /// @func assert_is_one_of(items,actual,onfailure)
+    /// @desc Asserts that a given value is equal to one of expected values.
+    /// @arg {Array} items          The possible expected values.
+    /// @arg {Any} actual           The actual value.
+    /// @arg {String} onfailure     A custom message to show in case of a failure.
+    static assert_is_one_of = function(_items, _actual, _onfailure = undefined) {
+        return test_asserter.assert_is_one_of(_items, _actual, _onfailure);
+    }
+    
+    #endregion
 }
