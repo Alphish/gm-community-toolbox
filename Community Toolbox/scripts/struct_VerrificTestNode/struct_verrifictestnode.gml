@@ -28,7 +28,7 @@ function VerrificTestNode(_suite, _index, _stub) : VerrificTreeNode(_suite, _ind
     /// @func run()
     /// @desc Runs the test.
     static run = function() {
-        if (!instance_exists(test_run))
+        if (is_undefined(test_run))
             test_run = new VerrificTestRun(test_stub);
         
         test_run.execute();
