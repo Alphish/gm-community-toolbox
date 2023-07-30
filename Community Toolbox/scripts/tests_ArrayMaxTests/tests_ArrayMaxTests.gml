@@ -30,25 +30,32 @@ function ArrayMaxTests(_run, _method) : VerrificMethodTest(_run, _method) constr
         then_result().should_be(99_999);
     }
     
-    static should_handle_positive_offset_and_length = function() {
-        given_array([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
-        given_offset_and_length(3, 4); // should take [4, 5, 6, 7]
+    static should_handle_offset_only = function() {
+        given_array([4, 6, 5, 1, 3, 2]);
+        given_offset(3); // should take [1, 3, 2]
         when_array_max_runs();
-        then_result().should_be(7);
+        then_result().should_be(3);
     }
     
-    static should_handle_negative_offset = function() {
-        given_array([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
-        given_offset_and_length(-5, 3); // should take [6, 7, 8]
+    static should_handle_positive_offset_and_length = function() {
+        given_array([1, 6, 2, 7, 3, 8, 4, 9, 5, 0]);
+        given_offset_and_length(3, 4); // should take [7, 3, 8, 4]
         when_array_max_runs();
         then_result().should_be(8);
     }
     
-    static should_handle_negative_length = function() {
-        given_array([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
-        given_offset_and_length(5, -3); // should take [6, 5, 4]
+    static should_handle_negative_offset = function() {
+        given_array([1, 6, 2, 7, 3, 8, 4, 9, 5, 0]);
+        given_offset_and_length(-5, 3); // should take [8, 4, 9]
         when_array_max_runs();
-        then_result().should_be(6);
+        then_result().should_be(9);
+    }
+    
+    static should_handle_negative_length = function() {
+        given_array([1, 6, 2, 7, 3, 8, 4, 9, 5, 0]);
+        given_offset_and_length(5, -3); // should take [8, 3, 7]
+        when_array_max_runs();
+        then_result().should_be(8);
     }
     
     static should_handle_large_subsection = function() {
@@ -58,17 +65,35 @@ function ArrayMaxTests(_run, _method) : VerrificMethodTest(_run, _method) constr
         then_result().should_be(89_999);
     }
     
+    static should_handle_overshooting = function() {
+        given_array([1, 6, 2, 7, 3, 8, 4, 9, 5, 0]);
+        given_offset_and_length(7, 5); // should take [9, 5, 0]
+        when_array_max_runs();
+        then_result().should_be(9);
+    }
+    
+    static should_handle_large_array_overshooting = function() {
+        given_array(array_with_100k_items);
+        given_offset_and_length(90_000, 20_000); // should take [90000, 90001, ..., 99998, 99999]
+        when_array_max_runs();
+        then_result().should_be(99_999);
+    }
+    
     // -----
     // Setup
     // -----
     
     array = [];
-    offset = 0;
+    offset = undefined;
     length = undefined;
     result = undefined;
     
     static given_array = function(_array) {
         array = _array;
+    }
+    
+    static given_offset = function(_offset) {
+        offset = _offset;
     }
     
     static given_offset_and_length = function(_offset, _length) {
@@ -77,7 +102,12 @@ function ArrayMaxTests(_run, _method) : VerrificMethodTest(_run, _method) constr
     }
     
     static when_array_max_runs = function() {
-        result = array_max(array, offset, length);
+        if (is_undefined(offset))
+            result = array_max(array);
+        else if (is_undefined(length))
+            result = array_max(array, offset);
+        else
+            result = array_max(array, offset, length);
     }
     
     static then_result = function() {

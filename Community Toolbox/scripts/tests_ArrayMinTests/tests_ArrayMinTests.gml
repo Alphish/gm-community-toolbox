@@ -30,25 +30,32 @@ function ArrayMinTests(_run, _method) : VerrificMethodTest(_run, _method) constr
         then_result().should_be(0);
     }
     
-    static should_handle_positive_offset_and_length = function() {
-        given_array([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
-        given_offset_and_length(3, 4); // should take [4, 5, 6, 7]
+    static should_handle_offset_only = function() {
+        given_array([1, 3, 2, 6, 4, 5]);
+        given_offset(3); // should take [6, 4, 5]
         when_array_min_runs();
         then_result().should_be(4);
+    }
+    
+    static should_handle_positive_offset_and_length = function() {
+        given_array([1, 6, 2, 7, 3, 8, 4, 9, 5, 0]);
+        given_offset_and_length(3, 4); // should take [7, 3, 8, 4]
+        when_array_min_runs();
+        then_result().should_be(3);
     }
     
     static should_handle_negative_offset = function() {
-        given_array([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
-        given_offset_and_length(-5, 3); // should take [6, 7, 8]
+        given_array([1, 6, 2, 7, 3, 8, 4, 9, 5, 0]);
+        given_offset_and_length(-5, 3); // should take [8, 4, 9]
         when_array_min_runs();
-        then_result().should_be(6);
+        then_result().should_be(4);
     }
     
     static should_handle_negative_length = function() {
-        given_array([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
-        given_offset_and_length(5, -3); // should take [6, 5, 4]
+        given_array([1, 6, 2, 7, 3, 8, 4, 9, 5, 0]);
+        given_offset_and_length(5, -3); // should take [8, 3, 7]
         when_array_min_runs();
-        then_result().should_be(4);
+        then_result().should_be(3);
     }
     
     static should_handle_large_subsection = function() {
@@ -58,17 +65,35 @@ function ArrayMinTests(_run, _method) : VerrificMethodTest(_run, _method) constr
         then_result().should_be(20_000);
     }
     
+    static should_handle_overshooting = function() {
+        given_array([1, 6, 2, 7, 3, 8, 4, 9, 5, 0]);
+        given_offset_and_length(7, 5); // should take [9, 5, 0]
+        when_array_min_runs();
+        then_result().should_be(0);
+    }
+    
+    static should_handle_large_array_overshooting = function() {
+        given_array(array_with_100k_items);
+        given_offset_and_length(90_000, 20_000); // should take [90000, 90001, ..., 99998, 99999]
+        when_array_min_runs();
+        then_result().should_be(90_000);
+    }
+    
     // -----
     // Setup
     // -----
     
     array = [];
-    offset = 0;
+    offset = undefined;
     length = undefined;
     result = undefined;
     
     static given_array = function(_array) {
         array = _array;
+    }
+    
+    static given_offset = function(_offset) {
+        offset = _offset;
     }
     
     static given_offset_and_length = function(_offset, _length) {
@@ -77,10 +102,20 @@ function ArrayMinTests(_run, _method) : VerrificMethodTest(_run, _method) constr
     }
     
     static when_array_min_runs = function() {
-        result = array_min(array, offset, length);
+        if (is_undefined(offset))
+            result = array_min(array);
+        else if (is_undefined(length))
+            result = array_min(array, offset);
+        else
+            result = array_min(array, offset, length);
     }
     
     static then_result = function() {
         return new VerrificNumericAssertion(test_asserter, result);
     }
 }
+
+show_debug_message(string_height("."));
+show_debug_message(string_height("WHATEVER1234567890"));
+show_debug_message(string_height_ext("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam fermentum enim magna, eget ultrices libero cursus porta. Vestibulum gravida orci eu egestas rhoncus. Vivamus at dictum erat. Nunc vel magna sit amet diam ultrices condimentum. Praesent efficitur ipsum ac tempor lacinia. Vivamus eget sapien vulputate, consectetur eros vel, dignissim tortor. Nunc libero neque, cursus vitae consequat gravida, fermentum eu sem. Nunc sollicitudin, nibh vel gravida ornare, nibh lectus posuere mauris, eget ultricies sem tellus sit amet erat. Nullam imperdiet, tortor eu sodales molestie, dolor ex accumsan tortor, in sodales diam magna et augue. Nunc vitae erat nec eros egestas convallis. Mauris tincidunt, tortor et efficitur consectetur, nulla enim tempus ante, non scelerisque lectus est lacinia justo. Nulla sodales rhoncus urna, ut mattis neque pretium efficitur. Proin vitae fringilla odio. Suspendisse at sem risus. Donec massa sapien, posuere sed est at, condimentum gravida turpis.", -1, 300));
+show_debug_message(string_height_ext("Lorem ipsum", -1, 300));

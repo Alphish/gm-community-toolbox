@@ -17,7 +17,8 @@ function array_max(_array, _offset = 0, _length = undefined) {
         _offset -= _length - 1;
     }
     
-    if (_length == 0 || _offset >= _arrlength)
+    _length = min(_arrlength - _offset, _length);
+    if (_length <= 0)
         return 0;
     
     // performing the actual calculation
@@ -51,7 +52,8 @@ function array_min(_array, _offset = 0, _length = undefined) {
         _offset -= _length - 1;
     }
     
-    if (_length == 0 || _offset >= _arrlength)
+    _length = min(_arrlength - _offset, _length);
+    if (_length <= 0)
         return 0;
     
     // performing the actual calculation
@@ -85,7 +87,8 @@ function array_mean(_array, _offset = 0, _length = undefined) {
         _offset -= _length - 1;
     }
     
-    if (_length == 0 || _offset >= _arrlength)
+    _length = min(_arrlength - _offset, _length);
+    if (_length <= 0)
         return 0;
     
     // performing the actual calculation
@@ -114,7 +117,8 @@ function array_median(_array, _offset = 0, _length = undefined) {
         _offset -= _length - 1;
     }
     
-    if (_length == 0 || _offset >= _arrlength)
+    _length = min(_arrlength - _offset, _length);
+    if (_length <= 0)
         return 0;
     
     // performing the actual calculation
@@ -151,7 +155,8 @@ function array_sum(_array, _offset = 0, _length = undefined) {
         _offset -= _length - 1;
     }
     
-    if (_length == 0 || _offset >= _arrlength)
+    _length = min(_arrlength - _offset, _length);
+    if (_length <= 0)
         return 0;
     
     // performing the actual calculation
