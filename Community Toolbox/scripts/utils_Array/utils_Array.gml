@@ -172,3 +172,62 @@ function array_sum(_array, _offset = 0, _length = undefined) {
         return array_reduce(_array, function(_previous, _current) { return _previous + _current; }, 0, _offset, _length);
     }
 }
+
+/// @func       array_get_random(array,[offset],[length])
+/// @desc       Returns a random element from the array (or a range within it). If the array/subsection is empty it will return zero.
+/// @arg        {Array<Real>}    array       the desired array
+/// @arg        {Real}           [offset]    optional 0-based offset to use. By default 0. Can be negative (will wrap around)
+/// @arg        {Real}           [length]    optional length of items to select from, starting from offset (for a negative length, it will count backwards from the offset position). By default array_length(array).
+/// @returns    {Any}            a random item from the array
+function array_get_random(_array, _offset=0, _length=undefined) {
+    // resolving the offset and length
+    var _arrlength = array_length(_array);
+    _length ??= _arrlength;
+    
+    if (_offset < 0)
+        _offset = max(_arrlength + _offset, 0);
+    
+    if (_length < 0) {
+        _length = min(_offset + 1, -_length);
+        _offset -= _length - 1;
+    }
+    
+    _length = min(_arrlength - _offset, _length);
+    if (_length <= 0)
+        return 0;
+    
+	// getting the random value	
+    var _index = irandom_range(_offset, _offset + _length - 1);
+    return _array[_index];
+}
+
+
+/// @func       array_pop_random(array,[offset],[length])
+/// @desc       Pops a random element from the array (or a range within it). If the array is empty or the length is nonpositive it will return zero.
+/// @arg        {Array<Real>}    array       the desired array
+/// @arg        {Real}           [offset]    optional 0-based offset to use. By default 0. Can be negative (will wrap around)
+/// @arg        {Real}           [length]    optional length of items to select from, starting from offset (for a negative length, it will count backwards from the offset position). By default array_length(array).
+/// @returns    {Any}            a random item from the array
+function array_pop_random(_array, _offset=0, _length=undefined) {
+    // resolving the offset and length
+    var _arrlength = array_length(_array);
+    _length ??= _arrlength;
+    
+    if (_offset < 0)
+        _offset = max(_arrlength + _offset, 0);
+    
+    if (_length < 0) {
+        _length = min(_offset + 1, -_length);
+        _offset -= _length - 1;
+    }
+    
+    _length = min(_arrlength - _offset, _length);
+    if (_length <= 0)
+        return 0;
+    
+    // popping the value
+    var _index = irandom_range(_offset, _offset + _length - 1);
+    var _element = _array[_index];
+    array_delete(_array, _index, 1);
+    return _element;        
+}
