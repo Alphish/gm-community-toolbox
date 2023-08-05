@@ -1,69 +1,88 @@
+// general note: since array_get_random is non-deterministic
+// the tests might technically pass even if there is an error by getting "lucky" with the RNG state;
+// what should be guaranteed, is that as long as the function is implemented correctly, the tests pass every time
+// the repeated array_get_random calls are supposed to lower the risk of "lucky" bad passes
+
 function ArrayGetRandomTests(_run, _method) : VerrificMethodTest(_run, _method) constructor {
     static test_subject = "array_get_random";
-
-    static should_handle_empty_array = function() {
+    
+    static repetitions = 10;
+    
+    static should_return_undefined_for_empty_array = function() {
         given_array([]);
         when_array_get_random_runs();
-        then_result().should_be(0);
+        then_result().should_be_undefined();
     }
     
-    static should_return_value_from_original_array = function() {
+    static should_get_value_from_single_item_array = function() {
+        given_array([42]);
+        
+        repeat (repetitions) {
+            when_array_get_random_runs();
+            then_result().should_be(42);
+        }
+    }
+    
+    static should_get_value_from_multi_item_array = function() {
         given_array([100, 300, 500, 700, 900]);
-        when_array_get_random_runs();
-        then_result().should_be_one_of([100, 300, 500, 700, 900]);
+        repeat (repetitions) {
+            when_array_get_random_runs();
+            then_result().should_be_one_of([100, 300, 500, 700, 900]);
+        }
     }
     
-    static should_return_value_from_original_1_length_array = function() {
-        given_array(["Hi"]);
-        when_array_get_random_runs();
-        then_string_result().should_be("Hi");
+    static should_handle_offset_only = function() {
+        given_array([100, 300, 500, 700, 900]);
+        given_offset(2); // should take [500, 700, 900]
+        repeat (repetitions) {
+            when_array_get_random_runs();
+            then_result().should_be_one_of([500, 700, 900]);
+        }
     }
     
-    static should_respect_offset = function() {
-        given_array([1,2,3,4,5,6,7,8,9,0]);
-        given_offset(3);
-        when_array_get_random_runs();
-        then_result().should_be_one_of([4,5,6,7,8,9,0]);
+    static should_handle_positive_offset_and_length = function() {
+        given_array([100, 300, 500, 700, 900]);
+        given_offset_and_length(1, 3); // should take [300, 500, 700]
+        repeat (repetitions) {
+            when_array_get_random_runs();
+            then_result().should_be_one_of([300, 500, 700]);
+        }
     }
     
-    static should_respect_length = function() {
-        given_array([1,2,3,4,5,6,7,8,9,0]);
-        given_length(4);
-        when_array_get_random_runs();
-        then_result().should_be_one_of([1,2,3,4]);
+    static should_handle_negative_offset = function() {
+        given_array([100, 300, 500, 700, 900]);
+        given_offset_and_length(-2, 3); // should_take [700, 900]
+        repeat (repetitions) {
+            when_array_get_random_runs();
+            then_result().should_be_one_of([700, 900]);
+        }
     }
     
-    static should_respect_negative_offset = function() {
-        given_array([1,2,3,4,5,6,7,8,9,0]);
-        given_offset(-3);
-        when_array_get_random_runs();
-        then_result().should_be_one_of([8,9,0]);
+    static should_handle_negative_length = function() {
+        given_array([100, 300, 500, 700, 900]);
+        given_offset_and_length(3, -3); // should take [700, 500, 300]
+        repeat (repetitions) {
+            when_array_get_random_runs();
+            then_result().should_be_one_of([300, 500, 700]);
+        }
     }
     
-    static should_respect_negative_length = function() {
-        given_array([1,2,3,4,5,6,7,8,9,0]);
-        given_offset(5);
-        given_length(-2);
+    static should_handle_zero_length_subsection = function() {
+        given_array([100, 300, 500, 700, 900]);
+        given_offset_and_length(2, 0);
         when_array_get_random_runs();
-        then_result().should_be_one_of([5,6]);
+        then_result().should_be_undefined();
     }
     
-    static should_return_zero_for_zero_length = function() {
-        given_array([1,2,3,4,5,6,7,8,9,0]);
-        given_length(0);
-        when_array_get_random_runs();
-        then_result().should_be(0);
+    static should_handle_one_length_subsection = function() {
+        given_array([100, 300, 500, 700, 900]);
+        given_offset_and_length(2, 1); // should take [500]
+        repeat (repetitions) {
+            when_array_get_random_runs();
+            then_result().should_be(500);
+        }
     }
     
-    static should_respect_negative_offset_and_positive_length = function() {
-        given_array([1,2,3,4,5,6,7,8,9,0]);
-        given_offset(-5);
-        given_length(4);
-        when_array_get_random_runs();
-        then_result().should_be_one_of([6,7,8,9]);
-    }
-    
- 
     // -----
     // Setup
     // -----
@@ -72,30 +91,25 @@ function ArrayGetRandomTests(_run, _method) : VerrificMethodTest(_run, _method) 
     offset = undefined;
     length = undefined;
     result = undefined;
-        
+    
     static given_array = function(_array) {
-        array = _array; 
-        offset = undefined;
-        length = undefined;
+        array = _array;
     }
     
     static given_offset = function(_offset) {
         offset = _offset;
     }
     
-    static given_length = function(_length) {
-        length = _length;        
+    static given_offset_and_length = function(_offset, _length) {
+        offset = _offset;
+        length = _length;
     }
     
     static when_array_get_random_runs = function() {
         result = array_get_random(array, offset, length);
     }
-        
+    
     static then_result = function() {
         return new VerrificNumericAssertion(test_asserter, result);
-    }
-    
-    static then_string_result = function() {
-        return new VerrificStringAssertion(test_asserter, result);
     }
 }
