@@ -1,3 +1,5 @@
+#region Array-wide maths
+
 /// @func array_max(array,[offset],[length])
 /// @desc Returns the highest number from the array or its subsection. If the array/subsection is empty, 0 is returned.
 /// @arg {Array<Real>} array    The array to get the maximum value of.
@@ -173,13 +175,17 @@ function array_sum(_array, _offset = 0, _length = undefined) {
     }
 }
 
-/// @func       array_get_random(array,[offset],[length])
-/// @desc       Returns a random element from the array (or a range within it). If the array/subsection is empty it will return zero.
-/// @arg        {Array<Real>}    array       the desired array
-/// @arg        {Real}           [offset]    optional 0-based offset to use. By default 0. Can be negative (will wrap around)
-/// @arg        {Real}           [length]    optional length of items to select from, starting from offset (for a negative length, it will count backwards from the offset position). By default array_length(array).
-/// @returns    {Any}            a random item from the array
-function array_get_random(_array, _offset=0, _length=undefined) {
+#endregion
+
+#region Random elements
+
+/// @func array_get_random(array,[offset],[length])
+/// @desc Returns a random element from the array or its subsection. If the array/subsection is empty, undefined is returned.
+/// @arg {Array} array          The array to get the random element from.
+/// @arg {Real} [offset]        The starting index of the subsection (for a negative offset, it will count from array end).
+/// @arg {Real} [length]        The length of the subsection (for a negative length, it will count backwards from the offset position).
+/// @returns {Any}
+function array_get_random(_array, _offset = 0, _length = undefined) {
     // resolving the offset and length
     var _arrlength = array_length(_array);
     _length ??= _arrlength;
@@ -194,21 +200,21 @@ function array_get_random(_array, _offset=0, _length=undefined) {
     
     _length = min(_arrlength - _offset, _length);
     if (_length <= 0)
-        return 0;
+        return undefined;
     
-	// getting the random value	
+    // getting the random value	
     var _index = irandom_range(_offset, _offset + _length - 1);
     return _array[_index];
 }
 
 
-/// @func       array_pop_random(array,[offset],[length])
-/// @desc       Pops a random element from the array (or a range within it). If the array is empty or the length is nonpositive it will return zero.
-/// @arg        {Array<Real>}    array       the desired array
-/// @arg        {Real}           [offset]    optional 0-based offset to use. By default 0. Can be negative (will wrap around)
-/// @arg        {Real}           [length]    optional length of items to select from, starting from offset (for a negative length, it will count backwards from the offset position). By default array_length(array).
-/// @returns    {Any}            a random item from the array
-function array_pop_random(_array, _offset=0, _length=undefined) {
+/// @func array_pop_random(array,[offset],[length])
+/// @desc Pops a random element from the array or its subsection. If the array/subsection is empty, undefined is returned.
+/// @arg {Array} array          The array to pop the random element from.
+/// @arg {Real} [offset]        The starting index of the subsection (for a negative offset, it will count from array end).
+/// @arg {Real} [length]        The length of the subsection (for a negative length, it will count backwards from the offset position).
+/// @returns {Any}
+function array_pop_random(_array, _offset = 0, _length = undefined) {
     // resolving the offset and length
     var _arrlength = array_length(_array);
     _length ??= _arrlength;
@@ -223,11 +229,13 @@ function array_pop_random(_array, _offset=0, _length=undefined) {
     
     _length = min(_arrlength - _offset, _length);
     if (_length <= 0)
-        return 0;
+        return undefined;
     
     // popping the value
     var _index = irandom_range(_offset, _offset + _length - 1);
     var _element = _array[_index];
     array_delete(_array, _index, 1);
-    return _element;        
+    return _element;
 }
+
+#endregion
