@@ -5,8 +5,8 @@ function ArrayUtilsSuite() : VerrificSuiteGroup("Array utilities tests") constru
         ArrayMeanTests,
         ArrayMedianTests,
         ArraySumTests,
-		ArrayGetRandomTests,
-		ArrayPopRandomTests,
+        ArrayGetRandomTests,
+        ArrayPopRandomTests,
     ], function(test) {
         add_methods_from(test);
     });
