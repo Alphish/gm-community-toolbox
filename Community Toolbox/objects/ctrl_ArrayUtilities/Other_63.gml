@@ -16,3 +16,25 @@ if (async_load[? "id"] == input_array) {
     }
     input_array = -1;
 }
+
+if (async_load[? "id"] == input_offset) {
+    if (async_load[? "status"]) {
+        try {
+            the_array_offset = real(async_load[? "result"]);
+        }
+        catch (ex) {}
+        recompute_values();
+    }
+    input_offset = -1;
+}
+
+if (async_load[? "id"] == input_length) {
+    if (async_load[? "status"]) {
+        try {
+            the_array_length = real(async_load[? "result"]);
+        }
+        catch (ex) {}
+        recompute_values();
+    }
+    input_length = -1;
+}

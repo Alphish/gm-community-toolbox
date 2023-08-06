@@ -41,6 +41,7 @@
   },
   "resources": [
     {"id":{"name":"tests_ArrayMinTests","path":"scripts/tests_ArrayMinTests/tests_ArrayMinTests.yy",},},
+    {"id":{"name":"tests_ArrayGetRandomTests","path":"scripts/tests_ArrayGetRandomTests/tests_ArrayGetRandomTests.yy",},},
     {"id":{"name":"demo_UnlerpRelerp","path":"rooms/demo_UnlerpRelerp/demo_UnlerpRelerp.yy",},},
     {"id":{"name":"enum_VerrificStatus","path":"scripts/enum_VerrificStatus/enum_VerrificStatus.yy",},},
     {"id":{"name":"tests_IsNullishTests","path":"scripts/tests_IsNullishTests/tests_IsNullishTests.yy",},},
@@ -95,6 +96,7 @@
     {"id":{"name":"struct_VerrificTest","path":"scripts/struct_VerrificTest/struct_VerrificTest.yy",},},
     {"id":{"name":"utils_Array","path":"scripts/utils_Array/utils_Array.yy",},},
     {"id":{"name":"ui_UnlerpRelerpSlider","path":"objects/ui_UnlerpRelerpSlider/ui_UnlerpRelerpSlider.yy",},},
+    {"id":{"name":"tests_ArrayPopRandomTests","path":"scripts/tests_ArrayPopRandomTests/tests_ArrayPopRandomTests.yy",},},
     {"id":{"name":"utils_Math","path":"scripts/utils_Math/utils_Math.yy",},},
     {"id":{"name":"struct_VerrificMethodTest","path":"scripts/struct_VerrificMethodTest/struct_VerrificMethodTest.yy",},},
     {"id":{"name":"struct_VerrificLogLine","path":"scripts/struct_VerrificLogLine/struct_VerrificLogLine.yy",},},

@@ -37,18 +37,18 @@ function ArrayMedianTests(_run, _method) : VerrificMethodTest(_run, _method) con
         then_result().should_be(50_000);
     }
     
-    static should_handle_positive_offset_and_length = function() {
-        given_array([1, 6, 2, 7, 3, 8, 4, 9, 5, 0]);
-        given_offset_and_length(3, 4); // should take [7, 3, 8, 4]
-        when_array_median_runs();
-        then_result().should_be(7);
-    }
-    
     static should_handle_offset_only = function() {
         given_array([4, 6, 5, 1, 3, 2]);
         given_offset(3); // should take [1, 3, 2]
         when_array_median_runs();
         then_result().should_be(2);
+    }
+    
+    static should_handle_positive_offset_and_length = function() {
+        given_array([1, 6, 2, 7, 3, 8, 4, 9, 5, 0]);
+        given_offset_and_length(3, 4); // should take [7, 3, 8, 4]
+        when_array_median_runs();
+        then_result().should_be(7);
     }
     
     static should_handle_negative_offset = function() {
