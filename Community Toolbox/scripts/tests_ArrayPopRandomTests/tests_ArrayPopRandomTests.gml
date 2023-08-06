@@ -17,6 +17,7 @@ function ArrayPopRandomTests(_run, _method) : VerrificMethodTest(_run, _method) 
         when_array_pop_random_runs();
         then_result().should_be(42);
         then_source_array_length().should_be(0);
+        then_source_array_should_not_have_result();
     }
     
     static should_pop_value_from_multi_item_array = function() {
@@ -24,6 +25,7 @@ function ArrayPopRandomTests(_run, _method) : VerrificMethodTest(_run, _method) 
         when_array_pop_random_runs();
         then_result().should_be_one_of([100, 300, 500, 700, 900]);
         then_source_array_length().should_be(4);
+        then_source_array_should_not_have_result();
     }
     
     static should_pop_values_until_no_items_left = function() {
@@ -32,14 +34,17 @@ function ArrayPopRandomTests(_run, _method) : VerrificMethodTest(_run, _method) 
         when_array_pop_random_runs();
         then_result().should_be_one_of([100, 300, 500]);
         then_source_array_length().should_be(2);
+        then_source_array_should_not_have_result();
         
         when_array_pop_random_runs();
         then_result().should_be_one_of([100, 300, 500]);
         then_source_array_length().should_be(1);
+        then_source_array_should_not_have_result();
 
         when_array_pop_random_runs();
         then_result().should_be_one_of([100, 300, 500]);
         then_source_array_length().should_be(0);
+        then_source_array_should_not_have_result();
 
         when_array_pop_random_runs();
         then_result().should_be_undefined();
@@ -54,6 +59,7 @@ function ArrayPopRandomTests(_run, _method) : VerrificMethodTest(_run, _method) 
         when_array_pop_random_runs();
         then_result().should_be_one_of([500, 700, 900]);
         then_source_array_length().should_be(4);
+        then_source_array_should_not_have_result();
     }
     
     static should_handle_positive_offset_and_length = function() {
@@ -70,6 +76,7 @@ function ArrayPopRandomTests(_run, _method) : VerrificMethodTest(_run, _method) 
         when_array_pop_random_runs();
         then_result().should_be(700);
         then_source_array_length().should_be(4);
+        then_source_array_should_not_have_result();
     }
     
     static should_handle_negative_length = function() {
@@ -78,6 +85,7 @@ function ArrayPopRandomTests(_run, _method) : VerrificMethodTest(_run, _method) 
         when_array_pop_random_runs();
         then_result().should_be_one_of([300, 500, 700]);
         then_source_array_length().should_be(4);
+        then_source_array_should_not_have_result();
     }
     
     static should_handle_zero_length_subsection = function() {
@@ -97,15 +105,18 @@ function ArrayPopRandomTests(_run, _method) : VerrificMethodTest(_run, _method) 
         when_array_pop_random_runs();
         then_result().should_be_one_of([500, 700, 900]);
         then_source_array_length().should_be(4);
+        then_source_array_should_not_have_result();
         
         when_array_pop_random_runs();
         then_result().should_be_one_of([500, 700, 900]);
         then_source_array_length().should_be(3);
-
+        then_source_array_should_not_have_result();
+        
         when_array_pop_random_runs();
         then_result().should_be_one_of([500, 700, 900]);
         then_source_array_length().should_be(2);
-
+        then_source_array_should_not_have_result();
+        
         when_array_pop_random_runs();
         then_result().should_be_undefined();
         then_source_array_length().should_be(2);
@@ -147,6 +158,10 @@ function ArrayPopRandomTests(_run, _method) : VerrificMethodTest(_run, _method) 
     
     static then_source_array_length = function() {
         return new VerrificNumericAssertion(test_asserter, array_length(source_array));
+    }
+    
+    static then_source_array_should_not_have_result = function() {
+        assert_that(!array_contains(source_array, result), $"Expected source array not to contain the result {result}, but it's {source_array} instead.");
     }
     
     static then_popped_items_must_include = function() {
