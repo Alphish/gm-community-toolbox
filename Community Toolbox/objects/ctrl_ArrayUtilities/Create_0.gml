@@ -1,5 +1,7 @@
 title = "Array Utilities";
-description = "Calculate the maximum, minimum, median, mean, and sum, and get/pop random values, of an array.";
+description =
+    "Calculates the maximum, minimum, median, mean, and sum of an array.\n" +
+    "Also, allows getting/popping random values from the array.";
 
 the_original_array = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 
@@ -34,15 +36,15 @@ popup_input_array = function() {
     }
 }
 
-set_offset_array = function() {
+set_array_offset = function() {
     if (input_offset == -1) {
-        input_offset = get_string_async("Enter the offset to consider for operations:", the_array_offset);
+        input_offset = get_string_async("Enter the offset to consider for operations:", string(the_array_offset));
     }
 }
 
-set_length_array = function() {
+set_array_length = function() {
     if (input_length == -1) {
-        input_length = get_string_async("Enter the length to consider for operations:", the_array_length);
+        input_length = get_string_async("Enter the length to consider for operations:", string(the_array_length));
     }
 }
 
@@ -70,28 +72,28 @@ reset_defaults();
 
 // Creating UI controls
 
-instance_create_layer(32, 80, layer, ui_Button, {
+instance_create_layer(32, 96, layer, ui_Button, {
     text: "Change Array", on_click: popup_input_array, image_xscale: 6
 });
 
-instance_create_layer(256+32, 80, layer, ui_Button, {
-    text: "Set offset", on_click: set_offset_array, image_xscale: 6
+instance_create_layer(672, 96, layer, ui_Button, {
+    text: "Set offset", on_click: set_array_offset, image_xscale: 6
 });
 
-instance_create_layer(256*2+32, 80, layer, ui_Button, {
-    text: "Set length", on_click: set_length_array, image_xscale: 6
+instance_create_layer(672, 192, layer, ui_Button, {
+    text: "Set length", on_click: set_array_length, image_xscale: 6
 });
 
 
 
-instance_create_layer(32, 300, layer, ui_Button, {
+instance_create_layer(32, 316, layer, ui_Button, {
     text: "Get Random", on_click: get_random_array, image_xscale: 6
 });
 
-instance_create_layer(256+32, 300, layer, ui_Button, {
+instance_create_layer(256+32, 316, layer, ui_Button, {
     text: "Pop Random", on_click: pop_random_array, image_xscale: 6
 });
 
-instance_create_layer(256*2+32, 300, layer, ui_Button, {
+instance_create_layer(256*2+32, 316, layer, ui_Button, {
     text: "Reset to Defaults", on_click: reset_defaults, image_xscale: 6
 });
