@@ -69,6 +69,7 @@
     {"id":{"name":"struct_VerrificFailure","path":"scripts/struct_VerrificFailure/struct_VerrificFailure.yy",},},
     {"id":{"name":"ui_VerrificLogView","path":"objects/ui_VerrificLogView/ui_VerrificLogView.yy",},},
     {"id":{"name":"struct_VerrificTreeNode","path":"scripts/struct_VerrificTreeNode/struct_VerrificTreeNode.yy",},},
+    {"id":{"name":"utils_File","path":"scripts/utils_File/utils_File.yy",},},
     {"id":{"name":"ui_EuclideanDivisionSummary","path":"objects/ui_EuclideanDivisionSummary/ui_EuclideanDivisionSummary.yy",},},
     {"id":{"name":"tests_ArrayMeanTests","path":"scripts/tests_ArrayMeanTests/tests_ArrayMeanTests.yy",},},
     {"id":{"name":"struct_VerrificMethodTestStub","path":"scripts/struct_VerrificMethodTestStub/struct_VerrificMethodTestStub.yy",},},
