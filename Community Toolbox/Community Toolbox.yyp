@@ -32,6 +32,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Method-based","folderPath":"folders/Tests/Verrific/Testing/Method-based.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Tools","folderPath":"folders/Tests/Verrific/Tools.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Log","folderPath":"folders/Tests/Verrific/Tools/Log.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"File","folderPath":"folders/Tests/File.yy",},
   ],
   "IncludedFiles": [
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"testblank.txt","CopyToMask":-1,"filePath":"datafiles/testing",},
@@ -59,6 +60,7 @@
     {"id":{"name":"tests_ApproachAngleTests","path":"scripts/tests_ApproachAngleTests/tests_ApproachAngleTests.yy",},},
     {"id":{"name":"struct_VerrificTreeVisitor","path":"scripts/struct_VerrificTreeVisitor/struct_VerrificTreeVisitor.yy",},},
     {"id":{"name":"suite_MiscUtilsSuite","path":"scripts/suite_MiscUtilsSuite/suite_MiscUtilsSuite.yy",},},
+    {"id":{"name":"suite_FileUtilsSuite","path":"scripts/suite_FileUtilsSuite/suite_FileUtilsSuite.yy",},},
     {"id":{"name":"ui_Slider","path":"objects/ui_Slider/ui_Slider.yy",},},
     {"id":{"name":"struct_VerrificTestStub","path":"scripts/struct_VerrificTestStub/struct_VerrificTestStub.yy",},},
     {"id":{"name":"ui_Button","path":"objects/ui_Button/ui_Button.yy",},},
@@ -76,6 +78,7 @@
     {"id":{"name":"suite_ArrayUtilsSuite","path":"scripts/suite_ArrayUtilsSuite/suite_ArrayUtilsSuite.yy",},},
     {"id":{"name":"demo_ArrayUtilities","path":"rooms/demo_ArrayUtilities/demo_ArrayUtilities.yy",},},
     {"id":{"name":"ctrl_ReachingTargets","path":"objects/ctrl_ReachingTargets/ctrl_ReachingTargets.yy",},},
+    {"id":{"name":"tests_FileReadAllTextTests","path":"scripts/tests_FileReadAllTextTests/tests_FileReadAllTextTests.yy",},},
     {"id":{"name":"tests_RelerpTests","path":"scripts/tests_RelerpTests/tests_RelerpTests.yy",},},
     {"id":{"name":"ctrl_ArrayUtilities","path":"objects/ctrl_ArrayUtilities/ctrl_ArrayUtilities.yy",},},
     {"id":{"name":"rm_Home","path":"rooms/rm_Home/rm_Home.yy",},},
