@@ -33,7 +33,10 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Tools","folderPath":"folders/Tests/Verrific/Tools.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Log","folderPath":"folders/Tests/Verrific/Tools/Log.yy",},
   ],
-  "IncludedFiles": [],
+  "IncludedFiles": [
+    {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"testblank.txt","CopyToMask":-1,"filePath":"datafiles/testing",},
+    {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"testtext.txt","CopyToMask":-1,"filePath":"datafiles/testing",},
+  ],
   "isEcma": false,
   "LibraryEmitters": [],
   "MetaData": {
