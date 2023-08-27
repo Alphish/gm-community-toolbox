@@ -3,4 +3,5 @@ function CommunityToolboxSuite() : VerrificSuiteGroup("Community toolbox tests")
     add_suite(new FileUtilsSuite());
     add_suite(new MathUtilsSuite());
     add_suite(new MiscUtilsSuite());
+	add_suite(new JsonUtilsSuite());
 }

@@ -1,0 +1,1 @@
+text = @'{ "content": "Click on the text area to change the JSON, or save/load its file." }';
