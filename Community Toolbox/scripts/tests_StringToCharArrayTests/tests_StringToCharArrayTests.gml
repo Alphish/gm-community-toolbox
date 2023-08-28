@@ -62,8 +62,4 @@ function StringToCharArrayTests(_run, _method) : VerrificMethodTest(_run, _metho
     static when_converted_to_array = function() {
         result = string_to_char_array(source_string, offset);
     }
-    
-    static then_result = function() {
-        return new VerrificNumericAssertion(test_asserter, result);
-    }
 }
