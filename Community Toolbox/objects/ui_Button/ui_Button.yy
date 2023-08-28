@@ -11,8 +11,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Community Toolbox",
-    "path": "Community Toolbox.yyp",
+    "name": "UI Elements",
+    "path": "folders/UI Elements.yy",
   },
   "parentObjectId": null,
   "persistent": false,

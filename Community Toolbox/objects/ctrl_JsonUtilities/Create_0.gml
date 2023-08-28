@@ -9,7 +9,7 @@ load_file = function() {
     
     var _data = json_load(_filename);
     if (!is_undefined(_data))
-        ui_FileText.text = json_stringify(_data, true);
+        ui_JsonFileText.text = json_stringify(_data, true);
 }
 
 save_file = function() {
@@ -19,7 +19,7 @@ save_file = function() {
     
     var _data;
     try {
-        _data = json_parse(ui_FileText.text);
+        _data = json_parse(ui_JsonFileText.text);
     } catch (_ex) {
         show_message_async("Error: Cannot save invalid JSON.");
         return;
@@ -35,7 +35,7 @@ save_file_pretty = function() {
     
     var _data;
     try {
-        _data = json_parse(ui_FileText.text);
+        _data = json_parse(ui_JsonFileText.text);
     } catch (_ex) {
         show_message_async("Error: Cannot save invalid JSON.");
         return;
