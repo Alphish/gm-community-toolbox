@@ -37,6 +37,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Tools","folderPath":"folders/Tests/Verrific/Tools.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Log","folderPath":"folders/Tests/Verrific/Tools/Log.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"UI Elements","folderPath":"folders/UI Elements.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"String","folderPath":"folders/Tests/String.yy",},
   ],
   "IncludedFiles": [
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"testarray.json","CopyToMask":-1,"filePath":"datafiles/testing",},
@@ -77,6 +78,7 @@
     {"id":{"name":"struct_VerrificTestStub","path":"scripts/struct_VerrificTestStub/struct_VerrificTestStub.yy",},},
     {"id":{"name":"ui_Button","path":"objects/ui_Button/ui_Button.yy",},},
     {"id":{"name":"struct_VerrificLogRunner","path":"scripts/struct_VerrificLogRunner/struct_VerrificLogRunner.yy",},},
+    {"id":{"name":"tests_StringToCharArrayTests","path":"scripts/tests_StringToCharArrayTests/tests_StringToCharArrayTests.yy",},},
     {"id":{"name":"struct_VerrificNumericAssertion","path":"scripts/struct_VerrificNumericAssertion/struct_VerrificNumericAssertion.yy",},},
     {"id":{"name":"tests_IsDefinedTests","path":"scripts/tests_IsDefinedTests/tests_IsDefinedTests.yy",},},
     {"id":{"name":"tests_EuclideanDivisionTests","path":"scripts/tests_EuclideanDivisionTests/tests_EuclideanDivisionTests.yy",},},
@@ -100,6 +102,7 @@
     {"id":{"name":"utils_Misc","path":"scripts/utils_Misc/utils_Misc.yy",},},
     {"id":{"name":"ctrl_EuclideanDivision","path":"objects/ctrl_EuclideanDivision/ctrl_EuclideanDivision.yy",},},
     {"id":{"name":"ui_ReachingTargetsSlider","path":"objects/ui_ReachingTargetsSlider/ui_ReachingTargetsSlider.yy",},},
+    {"id":{"name":"suite_StringUtilsSuite","path":"scripts/suite_StringUtilsSuite/suite_StringUtilsSuite.yy",},},
     {"id":{"name":"demo_EuclideanDivision","path":"rooms/demo_EuclideanDivision/demo_EuclideanDivision.yy",},},
     {"id":{"name":"struct_VerrificTestNode","path":"scripts/struct_VerrificTestNode/struct_VerrificTestNode.yy",},},
     {"id":{"name":"struct_VerrificSuiteNode","path":"scripts/struct_VerrificSuiteNode/struct_VerrificSuiteNode.yy",},},
