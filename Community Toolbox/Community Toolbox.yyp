@@ -93,6 +93,7 @@
     {"id":{"name":"demo_ArrayUtilities","path":"rooms/demo_ArrayUtilities/demo_ArrayUtilities.yy",},},
     {"id":{"name":"ctrl_ReachingTargets","path":"objects/ctrl_ReachingTargets/ctrl_ReachingTargets.yy",},},
     {"id":{"name":"tests_FileReadAllTextTests","path":"scripts/tests_FileReadAllTextTests/tests_FileReadAllTextTests.yy",},},
+    {"id":{"name":"utils_String","path":"scripts/utils_String/utils_String.yy",},},
     {"id":{"name":"tests_RelerpTests","path":"scripts/tests_RelerpTests/tests_RelerpTests.yy",},},
     {"id":{"name":"ctrl_ArrayUtilities","path":"objects/ctrl_ArrayUtilities/ctrl_ArrayUtilities.yy",},},
     {"id":{"name":"rm_Home","path":"rooms/rm_Home/rm_Home.yy",},},
