@@ -15,6 +15,7 @@
     {"name":"inst_B8653B6","path":"rooms/rm_Home/rm_Home.yy",},
     {"name":"inst_7F1AFE88","path":"rooms/rm_Home/rm_Home.yy",},
     {"name":"inst_2B5E8A1E","path":"rooms/rm_Home/rm_Home.yy",},
+    {"name":"inst_7BB73D5A","path":"rooms/rm_Home/rm_Home.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -51,6 +52,10 @@
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"ui_Button","path":"objects/ui_Button/ui_Button.yy",},"propertyId":{"name":"text","path":"objects/ui_Button/ui_Button.yy",},"value":"JSON utilities demo",},
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"ui_Button","path":"objects/ui_Button/ui_Button.yy",},"propertyId":{"name":"target_room","path":"objects/ui_Button/ui_Button.yy",},"value":"demo_JsonUtilities",},
           ],"rotation":0.0,"scaleX":8.0,"scaleY":2.0,"x":832.0,"y":320.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_7BB73D5A","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"ui_Button","path":"objects/ui_Button/ui_Button.yy",},"properties":[
+            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"ui_Button","path":"objects/ui_Button/ui_Button.yy",},"propertyId":{"name":"text","path":"objects/ui_Button/ui_Button.yy",},"value":"String utilities demo",},
+            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"ui_Button","path":"objects/ui_Button/ui_Button.yy",},"propertyId":{"name":"target_room","path":"objects/ui_Button/ui_Button.yy",},"value":"demo_StringUtilities",},
+          ],"rotation":0.0,"scaleX":8.0,"scaleY":2.0,"x":832.0,"y":416.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRBackgroundLayer","resourceVersion":"1.0","name":"Background","animationFPS":15.0,"animationSpeedType":0,"colour":4278190080,"depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"spriteId":null,"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":0,"y":0,},
   ],
