@@ -90,6 +90,7 @@
     - `load`: The function will read something from a file.
     - `save`: The function will write/overwrite some file with a given content.
     - `parse`: The function will read some value from a string.
+- Matching the GML conventions, functions that have `color` in name should also have `colour` counterpart, e.g. `shader_set_uniform_color` and `shader_set_uniform_colour`. The name of the colour argument (if any) should match the function's spelling.
 
 ### Function Parameters and Local Variables
 
