@@ -1,7 +1,7 @@
 23.4.0
 ======
 
-This release is compatible with GameMaker 2023.4 version.
+This release is compatible with GameMaker 2023.4 version. You can download the YYMPS local package [here](https://github.com/Alphish/gm-community-toolbox/blob/main/Releases/CommunityToolbox.23.4.0.yymps?raw=1).
 
 - implemented `is_nullish` and `is_defined` for checking potentially empty values
 - implemented `eucdiv` and `eucmod` for calculating quotient and remainder of Euclidean division (which handles negative values differently than `div`/`mod` operators
