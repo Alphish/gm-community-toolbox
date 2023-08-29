@@ -11,7 +11,7 @@
 
 # Installation
 
-- download the Community Toolbox local package (the YYMPS file); for the current package, GameMaker 2023.4 is recommended
+- download the Community Toolbox local package (the YYMPS file); for the current package, GameMaker 2023.4 or later is recommended
 - open your GameMaker project
 - from "Tools" menu, select "Import Local Package"
 - select whole package contents to import (or only some scripts) and click "Import"
