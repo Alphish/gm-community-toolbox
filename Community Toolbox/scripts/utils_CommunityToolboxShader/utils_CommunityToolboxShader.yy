@@ -1,7 +1,7 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "utils_Math",
+  "name": "utils_CommunityToolboxShader",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {

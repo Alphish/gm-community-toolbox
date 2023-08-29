@@ -1,7 +1,7 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "utils_Shader",
+  "name": "utils_CommunityToolboxJson",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
