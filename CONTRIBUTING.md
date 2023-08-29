@@ -44,27 +44,21 @@
 **YES:**
 
 ```gml
-/// @func relerp(oldfrom,oldto,oldvalue,newfrom,newto)
-/// @desc Given an interpolated value in the old range (oldfrom, oldto), returns its equivalent value in the new range (newfrom, newto).
-/// @arg {Real} oldfrom     The old range's first value.
-/// @arg {Real} oldto       The old range's second value.
-/// @arg {Real} oldvalue    The value to re-interpolate.
-/// @arg {Real} newfrom     The new range's first value.
-/// @arg {Real} newto       The new range's second value.
-/// @returns {Real}
+/// @func string_to_char_array(str,[ondeindexed])
+/// @desc Creates an array of characters from a given string. It may be 0-indexed or 1-indexed.
+/// @arg {String} str           The string to convert to the array.
+/// @arg {Bool} [oneindexed]    Whether the first character should start at index of 0 (false) or index of 1 (true).
+/// @returns {Array<String>}
 ```
 
 **NO:**
 
 ```gml
-/// @func relerp(oldfrom, oldto, oldvalue, newfrom, newto)
-/// @arg {real} oldfrom     The old range's first value.
-/// @arg {real} oldto       The old range's second value.
-/// @arg {real} oldvalue    The value to re-interpolate.
-/// @arg {real} newfrom     The new range's first value.
-/// @arg {real} newto       The new range's second value.
-/// @returns {real}
-/// @desc Given an interpolated value in the old range (oldfrom, oldto), returns its equivalent value in the new range (newfrom, newto).
+/// @func string_to_char_array(str, ondeindexed)
+/// @returns {array<string>}
+/// @arg {string} str           The string to convert to the array.
+/// @arg {bool} oneindexed      Whether the first character should start at index of 0 (false) or index of 1 (true).
+/// @desc Creates an array of characters from a given string. It may be 0-indexed or 1-indexed.
 ```
 
 ## Naming Conventions
