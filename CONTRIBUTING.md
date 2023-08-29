@@ -167,7 +167,6 @@ function other_function(_arg1) {
 **YES:**
 
 ```gml
-// OK
 if (_some_condition)
     return 1;
 else if (_other_condition)
@@ -179,7 +178,6 @@ else
 **YES:**
 
 ```gml
-// Also OK
 if (_some_condition) {
     return 1;
 } else if (_other_condition) {
