@@ -239,7 +239,6 @@ if (_other_condition)
 **YES:**
 
 ```gml
-//OK
 show_debug_message("Hello, world!");
 ```
 
