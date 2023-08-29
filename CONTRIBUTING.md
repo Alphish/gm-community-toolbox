@@ -38,6 +38,7 @@
 - Order the annotations in this order: `@func`, `@desc`, `@arg`, `@returns`
 - In the `@func` annotation, keep arguments all lowercase (without word separation) and separated by comma without any space inbetween.
 - In the `@arg` annotation, specify expected type using PascalCase conventions, so `String` or `Asset.GMObject` rather than `string` or `asset.gmobject`. The name of the argument is the same as in the `@func` annotation.
+- Wrap optional argument names in square brackets in both the `@func` and `@arg` annotations; e.g. `[precision]`
 - In the `@returns` annotation, specify type using PascalCase just like in the arguments.
 
 **YES:**
