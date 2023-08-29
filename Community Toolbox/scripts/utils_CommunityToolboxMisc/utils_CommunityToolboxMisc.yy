@@ -1,7 +1,7 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "utils_String",
+  "name": "utils_CommunityToolboxMisc",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {

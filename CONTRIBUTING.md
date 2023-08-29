@@ -118,7 +118,7 @@ function relerp(oldfrom, oldto, oldvalue, newfrom, newto) {
 
 ### Toolbox Script Assets
 
-- **Use `utils_` as the prefix, and PascalCase for the rest of the name.** Example: `utils_CommunityToolboxScriptCategory`
+- **Use `utils_CommunityToolbox` as the prefix, and PascalCase for the rest of the name.** Example: `utils_CommunityToolboxArray`
 
 ### Other assets
 
