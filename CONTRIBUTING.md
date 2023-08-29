@@ -1,6 +1,6 @@
-# Contribution Style Guide
+# General Information
 
-## General Behavioural Guidelines
+## Behavioural Guidelines
 
 - As an affiliated project, **all [general community guidelines of the GameMaker Community](https://forum.gamemaker.io/index.php?threads/community-guidelines.4/) also apply here.**
 - **Before starting development on an accepted feature, reply to its Issue thread indicating your commitment.** This prevents multiple developers from duplicating each other's work.
@@ -12,6 +12,8 @@
 - **Use the stable IDE version indicated by `IDEVersion` in [the main YYP file on the `main` branch](https://github.com/Alphish/gm-community-toolbox/blob/main/Community%20Toolbox/Community%20Toolbox.yyp).** This will prevent IDE version differences from causing merge conflicts.
 - **Use 4 spaces for indentation.** This can be configured in *Preferences > Text Editors > Code Editor > Tab size*. Be sure to uncheck *Keep tabs*.
 - **If you use Feather, set GM1042 and GM2017 to *Ignore*.** This can be configured in *Preferences > Feather Settings > Message Severity*.
+
+# Style Guide
 
 ## JSDoc/Feather Comments
 
