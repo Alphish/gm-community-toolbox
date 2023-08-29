@@ -1,11 +1,30 @@
-# Introduction
-**GameMaker Community Toolbox** is planned to be a collection of general-purpose utility functions for GameMaker. While some utility packages may have been published in the past, they would likely be a set of loosely related functions, likely found extremely useful by the author but not necessarily applicable to a wider range of users. Likewise, people would occasionally post useful scripts around the Internet, but it wouldn't get organised into a more comprehensive package. Something ready to integrate into GameMaker project with a one Import Local Package command or, if someone is feeling adventurous, with one Marketplace package download. Most likely, a number of utility functions serving the exact same purpose has been posted independently in different places.
+# Important links
 
-GameMaker Community Toolbox aims to gather the most useful general-purpose functions into one comprehensive package. The selection of functions would be community-driven - GameMaker developers would suggest the new functions, upvote the feature requests they like and discuss the fine details (like function naming). Best case scenario, it would become a go-to utility package that GameMaker users would recommend for novice developers, especially when a programming question can be solved with some of the toolbox' functions.
+- [Community Toolbox 23.4.0 YYMPS package](https://github.com/Alphish/gm-community-toolbox/blob/main/Releases/CommunityToolbox.23.4.0.yymps?raw=1) - the most recent release
+- [Release notes](https://github.com/Alphish/gm-community-toolbox/blob/main/RELEASENOTES.md)
+- [Issues Page](https://github.com/Alphish/gm-community-toolbox/issues) - for requesting Community Toolbox functionality and reporting bugs
+- [Contribution Guide](https://github.com/Alphish/gm-community-toolbox/blob/main/CONTRIBUTING.md)
+- [Credits](https://github.com/Alphish/gm-community-toolbox/blob/main/CREDITS.md) - listing all major contributions to the Community Toolbox
+- [GameMaker Community forum thread](https://forum.gamemaker.io/index.php?threads/gamemaker-community-toolbox-project.103966/)
 
-Not only that, using the same utilities package would improve collaborations. Instead of two people independently using their own variations of common utility functions (differently named, too), they would use the same utilities. Thanks to using same function names, they would understand each other's code more easily as well.
+(note: there's no full Community Toolbox reference yet, it'll be added later)
 
-Someday, once enough features are actually gathered, I will make a release and post relevant links here (both the \*.yymps with functions only and \*.yyz with functions, demos and tests). But not today. For now, you can check out the current functionality by cloning the repository.
+# Installation
+
+- download the Community Toolbox local package (the YYMPS file); for the current package, GameMaker 2023.4 is recommended
+- open your GameMaker project
+- from "Tools" menu, select "Import Local Package"
+- select whole package contents to import (or only some scripts) and click "Import"
+- enjoy!
+
+# Overview
+**GameMaker Community Toolbox** a collection of general-purpose utility functions for GameMaker. While some utility packages were published in the past, they would often end up as a set of loosely related functions, probably found extremely useful by the author but not necessarily applicable to a wider range of users. Likewise, people occasionally posted useful scripts around the Internet, but it wasn't organised into a more comprehensive package. Something ready to integrate into GameMaker project with a one Import Local Package command or, if someone is feeling adventurous, with one Marketplace package download.
+
+GameMaker Community Toolbox aims to fill this niche. The selection of functions is community-driven - GameMaker developers suggest the new functions, upvote the feature requests they like and discuss the fine details (like function naming). Ideally, the Community Toolbox would one day become a go-to utility package that GameMaker users would recommend for novice developers, especially when a programming question can be solved with some of the toolbox' functions.
+
+Not only that, using the same utilities package would improve collaborations. Instead of two developers independently using their own variations of common utility functions (differently named, too), they can use the same set of utilities. By using common function names, they would understand each other's code more easily as well.
+
+Currently, a 23.4 version of Community Toolbox was released, designed to be compatible with GameMaker 2023.4. You can check out the links and the installation guide above for more information. 
 
 **Note:** While GameMaker Community Toolbox is meant to be community-driven, I will still make the final decisions regarding whether to include a certain function in the package or not. This is to ensure that design guidelines will be adhered too, and also to avoid potential feature bloat, when many highly specific functions would be included.
 
