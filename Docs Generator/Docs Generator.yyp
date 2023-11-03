@@ -24,6 +24,7 @@
     {"id":{"name":"spr_Button","path":"sprites/spr_Button/spr_Button.yy",},},
     {"id":{"name":"fnt_BasicText","path":"fonts/fnt_BasicText/fnt_BasicText.yy",},},
     {"id":{"name":"ui_Button","path":"objects/ui_Button/ui_Button.yy",},},
+    {"id":{"name":"ctrl_Generator","path":"objects/ctrl_Generator/ctrl_Generator.yy",},},
   ],
   "RoomOrderNodes": [
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
