@@ -15,10 +15,28 @@ function ToolboxScriptParser(_scriptdir) constructor {
     script_lines = file_read_all_lines(gml_path);
     script_scanner = new ToolboxScriptScanner(script_lines);
     script_builder = new ToolboxScriptBuilder(self);
+    region_subparser = new ToolboxRegionSubparser(self);
+    function_subparser = new ToolboxFunctionSubparser(self);
     
     // processing the script, step by step
     static load_step = function() {
-        throw "Not implemented yet.";
+        script_scanner.skip_empty_lines();
+        if (script_scanner.is_at_end()) {
+            toolbox_script = script_builder.build_script();
+            return true; // it's finished now
+        }
+        
+        if (region_subparser.peeks_begin_region()) {
+            region_subparser.begin_region();
+        } else if (region_subparser.peeks_end_region()) {
+            region_subparser.end_region();
+        } else if (function_subparser.peeks_function()) {
+            var _function = function_subparser.read_function();
+            script_builder.add_function(_function);
+        } else {
+            throw $"Cannot process line:\n{script_scanner.current_line}";
+        }
+        return false;
     }
     
     // warning about various problems found throughout the parsing
