@@ -1,5 +1,5 @@
 /// @func ToolboxFunctionGmlSubparser(parser)
-/// @desc A utility for parsing data of GML sections in Toolbox functions.
+/// @desc A tool for parsing data of GML sections in Toolbox functions.
 /// @arg {Struct.ToolboxScriptParser} parser        The toolbox script parser using the subparser.
 function ToolboxFunctionGmlSubparser(_parser) constructor {
     script_parser = _parser;

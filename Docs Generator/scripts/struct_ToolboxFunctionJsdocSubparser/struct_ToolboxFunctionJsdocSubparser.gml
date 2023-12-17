@@ -1,5 +1,5 @@
 /// @func ToolboxFunctionJsdocSubparser(parser)
-/// @desc A utility for parsing JSDoc sections data in Toolbox scripts.
+/// @desc A tool for parsing data of JSDoc sections in Toolbox functions.
 /// @arg {Struct.ToolboxScriptParser} parser        The toolbox script parser using the subparser.
 function ToolboxFunctionJsdocSubparser(_parser) constructor {
     script_parser = _parser;

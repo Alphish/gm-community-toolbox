@@ -27,6 +27,7 @@
     "IDEVersion": "2023.8.2.108",
   },
   "resources": [
+    {"id":{"name":"struct_ToolboxFunctionSubparser","path":"scripts/struct_ToolboxFunctionSubparser/struct_ToolboxFunctionSubparser.yy",},},
     {"id":{"name":"struct_GmlArgument","path":"scripts/struct_GmlArgument/struct_GmlArgument.yy",},},
     {"id":{"name":"spr_Button","path":"sprites/spr_Button/spr_Button.yy",},},
     {"id":{"name":"struct_ToolboxUtilsLoader","path":"scripts/struct_ToolboxUtilsLoader/struct_ToolboxUtilsLoader.yy",},},
@@ -40,6 +41,7 @@
     {"id":{"name":"struct_ToolboxProject","path":"scripts/struct_ToolboxProject/struct_ToolboxProject.yy",},},
     {"id":{"name":"struct_JsdocAnnotationBuilder","path":"scripts/struct_JsdocAnnotationBuilder/struct_JsdocAnnotationBuilder.yy",},},
     {"id":{"name":"struct_ToolboxScriptBuilder","path":"scripts/struct_ToolboxScriptBuilder/struct_ToolboxScriptBuilder.yy",},},
+    {"id":{"name":"struct_ToolboxFunctionResolver","path":"scripts/struct_ToolboxFunctionResolver/struct_ToolboxFunctionResolver.yy",},},
     {"id":{"name":"utils_File","path":"scripts/utils_File/utils_File.yy",},},
     {"id":{"name":"struct_ToolboxLoader","path":"scripts/struct_ToolboxLoader/struct_ToolboxLoader.yy",},},
     {"id":{"name":"utils_String","path":"scripts/utils_String/utils_String.yy",},},
