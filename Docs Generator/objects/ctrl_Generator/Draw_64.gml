@@ -27,3 +27,12 @@ var _processed = toolbox_loader.processed_count;
 var _total = toolbox_loader.total_count;
 var _progress_message = $"{_processed}/{_total} scripts processed";
 draw_text_ext(_text_x, _text_y, _progress_message, -1, _text_width);
+_text_y += string_height_ext(_progress_message, -1, _text_width) + 10;
+
+// draw warnings
+draw_set_color(c_orange);
+
+for (var i = 0; i < array_length(warnings_log); i++) {
+    draw_text_ext(_text_x, _text_y, warnings_log[i], -1, _text_width);
+    _text_y += string_height_ext(warnings_log[i], -1, _text_width) + 10;
+}
