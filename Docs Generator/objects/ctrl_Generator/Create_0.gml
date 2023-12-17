@@ -17,3 +17,5 @@ load_toolbox_project = function() {
 log_warning = function(_warning) {
     array_push(warnings_log, _warning);
 }
+
+gc_enable(false);
