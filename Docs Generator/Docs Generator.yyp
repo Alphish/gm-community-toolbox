@@ -17,6 +17,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"UI Elements","folderPath":"folders/UI Elements.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Generator","folderPath":"folders/Generator.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Utils","folderPath":"folders/Utils.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Gml","folderPath":"folders/Explorer/Functions/Gml.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Jsdoc","folderPath":"folders/Explorer/Functions/Jsdoc.yy",},
   ],
   "IncludedFiles": [],
@@ -26,6 +27,7 @@
     "IDEVersion": "2023.8.2.108",
   },
   "resources": [
+    {"id":{"name":"struct_GmlArgument","path":"scripts/struct_GmlArgument/struct_GmlArgument.yy",},},
     {"id":{"name":"spr_Button","path":"sprites/spr_Button/spr_Button.yy",},},
     {"id":{"name":"struct_ToolboxUtilsLoader","path":"scripts/struct_ToolboxUtilsLoader/struct_ToolboxUtilsLoader.yy",},},
     {"id":{"name":"struct_JsdocAnnotationData","path":"scripts/struct_JsdocAnnotationData/struct_JsdocAnnotationData.yy",},},
@@ -43,10 +45,12 @@
     {"id":{"name":"utils_String","path":"scripts/utils_String/utils_String.yy",},},
     {"id":{"name":"struct_ToolboxArgument","path":"scripts/struct_ToolboxArgument/struct_ToolboxArgument.yy",},},
     {"id":{"name":"struct_ToolboxScript","path":"scripts/struct_ToolboxScript/struct_ToolboxScript.yy",},},
+    {"id":{"name":"struct_GmlFunctionSignature","path":"scripts/struct_GmlFunctionSignature/struct_GmlFunctionSignature.yy",},},
     {"id":{"name":"fnt_BasicText","path":"fonts/fnt_BasicText/fnt_BasicText.yy",},},
     {"id":{"name":"struct_ToolboxScriptScanner","path":"scripts/struct_ToolboxScriptScanner/struct_ToolboxScriptScanner.yy",},},
     {"id":{"name":"ui_Button","path":"objects/ui_Button/ui_Button.yy",},},
     {"id":{"name":"ctrl_Generator","path":"objects/ctrl_Generator/ctrl_Generator.yy",},},
+    {"id":{"name":"struct_ToolboxFunctionGmlSubparser","path":"scripts/struct_ToolboxFunctionGmlSubparser/struct_ToolboxFunctionGmlSubparser.yy",},},
     {"id":{"name":"rm_Generator","path":"rooms/rm_Generator/rm_Generator.yy",},},
   ],
   "RoomOrderNodes": [
