@@ -27,6 +27,7 @@
     {"id":{"name":"spr_Button","path":"sprites/spr_Button/spr_Button.yy",},},
     {"id":{"name":"struct_ToolboxUtilsLoader","path":"scripts/struct_ToolboxUtilsLoader/struct_ToolboxUtilsLoader.yy",},},
     {"id":{"name":"struct_ToolboxFunction","path":"scripts/struct_ToolboxFunction/struct_ToolboxFunction.yy",},},
+    {"id":{"name":"struct_ToolboxScriptParser","path":"scripts/struct_ToolboxScriptParser/struct_ToolboxScriptParser.yy",},},
     {"id":{"name":"struct_ToolboxRegion","path":"scripts/struct_ToolboxRegion/struct_ToolboxRegion.yy",},},
     {"id":{"name":"struct_ToolboxProject","path":"scripts/struct_ToolboxProject/struct_ToolboxProject.yy",},},
     {"id":{"name":"utils_File","path":"scripts/utils_File/utils_File.yy",},},
