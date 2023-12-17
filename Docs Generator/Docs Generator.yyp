@@ -11,6 +11,7 @@
   },
   "defaultScriptType": 1,
   "Folders": [
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Project","folderPath":"folders/Project.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"UI Elements","folderPath":"folders/UI Elements.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Generator","folderPath":"folders/Generator.yy",},
   ],
@@ -23,8 +24,13 @@
   "resources": [
     {"id":{"name":"spr_Button","path":"sprites/spr_Button/spr_Button.yy",},},
     {"id":{"name":"struct_ToolboxUtilsLoader","path":"scripts/struct_ToolboxUtilsLoader/struct_ToolboxUtilsLoader.yy",},},
+    {"id":{"name":"struct_ToolboxFunction","path":"scripts/struct_ToolboxFunction/struct_ToolboxFunction.yy",},},
+    {"id":{"name":"struct_ToolboxRegion","path":"scripts/struct_ToolboxRegion/struct_ToolboxRegion.yy",},},
+    {"id":{"name":"struct_ToolboxProject","path":"scripts/struct_ToolboxProject/struct_ToolboxProject.yy",},},
     {"id":{"name":"utils_File","path":"scripts/utils_File/utils_File.yy",},},
     {"id":{"name":"struct_ToolboxLoader","path":"scripts/struct_ToolboxLoader/struct_ToolboxLoader.yy",},},
+    {"id":{"name":"struct_ToolboxArgument","path":"scripts/struct_ToolboxArgument/struct_ToolboxArgument.yy",},},
+    {"id":{"name":"struct_ToolboxScript","path":"scripts/struct_ToolboxScript/struct_ToolboxScript.yy",},},
     {"id":{"name":"fnt_BasicText","path":"fonts/fnt_BasicText/fnt_BasicText.yy",},},
     {"id":{"name":"ui_Button","path":"objects/ui_Button/ui_Button.yy",},},
     {"id":{"name":"ctrl_Generator","path":"objects/ctrl_Generator/ctrl_Generator.yy",},},
