@@ -46,6 +46,7 @@
     {"id":{"name":"utils_File","path":"scripts/utils_File/utils_File.yy",},},
     {"id":{"name":"struct_ToolboxLoader","path":"scripts/struct_ToolboxLoader/struct_ToolboxLoader.yy",},},
     {"id":{"name":"utils_String","path":"scripts/utils_String/utils_String.yy",},},
+    {"id":{"name":"struct_ToolboxProjectExplorer","path":"scripts/struct_ToolboxProjectExplorer/struct_ToolboxProjectExplorer.yy",},},
     {"id":{"name":"struct_ToolboxArgument","path":"scripts/struct_ToolboxArgument/struct_ToolboxArgument.yy",},},
     {"id":{"name":"struct_ToolboxScript","path":"scripts/struct_ToolboxScript/struct_ToolboxScript.yy",},},
     {"id":{"name":"struct_GmlFunctionSignature","path":"scripts/struct_GmlFunctionSignature/struct_GmlFunctionSignature.yy",},},

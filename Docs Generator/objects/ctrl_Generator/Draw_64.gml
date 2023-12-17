@@ -10,7 +10,7 @@ draw_set_halign(fa_left);
 draw_set_valign(fa_top);
 
 // exit early with a basic message if the toolbox project isn't loading yet
-if (is_undefined(toolbox_loader)) {
+if (is_undefined(toolbox_explorer)) {
     draw_set_color(c_orange);
     draw_text_ext(_text_x, _text_y, $"Load a toolbox project before proceeding", -1, _text_width);
     exit;
@@ -23,9 +23,9 @@ var _loaded_message = $"Loaded toolbox project from:\n{toolbox_path}";
 draw_text_ext(_text_x, _text_y, _loaded_message, -1, _text_width);
 _text_y += string_height_ext(_loaded_message, -1, _text_width) + 10;
 
-var _processed = toolbox_loader.processed_count;
-var _total = toolbox_loader.total_count;
-var _progress_message = $"{_processed}/{_total} scripts processed";
+var _processed = toolbox_explorer.processed_count;
+var _total = toolbox_explorer.total_count;
+var _progress_message = toolbox_explorer.is_completed ? "Toolbox project processed!" : $"{_processed}/{_total} scripts processed...";
 draw_text_ext(_text_x, _text_y, _progress_message, -1, _text_width);
 _text_y += string_height_ext(_progress_message, -1, _text_width) + 10;
 

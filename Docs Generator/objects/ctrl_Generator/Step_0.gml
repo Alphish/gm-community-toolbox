@@ -1,2 +1,2 @@
-if (!is_undefined(toolbox_loader))
-    toolbox_loader.load_step();
+if (!is_undefined(toolbox_explorer))
+    toolbox_explorer.load_step();

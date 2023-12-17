@@ -2,7 +2,7 @@ image_index = 0;
 image_speed = 0;
 
 toolbox_path = "";
-toolbox_loader = undefined;
+toolbox_explorer = undefined;
 warnings_log = [];
 
 load_toolbox_project = function() {
@@ -11,7 +11,7 @@ load_toolbox_project = function() {
         return;
     
     toolbox_path = _selected_path;
-    toolbox_loader = new ToolboxLoader(toolbox_path); 
+    toolbox_explorer = new ToolboxProjectExplorer(toolbox_path); 
 }
 
 log_warning = function(_warning) {
