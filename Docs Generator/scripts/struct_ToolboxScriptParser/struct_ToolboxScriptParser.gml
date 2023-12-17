@@ -14,6 +14,7 @@ function ToolboxScriptParser(_scriptdir) constructor {
     // setting up utilities for script contents processing
     script_lines = file_read_all_lines(gml_path);
     script_scanner = new ToolboxScriptScanner(script_lines);
+    script_builder = new ToolboxScriptBuilder(self);
     
     // processing the script, step by step
     static load_step = function() {

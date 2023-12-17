@@ -30,6 +30,7 @@
     {"id":{"name":"struct_ToolboxScriptParser","path":"scripts/struct_ToolboxScriptParser/struct_ToolboxScriptParser.yy",},},
     {"id":{"name":"struct_ToolboxRegion","path":"scripts/struct_ToolboxRegion/struct_ToolboxRegion.yy",},},
     {"id":{"name":"struct_ToolboxProject","path":"scripts/struct_ToolboxProject/struct_ToolboxProject.yy",},},
+    {"id":{"name":"struct_ToolboxScriptBuilder","path":"scripts/struct_ToolboxScriptBuilder/struct_ToolboxScriptBuilder.yy",},},
     {"id":{"name":"utils_File","path":"scripts/utils_File/utils_File.yy",},},
     {"id":{"name":"struct_ToolboxLoader","path":"scripts/struct_ToolboxLoader/struct_ToolboxLoader.yy",},},
     {"id":{"name":"utils_String","path":"scripts/utils_String/utils_String.yy",},},
