@@ -11,6 +11,7 @@
   },
   "defaultScriptType": 1,
   "Folders": [
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Explorer","folderPath":"folders/Explorer.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Project","folderPath":"folders/Project.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"UI Elements","folderPath":"folders/UI Elements.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Generator","folderPath":"folders/Generator.yy",},
@@ -34,6 +35,7 @@
     {"id":{"name":"struct_ToolboxArgument","path":"scripts/struct_ToolboxArgument/struct_ToolboxArgument.yy",},},
     {"id":{"name":"struct_ToolboxScript","path":"scripts/struct_ToolboxScript/struct_ToolboxScript.yy",},},
     {"id":{"name":"fnt_BasicText","path":"fonts/fnt_BasicText/fnt_BasicText.yy",},},
+    {"id":{"name":"struct_ToolboxScriptScanner","path":"scripts/struct_ToolboxScriptScanner/struct_ToolboxScriptScanner.yy",},},
     {"id":{"name":"ui_Button","path":"objects/ui_Button/ui_Button.yy",},},
     {"id":{"name":"ctrl_Generator","path":"objects/ctrl_Generator/ctrl_Generator.yy",},},
     {"id":{"name":"rm_Generator","path":"rooms/rm_Generator/rm_Generator.yy",},},
