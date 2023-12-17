@@ -2,7 +2,7 @@
 /// @desc A structure representing a single Community Toolbox function.
 /// @arg {String} name                                  The function name.
 /// @arg {String} description                           The function description.
-/// @arg {Array<Struct.ToolboxArgument> arguments       Data of the arguments passed into the function.
+/// @arg {Array<Struct.ToolboxArgument> arguments       The arguments passed into the function.
 /// @arg {String,Undefined} returns                     The return type of the function, if any.
 /// @arg {Real} line                                    The line in the script at which the function is defined.
 function ToolboxFunction(_name, _description, _arguments, _returns, _line) constructor {
