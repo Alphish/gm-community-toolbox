@@ -6,6 +6,6 @@
   "isDnD": false,
   "parent": {
     "name": "Gml",
-    "path": "folders/Explorer/Functions/Gml.yy",
+    "path": "folders/Project/Explorer/Functions/Gml.yy",
   },
 }

@@ -6,6 +6,6 @@
   "isDnD": false,
   "parent": {
     "name": "Jsdoc",
-    "path": "folders/Explorer/Functions/Jsdoc.yy",
+    "path": "folders/Project/Explorer/Functions/Jsdoc.yy",
   },
 }

@@ -6,6 +6,6 @@
   "isDnD": false,
   "parent": {
     "name": "Functions",
-    "path": "folders/Explorer/Functions.yy",
+    "path": "folders/Project/Explorer/Functions.yy",
   },
 }
