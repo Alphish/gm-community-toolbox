@@ -19,7 +19,7 @@ if (is_undefined(toolbox_explorer)) {
 // draw generator report otherwise
 draw_set_color(c_lime);
 
-var _loaded_message = $"Loaded toolbox project from:\n{toolbox_path}";
+var _loaded_message = $"Loaded toolbox project from:\n{toolbox_explorer.project_path}";
 draw_text_ext(_text_x, _text_y, _loaded_message, -1, _text_width);
 _text_y += string_height_ext(_loaded_message, -1, _text_width) + 10;
 

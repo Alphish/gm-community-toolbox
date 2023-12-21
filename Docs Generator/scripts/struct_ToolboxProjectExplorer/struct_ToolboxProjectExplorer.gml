@@ -2,10 +2,8 @@ function ToolboxProjectExplorer(_path) constructor {
     // setup
     
     project_path = string_replace_all(_path, "\\", "/");
-    
-    var _last_segment_pos = string_last_pos("/", project_path);
-    project_directory_path = string_delete(project_path, _last_segment_pos, string_length(project_path) - _last_segment_pos + 1);
-    scripts_directory_path = $"{project_directory_path}/scripts";
+    project_directory_path = file_path_get_directory(project_path);
+    scripts_directory_path = file_path_append(project_directory_path, "scripts");
     utils_directories = file_find_array(scripts_directory_path, "utils_CommunityToolbox*", fa_directory);
     
     project_scripts = [];

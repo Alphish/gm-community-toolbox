@@ -1,18 +1,15 @@
 image_index = 0;
 image_speed = 0;
 
-toolbox_path = "";
-toolbox_explorer = undefined;
-warnings_log = [];
-
-load_toolbox_project = function() {
-    var _selected_path = get_open_filename("GM project|*.yyp", "Community Toolbox.yyp");
-    if (_selected_path == "")
-        return;
-    
-    toolbox_path = _selected_path;
-    toolbox_explorer = new ToolboxProjectExplorer(toolbox_path); 
+var _toolbox_path = file_path_resolve(
+    file_path_append(GM_project_filename, "..", "..", "Community Toolbox", "Community Toolbox.yyp")
+);
+if (!file_exists(_toolbox_path)) {
+    throw $"Could not find Community Toolbox project at '{_toolbox_path}'.";
 }
+toolbox_explorer = new ToolboxProjectExplorer(_toolbox_path); 
+
+warnings_log = [];
 
 log_warning = function(_warning) {
     array_push(warnings_log, _warning);

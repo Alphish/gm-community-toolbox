@@ -4,10 +4,7 @@
 function ToolboxScriptParser(_scriptdir) constructor {
     script_directory = _scriptdir;
     gml_path = file_find_single(script_directory, "*.gml", fa_none);
-    
-    var _start_index = string_last_pos("utils_CommunityToolbox", gml_path) + string_length("utils_CommunityToolbox");
-    var _end_index = string_last_pos(".gml", gml_path);
-    script_name = string_copy(gml_path, _start_index, _end_index - _start_index);
+    script_name = string_between_last(gml_path, "utils_CommunityToolbox", ".gml");
     
     toolbox_script = undefined;
     
