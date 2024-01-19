@@ -11,6 +11,7 @@
   },
   "defaultScriptType": 1,
   "Folders": [
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Common","folderPath":"folders/Common.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Explorer","folderPath":"folders/Project/Explorer.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Functions","folderPath":"folders/Project/Explorer/Functions.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Gml","folderPath":"folders/Project/Explorer/Functions/Gml.yy",},
@@ -49,6 +50,7 @@
     {"id":{"name":"struct_GmlFunctionSignature","path":"scripts/struct_GmlFunctionSignature/struct_GmlFunctionSignature.yy",},},
     {"id":{"name":"fnt_BasicText","path":"fonts/fnt_BasicText/fnt_BasicText.yy",},},
     {"id":{"name":"struct_ToolboxScriptScanner","path":"scripts/struct_ToolboxScriptScanner/struct_ToolboxScriptScanner.yy",},},
+    {"id":{"name":"struct_LineScanner","path":"scripts/struct_LineScanner/struct_LineScanner.yy",},},
     {"id":{"name":"ui_Button","path":"objects/ui_Button/ui_Button.yy",},},
     {"id":{"name":"ctrl_Generator","path":"objects/ctrl_Generator/ctrl_Generator.yy",},},
     {"id":{"name":"struct_ToolboxFunctionGmlSubparser","path":"scripts/struct_ToolboxFunctionGmlSubparser/struct_ToolboxFunctionGmlSubparser.yy",},},
