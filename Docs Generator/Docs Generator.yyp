@@ -36,6 +36,7 @@
     {"id":{"name":"struct_JsdocFunctionSignature","path":"scripts/struct_JsdocFunctionSignature/struct_JsdocFunctionSignature.yy",},},
     {"id":{"name":"struct_ToolboxFunction","path":"scripts/struct_ToolboxFunction/struct_ToolboxFunction.yy",},},
     {"id":{"name":"struct_ToolboxScriptParser","path":"scripts/struct_ToolboxScriptParser/struct_ToolboxScriptParser.yy",},},
+    {"id":{"name":"utils_Array","path":"scripts/utils_Array/utils_Array.yy",},},
     {"id":{"name":"struct_JsdocArgument","path":"scripts/struct_JsdocArgument/struct_JsdocArgument.yy",},},
     {"id":{"name":"struct_ToolboxRegion","path":"scripts/struct_ToolboxRegion/struct_ToolboxRegion.yy",},},
     {"id":{"name":"struct_ToolboxFunctionJsdocSubparser","path":"scripts/struct_ToolboxFunctionJsdocSubparser/struct_ToolboxFunctionJsdocSubparser.yy",},},
@@ -59,6 +60,7 @@
     {"id":{"name":"ui_Button","path":"objects/ui_Button/ui_Button.yy",},},
     {"id":{"name":"ctrl_Generator","path":"objects/ctrl_Generator/ctrl_Generator.yy",},},
     {"id":{"name":"struct_ToolboxFunctionGmlSubparser","path":"scripts/struct_ToolboxFunctionGmlSubparser/struct_ToolboxFunctionGmlSubparser.yy",},},
+    {"id":{"name":"utils_Keyname","path":"scripts/utils_Keyname/utils_Keyname.yy",},},
     {"id":{"name":"rm_Generator","path":"rooms/rm_Generator/rm_Generator.yy",},},
   ],
   "RoomOrderNodes": [

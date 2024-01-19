@@ -71,6 +71,23 @@ function file_find_single(_dir, _mask, _attr) {
 
 #region File path
 
+/// @func file_path_get_filename(path)
+/// @desc Gets the last segment for the given file path, as separated with a directory separator (foreslash or backslash).
+/// @arg {String} path      The file path to get the last segment of.
+/// @returns {String}
+function file_path_get_filename(_path) {
+    static directory_separators = ["/", "\\"];
+    
+    _path = string_trim_end(_path, directory_separators);
+    var _foreslash_idx = string_last_pos("/", _path);
+    var _backslash_idx = string_last_pos("\\", _path);
+    var _separator_idx = max(_foreslash_idx, _backslash_idx);
+    if (_separator_idx < 1)
+        return _path;
+    
+    return string_delete(_path, 1, _separator_idx);
+}
+
 /// @func file_path_get_directory(_path,[level])
 /// @desc Gets a ancestor directory for the given file path up to the given nesting level (1 by default, i.e. parent directory). If no ancestor directory can be found, returns undefined.
 /// @arg {String} path      The file path to get the directory of.

@@ -1,3 +1,12 @@
+/// @func string_contains(str,substr)
+/// @desc Checks whether a given string contains the given substring or not.
+/// @arg {String} str           The string to check.
+/// @arg {String} substr        The substring to find in the string.
+/// @returns {Bool}
+function string_contains(_str, _substr) {
+    return string_pos(_substr, _str) > 0;
+}
+
 /// @func string_before(str,substr)
 /// @desc Returns a part of the given string before the first occurrence of the given substring, or undefined if the substring isn't found.
 /// @arg {String} str           The string to get the part of.
@@ -38,7 +47,7 @@ function string_between(_str, _left, _right) {
     return string_copy(_str, _startpos, _rightpos - _startpos);
 }
 
-/// @func string_before(str,substr)
+/// @func string_before_last(str,substr)
 /// @desc Returns a part of the given string before the last occurrence of the given substring, or undefined if the substring isn't found.
 /// @arg {String} str           The string to get the part of.
 /// @arg {String} substr        The substring to divide the input string by.
