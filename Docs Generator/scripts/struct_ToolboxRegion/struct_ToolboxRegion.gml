@@ -1,22 +1,32 @@
 /// @func ToolboxRegion(name,functions)
 /// @desc A structure representing a region within a Community Toolbox script.
-/// @arg {String,Undefined} name                        The region name, or undefined if it's a script-wide pseudo-region.
-/// @arg {Array<Struct.ToolboxFunction> functions       The functions contained within the region.
-function ToolboxRegion(_name, _functions) constructor {
-    if (is_undefined(_functions))
+/// @arg {Struct.ToolboxScript} script      The script the region belongs to.
+/// @arg {String,Undefined} name            The region name, or undefined if it's a script-wide pseudo-region.
+/// @arg {Real,Undefined} line              The line at which the region is defined.
+function ToolboxRegion(_script, _name, _line) constructor {
+    if (is_undefined(_script))
         exit;
     
+    type = "region";
     name = _name;
+    keyname = _script.keyname + ":" + string_lower(name);
     is_anonymous = is_undefined(name);
-    functions = _functions;
     
-    static create_anonymous = function(_functions) {
-        return new ToolboxRegion(undefined, _functions);
+    script = _script;
+    array_push(script.regions, self);
+    if (!is_anonymous)
+        script.has_regions = true;
+    
+    functions = [];
+    
+    static create_anonymous = function(_script) {
+        return new ToolboxRegion(_script, undefined, undefined);
     }
     
-    static create_named = function(_name, _functions) {
-        return new ToolboxRegion(_name, _functions);
+    static create_named = function(_script, _name, _line) {
+        return new ToolboxRegion(_script, _name, _line);
     }
 }
 
-var _static_init = new ToolboxRegion(undefined, undefined);
+/// feather ignore GM1041
+var _static_init = new ToolboxRegion(undefined, undefined, undefined);
