@@ -9,28 +9,28 @@ draw_set_font(fnt_BasicText);
 draw_set_halign(fa_left);
 draw_set_valign(fa_top);
 
-// exit early with a basic message if the toolbox project isn't loading yet
-if (is_undefined(toolbox_explorer)) {
-    draw_set_color(c_orange);
-    draw_text_ext(_text_x, _text_y, $"Load a toolbox project before proceeding", -1, _text_width);
-    exit;
-}
-
-// draw generator report otherwise
+// draw current state report
 draw_set_color(c_lime);
 
-var _loaded_message = $"Loaded toolbox project from:\n{toolbox_explorer.project_path}";
+var _loaded_message = $"Loaded toolbox project from:\n{project_path}";
 draw_text_ext(_text_x, _text_y, _loaded_message, -1, _text_width);
 _text_y += string_height_ext(_loaded_message, -1, _text_width) + 10;
 
-var _processed = toolbox_explorer.processed_count;
-var _total = toolbox_explorer.total_count;
-var _progress_message = toolbox_explorer.is_completed ? "Toolbox project processed!" : $"{_processed}/{_total} scripts processed...";
-draw_text_ext(_text_x, _text_y, _progress_message, -1, _text_width);
-_text_y += string_height_ext(_progress_message, -1, _text_width) + 10;
+draw_set_color(state.get_color());
+var _message = state.get_message();
+draw_text_ext(_text_x, _text_y, _message, -1, _text_width);
+_text_y += string_height_ext(_message, -1, _text_width) + 10;
+
+// draw failures
+draw_set_color(c_orange);
+
+for (var i = 0; i < array_length(failures_log); i++) {
+    draw_text_ext(_text_x, _text_y, failures_log[i], -1, _text_width);
+    _text_y += string_height_ext(failures_log[i], -1, _text_width) + 10;
+}
 
 // draw warnings
-draw_set_color(c_orange);
+draw_set_color(c_yellow);
 
 for (var i = 0; i < array_length(warnings_log); i++) {
     draw_text_ext(_text_x, _text_y, warnings_log[i], -1, _text_width);

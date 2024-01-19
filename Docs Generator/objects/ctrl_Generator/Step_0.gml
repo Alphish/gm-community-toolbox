@@ -1,3 +1,5 @@
-if (!is_undefined(toolbox_explorer) && !toolbox_explorer.is_completed) {
-    toolbox_explorer.load_step();
+var _new_state = state.process();
+while (_new_state != state) {
+    state = _new_state;
+    _new_state = _new_state.init();
 }
