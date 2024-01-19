@@ -40,6 +40,7 @@
     {"id":{"name":"struct_ToolboxProject","path":"scripts/struct_ToolboxProject/struct_ToolboxProject.yy",},},
     {"id":{"name":"struct_JsdocAnnotationBuilder","path":"scripts/struct_JsdocAnnotationBuilder/struct_JsdocAnnotationBuilder.yy",},},
     {"id":{"name":"struct_ToolboxScriptBuilder","path":"scripts/struct_ToolboxScriptBuilder/struct_ToolboxScriptBuilder.yy",},},
+    {"id":{"name":"struct_MultiStepProcess","path":"scripts/struct_MultiStepProcess/struct_MultiStepProcess.yy",},},
     {"id":{"name":"struct_ToolboxRegionSubparser","path":"scripts/struct_ToolboxRegionSubparser/struct_ToolboxRegionSubparser.yy",},},
     {"id":{"name":"struct_ToolboxFunctionResolver","path":"scripts/struct_ToolboxFunctionResolver/struct_ToolboxFunctionResolver.yy",},},
     {"id":{"name":"utils_File","path":"scripts/utils_File/utils_File.yy",},},
