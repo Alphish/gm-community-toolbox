@@ -19,7 +19,7 @@ function GmlArgument(_name, _default) constructor {
         
         // stripping the starting underscore
         if (!string_starts_with(_name, "_")) {
-            _parser.warn($"GML function argument name '{_name}' doesn't start with an underscore.");
+            _parser.fail($"GML function argument name '{_name}' doesn't start with an underscore.");
             return new GmlArgument("<error>", undefined)
         }
         

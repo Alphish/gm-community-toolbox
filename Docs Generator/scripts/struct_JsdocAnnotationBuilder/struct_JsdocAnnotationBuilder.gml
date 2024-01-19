@@ -43,7 +43,7 @@ function JsdocAnnotationBuilder(_parser) constructor {
     static normalize_tag = function(_tag) {
         // ignoring certain tags
         if (array_contains(unsupported_tags, _tag)) {
-            script_parser.warn($"The JSDoc tag '{_tag}' is not applicable to Community Toolbox scripts.");
+            script_parser.fail($"The JSDoc tag '{_tag}' is not applicable to Community Toolbox scripts.");
             return undefined;
         }
         
@@ -57,7 +57,7 @@ function JsdocAnnotationBuilder(_parser) constructor {
         // ensuring proper tags ordering
         var _new_order = array_get_index(tag_order, _tag);
         if (_new_order == -1) {
-            script_parser.warn($"Unknown JSDoc tag: '{_tag}'.");
+            script_parser.fail($"Unknown JSDoc tag: '{_tag}'.");
             return undefined;
         }
         
@@ -78,7 +78,7 @@ function JsdocAnnotationBuilder(_parser) constructor {
     
     static accept_function_signature = function(_signature) {
         if (!is_undefined(function_signature)) {
-            script_parser.warn($"Multiple function JSDoc annotations found.");
+            script_parser.fail($"Multiple function JSDoc annotations found.");
             return;
         }
         function_signature = _signature;
@@ -86,7 +86,7 @@ function JsdocAnnotationBuilder(_parser) constructor {
     
     static accept_description = function(_description) {
         if (!is_undefined(description)) {
-            script_parser.warn($"Multiple description JSDoc annotations found.");
+            script_parser.fail($"Multiple description JSDoc annotations found.");
             return;
         }
         description = _description;
@@ -98,7 +98,7 @@ function JsdocAnnotationBuilder(_parser) constructor {
     
     static accept_return_type = function(_returns) {
         if (!is_undefined(return_type)) {
-            script_parser.warn($"Multiple return type JSDoc annotations found.");
+            script_parser.fail($"Multiple return type JSDoc annotations found.");
             return;
         }
         return_type = _returns;
@@ -110,10 +110,10 @@ function JsdocAnnotationBuilder(_parser) constructor {
     
     static build = function() {
         if (is_undefined(function_signature))
-            warn("Missing @func annotation in the function's JSDoc.");
+            script_parser.fail("Missing @func annotation in the function's JSDoc.");
         
         if (is_undefined(description))
-            warn("Missing @desc annotation in the function's JSDoc.");
+            script_parser.fail("Missing @desc annotation in the function's JSDoc.");
         
         return new JsdocAnnotationData(function_signature, description, arguments_details, return_type);
     }

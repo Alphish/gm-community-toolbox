@@ -18,7 +18,7 @@ function JsdocFunctionSignature(_name, _arguments) constructor {
         
         // could not parse signature in the first place
         if (is_undefined(_name) || is_undefined(_args_string)) {
-            _parser.warn($"The JSDoc function signature '{_line}' doesn't have open and close parentheses.");
+            _parser.fail($"The JSDoc function signature '{_line}' doesn't have open and close parentheses.");
             return new JsdocFunctionSignature("<error>", []);
         }
         

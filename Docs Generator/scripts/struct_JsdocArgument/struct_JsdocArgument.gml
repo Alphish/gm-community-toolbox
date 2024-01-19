@@ -32,7 +32,7 @@ function JsdocArgument(_name, _optional, _datatype, _description) constructor {
     static parse_from_argument_jsdoc = function(_parser, _line, _rest) {
         var _datatype = string_between(_line, "{", "}");
         if (is_undefined(_datatype)) {
-            _parser.warn($"The function argument definition '{_line}' doesn't have a datatype.");
+            _parser.fail($"The function argument definition '{_line}' doesn't have a datatype.");
             return new ToolboxFunctionArgument("<error>", false, undefined, undefined);
         }
         
@@ -47,7 +47,7 @@ function JsdocArgument(_name, _optional, _datatype, _description) constructor {
         var _description = string_trim(string_after(_name_and_description, " ")) ?? undefined;
         _description = !is_undefined(_description) ? _description + _rest : string_trim(_rest);
         if (_description == "")
-            _parser.warn($"The function argument definition '{_line}' doesn't have a description.");
+            _parser.fail($"The function argument definition '{_line}' doesn't have a description.");
         
         return new JsdocArgument(_name, _optional, _datatype, _description);
     }

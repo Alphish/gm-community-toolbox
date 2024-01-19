@@ -20,7 +20,7 @@ function GmlFunctionSignature(_name, _arguments, _line) constructor {
         
         // could not parse signature in the first place
         if (is_undefined(_name) || is_undefined(_args_string)) {
-            _parser.warn($"The GML function signature '{_line}' doesn't have open and close parentheses.");
+            _parser.fail($"The GML function signature '{_line}' doesn't have open and close parentheses.");
             return new GmlFunctionSignature("<error>", []);
         }
         

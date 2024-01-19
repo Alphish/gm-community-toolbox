@@ -12,9 +12,9 @@ function ToolboxFunctionSubparser(_parser) constructor {
         return jsdoc_subparser.peeks_jsdoc_entry();
     }
     
-    static read_function = function() {
+    static read_function = function(_region) {
         var _jsdoc_data = jsdoc_subparser.read_jsdoc();
         var _gml_signature = gml_subparser.read_gml_signature();
-        return function_resolver.resolve_toolbox_function(_jsdoc_data, _gml_signature);
+        return function_resolver.resolve_toolbox_function(_region, _jsdoc_data, _gml_signature);
     }
 }

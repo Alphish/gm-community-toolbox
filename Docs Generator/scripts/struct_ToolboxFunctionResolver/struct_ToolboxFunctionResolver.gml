@@ -4,7 +4,7 @@
 function ToolboxFunctionResolver(_parser) constructor {
     script_parser = _parser;
     
-    static resolve_toolbox_function = function(_jsdoc_data, _gml_signature) {
+    static resolve_toolbox_function = function(_region, _jsdoc_data, _gml_signature) {
         if (!_jsdoc_data.is_valid || !_gml_signature.is_valid)
             return get_unresolved();
         
@@ -14,7 +14,7 @@ function ToolboxFunctionResolver(_parser) constructor {
         if (!validate_arguments(_jsdoc_data, _gml_signature))
             return get_unresolved();
         
-        return build_function(_jsdoc_data, _gml_signature);
+        return build_function(_region, _jsdoc_data, _gml_signature);
     }
     
     // ----------
@@ -25,7 +25,7 @@ function ToolboxFunctionResolver(_parser) constructor {
         var _jsdoc_name = _jsdoc_data.function_signature.name;
         var _gml_name = _gml_signature.name;
         if (_jsdoc_name != _gml_name) {
-            script_parser.warn($"Inconsistent function name: the JSDoc function name is '{_jsdoc_name}' but the GML function name is '{_gml_name}.'");
+            script_parser.fail($"Inconsistent function name: the JSDoc function name is '{_jsdoc_name}' but the GML function name is '{_gml_name}.'");
             return false;
         }
         
@@ -42,7 +42,7 @@ function ToolboxFunctionResolver(_parser) constructor {
         var _gml_signature_count = array_length(_gml_signature_args);
         
         if (_gml_signature_count != _jsdoc_signature_count || _gml_signature_count != _jsdoc_details_count) {
-            script_parser.warn($"Inconsistent argument counts: {_jsdoc_signature_count} in JSDoc @func annotation, {_jsdoc_details_args} in JSDoc @arg annotations and {_gml_signature_count} in GML function signature.");
+            script_parser.fail($"Inconsistent argument counts: {_jsdoc_signature_count} in JSDoc @func annotation, {_jsdoc_details_args} in JSDoc @arg annotations and {_gml_signature_count} in GML function signature.");
             return false;
         }
         
@@ -59,20 +59,20 @@ function ToolboxFunctionResolver(_parser) constructor {
     static validate_single_argument = function(_jsdoc_signature, _jsdoc_details, _gml_signature) {
         // name consistency
         if (_gml_signature.name != _jsdoc_signature.name || _gml_signature.name != _jsdoc_details.name) {
-            script_parser.warn($"Inconsistent argument name: '{_jsdoc_signature.name}' in JSDoc @func annotation, '{_jsdoc_details.name}' in JSDoc @arg annotations and '{_gml_signature.name}' in GML function signature.");
+            script_parser.fail($"Inconsistent argument name: '{_jsdoc_signature.name}' in JSDoc @func annotation, '{_jsdoc_details.name}' in JSDoc @arg annotations and '{_gml_signature.name}' in GML function signature.");
             return false;
         }
         var _name = _gml_signature.name;
         
         // optionality consistency
         if (_jsdoc_details.is_optional && !_jsdoc_signature.is_optional) {
-            script_parser.warn($"Inconsistent argument '{_name}' optionality: Argument is marked as optional in JSDoc @arg annotation, but not in JSDoc @func annotation.");
+            script_parser.fail($"Inconsistent argument '{_name}' optionality: Argument is marked as optional in JSDoc @arg annotation, but not in JSDoc @func annotation.");
             return false;
         } else if (_jsdoc_signature.is_optional && !_jsdoc_details.is_optional) {
-            script_parser.warn($"Inconsistent argument '{_name}' optionality: Argument is marked as optional in JSDoc @func annotation, but not in JSDoc @arg annotation.");
+            script_parser.fail($"Inconsistent argument '{_name}' optionality: Argument is marked as optional in JSDoc @func annotation, but not in JSDoc @arg annotation.");
             return false;
         } else if (_gml_signature.has_default && !_jsdoc_signature.is_optional) {
-            script_parser.warn($"Inconsistent argument '{_name}' optionality: GML function signature has a default value of '{_gml_signature.default_value}' but JSDoc marks argument as non-optional.");
+            script_parser.fail($"Inconsistent argument '{_name}' optionality: GML function signature has a default value of '{_gml_signature.default_value}' but JSDoc marks argument as non-optional.");
             return false;
         }
         
@@ -84,11 +84,11 @@ function ToolboxFunctionResolver(_parser) constructor {
     // ----------------------
     
     static get_unresolved = function() {
-        script_parser.warn($"Could not resolve function because of invalid data. Check earlier warnings for more details.");
+        script_parser.fail($"Could not resolve function because of invalid data. Check earlier warnings for more details.");
         return undefined;
     }
     
-    static build_function = function(_jsdoc_data, _gml_signature) {
+    static build_function = function(_region, _jsdoc_data, _gml_signature) {
         var _name = _jsdoc_data.function_signature.name;
         var _description = _jsdoc_data.description;
         var _returns = _jsdoc_data.return_type;
@@ -102,7 +102,7 @@ function ToolboxFunctionResolver(_parser) constructor {
             array_push(_arguments, build_function_argument(_jsdoc_arg, _gml_arg));
         }
         
-        return new ToolboxFunction(_name, _description, _arguments, _returns, _line);
+        return new ToolboxFunction(_region, _name, _description, _arguments, _returns, _line);
     }
     
     static build_function_argument = function(_jsdoc_arg, _gml_arg) {

@@ -8,6 +8,8 @@
 function ToolboxArgument(_datatype, _name, _optional, _default, _description) constructor {
     datatype = _datatype;
     name = _name;
+    keyname = string_lower(name);
+    
     is_optional = _optional
     default_value = _default;
     description = _description;

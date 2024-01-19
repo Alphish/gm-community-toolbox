@@ -23,14 +23,14 @@ function ToolboxFunctionJsdocSubparser(_parser) constructor {
                     break;
                 
                 case "desc":
-                    var _rest = read_jsdoc_rest();
-                    var _description = _line + _rest;
+                    var _descrest = read_jsdoc_rest();
+                    var _description = _line + _descrest;
                     _data_builder.accept_description(_description);
                     break;
                 
                 case "arg":
-                    var _rest = read_jsdoc_rest();
-                    var _argument = JsdocArgument.parse_from_argument_jsdoc(script_parser, _line, _rest);
+                    var _argrest = read_jsdoc_rest();
+                    var _argument = JsdocArgument.parse_from_argument_jsdoc(script_parser, _line, _argrest);
                     _data_builder.accept_argument(_argument);
                     break;
                 
