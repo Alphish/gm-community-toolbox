@@ -1,4 +1,4 @@
-[Home](/) > [Community Toolbox Reference](/Docs/Reference/Home.md) > [Array utilities](/Docs/Reference/Groups/ArrayUtils.md) > [Maths on number arrays](/Docs/Reference/Groups/ArrayUtils_Maths.md)
+[Home](/README.md) > [Community Toolbox Reference](/Docs/Reference/Reference.md) > [Array utilities](/Docs/Reference/Groups/ArrayUtils.md) > [Maths on number arrays](/Docs/Reference/Groups/ArrayUtils_Maths.md)
 
 # array_mean
 

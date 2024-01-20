@@ -1,4 +1,4 @@
-[Home](/) > [Community Toolbox Reference](/Docs/Reference/Home.md) > [String utilities](/Docs/Reference/Groups/StringUtils.md)
+[Home](/README.md) > [Community Toolbox Reference](/Docs/Reference/Reference.md) > [String utilities](/Docs/Reference/Groups/StringUtils.md)
 
 # string_to_char_array
 

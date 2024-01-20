@@ -1,4 +1,4 @@
-[Home](/) > [Community Toolbox Reference](/Docs/Reference/Home.md)
+[Home](/README.md) > [Community Toolbox Reference](/Docs/Reference/Reference.md)
 
 # String utilities
 

@@ -1,4 +1,4 @@
-[Home](/) > [Community Toolbox Reference](/Docs/Reference/Home.md) > [Array utilities](/Docs/Reference/Groups/ArrayUtils.md) > [Retrieving random items](/Docs/Reference/Groups/ArrayUtils_Random.md)
+[Home](/README.md) > [Community Toolbox Reference](/Docs/Reference/Reference.md) > [Array utilities](/Docs/Reference/Groups/ArrayUtils.md) > [Retrieving random items](/Docs/Reference/Groups/ArrayUtils_Random.md)
 
 # array_get_random
 
