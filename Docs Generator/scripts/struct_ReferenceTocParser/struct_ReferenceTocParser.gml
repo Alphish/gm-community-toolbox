@@ -17,7 +17,7 @@ function ReferenceTocParser(_path, _items) : MultiStepProcess() constructor {
         fail($"There is no reference item defined with 'home' key.");
     }
     
-    result = new ReferenceTocNode("home", "home", "Home.md", _home_stub);
+    result = new ReferenceTocNode("home", "home", "Reference.md", _home_stub);
     current_node = result;
     current_indent = -1;
     parent_nodes = [];

@@ -73,7 +73,7 @@ function ReferenceItemWriter() constructor {
     
     static write_crumb_segment = function(_item, _is_last) {
         if (is_undefined(_item.parent))
-            write(link("Home", "/"));
+            write(link("Home", "/README.md"));
         else
             write_crumb_segment(_item.parent, false);
         
