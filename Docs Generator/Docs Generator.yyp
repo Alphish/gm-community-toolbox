@@ -54,6 +54,7 @@
     {"id":{"name":"struct_JsdocAnnotationBuilder","path":"scripts/struct_JsdocAnnotationBuilder/struct_JsdocAnnotationBuilder.yy",},},
     {"id":{"name":"struct_ProjectLoadingState","path":"scripts/struct_ProjectLoadingState/struct_ProjectLoadingState.yy",},},
     {"id":{"name":"struct_MultiStepProcess","path":"scripts/struct_MultiStepProcess/struct_MultiStepProcess.yy",},},
+    {"id":{"name":"struct_DocsTocLoadingState","path":"scripts/struct_DocsTocLoadingState/struct_DocsTocLoadingState.yy",},},
     {"id":{"name":"struct_ReferenceItemStubsParser","path":"scripts/struct_ReferenceItemStubsParser/struct_ReferenceItemStubsParser.yy",},},
     {"id":{"name":"struct_ToolboxRegionSubparser","path":"scripts/struct_ToolboxRegionSubparser/struct_ToolboxRegionSubparser.yy",},},
     {"id":{"name":"struct_ToolboxFunctionResolver","path":"scripts/struct_ToolboxFunctionResolver/struct_ToolboxFunctionResolver.yy",},},

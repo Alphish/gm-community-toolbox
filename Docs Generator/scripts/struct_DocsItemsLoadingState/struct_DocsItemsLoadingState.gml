@@ -23,7 +23,7 @@ function DocsItemsLoadingState() : AppState() constructor {
             return error_state($"Problems found when reading reference stubs files.");
         
         ctrl_Generator.item_stubs = reference_explorer.result;
-        return new EndState("Reference stubs loading finished successfully!", c_lime);
+        return new DocsTocLoadingState();
     }
     
     static get_message = function() {
