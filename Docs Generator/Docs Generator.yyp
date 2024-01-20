@@ -27,7 +27,14 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Utils","folderPath":"folders/Utils.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Writing","folderPath":"folders/Writing.yy",},
   ],
-  "IncludedFiles": [],
+  "IncludedFiles": [
+    {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"ArrayUtils_Math.stub.md","CopyToMask":-1,"filePath":"datafiles/Reference",},
+    {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"ArrayUtils_Random.stub.md","CopyToMask":-1,"filePath":"datafiles/Reference",},
+    {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"ArrayUtils.stub.md","CopyToMask":-1,"filePath":"datafiles/Reference",},
+    {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"Home.stub.md","CopyToMask":-1,"filePath":"datafiles/Reference",},
+    {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"StringUtils.stub.md","CopyToMask":-1,"filePath":"datafiles/Reference",},
+    {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"TOC.txt","CopyToMask":-1,"filePath":"datafiles/Reference",},
+  ],
   "isEcma": false,
   "LibraryEmitters": [],
   "MetaData": {
