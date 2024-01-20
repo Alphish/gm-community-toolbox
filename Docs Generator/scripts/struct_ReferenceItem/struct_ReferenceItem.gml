@@ -17,4 +17,24 @@ function ReferenceItem(_tocnode, _parent) constructor {
     
     if (!is_undefined(_parent))
         array_push(_parent.children, self);
+    
+    static get_page_path = function() {
+        throw $"{instanceof(self)}.get_page_path() is not implemented.";
+    }
+    
+    static list_subtree = function() {
+        var _result = [];
+        populate_subtree(_result);
+        return _result;
+    }
+    
+    static populate_subtree = function(_target) {
+        array_push(_target, self);
+        
+        var _count = array_length(children);
+        for (var i = 0; i < _count; i++) {
+            var _child = children[i];
+            _child.populate_subtree(_target);
+        }
+    }
 }

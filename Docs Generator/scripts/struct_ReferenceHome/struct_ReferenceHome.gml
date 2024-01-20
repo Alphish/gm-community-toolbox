@@ -4,4 +4,8 @@
 /// @arg {Struct.ToolboxProject} project        The toolbox project data.
 function ReferenceHome(_tocnode, _project) : ReferenceItem(_tocnode, undefined) constructor {
     project = _project;
+    
+    static get_page_path = function() {
+        return filename;
+    }
 }

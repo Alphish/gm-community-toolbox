@@ -29,9 +29,6 @@ function ReferenceItemStubsExplorer(_path) : MultiStepProcess() constructor {
         if (processed_count < total_count)
             return false;
         
-        if (is_failed)
-            warn("Some reference items could not be parsed.");
-        
         check_duplicates();
         
         return true;

@@ -11,6 +11,7 @@ function ToolboxRegion(_script, _name, _line) constructor {
     name = _name;
     keyname = _script.keyname + ":" + string_lower(name);
     is_anonymous = is_undefined(name);
+    line = _line;
     
     script = _script;
     array_push(script.regions, self);
