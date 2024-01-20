@@ -21,7 +21,7 @@ function DocsTocLoadingState() : AppState() constructor {
             return error_state($"Problems found when reading Table of Contents file.");
         
         ctrl_Generator.toc_home = toc_parser.result;
-        return new EndState("Table of contents loading finished successfully!", c_lime);
+        return new ReferenceMergingState();
     }
     
     static get_message = function() {

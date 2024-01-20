@@ -91,6 +91,7 @@
     {"id":{"name":"struct_ReferenceFunctionStub","path":"scripts/struct_ReferenceFunctionStub/struct_ReferenceFunctionStub.yy",},},
     {"id":{"name":"struct_ToolboxFunctionGmlSubparser","path":"scripts/struct_ToolboxFunctionGmlSubparser/struct_ToolboxFunctionGmlSubparser.yy",},},
     {"id":{"name":"utils_Keyname","path":"scripts/utils_Keyname/utils_Keyname.yy",},},
+    {"id":{"name":"struct_ReferenceMergingState","path":"scripts/struct_ReferenceMergingState/struct_ReferenceMergingState.yy",},},
     {"id":{"name":"struct_ReferenceArgumentStub","path":"scripts/struct_ReferenceArgumentStub/struct_ReferenceArgumentStub.yy",},},
     {"id":{"name":"struct_ReferenceItemStubsScanner","path":"scripts/struct_ReferenceItemStubsScanner/struct_ReferenceItemStubsScanner.yy",},},
     {"id":{"name":"rm_Generator","path":"rooms/rm_Generator/rm_Generator.yy",},},
