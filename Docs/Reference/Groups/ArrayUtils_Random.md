@@ -1,0 +1,10 @@
+[Home](/) > [Community Toolbox Reference](/Docs/Reference/Home.md) > [Array utilities](/Docs/Reference/Groups/ArrayUtils.md)
+
+# Retrieving random items
+
+[Go to source](/Community%20Toolbox/scripts/utils_CommunityToolboxArray/utils_CommunityToolboxArray.gml#L180)
+
+### Defined functions
+
+- [array_get_random](/Docs/Reference/Functions/array_get_random.md)
+- [array_pop_random](/Docs/Reference/Functions/array_pop_random.md)
