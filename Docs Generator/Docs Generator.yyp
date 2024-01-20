@@ -13,6 +13,7 @@
   "Folders": [
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Common","folderPath":"folders/Common.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Docs","folderPath":"folders/Docs.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Merging","folderPath":"folders/Docs/Merging.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Stubs","folderPath":"folders/Docs/Stubs.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Explorer","folderPath":"folders/Docs/Stubs/Explorer.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Toc","folderPath":"folders/Docs/Toc.yy",},
@@ -42,6 +43,7 @@
     {"id":{"name":"struct_ReferenceItem","path":"scripts/struct_ReferenceItem/struct_ReferenceItem.yy",},},
     {"id":{"name":"struct_ReferenceSection","path":"scripts/struct_ReferenceSection/struct_ReferenceSection.yy",},},
     {"id":{"name":"struct_ReferenceRegion","path":"scripts/struct_ReferenceRegion/struct_ReferenceRegion.yy",},},
+    {"id":{"name":"struct_ReferenceMerger","path":"scripts/struct_ReferenceMerger/struct_ReferenceMerger.yy",},},
     {"id":{"name":"struct_ReferenceItemStub","path":"scripts/struct_ReferenceItemStub/struct_ReferenceItemStub.yy",},},
     {"id":{"name":"struct_ReferenceScriptSubparser","path":"scripts/struct_ReferenceScriptSubparser/struct_ReferenceScriptSubparser.yy",},},
     {"id":{"name":"struct_JsdocAnnotationData","path":"scripts/struct_JsdocAnnotationData/struct_JsdocAnnotationData.yy",},},
