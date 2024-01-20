@@ -4,6 +4,7 @@ image_speed = 0;
 state = new InitState();
 project_path = "";
 toolbox_project = undefined;
+item_stubs = undefined;
 
 failures_log = [];
 warnings_log = [];

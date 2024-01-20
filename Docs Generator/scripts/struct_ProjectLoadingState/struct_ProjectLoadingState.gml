@@ -27,7 +27,7 @@ function ProjectLoadingState() : AppState() constructor {
             return error_state("Problems found when reading functions data from the Community Toolbox project.");
         
         ctrl_Generator.toolbox_project = toolbox_explorer.result;
-        return new EndState("Project loading finished successfully!", c_lime);
+        return new DocsItemsLoadingState();
     }
     
     static get_message = function() {

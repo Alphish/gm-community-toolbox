@@ -60,6 +60,7 @@
     {"id":{"name":"utils_File","path":"scripts/utils_File/utils_File.yy",},},
     {"id":{"name":"utils_String","path":"scripts/utils_String/utils_String.yy",},},
     {"id":{"name":"struct_ToolboxProjectExplorer","path":"scripts/struct_ToolboxProjectExplorer/struct_ToolboxProjectExplorer.yy",},},
+    {"id":{"name":"struct_DocsItemsLoadingState","path":"scripts/struct_DocsItemsLoadingState/struct_DocsItemsLoadingState.yy",},},
     {"id":{"name":"struct_ReferenceScriptStub","path":"scripts/struct_ReferenceScriptStub/struct_ReferenceScriptStub.yy",},},
     {"id":{"name":"struct_ToolboxArgument","path":"scripts/struct_ToolboxArgument/struct_ToolboxArgument.yy",},},
     {"id":{"name":"struct_ToolboxScript","path":"scripts/struct_ToolboxScript/struct_ToolboxScript.yy",},},
