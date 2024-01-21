@@ -1,0 +1,12 @@
+@script <String> StringUtils
+    @func <string_to_char_array>
+@script <Array> ArrayUtils
+    @region <Array:Array-wide maths> ArrayUtils_Maths
+        @func <array_max>
+        @func <array_min>
+        @func <array_median>
+        @func <array_mean>
+        @func <array_sum>
+    @region <Array:Random elements> ArrayUtils_Random
+        @func <array_get_random>
+        @func <array_pop_random>
