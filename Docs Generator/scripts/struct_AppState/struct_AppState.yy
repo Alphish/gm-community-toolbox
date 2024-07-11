@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "struct_AppState",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "States",
-    "path": "folders/States.yy",
+  "$GMScript":"v1",
+  "%Name":"struct_AppState",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"struct_AppState",
+  "parent":{
+    "name":"States",
+    "path":"folders/States.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

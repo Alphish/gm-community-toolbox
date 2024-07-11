@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "struct_MultiStepProcess",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "Common",
-    "path": "folders/Common.yy",
+  "$GMScript":"v1",
+  "%Name":"struct_MultiStepProcess",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"struct_MultiStepProcess",
+  "parent":{
+    "name":"Common",
+    "path":"folders/Common.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

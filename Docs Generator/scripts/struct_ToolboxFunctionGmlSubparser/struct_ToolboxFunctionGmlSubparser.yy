@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "struct_ToolboxFunctionGmlSubparser",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "Gml",
-    "path": "folders/Project/Explorer/Functions/Gml.yy",
+  "$GMScript":"v1",
+  "%Name":"struct_ToolboxFunctionGmlSubparser",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"struct_ToolboxFunctionGmlSubparser",
+  "parent":{
+    "name":"Gml",
+    "path":"folders/Project/Explorer/Functions/Gml.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

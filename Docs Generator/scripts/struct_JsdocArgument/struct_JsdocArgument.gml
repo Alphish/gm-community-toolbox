@@ -13,11 +13,11 @@ function JsdocArgument(_name, _optional, _datatype, _description) constructor {
     datatype = _datatype;
     description = _description;
     
-    is_valid = name != "<error";
+    is_valid = name != "<error>";
     
     // parsing an argument summary from the @func annotation signature
-    static parse_from_signature_argument = function(_name) {
-        _name = string_trim(_name);
+    static parse_from_signature_argument = function(_segment) {
+        var _name = string_trim(_segment);
         var _optional = false;
         
         if (string_starts_with(_name, "[") && string_ends_with(_name, "]")) {

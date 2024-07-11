@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "struct_JsdocArgument",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "Jsdoc",
-    "path": "folders/Project/Explorer/Functions/Jsdoc.yy",
+  "$GMScript":"v1",
+  "%Name":"struct_JsdocArgument",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"struct_JsdocArgument",
+  "parent":{
+    "name":"Jsdoc",
+    "path":"folders/Project/Explorer/Functions/Jsdoc.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

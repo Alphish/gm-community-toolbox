@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "struct_ToolboxFunctionResolver",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "Functions",
-    "path": "folders/Project/Explorer/Functions.yy",
+  "$GMScript":"v1",
+  "%Name":"struct_ToolboxFunctionResolver",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"struct_ToolboxFunctionResolver",
+  "parent":{
+    "name":"Functions",
+    "path":"folders/Project/Explorer/Functions.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

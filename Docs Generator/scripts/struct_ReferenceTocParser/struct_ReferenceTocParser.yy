@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "struct_ReferenceTocParser",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "Toc",
-    "path": "folders/Docs/Toc.yy",
+  "$GMScript":"v1",
+  "%Name":"struct_ReferenceTocParser",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"struct_ReferenceTocParser",
+  "parent":{
+    "name":"Toc",
+    "path":"folders/Docs/Toc.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

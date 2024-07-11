@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "struct_ToolboxRegion",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "Project",
-    "path": "folders/Project.yy",
+  "$GMScript":"v1",
+  "%Name":"struct_ToolboxRegion",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"struct_ToolboxRegion",
+  "parent":{
+    "name":"Project",
+    "path":"folders/Project.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

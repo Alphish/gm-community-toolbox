@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "utils_Array",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "Utils",
-    "path": "folders/Utils.yy",
+  "$GMScript":"v1",
+  "%Name":"utils_Array",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"utils_Array",
+  "parent":{
+    "name":"Utils",
+    "path":"folders/Utils.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

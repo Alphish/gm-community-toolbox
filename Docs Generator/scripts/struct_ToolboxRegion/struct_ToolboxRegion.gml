@@ -4,8 +4,11 @@
 /// @arg {String,Undefined} name            The region name, or undefined if it's a script-wide pseudo-region.
 /// @arg {Real,Undefined} line              The line at which the region is defined.
 function ToolboxRegion(_script, _name, _line) constructor {
-    if (is_undefined(_script))
+    if (static_init_in_progress())
         exit;
+    
+    // if (is_undefined(_script))
+    //     exit;
     
     type = "region";
     name = _name;
@@ -30,4 +33,5 @@ function ToolboxRegion(_script, _name, _line) constructor {
 }
 
 /// feather ignore GM1041
-var _static_init = new ToolboxRegion(undefined, undefined, undefined);
+// var _static_init = new ToolboxRegion(undefined, undefined, undefined);
+static_init(ToolboxRegion);

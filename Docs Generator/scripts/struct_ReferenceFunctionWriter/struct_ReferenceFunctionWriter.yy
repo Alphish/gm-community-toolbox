@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "struct_ReferenceFunctionWriter",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "Writing",
-    "path": "folders/Writing.yy",
+  "$GMScript":"v1",
+  "%Name":"struct_ReferenceFunctionWriter",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"struct_ReferenceFunctionWriter",
+  "parent":{
+    "name":"Writing",
+    "path":"folders/Writing.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

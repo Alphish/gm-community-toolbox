@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "struct_ReferenceArgumentStub",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "Stubs",
-    "path": "folders/Docs/Stubs.yy",
+  "$GMScript":"v1",
+  "%Name":"struct_ReferenceArgumentStub",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"struct_ReferenceArgumentStub",
+  "parent":{
+    "name":"Stubs",
+    "path":"folders/Docs/Stubs.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

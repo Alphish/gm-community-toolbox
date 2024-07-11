@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "struct_ReferenceHome",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "Docs",
-    "path": "folders/Docs.yy",
+  "$GMScript":"v1",
+  "%Name":"struct_ReferenceHome",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"struct_ReferenceHome",
+  "parent":{
+    "name":"Docs",
+    "path":"folders/Docs.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }
