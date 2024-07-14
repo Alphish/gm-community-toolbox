@@ -109,6 +109,7 @@
     {"id":{"name":"utils_Array","path":"scripts/utils_Array/utils_Array.yy",},},
     {"id":{"name":"utils_File","path":"scripts/utils_File/utils_File.yy",},},
     {"id":{"name":"utils_Keyname","path":"scripts/utils_Keyname/utils_Keyname.yy",},},
+    {"id":{"name":"utils_Misc","path":"scripts/utils_Misc/utils_Misc.yy",},},
     {"id":{"name":"utils_String","path":"scripts/utils_String/utils_String.yy",},},
     {"id":{"name":"spr_Button","path":"sprites/spr_Button/spr_Button.yy",},},
   ],
