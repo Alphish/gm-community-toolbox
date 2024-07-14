@@ -12,8 +12,7 @@ function ReferenceMergingState() : AppState() constructor {
             return new EndState("Problems found when merging project data with reference stubs.", c_red);
         
         ctrl_Generator.reference_items = reference_merger.result;
-        return new EndState("Yay!", c_lime);
-        // return new ReferenceWritingState();
+        return new ReferenceWritingState();
     }
     
     static get_message = function() {

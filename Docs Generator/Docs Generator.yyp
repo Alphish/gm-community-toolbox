@@ -91,6 +91,7 @@
     {"id":{"name":"struct_ReferenceTocNode","path":"scripts/struct_ReferenceTocNode/struct_ReferenceTocNode.yy",},},
     {"id":{"name":"struct_ReferenceTocParser","path":"scripts/struct_ReferenceTocParser/struct_ReferenceTocParser.yy",},},
     {"id":{"name":"struct_ReferenceTocScanner","path":"scripts/struct_ReferenceTocScanner/struct_ReferenceTocScanner.yy",},},
+    {"id":{"name":"struct_ReferenceUpdate","path":"scripts/struct_ReferenceUpdate/struct_ReferenceUpdate.yy",},},
     {"id":{"name":"struct_ReferenceWritingState","path":"scripts/struct_ReferenceWritingState/struct_ReferenceWritingState.yy",},},
     {"id":{"name":"struct_ToolboxArgument","path":"scripts/struct_ToolboxArgument/struct_ToolboxArgument.yy",},},
     {"id":{"name":"struct_ToolboxFunction","path":"scripts/struct_ToolboxFunction/struct_ToolboxFunction.yy",},},

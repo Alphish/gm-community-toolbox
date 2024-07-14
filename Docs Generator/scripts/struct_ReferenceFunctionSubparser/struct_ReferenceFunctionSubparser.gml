@@ -2,7 +2,7 @@
 /// @desc A tool for reading function information from the reference stub.
 /// @arg {Struct.ReferenceItemStubsParser} parser       The main reference items parser.
 function ReferenceFunctionSubparser(_parser) : ReferenceItemSubparser(_parser) constructor {
-    static function_tags = ["arg", "returns", "section"];
+    static function_tags = ["arg", "returns", "section", "update"];
     
     static read_item = function() {
         var _keyname = items_scanner.get_keyname();
@@ -20,6 +20,7 @@ function ReferenceFunctionSubparser(_parser) : ReferenceItemSubparser(_parser) c
         var _arguments = [];
         var _returns = undefined;
         var _sections = [];
+        var _updates = [];
         
         var _tag = items_scanner.get_tag();
         while (array_contains(function_tags, _tag)) {
@@ -39,12 +40,23 @@ function ReferenceFunctionSubparser(_parser) : ReferenceItemSubparser(_parser) c
                     if (!is_undefined(_section))
                         array_push(_sections, _section);
                     break;
+                
+                case "update":
+                    var _update = read_update();
+                    if (!is_undefined(_update))
+                        array_push(_updates, _update);
+                    break;
             }
             
             _tag = items_scanner.get_tag();
         }
         
-        return new ReferenceFunctionStub(_keyname, _summary, _arguments, _returns, _sections);
+        if (array_length(_updates) == 0) {
+            fail($"The function {_keyname} must have at least a single update history entry.");
+            return undefined;
+        }
+        
+        return new ReferenceFunctionStub(_keyname, _summary, _arguments, _returns, _sections, _updates);
     }
     
     static skip_function_tags = function() {
@@ -78,5 +90,21 @@ function ReferenceFunctionSubparser(_parser) : ReferenceItemSubparser(_parser) c
         var _result = items_scanner.read_tag_line();
         items_scanner.skip_to_tag();
         return _result;
+    }
+    
+    static read_update = function() {
+        var _version = items_scanner.read_tag_line();
+        if (is_undefined(_version)) {
+            fail($"The update entry has no version identifier.");
+            return undefined;
+        }
+        
+        var _description = items_scanner.read_content();
+        if (is_undefined(_description)) {
+            fail($"The update entry has no description.");
+            return undefined;
+        }
+        
+        return new ReferenceUpdate(_version, _description);
     }
 }

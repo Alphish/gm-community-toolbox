@@ -94,7 +94,7 @@ function static_init(_func) {
     static context = { };
     
     with (context) {
-        _ctor();
+        _func();
         
         if (struct_names_count(self) > 0) {
             throw $"The static init context was changed when initialising statics of {script_get_name(_func)}.\n" +

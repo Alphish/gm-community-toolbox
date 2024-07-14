@@ -10,6 +10,7 @@ function ReferenceFunctionWriter() : ReferenceItemWriter() constructor {
         write_arguments(_function.arguments);
         write_return_type(_function);
         write_sections(_function.sections);
+        write_update_history(_function.updates);
         
         save_content(_function.get_page_path());
     }
@@ -67,5 +68,21 @@ function ReferenceFunctionWriter() : ReferenceItemWriter() constructor {
             write_line($"**`{_function.return_type}`**");
         else
             write_line("N/A");
+    }
+    
+    // -------
+    // Updates
+    // -------
+    
+    static write_update_history = function(_updates) {
+        write_line();
+        write_line($"### Update history");
+        
+        write_line();
+        array_foreach(_updates, function(_update) {
+            var _version = string_trim(_update.version);
+            var _description = string_trim(_update.description);
+            write_line($"- **{_version}** - {_description}");
+        });
     }
 }

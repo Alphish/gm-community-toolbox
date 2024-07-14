@@ -16,6 +16,8 @@ function ReferenceFunction(_tocnode, _function, _arguments, _parent) : Reference
     return_type = _function.return_type;
     return_description = _tocnode.stub.return_type;
     
+    updates = _tocnode.stub.updates;
+    
     static get_page_path = function() {
         return "Functions/" + filename;
     }

@@ -5,7 +5,9 @@
 /// @arg {Array<Struct.ReferenceArgumentStub>} arguments        The arguments information to use in the reference.
 /// @arg {String} returns                                       The return type to use in the reference.
 /// @arg {Array<Struct.ReferenceSection>} sections              Sections containing additional details.
-function ReferenceFunctionStub(_keyname, _summary, _arguments, _returns, _sections) : ReferenceItemStub("func", _keyname, _keyname, _summary, _sections) constructor {
+/// @arg {Array<Struct.ReferenceUpdate>} updates                The update history of the function.
+function ReferenceFunctionStub(_keyname, _summary, _arguments, _returns, _sections, _updates) : ReferenceItemStub("func", _keyname, _keyname, _summary, _sections, _updates) constructor {
     arguments = _arguments;
     return_type = _returns;
+    updates = _updates;
 }
