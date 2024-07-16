@@ -30,3 +30,6 @@ Below is the releases history, with detailed information about specific function
 - **JSON utilities**
     - [json_load](Functions/json_load.md) - Created a function to read a JSON value from a file.
     - [json_save](Functions/json_save.md) - Created a function to write a given value to a JSON file.
+- **Other utilities**
+    - [is_nullish](Functions/is_nullish.md) - Created a function to check if the given value is nullish.
+    - [is_defined](Functions/is_defined.md) - Created a function to check if the given value is defined (not nullish).

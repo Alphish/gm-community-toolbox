@@ -16,6 +16,7 @@ Below are listed various scripts and functions available in the Community Toolbo
     - [Retrieving random items](/Docs/Reference/Groups/ArrayUtils_Random.md)
 - [File utilities](/Docs/Reference/Groups/FileUtils.md)
 - [JSON utilities](/Docs/Reference/Groups/JsonUtils.md)
+- [Other utilities](/Docs/Reference/Groups/MiscUtils.md)
 
 ### Functions list
 
@@ -32,6 +33,8 @@ Below are listed various scripts and functions available in the Community Toolbo
 - [eucmod](/Docs/Reference/Functions/eucmod.md)
 - [file_read_all_text](/Docs/Reference/Functions/file_read_all_text.md)
 - [file_write_all_text](/Docs/Reference/Functions/file_write_all_text.md)
+- [is_defined](/Docs/Reference/Functions/is_defined.md)
+- [is_nullish](/Docs/Reference/Functions/is_nullish.md)
 - [json_load](/Docs/Reference/Functions/json_load.md)
 - [json_save](/Docs/Reference/Functions/json_save.md)
 - [lerp_angle](/Docs/Reference/Functions/lerp_angle.md)

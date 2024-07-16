@@ -27,5 +27,8 @@
 @script <Json> JsonUtils
     @func <json_load>
     @func <json_save>
+@script <Misc> MiscUtils
+    @func <is_nullish>
+    @func <is_defined>
 
 @release <23.4.0>
