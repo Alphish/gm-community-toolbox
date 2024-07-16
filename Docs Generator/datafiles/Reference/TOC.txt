@@ -13,5 +13,8 @@
 @script <File> FileUtils
     @func <file_read_all_text>
     @func <file_write_all_text>
+@script <Json> JsonUtils
+    @func <json_load>
+    @func <json_save>
 
 @release <23.4.0>

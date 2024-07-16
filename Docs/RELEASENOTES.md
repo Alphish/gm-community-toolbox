@@ -17,3 +17,6 @@ Below is the releases history, with detailed information about specific function
 - **File utilities**
     - [file_read_all_text](Functions/file_read_all_text.md) - Created a function to read file contents as a string.
     - [file_write_all_text](Functions/file_write_all_text.md) - Created a function to replace file contents with a given string.
+- **JSON utilities**
+    - [json_load](Functions/json_load.md) - Created a function to read a JSON value from a file.
+    - [json_save](Functions/json_save.md) - Created a function to write a given value to a JSON file.
