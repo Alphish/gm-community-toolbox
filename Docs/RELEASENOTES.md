@@ -6,6 +6,9 @@ Below is the releases history, with detailed information about specific function
 - **Math utilities: Euclidean division**
     - [eucdiv](Functions/eucdiv.md) - Created a function to calculate the quotient of an Euclidean division.
     - [eucmod](Functions/eucmod.md) - Created a function to calculate the remainder of an Euclidean division.
+- **Math utilities: Fixed step approach**
+    - [approach](Functions/approach.md) - Created a function to approach a given target value by a fixed step.
+    - [approach_angle](Functions/approach_angle.md) - Created a function to approach a given angle by a fixed step.
 - **String utilities**
     - [string_to_char_array](Functions/string_to_char_array.md) - Created a function to convert a string to an array of its characters.
 - **Array utilities: Number array statistics**

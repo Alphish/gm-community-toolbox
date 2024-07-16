@@ -8,6 +8,7 @@ Below are listed various scripts and functions available in the Community Toolbo
 
 - [Math utilities](/Docs/Reference/Groups/MathUtils.md)
     - [Euclidean division](/Docs/Reference/Groups/MethUtils_Euclidean.md)
+    - [Fixed step approach](/Docs/Reference/Groups/MathUtils_Approach.md)
 - [String utilities](/Docs/Reference/Groups/StringUtils.md)
 - [Array utilities](/Docs/Reference/Groups/ArrayUtils.md)
     - [Number array statistics](/Docs/Reference/Groups/ArrayUtils_Maths.md)
@@ -17,6 +18,8 @@ Below are listed various scripts and functions available in the Community Toolbo
 
 ### Functions list
 
+- [approach](/Docs/Reference/Functions/approach.md)
+- [approach_angle](/Docs/Reference/Functions/approach_angle.md)
 - [array_get_random](/Docs/Reference/Functions/array_get_random.md)
 - [array_max](/Docs/Reference/Functions/array_max.md)
 - [array_mean](/Docs/Reference/Functions/array_mean.md)

@@ -9,3 +9,6 @@
 - [Euclidean division](/Docs/Reference/Groups/MethUtils_Euclidean.md)
     - [eucdiv](/Docs/Reference/Functions/eucdiv.md)
     - [eucmod](/Docs/Reference/Functions/eucmod.md)
+- [Fixed step approach](/Docs/Reference/Groups/MathUtils_Approach.md)
+    - [approach](/Docs/Reference/Functions/approach.md)
+    - [approach_angle](/Docs/Reference/Functions/approach_angle.md)

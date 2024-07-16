@@ -29,18 +29,7 @@ function eucdiv(_dividend, _divisor) {
 
 #endregion
 
-#region Reaching target values
-
-/// @func lerp_angle(from,to,amount)
-/// @desc Calculates the angle interpolated between a starting and destination angle for the given fraction amount.
-/// @arg {Real} from            The starting angle.
-/// @arg {Real} to              The destination angle.
-/// @arg {Real} amount          The amount to interpolate (0 matches the starting angle, 1 matches the destination angle).
-/// @returns {Real}
-function lerp_angle(_from, _to, _amount) {
-    var _new_angle = _from + angle_difference(_to, _from) * _amount;
-    return eucmod(_new_angle, 360);
-}
+#region Fixed step approach
 
 /// @func approach(current,target,[step])
 /// @desc Calculates the value a step closer to the target value. If the target is close enough, returns the target.
@@ -86,6 +75,17 @@ function approach_angle(_current, _target, _step = 1) {
 #endregion
 
 #region Linear interpolation
+
+/// @func lerp_angle(from,to,amount)
+/// @desc Calculates the angle interpolated between a starting and destination angle for the given fraction amount.
+/// @arg {Real} from            The starting angle.
+/// @arg {Real} to              The destination angle.
+/// @arg {Real} amount          The amount to interpolate (0 matches the starting angle, 1 matches the destination angle).
+/// @returns {Real}
+function lerp_angle(_from, _to, _amount) {
+    var _new_angle = _from + angle_difference(_to, _from) * _amount;
+    return eucmod(_new_angle, 360);
+}
 
 /// @func unlerp(from,to,value)
 /// @desc Returns the interpolation amount such that lerp(from, to, amount) equals the given value.
