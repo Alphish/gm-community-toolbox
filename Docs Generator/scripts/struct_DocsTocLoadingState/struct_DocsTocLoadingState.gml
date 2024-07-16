@@ -20,7 +20,8 @@ function DocsTocLoadingState() : AppState() constructor {
         if (toc_parser.is_failed)
             return error_state($"Problems found when reading Table of Contents file.");
         
-        ctrl_Generator.toc_home = toc_parser.result;
+        ctrl_Generator.docs_toc = toc_parser.result;
+        ctrl_Generator.toc_home = toc_parser.result.toc_home;
         return new ReferenceMergingState();
     }
     

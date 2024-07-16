@@ -17,11 +17,14 @@ function ReferenceTocParser(_path, _items) : MultiStepProcess() constructor {
         fail($"There is no reference item defined with 'home' key.");
     }
     
-    result = new ReferenceTocNode("home", "home", "Reference.md", _home_stub);
-    current_node = result;
+    home_node = new ReferenceTocNode("home", "home", "Reference.md", _home_stub);
+    current_node = home_node;
     current_indent = -1;
     parent_nodes = [];
     parent_indents = [];
+    
+    releases = [];
+    result = undefined;
     
     // ----------
     // Processing
@@ -31,6 +34,7 @@ function ReferenceTocParser(_path, _items) : MultiStepProcess() constructor {
         toc_scanner.skip_empty_lines();
         if (toc_scanner.is_at_end()) {
             check_all_items_in_toc();
+            result = new DocsTableOfContents(home_node, releases);
             return true;
         }
         
@@ -43,13 +47,17 @@ function ReferenceTocParser(_path, _items) : MultiStepProcess() constructor {
         if (!validate_line_data(_line_data))
             return;
         
-        var _node = prepare_new_node(_line_data);
-        pop_to_indent(_line_data.indent);
-        push_new_node(_node, _line_data.indent);
+        if (_line_data.type != "release") {
+            var _node = prepare_new_node(_line_data);
+            pop_to_indent(_line_data.indent);
+            push_new_node(_node, _line_data.indent);
+        } else {
+            register_release(_line_data);
+        }
     }
     
     static validate_line_data = function(_line_data) {
-        static allowed_types = ["script", "region", "func"];
+        static allowed_types = ["script", "region", "func", "release"];
         
         if (is_undefined(_line_data.keyname) || is_undefined(_line_data.type)) {
             fail($"Could not properly read the line '{_line_data.content}'.");
@@ -59,6 +67,10 @@ function ReferenceTocParser(_path, _items) : MultiStepProcess() constructor {
         if (!array_contains(allowed_types, _line_data.type)) {
             fail($"Received TOC entry type '{_line_data.type}'. TOC entry type must be one of the following: {string_join_ext(", ", allowed_types)}.");
             return false;
+        }
+        
+        if (_line_data.type == "release") {
+            return true;
         }
         
         var _keyname = string_lower(_line_data.keyname);
@@ -107,6 +119,11 @@ function ReferenceTocParser(_path, _items) : MultiStepProcess() constructor {
         array_push(parent_indents, current_indent);
         current_node = _node;
         current_indent = _indent;
+    }
+    
+    static register_release = function(_line_data) {
+        var _keyname = _line_data.keyname;
+        array_push(releases, _keyname);
     }
     
     static check_all_items_in_toc = function() {

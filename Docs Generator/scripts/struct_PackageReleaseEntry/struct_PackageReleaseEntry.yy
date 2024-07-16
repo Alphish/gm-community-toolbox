@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"struct_PackageReleaseEntry",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"struct_PackageReleaseEntry",
+  "parent":{
+    "name":"Releases",
+    "path":"folders/Docs/Releases.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

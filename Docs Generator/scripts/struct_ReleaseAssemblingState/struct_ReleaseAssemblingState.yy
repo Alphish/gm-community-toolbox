@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"struct_ReleaseAssemblingState",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"struct_ReleaseAssemblingState",
+  "parent":{
+    "name":"States",
+    "path":"folders/States.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -5,8 +5,10 @@ state = new InitState();
 project_path = "";
 toolbox_project = undefined;
 item_stubs = undefined;
+docs_toc = undefined;
 toc_home = undefined;
 reference_items = undefined;
+release_notes = undefined;
 
 failures_log = [];
 warnings_log = [];
