@@ -9,6 +9,10 @@ Below is the releases history, with detailed information about specific function
 - **Math utilities: Fixed step approach**
     - [approach](Functions/approach.md) - Created a function to approach a given target value by a fixed step.
     - [approach_angle](Functions/approach_angle.md) - Created a function to approach a given angle by a fixed step.
+- **Math utilities: Linear interpolation**
+    - [lerp_angle](Functions/lerp_angle.md) - Created a function to approach a given angle by a given fraction.
+    - [unlerp](Functions/unlerp.md) - Created a function to retrieve the interpolation amount for the given value and range.
+    - [relerp](Functions/relerp.md) - Created a function to convert a value in one range to a corresponding value in another range.
 - **String utilities**
     - [string_to_char_array](Functions/string_to_char_array.md) - Created a function to convert a string to an array of its characters.
 - **Array utilities: Number array statistics**

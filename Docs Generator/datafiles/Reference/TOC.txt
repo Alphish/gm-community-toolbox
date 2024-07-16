@@ -5,6 +5,10 @@
     @region <Math:Fixed step approach> MathUtils_Approach
         @func <approach>
         @func <approach_angle>
+    @region <Math:Linear interpolation> MathUtils_Lerp
+        @func <lerp_angle>
+        @func <unlerp>
+        @func <relerp>
 @script <String> StringUtils
     @func <string_to_char_array>
 @script <Array> ArrayUtils

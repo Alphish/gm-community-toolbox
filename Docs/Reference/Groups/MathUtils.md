@@ -12,3 +12,7 @@
 - [Fixed step approach](/Docs/Reference/Groups/MathUtils_Approach.md)
     - [approach](/Docs/Reference/Functions/approach.md)
     - [approach_angle](/Docs/Reference/Functions/approach_angle.md)
+- [Linear interpolation](/Docs/Reference/Groups/MathUtils_Lerp.md)
+    - [lerp_angle](/Docs/Reference/Functions/lerp_angle.md)
+    - [unlerp](/Docs/Reference/Functions/unlerp.md)
+    - [relerp](/Docs/Reference/Functions/relerp.md)
