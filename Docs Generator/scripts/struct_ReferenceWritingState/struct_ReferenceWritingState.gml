@@ -1,5 +1,5 @@
 /// @func ReferenceWritingState()
-/// @desc A state for writing the documentation data on the drive.
+/// @desc A state for writing function reference files.
 function ReferenceWritingState() : AppState() constructor {
     generator = new ReferenceFilesGenerator(ctrl_Generator.reference_items);
     
@@ -8,7 +8,7 @@ function ReferenceWritingState() : AppState() constructor {
         if (!generator.is_completed)
             return self;
         
-        return new EndState("Reference files written successfully!", c_lime);
+        return new ReleaseNotesWritingState();
     }
     
     static get_message = function() {

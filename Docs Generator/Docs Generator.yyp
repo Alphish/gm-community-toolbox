@@ -103,6 +103,8 @@
     {"id":{"name":"struct_ReleaseAssemblingState","path":"scripts/struct_ReleaseAssemblingState/struct_ReleaseAssemblingState.yy",},},
     {"id":{"name":"struct_ReleaseNotes","path":"scripts/struct_ReleaseNotes/struct_ReleaseNotes.yy",},},
     {"id":{"name":"struct_ReleaseNotesAssembler","path":"scripts/struct_ReleaseNotesAssembler/struct_ReleaseNotesAssembler.yy",},},
+    {"id":{"name":"struct_ReleaseNotesWriter","path":"scripts/struct_ReleaseNotesWriter/struct_ReleaseNotesWriter.yy",},},
+    {"id":{"name":"struct_ReleaseNotesWritingState","path":"scripts/struct_ReleaseNotesWritingState/struct_ReleaseNotesWritingState.yy",},},
     {"id":{"name":"struct_ToolboxArgument","path":"scripts/struct_ToolboxArgument/struct_ToolboxArgument.yy",},},
     {"id":{"name":"struct_ToolboxFunction","path":"scripts/struct_ToolboxFunction/struct_ToolboxFunction.yy",},},
     {"id":{"name":"struct_ToolboxFunctionGmlSubparser","path":"scripts/struct_ToolboxFunctionGmlSubparser/struct_ToolboxFunctionGmlSubparser.yy",},},
