@@ -40,6 +40,7 @@
     {"$GMIncludedFile":"","%Name":"MathUtils_Lerp.stub.md","CopyToMask":-1,"filePath":"datafiles/Reference","name":"MathUtils_Lerp.stub.md","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"MathUtils.stub.md","CopyToMask":-1,"filePath":"datafiles/Reference","name":"MathUtils.stub.md","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"MiscUtils.stub.md","CopyToMask":-1,"filePath":"datafiles/Reference","name":"MiscUtils.stub.md","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
+    {"$GMIncludedFile":"","%Name":"ShaderUtils.stub.md","CopyToMask":-1,"filePath":"datafiles/Reference","name":"ShaderUtils.stub.md","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"StringUtils.stub.md","CopyToMask":-1,"filePath":"datafiles/Reference","name":"StringUtils.stub.md","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"TOC.txt","CopyToMask":-1,"filePath":"datafiles/Reference","name":"TOC.txt","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
   ],

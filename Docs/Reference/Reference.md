@@ -16,6 +16,7 @@ Below are listed various scripts and functions available in the Community Toolbo
     - [Retrieving random items](/Docs/Reference/Groups/ArrayUtils_Random.md)
 - [File utilities](/Docs/Reference/Groups/FileUtils.md)
 - [JSON utilities](/Docs/Reference/Groups/JsonUtils.md)
+- [Shader utilities](/Docs/Reference/Groups/ShaderUtils.md)
 - [Other utilities](/Docs/Reference/Groups/MiscUtils.md)
 
 ### Functions list
@@ -39,5 +40,6 @@ Below are listed various scripts and functions available in the Community Toolbo
 - [json_save](/Docs/Reference/Functions/json_save.md)
 - [lerp_angle](/Docs/Reference/Functions/lerp_angle.md)
 - [relerp](/Docs/Reference/Functions/relerp.md)
+- [shader_set_uniform_color](/Docs/Reference/Functions/shader_set_uniform_color.md)
 - [string_to_char_array](/Docs/Reference/Functions/string_to_char_array.md)
 - [unlerp](/Docs/Reference/Functions/unlerp.md)
