@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"struct_ReferenceFilesGenerator",
   "parent":{
-    "name":"Writing",
-    "path":"folders/Writing.yy",
+    "name":"Reference",
+    "path":"folders/Writing/Reference.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

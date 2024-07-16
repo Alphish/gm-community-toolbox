@@ -26,6 +26,7 @@
     {"$GMFolder":"","%Name":"UI Elements","folderPath":"folders/UI Elements.yy","name":"UI Elements","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Utils","folderPath":"folders/Utils.yy","name":"Utils","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Writing","folderPath":"folders/Writing.yy","name":"Writing","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Reference","folderPath":"folders/Writing/Reference.yy","name":"Reference","resourceType":"GMFolder","resourceVersion":"2.0",},
   ],
   "IncludedFiles":[
     {"$GMIncludedFile":"","%Name":"ArrayUtils_Math.stub.md","CopyToMask":-1,"filePath":"datafiles/Reference","name":"ArrayUtils_Math.stub.md","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
