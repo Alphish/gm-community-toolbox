@@ -6,7 +6,7 @@
 
 ### Defined functions
 
-- [Maths on number arrays](/Docs/Reference/Groups/ArrayUtils_Maths.md)
+- [Number array statistics](/Docs/Reference/Groups/ArrayUtils_Maths.md)
     - [array_max](/Docs/Reference/Functions/array_max.md)
     - [array_min](/Docs/Reference/Functions/array_min.md)
     - [array_median](/Docs/Reference/Functions/array_median.md)

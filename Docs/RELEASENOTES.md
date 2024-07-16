@@ -5,7 +5,7 @@ Below is the releases history, with detailed information about specific function
 
 - **String utilities**
     - [string_to_char_array](Functions/string_to_char_array.md) - Created a function to convert a string to an array of its characters.
-- **Array utilities: Maths on number arrays**
+- **Array utilities: Number array statistics**
     - [array_max](Functions/array_max.md) - Created a function to find the lowest value in a numbers array.
     - [array_min](Functions/array_min.md) - Created a function to find the greatest value in a numbers array.
     - [array_median](Functions/array_median.md) - Created a function to find the median value in a numbers array.

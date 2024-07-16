@@ -8,7 +8,7 @@ Below are listed various scripts and functions available in the Community Toolbo
 
 - [String utilities](/Docs/Reference/Groups/StringUtils.md)
 - [Array utilities](/Docs/Reference/Groups/ArrayUtils.md)
-    - [Maths on number arrays](/Docs/Reference/Groups/ArrayUtils_Maths.md)
+    - [Number array statistics](/Docs/Reference/Groups/ArrayUtils_Maths.md)
     - [Retrieving random items](/Docs/Reference/Groups/ArrayUtils_Random.md)
 - [File utilities](/Docs/Reference/Groups/FileUtils.md)
 - [JSON utilities](/Docs/Reference/Groups/JsonUtils.md)

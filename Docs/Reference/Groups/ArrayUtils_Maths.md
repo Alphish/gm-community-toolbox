@@ -1,6 +1,6 @@
 [Home](/README.md) > [Community Toolbox Reference](/Docs/Reference/Reference.md) > [Array utilities](/Docs/Reference/Groups/ArrayUtils.md)
 
-# Maths on number arrays
+# Number array statistics
 
 [Go to source](/Community%20Toolbox/scripts/utils_CommunityToolboxArray/utils_CommunityToolboxArray.gml#L1)
 

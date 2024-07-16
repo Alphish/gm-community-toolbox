@@ -1,4 +1,4 @@
-@region <Array:Array-wide maths> Maths on number arrays
+@region <Array:Array-wide maths> Number array statistics
 
 @func <array_max>
 
