@@ -3,6 +3,9 @@ Below is the releases history, with detailed information about specific function
 
 ### 23.4.0
 
+- **Math utilities: Euclidean division**
+    - [eucdiv](Functions/eucdiv.md) - Created a function to calculate the quotient of an Euclidean division.
+    - [eucmod](Functions/eucmod.md) - Created a function to calculate the remainder of an Euclidean division.
 - **String utilities**
     - [string_to_char_array](Functions/string_to_char_array.md) - Created a function to convert a string to an array of its characters.
 - **Array utilities: Number array statistics**

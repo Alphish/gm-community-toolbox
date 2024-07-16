@@ -6,6 +6,8 @@ Below are listed various scripts and functions available in the Community Toolbo
 
 ### Table of contents
 
+- [Math utilities](/Docs/Reference/Groups/MathUtils.md)
+    - [Euclidean division](/Docs/Reference/Groups/MethUtils_Euclidean.md)
 - [String utilities](/Docs/Reference/Groups/StringUtils.md)
 - [Array utilities](/Docs/Reference/Groups/ArrayUtils.md)
     - [Number array statistics](/Docs/Reference/Groups/ArrayUtils_Maths.md)
@@ -22,6 +24,8 @@ Below are listed various scripts and functions available in the Community Toolbo
 - [array_min](/Docs/Reference/Functions/array_min.md)
 - [array_pop_random](/Docs/Reference/Functions/array_pop_random.md)
 - [array_sum](/Docs/Reference/Functions/array_sum.md)
+- [eucdiv](/Docs/Reference/Functions/eucdiv.md)
+- [eucmod](/Docs/Reference/Functions/eucmod.md)
 - [file_read_all_text](/Docs/Reference/Functions/file_read_all_text.md)
 - [file_write_all_text](/Docs/Reference/Functions/file_write_all_text.md)
 - [json_load](/Docs/Reference/Functions/json_load.md)

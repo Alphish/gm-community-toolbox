@@ -35,6 +35,8 @@
     {"$GMIncludedFile":"","%Name":"FileUtils.stub.md","CopyToMask":-1,"filePath":"datafiles/Reference","name":"FileUtils.stub.md","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"Home.stub.md","CopyToMask":-1,"filePath":"datafiles/Reference","name":"Home.stub.md","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"JsonUtils.stub.md","CopyToMask":-1,"filePath":"datafiles/Reference","name":"JsonUtils.stub.md","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
+    {"$GMIncludedFile":"","%Name":"MathUtils_Euclidean.stub.md","CopyToMask":-1,"filePath":"datafiles/Reference","name":"MathUtils_Euclidean.stub.md","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
+    {"$GMIncludedFile":"","%Name":"MathUtils.stub.md","CopyToMask":-1,"filePath":"datafiles/Reference","name":"MathUtils.stub.md","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"StringUtils.stub.md","CopyToMask":-1,"filePath":"datafiles/Reference","name":"StringUtils.stub.md","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"TOC.txt","CopyToMask":-1,"filePath":"datafiles/Reference","name":"TOC.txt","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
   ],

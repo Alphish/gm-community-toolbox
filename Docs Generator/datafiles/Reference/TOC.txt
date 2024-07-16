@@ -1,3 +1,7 @@
+@script <Math> MathUtils
+    @region <Math:Euclidean division> MethUtils_Euclidean
+        @func <eucdiv>
+        @func <eucmod>
 @script <String> StringUtils
     @func <string_to_char_array>
 @script <Array> ArrayUtils
