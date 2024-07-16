@@ -104,3 +104,7 @@ string_to_char_array processing through 10000 characters: 3.464ms
 string_char_at processing through 100000 characters: 2158.981ms
 string_to_char_array processing through 100000 characters: 30.385ms
 ```
+
+### Update history
+
+- **23.4.0** - Created a function to convert a string to an array of its characters.

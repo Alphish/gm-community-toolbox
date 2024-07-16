@@ -31,3 +31,7 @@ var _levels = array_map(_heroes, function(_hero) { return _hero.level; });
 var _mean_level = array_mean(_levels);
 show_debug_message(_mean_level);
 ```
+
+### Update history
+
+- **23.4.0** - Created a function to calculate the average value of the numbers array values.

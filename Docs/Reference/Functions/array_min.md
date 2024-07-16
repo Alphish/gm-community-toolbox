@@ -31,3 +31,7 @@ var _levels = array_map(_heroes, function(_hero) { return _hero.level; });
 var _min_level = array_min(_levels);
 show_debug_message(_min_level);
 ```
+
+### Update history
+
+- **23.4.0** - Created a function to find the greatest value in a numbers array.

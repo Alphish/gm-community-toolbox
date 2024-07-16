@@ -27,3 +27,7 @@ var _known_nouns = ["Apple", "Banana", "Cherry", "Date", "Elderberry"];
 var _random_noun = array_get_random(_known_nouns);
 show_debug_message(_random_noun);
 ```
+
+### Update history
+
+- **23.4.0** - Created a function to get a random value from an array.

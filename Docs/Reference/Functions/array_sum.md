@@ -31,3 +31,7 @@ var _heroes_gold = array_map(_heroes, function(_hero) { return _hero.gold; });
 var _total_gold = array_sum(_heroes_gold);
 show_debug_message(_total_gold);
 ```
+
+### Update history
+
+- **23.4.0** - Created a function to calculate the sum of the numbers array values.

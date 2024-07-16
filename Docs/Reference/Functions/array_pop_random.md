@@ -44,3 +44,7 @@ show_debug_message(_hand);
 // the cards in hand are not in available cards anymore
 show_debug_message(_available_cards);
 ```
+
+### Update history
+
+- **23.4.0** - Created a function to get and remove a random value from an array.

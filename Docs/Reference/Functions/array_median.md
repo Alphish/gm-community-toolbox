@@ -31,3 +31,7 @@ var _levels = array_map(_heroes, function(_hero) { return _hero.level; });
 var _median_level = array_median(_levels);
 show_debug_message(_median_level);
 ```
+
+### Update history
+
+- **23.4.0** - Created a function to find the median value in a numbers array.
