@@ -1,7 +1,7 @@
 /// @func ReferenceHomeWriter()
 /// @desc A tool for writing the main reference page.
 function ReferenceHomeWriter() : ReferenceItemWriter() constructor {
-    static write_item = function(_home) {
+    static write_file = function(_home) {
         write_breadcrumbs(_home);
         
         write_title(_home.title);
@@ -14,9 +14,7 @@ function ReferenceHomeWriter() : ReferenceItemWriter() constructor {
     }
     
     static write_toc = function(_home) {
-        write_line();
-        write_line("### Table of contents");
-        
+        write_section_header("Table of contents");
         write_line();
         write_toc_subtree(_home);
     }
@@ -34,8 +32,7 @@ function ReferenceHomeWriter() : ReferenceItemWriter() constructor {
     }
     
     static write_functions_list = function(_home) {
-        write_line();
-        write_line("### Functions list");
+        write_section_header("Functions list");
         
         write_line();
         var _all_items = _home.list_subtree();

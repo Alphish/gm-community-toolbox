@@ -1,7 +1,7 @@
 /// @func ReferenceScriptWriter()
 /// @desc A tool for writing scripts reference pages.
 function ReferenceScriptWriter() : ReferenceItemWriter() constructor {
-    static write_item = function(_script) {
+    static write_file = function(_script) {
         write_breadcrumbs(_script);
         
         write_title(_script.title);
@@ -14,9 +14,7 @@ function ReferenceScriptWriter() : ReferenceItemWriter() constructor {
     }
     
     static write_functions = function(_script) {
-        write_line();
-        write_line("### Defined functions");
-        
+        write_section_header("Defined functions");
         write_line();
         write_functions_subtree(_script);
     }

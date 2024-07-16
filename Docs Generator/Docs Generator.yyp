@@ -48,6 +48,7 @@
     {"id":{"name":"ui_Button","path":"objects/ui_Button/ui_Button.yy",},},
     {"id":{"name":"rm_Generator","path":"rooms/rm_Generator/rm_Generator.yy",},},
     {"id":{"name":"struct_AppState","path":"scripts/struct_AppState/struct_AppState.yy",},},
+    {"id":{"name":"struct_DocsFileWriter","path":"scripts/struct_DocsFileWriter/struct_DocsFileWriter.yy",},},
     {"id":{"name":"struct_DocsItemsLoadingState","path":"scripts/struct_DocsItemsLoadingState/struct_DocsItemsLoadingState.yy",},},
     {"id":{"name":"struct_DocsTableOfContents","path":"scripts/struct_DocsTableOfContents/struct_DocsTableOfContents.yy",},},
     {"id":{"name":"struct_DocsTocLoadingState","path":"scripts/struct_DocsTocLoadingState/struct_DocsTocLoadingState.yy",},},

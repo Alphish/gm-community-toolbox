@@ -11,7 +11,7 @@ function ReferenceFilesGenerator(_items) : MultiStepProcess() constructor {
     static perform_step = function() {
         var _item = array_shift(remaining_items);
         var _writer = create_item_writer(_item);
-        _writer.write_item(_item);
+        _writer.write_file(_item);
         
         processed_count++;
         return processed_count >= total_count;

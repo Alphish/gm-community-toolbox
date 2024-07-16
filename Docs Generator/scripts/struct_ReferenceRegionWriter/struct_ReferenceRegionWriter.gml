@@ -1,7 +1,7 @@
 /// @func ReferenceRegionWriter()
 /// @desc A tool for writing regions reference pages.
 function ReferenceRegionWriter() : ReferenceItemWriter() constructor {
-    static write_item = function(_region) {
+    static write_file = function(_region) {
         write_breadcrumbs(_region);
         
         write_title(_region.title);
@@ -14,9 +14,7 @@ function ReferenceRegionWriter() : ReferenceItemWriter() constructor {
     }
     
     static write_functions = function(_region) {
-        write_line();
-        write_line("### Defined functions");
-        
+        write_section_header("Defined functions");
         write_line();
         write_functions_subtree(_region);
     }

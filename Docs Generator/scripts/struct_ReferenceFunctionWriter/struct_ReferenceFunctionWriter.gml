@@ -1,7 +1,7 @@
 /// @func ReferenceFunctionWriter()
 /// @desc A tool for writing functions reference pages.
 function ReferenceFunctionWriter() : ReferenceItemWriter() constructor {
-    static write_item = function(_function) {
+    static write_file = function(_function) {
         write_breadcrumbs(_function);
         
         write_title(_function.title);
@@ -75,9 +75,7 @@ function ReferenceFunctionWriter() : ReferenceItemWriter() constructor {
     // -------
     
     static write_update_history = function(_updates) {
-        write_line();
-        write_line($"### Update history");
-        
+        write_section_header("Update history");
         write_line();
         array_foreach(_updates, function(_update) {
             var _version = string_trim(_update.version);
