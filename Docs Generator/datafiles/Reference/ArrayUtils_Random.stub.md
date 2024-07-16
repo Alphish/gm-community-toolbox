@@ -13,6 +13,9 @@ var _random_noun = array_get_random(_known_nouns);
 show_debug_message(_random_noun);
 ```
 
+@update 23.4.0
+Created a function to get a random value from an array.
+
 @func <array_pop_random>
 
 @section Example
@@ -42,3 +45,6 @@ show_debug_message(_hand);
 // the cards in hand are not in available cards anymore
 show_debug_message(_available_cards);
 ```
+
+@update 23.4.0
+Created a function to get and remove a random value from an array.

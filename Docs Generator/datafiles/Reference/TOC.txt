@@ -10,3 +10,5 @@
     @region <Array:Random elements> ArrayUtils_Random
         @func <array_get_random>
         @func <array_pop_random>
+
+@release <23.4.0>
