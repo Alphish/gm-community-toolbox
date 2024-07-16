@@ -10,5 +10,8 @@
     @region <Array:Random elements> ArrayUtils_Random
         @func <array_get_random>
         @func <array_pop_random>
+@script <File> FileUtils
+    @func <file_read_all_text>
+    @func <file_write_all_text>
 
 @release <23.4.0>

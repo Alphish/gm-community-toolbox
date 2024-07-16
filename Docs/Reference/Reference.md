@@ -10,6 +10,7 @@ Below are listed various scripts and functions available in the Community Toolbo
 - [Array utilities](/Docs/Reference/Groups/ArrayUtils.md)
     - [Maths on number arrays](/Docs/Reference/Groups/ArrayUtils_Maths.md)
     - [Retrieving random items](/Docs/Reference/Groups/ArrayUtils_Random.md)
+- [File utilities](/Docs/Reference/Groups/FileUtils.md)
 
 ### Functions list
 
@@ -20,4 +21,6 @@ Below are listed various scripts and functions available in the Community Toolbo
 - [array_min](/Docs/Reference/Functions/array_min.md)
 - [array_pop_random](/Docs/Reference/Functions/array_pop_random.md)
 - [array_sum](/Docs/Reference/Functions/array_sum.md)
+- [file_read_all_text](/Docs/Reference/Functions/file_read_all_text.md)
+- [file_write_all_text](/Docs/Reference/Functions/file_write_all_text.md)
 - [string_to_char_array](/Docs/Reference/Functions/string_to_char_array.md)

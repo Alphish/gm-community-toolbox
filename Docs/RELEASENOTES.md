@@ -14,3 +14,6 @@ Below is the releases history, with detailed information about specific function
 - **Array utilities: Retrieving random items**
     - [array_get_random](Functions/array_get_random.md) - Created a function to get a random value from an array.
     - [array_pop_random](Functions/array_pop_random.md) - Created a function to get and remove a random value from an array.
+- **File utilities**
+    - [file_read_all_text](Functions/file_read_all_text.md) - Created a function to read file contents as a string.
+    - [file_write_all_text](Functions/file_write_all_text.md) - Created a function to replace file contents with a given string.
