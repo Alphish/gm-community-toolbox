@@ -50,7 +50,7 @@ function approach(_current, _target, _step = 1) {
 }
 
 /// @func approach_angle(current,target,[step])
-/// @desc Calculates the angle a step closer to the target angle. If the target is close enough, returns the target.
+/// @desc Calculates the angle (in degrees) a step closer to the target angle. If the target is close enough, returns the target.
 /// @arg {Real} current         The current angle.
 /// @arg {Real} target          The target angle.
 /// @arg {Real} [step]          The step to approach the target by (1 by default).
@@ -77,7 +77,7 @@ function approach_angle(_current, _target, _step = 1) {
 #region Linear interpolation
 
 /// @func lerp_angle(from,to,amount)
-/// @desc Calculates the angle interpolated between a starting and destination angle for the given fraction amount.
+/// @desc Calculates the angle (in degrees) interpolated between a starting and destination angle for the given fraction amount.
 /// @arg {Real} from            The starting angle.
 /// @arg {Real} to              The destination angle.
 /// @arg {Real} amount          The amount to interpolate (0 matches the starting angle, 1 matches the destination angle).

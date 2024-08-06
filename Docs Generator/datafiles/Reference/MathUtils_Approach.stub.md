@@ -8,7 +8,7 @@ The following code gradually moves an object towards its target coordinates by 5
 
 ```gml
 x = approach(/* current value */ x, /* target value */ target_x, /* step */ 5);
-x = approach(/* current value */ y, /* target value */ target_y, /* step */ 5);
+y = approach(/* current value */ y, /* target value */ target_y, /* step */ 5);
 ```
 
 @update 23.4.0
