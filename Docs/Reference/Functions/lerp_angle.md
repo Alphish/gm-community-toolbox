@@ -4,7 +4,7 @@
 
 [Go to source](/Community%20Toolbox/scripts/utils_CommunityToolboxMath/utils_CommunityToolboxMath.gml#L85)
 
-Calculates the angle interpolated between a starting and destination angle for the given fraction amount.
+Calculates the angle (in degrees) interpolated between a starting and destination angle for the given fraction amount.
 
 ###### Arguments
 

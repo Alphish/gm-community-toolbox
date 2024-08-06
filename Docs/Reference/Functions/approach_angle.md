@@ -4,7 +4,7 @@
 
 [Go to source](/Community%20Toolbox/scripts/utils_CommunityToolboxMath/utils_CommunityToolboxMath.gml#L57)
 
-Calculates the angle a step closer to the target angle. If the target is close enough, returns the target.
+Calculates the angle (in degrees) a step closer to the target angle. If the target is close enough, returns the target.
 
 ###### Arguments
 
