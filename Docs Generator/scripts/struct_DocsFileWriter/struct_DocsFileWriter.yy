@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"struct_DocsFileWriter",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"struct_DocsFileWriter",
+  "parent":{
+    "name":"Writing",
+    "path":"folders/Writing.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

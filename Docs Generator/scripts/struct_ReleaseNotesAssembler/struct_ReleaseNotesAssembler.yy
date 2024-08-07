@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"struct_ReleaseNotesAssembler",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"struct_ReleaseNotesAssembler",
+  "parent":{
+    "name":"Releases",
+    "path":"folders/Docs/Releases.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

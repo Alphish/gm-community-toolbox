@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"struct_ReferenceScript",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"struct_ReferenceScript",
+  "parent":{
+    "name":"Docs",
+    "path":"folders/Docs.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"struct_ReferenceItemStubsParser",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"struct_ReferenceItemStubsParser",
+  "parent":{
+    "name":"Explorer",
+    "path":"folders/Docs/Stubs/Explorer.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

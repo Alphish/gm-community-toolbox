@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"struct_ToolboxFunctionSubparser",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"struct_ToolboxFunctionSubparser",
+  "parent":{
+    "name":"Functions",
+    "path":"folders/Project/Explorer/Functions.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

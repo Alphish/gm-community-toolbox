@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"struct_GmlArgument",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"struct_GmlArgument",
+  "parent":{
+    "name":"Gml",
+    "path":"folders/Project/Explorer/Functions/Gml.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

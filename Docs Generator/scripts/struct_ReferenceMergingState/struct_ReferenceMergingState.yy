@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"struct_ReferenceMergingState",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"struct_ReferenceMergingState",
+  "parent":{
+    "name":"States",
+    "path":"folders/States.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

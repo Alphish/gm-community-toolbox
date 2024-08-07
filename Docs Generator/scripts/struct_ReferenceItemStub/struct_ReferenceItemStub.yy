@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"struct_ReferenceItemStub",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"struct_ReferenceItemStub",
+  "parent":{
+    "name":"Stubs",
+    "path":"folders/Docs/Stubs.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

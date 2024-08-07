@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"struct_ReferenceTocNode",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"struct_ReferenceTocNode",
+  "parent":{
+    "name":"Toc",
+    "path":"folders/Docs/Toc.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -1,0 +1,36 @@
+@script <Math> MathUtils
+    @region <Math:Euclidean division> MethUtils_Euclidean
+        @func <eucdiv>
+        @func <eucmod>
+    @region <Math:Fixed step approach> MathUtils_Approach
+        @func <approach>
+        @func <approach_angle>
+    @region <Math:Linear interpolation> MathUtils_Lerp
+        @func <lerp_angle>
+        @func <unlerp>
+        @func <relerp>
+@script <String> StringUtils
+    @func <string_to_char_array>
+@script <Array> ArrayUtils
+    @region <Array:Array-wide maths> ArrayUtils_Maths
+        @func <array_max>
+        @func <array_min>
+        @func <array_median>
+        @func <array_mean>
+        @func <array_sum>
+    @region <Array:Random elements> ArrayUtils_Random
+        @func <array_get_random>
+        @func <array_pop_random>
+@script <File> FileUtils
+    @func <file_read_all_text>
+    @func <file_write_all_text>
+@script <Json> JsonUtils
+    @func <json_load>
+    @func <json_save>
+@script <Shader> ShaderUtils
+    @func <shader_set_uniform_color>
+@script <Misc> MiscUtils
+    @func <is_nullish>
+    @func <is_defined>
+
+@release <23.4.0>

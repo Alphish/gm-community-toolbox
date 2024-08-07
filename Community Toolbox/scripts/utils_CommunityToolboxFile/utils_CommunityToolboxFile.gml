@@ -1,5 +1,5 @@
 /// @func file_read_all_text(filename)
-/// @desc Reads entire content of a given file as a string, or returns undefined if the file doesn't exist.
+/// @desc Reads entire content of a given file as a string, or returns undefined if the file couldn't be read.
 /// @arg {String} filename          The path of the file to read the content of.
 /// @returns {Undefined,String}
 function file_read_all_text(_filename) {

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"struct_ToolboxProjectExplorer",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"struct_ToolboxProjectExplorer",
+  "parent":{
+    "name":"Explorer",
+    "path":"folders/Project/Explorer.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

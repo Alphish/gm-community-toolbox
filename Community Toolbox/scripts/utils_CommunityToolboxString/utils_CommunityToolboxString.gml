@@ -1,5 +1,5 @@
-/// @func string_to_char_array(str,[ondeindexed])
-/// @desc Creates an array of characters from a given string. It may be 0-indexed or 1-indexed.
+/// @func string_to_char_array(str,[oneindexed])
+/// @desc Creates an array of characters from a given string. It may be 0-indexed or 1-indexed (it's 0-indexed by default).
 /// @arg {String} str           The string to convert to the array.
 /// @arg {Bool} [oneindexed]    Whether the first character should start at index of 0 (false) or index of 1 (true).
 /// @returns {Array<String>}

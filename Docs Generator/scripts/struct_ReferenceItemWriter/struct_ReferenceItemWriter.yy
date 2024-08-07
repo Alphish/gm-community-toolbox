@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"struct_ReferenceItemWriter",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"struct_ReferenceItemWriter",
+  "parent":{
+    "name":"Reference",
+    "path":"folders/Writing/Reference.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

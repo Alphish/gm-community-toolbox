@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"struct_ReferenceMerger",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"struct_ReferenceMerger",
+  "parent":{
+    "name":"Merging",
+    "path":"folders/Docs/Merging.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

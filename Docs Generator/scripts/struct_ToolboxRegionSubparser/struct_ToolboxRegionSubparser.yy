@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"struct_ToolboxRegionSubparser",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"struct_ToolboxRegionSubparser",
+  "parent":{
+    "name":"Explorer",
+    "path":"folders/Project/Explorer.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
