@@ -3,6 +3,8 @@ Below is the releases history, with detailed information about specific function
 
 ### 23.4.1
 
+**Download:** [YYMPS](/releases/download/v23.4.1/CommunityToolbox.23.4.1.yymps)
+
 - **Math utilities: Fixed step approach**
     - [approach_angle](Functions/approach_angle.md) - Tweaked the JSDocs.
 - **String utilities**
@@ -14,6 +16,8 @@ Below is the releases history, with detailed information about specific function
     - [json_save](Functions/json_save.md) - Tweaked the JSDocs.
 
 ### 23.4.0
+
+**Download:** [YYMPS](/releases/download/v23.4.0/CommunityToolbox.23.4.0.yymps)
 
 - **Math utilities: Euclidean division**
     - [eucdiv](Functions/eucdiv.md) - Created a function to calculate the quotient of an Euclidean division.
