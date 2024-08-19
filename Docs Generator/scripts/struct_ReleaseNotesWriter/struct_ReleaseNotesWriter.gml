@@ -29,7 +29,7 @@ function ReleaseNotesWriter() : DocsFileWriter() constructor {
     }
     
     static write_release_entry = function(_entry) {
-        var _function_link = link(_entry.func.title, _entry.func.get_page_path());
+        var _function_link = link(_entry.func.title, "Reference/" + _entry.func.get_page_path());
         var _description = string_trim(_entry.description);
         write_line($"    - {_function_link} - {_description}");
     }
