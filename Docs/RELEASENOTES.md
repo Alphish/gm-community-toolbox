@@ -1,3 +1,5 @@
+[Home](/README.md)
+
 # Release notes
 Below is the releases history, with detailed information about specific functions affected.
 

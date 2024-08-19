@@ -4,6 +4,9 @@ function ReleaseNotesWriter() : DocsFileWriter() constructor {
     repository_root = "https://github.com/Alphish/gm-community-toolbox";
     
     static write_file = function(_notes) {
+        write_line(link("Home", "/README.md"));
+        write_line();
+        
         write_line("# Release notes");
         write_line("Below is the releases history, with detailed information about specific functions affected.");
         
