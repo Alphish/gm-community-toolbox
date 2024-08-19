@@ -47,17 +47,30 @@ function ReferenceTocParser(_path, _items) : MultiStepProcess() constructor {
         if (!validate_line_data(_line_data))
             return;
         
-        if (_line_data.type != "release") {
-            var _node = prepare_new_node(_line_data);
-            pop_to_indent(_line_data.indent);
-            push_new_node(_node, _line_data.indent);
-        } else {
-            register_release(_line_data);
+        switch (_line_data.type) {
+            case "script":
+            case "region":
+            case "func":
+                var _node = prepare_new_node(_line_data);
+                pop_to_indent(_line_data.indent);
+                push_new_node(_node, _line_data.indent);
+                break;
+            
+            case "release":
+                register_release(_line_data);
+                break;
+            
+            case "download":
+                register_download(_line_data);
+                break;
+            
+            default:
+                throw $"No TOC line processing has been defined for '{_line_data.type}' node type.";
         }
     }
     
     static validate_line_data = function(_line_data) {
-        static allowed_types = ["script", "region", "func", "release"];
+        static allowed_types = ["script", "region", "func", "release", "download"];
         
         if (is_undefined(_line_data.keyname) || is_undefined(_line_data.type)) {
             fail($"Could not properly read the line '{_line_data.content}'.");
@@ -69,7 +82,7 @@ function ReferenceTocParser(_path, _items) : MultiStepProcess() constructor {
             return false;
         }
         
-        if (_line_data.type == "release") {
+        if (_line_data.type == "release" || _line_data.type == "download") {
             return true;
         }
         
@@ -123,7 +136,14 @@ function ReferenceTocParser(_path, _items) : MultiStepProcess() constructor {
     
     static register_release = function(_line_data) {
         var _keyname = _line_data.keyname;
-        array_push(releases, _keyname);
+        array_push(releases, { version: _keyname, downloads: [] });
+    }
+    
+    static register_download = function(_line_data) {
+        var _title = _line_data.keyname;
+        var _link = _line_data.filename;
+        var _release = array_last(releases);
+        array_push(_release.downloads, { title: _title, link: _link });
     }
     
     static check_all_items_in_toc = function() {

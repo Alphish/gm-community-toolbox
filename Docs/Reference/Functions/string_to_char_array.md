@@ -107,4 +107,5 @@ string_to_char_array processing through 100000 characters: 30.385ms
 
 ### Update history
 
+- **23.4.1** - Tweaked the JSDocs.
 - **23.4.0** - Created a function to convert a string to an array of its characters.

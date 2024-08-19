@@ -35,4 +35,5 @@ function progress_load() {
 
 ### Update history
 
+- **23.4.1** - Tweaked the JSDocs.
 - **23.4.0** - Created a function to read file contents as a string.

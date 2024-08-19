@@ -33,4 +33,7 @@
     @func <is_nullish>
     @func <is_defined>
 
+@release <23.4.1>
+    @download <YYMPS> /releases/download/v23.4.1/CommunityToolbox.23.4.1.yymps
 @release <23.4.0>
+    @download <YYMPS> /releases/download/v23.4.0/CommunityToolbox.23.4.0.yymps

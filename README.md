@@ -1,11 +1,11 @@
 # Important links
 
-- [Community Toolbox 23.4.0 YYMPS package](https://github.com/Alphish/gm-community-toolbox/blob/main/Releases/CommunityToolbox.23.4.0.yymps?raw=1) - the most recent release
-- [Release notes](https://github.com/Alphish/gm-community-toolbox/blob/main/Docs/RELEASENOTES.md)
-- [Functions reference](https://github.com/Alphish/gm-community-toolbox/blob/main/Docs/Reference/Reference.md)
+- [Community Toolbox 23.4.1 YYMPS package](https://github.com/Alphish/gm-community-toolbox/releases/download/v23.4.1/CommunityToolbox.23.4.1.yymps) - the most recent release
+- [Release notes](/Docs/RELEASENOTES.md)
+- [Functions reference](/Docs/Reference/Reference.md)
 - [Issues Page](https://github.com/Alphish/gm-community-toolbox/issues) - for requesting Community Toolbox functionality and reporting bugs
-- [Contribution Guide](https://github.com/Alphish/gm-community-toolbox/blob/main/CONTRIBUTING.md)
-- [Credits](https://github.com/Alphish/gm-community-toolbox/blob/main/CREDITS.md) - listing all major contributions to the Community Toolbox
+- [Contribution Guide](/CONTRIBUTING.md)
+- [Credits](/CREDITS.md) - listing all major contributions to the Community Toolbox
 - [GameMaker Community forum thread](https://forum.gamemaker.io/index.php?threads/gamemaker-community-toolbox-project.103966/)
 
 # Installation

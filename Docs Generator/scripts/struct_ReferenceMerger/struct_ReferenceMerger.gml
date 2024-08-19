@@ -2,10 +2,12 @@
 /// @desc A tool for merging documentation reference item stubs and the toolbox project data.
 /// @arg {Struct.ReferenceTocNode} tochome      The table of contents root node.
 /// @arg {Struct.ToolboxProject} project        The toolbox project data.
-function ReferenceMerger(_tochome, _project) : MultiStepProcess() constructor {
-    toc_home = _tochome;
+function ReferenceMerger(_toc, _project) : MultiStepProcess() constructor {
+    toc_home = _toc.toc_home;
     toc_entries = toc_home.list_descendants();
     toc_entries_by_name = array_key_by(toc_entries, get_keyname);
+    
+    release_versions = array_map(_toc.releases, function(_release) { return _release.version });
     
     project = _project;
     project_scripts = project.scripts;
@@ -127,6 +129,9 @@ function ReferenceMerger(_tochome, _project) : MultiStepProcess() constructor {
             return undefined;
         
         var _arguments = merge_function_arguments(_toc_entry.stub.arguments, _function);
+        
+        check_releases_order(_toc_entry.stub);
+        
         return new ReferenceFunction(_toc_entry, _function, _arguments, _parent_item);
     }
     
@@ -151,6 +156,20 @@ function ReferenceMerger(_tochome, _project) : MultiStepProcess() constructor {
             array_push(_result, _item_argument);
         }
         return _result;
+    }
+    
+    static check_releases_order = function(_function) {
+        var _updates = _function.updates;
+        for (var i = 1, _count = array_length(_updates); i < _count; i++) {
+            var _previous_version = _updates[i - 1].version;
+            var _previous_index = array_get_index(release_versions, _previous_version);
+            var _next_version = _updates[i].version;
+            var _next_index = array_get_index(release_versions, _next_version);
+            
+            if (_previous_index >= _next_index) {
+                warn($"Function '{_function.keyname}' has the {_previous_version} version listed before the {_next_version} version.");
+            }
+        }
     }
     
     // -----------------

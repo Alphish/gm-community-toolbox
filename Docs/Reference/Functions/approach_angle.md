@@ -28,4 +28,5 @@ image_angle = approach_angle(image_angle, _target_angle, 3);
 
 ### Update history
 
+- **23.4.1** - Tweaked the JSDocs.
 - **23.4.0** - Created a function to approach a given angle by a fixed step.
