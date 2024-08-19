@@ -3,10 +3,15 @@
 /// @arg {Struct.DocsTableOfContents} docstoc           The documentation table of contents listing the releases.
 /// @arg {Array<Struct.ReferenceItem>} reference        Reference items to get the updates information from.
 function ReleaseNotesAssembler(_docstoc, _reference) : MultiStepProcess() constructor {
-    release_versions = _docstoc.releases;
+    releases = _docstoc.releases;
     releases_by_version = {};
-    array_foreach(release_versions, function(_version) {
-        releases_by_version[$ _version] = { version: _version, groups: [], groups_by_name: {} };
+    array_foreach(releases, function(_release) {
+        releases_by_version[$ _release.version] = {
+            version: _release.version,
+            downloads: _release.downloads,
+            groups: [],
+            groups_by_name: {}
+        };
     });
     
     result = undefined;
@@ -61,14 +66,15 @@ function ReleaseNotesAssembler(_docstoc, _reference) : MultiStepProcess() constr
     // ----------------------
     
     static create_release_notes = function() {
-        var _releases = array_map(release_versions, method(self, create_package_release));
+        var _releases = array_map(releases, method(self, create_package_release));
         return new ReleaseNotes(_releases);
     }
     
-    static create_package_release = function(_version) {
+    static create_package_release = function(_release) {
+        var _version = _release.version;
         var _release_data = releases_by_version[$ _version];
         var _groups = array_map(_release_data.groups, method(self, create_release_group));
-        return new PackageRelease(_version, _groups);
+        return new PackageRelease(_version, _release.downloads, _groups);
     }
     
     static create_release_group = function(_group) {

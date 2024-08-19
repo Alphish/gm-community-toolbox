@@ -13,6 +13,11 @@ function ReleaseNotesWriter() : DocsFileWriter() constructor {
     static write_release = function(_release) {
         write_section_header(_release.version);
         write_line();
+
+        var _download_links = array_map(_release.downloads, function(_download) { return link(_download.title, _download.link); });
+        write_line($"**Download:** " + string_join_ext(" | ", _download_links));
+        write_line();
+
         array_foreach(_release.groups, method(self, write_release_group));
     }
     

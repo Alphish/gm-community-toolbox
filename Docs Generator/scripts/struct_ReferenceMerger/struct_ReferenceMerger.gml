@@ -7,7 +7,7 @@ function ReferenceMerger(_toc, _project) : MultiStepProcess() constructor {
     toc_entries = toc_home.list_descendants();
     toc_entries_by_name = array_key_by(toc_entries, get_keyname);
     
-    releases = _toc.releases;
+    release_versions = array_map(_toc.releases, function(_release) { return _release.version });
     
     project = _project;
     project_scripts = project.scripts;
@@ -162,9 +162,9 @@ function ReferenceMerger(_toc, _project) : MultiStepProcess() constructor {
         var _updates = _function.updates;
         for (var i = 1, _count = array_length(_updates); i < _count; i++) {
             var _previous_version = _updates[i - 1].version;
-            var _previous_index = array_get_index(releases, _previous_version);
+            var _previous_index = array_get_index(release_versions, _previous_version);
             var _next_version = _updates[i].version;
-            var _next_index = array_get_index(releases, _next_version);
+            var _next_index = array_get_index(release_versions, _next_version);
             
             if (_previous_index >= _next_index) {
                 warn($"Function '{_function.keyname}' has the {_previous_version} version listed before the {_next_version} version.");
