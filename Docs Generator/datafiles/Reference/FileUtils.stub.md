@@ -20,6 +20,9 @@ function progress_load() {
 }
 ```
 
+@update 23.4.1
+Tweaked the JSDocs.
+
 @update 23.4.0
 Created a function to read file contents as a string.
 

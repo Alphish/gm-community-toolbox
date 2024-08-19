@@ -28,6 +28,9 @@ function load_location() {
 }
 ```
 
+@update 23.4.1
+Tweaked the JSDocs.
+
 @update 23.4.0
 Created a function to read a JSON value from a file.
 
@@ -43,6 +46,9 @@ function save_location() {
     json_save("save.dat", _save_data);
 }
 ```
+
+@update 23.4.1
+Tweaked the JSDocs.
 
 @update 23.4.0
 Created a function to write a given value to a JSON file.

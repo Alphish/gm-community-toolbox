@@ -30,4 +30,5 @@ function save_location() {
 
 ### Update history
 
+- **23.4.1** - Tweaked the JSDocs.
 - **23.4.0** - Created a function to write a given value to a JSON file.

@@ -1,6 +1,18 @@
 # Release notes
 Below is the releases history, with detailed information about specific functions affected.
 
+### 23.4.1
+
+- **Math utilities: Fixed step approach**
+    - [approach_angle](Functions/approach_angle.md) - Tweaked the JSDocs.
+- **String utilities**
+    - [string_to_char_array](Functions/string_to_char_array.md) - Tweaked the JSDocs.
+- **File utilities**
+    - [file_read_all_text](Functions/file_read_all_text.md) - Tweaked the JSDocs.
+- **JSON utilities**
+    - [json_load](Functions/json_load.md) - Tweaked the JSDocs.
+    - [json_save](Functions/json_save.md) - Tweaked the JSDocs.
+
 ### 23.4.0
 
 - **Math utilities: Euclidean division**

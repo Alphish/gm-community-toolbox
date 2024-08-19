@@ -25,5 +25,8 @@ var _target_angle = point_direction(x, y, obj_Player.x, obj_Player.y);
 image_angle = approach_angle(image_angle, _target_angle, 3);
 ```
 
+@update 23.4.1
+Tweaked the JSDocs.
+
 @update 23.4.0
 Created a function to approach a given angle by a fixed step.

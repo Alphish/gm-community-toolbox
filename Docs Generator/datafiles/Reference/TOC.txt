@@ -33,4 +33,5 @@
     @func <is_nullish>
     @func <is_defined>
 
+@release <23.4.1>
 @release <23.4.0>
