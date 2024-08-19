@@ -1,6 +1,8 @@
 /// @func ReleaseNotesWriter()
 /// @desc A tool for writing the release notes file.
 function ReleaseNotesWriter() : DocsFileWriter() constructor {
+    repository_root = "https://github.com/Alphish/gm-community-toolbox";
+    
     static write_file = function(_notes) {
         write_line("# Release notes");
         write_line("Below is the releases history, with detailed information about specific functions affected.");
@@ -14,7 +16,7 @@ function ReleaseNotesWriter() : DocsFileWriter() constructor {
         write_section_header(_release.version);
         write_line();
 
-        var _download_links = array_map(_release.downloads, function(_download) { return link(_download.title, _download.link); });
+        var _download_links = array_map(_release.downloads, function(_download) { return link(_download.title, repository_root + _download.link); });
         write_line($"**Download:** " + string_join_ext(" | ", _download_links));
         write_line();
 
