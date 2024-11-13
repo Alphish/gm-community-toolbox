@@ -52,7 +52,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2023.4.0.84",
+    "IDEVersion":"2024.6.2.162",
   },
   "name":"Community Toolbox",
   "resources":[
@@ -141,6 +141,7 @@
     {"id":{"name":"tests_StringToCharArrayTests","path":"scripts/tests_StringToCharArrayTests/tests_StringToCharArrayTests.yy",},},
     {"id":{"name":"tests_UnlerpTests","path":"scripts/tests_UnlerpTests/tests_UnlerpTests.yy",},},
     {"id":{"name":"utils_CommunityToolboxArray","path":"scripts/utils_CommunityToolboxArray/utils_CommunityToolboxArray.yy",},},
+    {"id":{"name":"utils_CommunityToolboxDsList","path":"scripts/utils_CommunityToolboxDsList/utils_CommunityToolboxDsList.yy",},},
     {"id":{"name":"utils_CommunityToolboxFile","path":"scripts/utils_CommunityToolboxFile/utils_CommunityToolboxFile.yy",},},
     {"id":{"name":"utils_CommunityToolboxJson","path":"scripts/utils_CommunityToolboxJson/utils_CommunityToolboxJson.yy",},},
     {"id":{"name":"utils_CommunityToolboxMath","path":"scripts/utils_CommunityToolboxMath/utils_CommunityToolboxMath.yy",},},
