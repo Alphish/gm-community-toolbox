@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "struct_VerrificFailure",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "Messages",
-    "path": "folders/Tests/Verrific/Testing/Messages.yy",
+  "$GMScript":"v1",
+  "%Name":"struct_VerrificFailure",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"struct_VerrificFailure",
+  "parent":{
+    "name":"Messages",
+    "path":"folders/Tests/Verrific/Testing/Messages.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

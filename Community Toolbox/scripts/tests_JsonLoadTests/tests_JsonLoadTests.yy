@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "tests_JsonLoadTests",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "Json",
-    "path": "folders/Tests/Json.yy",
+  "$GMScript":"v1",
+  "%Name":"tests_JsonLoadTests",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"tests_JsonLoadTests",
+  "parent":{
+    "name":"Json",
+    "path":"folders/Tests/Json.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

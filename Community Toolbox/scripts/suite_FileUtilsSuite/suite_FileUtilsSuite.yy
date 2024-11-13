@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "suite_FileUtilsSuite",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "File",
-    "path": "folders/Tests/File.yy",
+  "$GMScript":"v1",
+  "%Name":"suite_FileUtilsSuite",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"suite_FileUtilsSuite",
+  "parent":{
+    "name":"File",
+    "path":"folders/Tests/File.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

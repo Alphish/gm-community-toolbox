@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "tests_FileReadAllTextTests",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "File",
-    "path": "folders/Tests/File.yy",
+  "$GMScript":"v1",
+  "%Name":"tests_FileReadAllTextTests",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"tests_FileReadAllTextTests",
+  "parent":{
+    "name":"File",
+    "path":"folders/Tests/File.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "struct_VerrificTestNode",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "Runtime",
-    "path": "folders/Tests/Verrific/Runtime.yy",
+  "$GMScript":"v1",
+  "%Name":"struct_VerrificTestNode",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"struct_VerrificTestNode",
+  "parent":{
+    "name":"Runtime",
+    "path":"folders/Tests/Verrific/Runtime.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

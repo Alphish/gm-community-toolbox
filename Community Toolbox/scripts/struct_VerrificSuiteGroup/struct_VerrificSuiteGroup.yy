@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "struct_VerrificSuiteGroup",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "Testing",
-    "path": "folders/Tests/Verrific/Testing.yy",
+  "$GMScript":"v1",
+  "%Name":"struct_VerrificSuiteGroup",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"struct_VerrificSuiteGroup",
+  "parent":{
+    "name":"Testing",
+    "path":"folders/Tests/Verrific/Testing.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

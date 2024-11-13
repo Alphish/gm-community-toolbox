@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "struct_VerrificAsserter",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "Assertions",
-    "path": "folders/Tests/Verrific/Testing/Assertions.yy",
+  "$GMScript":"v1",
+  "%Name":"struct_VerrificAsserter",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"struct_VerrificAsserter",
+  "parent":{
+    "name":"Assertions",
+    "path":"folders/Tests/Verrific/Testing/Assertions.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

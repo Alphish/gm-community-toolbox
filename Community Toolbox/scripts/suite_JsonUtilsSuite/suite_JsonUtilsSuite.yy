@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "suite_JsonUtilsSuite",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "Json",
-    "path": "folders/Tests/Json.yy",
+  "$GMScript":"v1",
+  "%Name":"suite_JsonUtilsSuite",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"suite_JsonUtilsSuite",
+  "parent":{
+    "name":"Json",
+    "path":"folders/Tests/Json.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }
