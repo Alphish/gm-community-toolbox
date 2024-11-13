@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "tests_ApproachTests",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "Math",
-    "path": "folders/Tests/Math.yy",
+  "$GMScript":"v1",
+  "%Name":"tests_ApproachTests",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"tests_ApproachTests",
+  "parent":{
+    "name":"Math",
+    "path":"folders/Tests/Math.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

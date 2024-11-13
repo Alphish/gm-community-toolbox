@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "utils_CommunityToolboxMisc",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "Community Toolbox",
-    "path": "folders/_Packages/Alphish/Community Toolbox.yy",
+  "$GMScript":"v1",
+  "%Name":"utils_CommunityToolboxMisc",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"utils_CommunityToolboxMisc",
+  "parent":{
+    "name":"Community Toolbox",
+    "path":"folders/_Packages/Alphish/Community Toolbox.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

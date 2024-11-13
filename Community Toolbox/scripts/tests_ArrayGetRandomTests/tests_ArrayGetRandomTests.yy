@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "tests_ArrayGetRandomTests",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "Array",
-    "path": "folders/Tests/Array.yy",
+  "$GMScript":"v1",
+  "%Name":"tests_ArrayGetRandomTests",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"tests_ArrayGetRandomTests",
+  "parent":{
+    "name":"Array",
+    "path":"folders/Tests/Array.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

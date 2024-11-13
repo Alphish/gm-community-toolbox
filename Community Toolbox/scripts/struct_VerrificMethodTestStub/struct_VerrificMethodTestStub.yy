@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "struct_VerrificMethodTestStub",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "Method-based",
-    "path": "folders/Tests/Verrific/Testing/Method-based.yy",
+  "$GMScript":"v1",
+  "%Name":"struct_VerrificMethodTestStub",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"struct_VerrificMethodTestStub",
+  "parent":{
+    "name":"Method-based",
+    "path":"folders/Tests/Verrific/Testing/Method-based.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "tests_IsDefinedTests",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "Misc",
-    "path": "folders/Tests/Misc.yy",
+  "$GMScript":"v1",
+  "%Name":"tests_IsDefinedTests",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"tests_IsDefinedTests",
+  "parent":{
+    "name":"Misc",
+    "path":"folders/Tests/Misc.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

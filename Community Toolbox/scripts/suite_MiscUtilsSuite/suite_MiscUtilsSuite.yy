@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "suite_MiscUtilsSuite",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "Misc",
-    "path": "folders/Tests/Misc.yy",
+  "$GMScript":"v1",
+  "%Name":"suite_MiscUtilsSuite",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"suite_MiscUtilsSuite",
+  "parent":{
+    "name":"Misc",
+    "path":"folders/Tests/Misc.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

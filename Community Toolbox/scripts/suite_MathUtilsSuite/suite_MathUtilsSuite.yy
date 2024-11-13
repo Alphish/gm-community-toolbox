@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "suite_MathUtilsSuite",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "Math",
-    "path": "folders/Tests/Math.yy",
+  "$GMScript":"v1",
+  "%Name":"suite_MathUtilsSuite",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"suite_MathUtilsSuite",
+  "parent":{
+    "name":"Math",
+    "path":"folders/Tests/Math.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

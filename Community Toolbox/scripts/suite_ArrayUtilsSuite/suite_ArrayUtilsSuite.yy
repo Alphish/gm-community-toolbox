@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "suite_ArrayUtilsSuite",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "Array",
-    "path": "folders/Tests/Array.yy",
+  "$GMScript":"v1",
+  "%Name":"suite_ArrayUtilsSuite",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"suite_ArrayUtilsSuite",
+  "parent":{
+    "name":"Array",
+    "path":"folders/Tests/Array.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }
