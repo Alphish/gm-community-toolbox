@@ -21,6 +21,11 @@
     @region <Array:Random elements> ArrayUtils_Random
         @func <array_get_random>
         @func <array_pop_random>
+@script <DsList>
+    @func <ds_list_create_from_array>
+    @func <ds_list_add_from_array>
+    @func <ds_list_to_array>
+    @func <ds_list_add_to_array>
 @script <File> FileUtils
     @func <file_read_all_text>
     @func <file_write_all_text>
@@ -33,6 +38,8 @@
     @func <is_nullish>
     @func <is_defined>
 
+@release <24.6.0>
+    @download <YYMPS> /releases/download/v24.6.0/CommunityToolbox.24.6.0.yymps
 @release <23.4.1>
     @download <YYMPS> /releases/download/v23.4.1/CommunityToolbox.23.4.1.yymps
 @release <23.4.0>
