@@ -49,7 +49,7 @@ function JsdocAnnotationBuilder(_parser) constructor {
         
         // using preferred forms of the basic tags
         if (struct_exists(preferred_tags, _tag)) {
-            var _preferred = preferred_annotations[$ _tag];
+            var _preferred = preferred_tags[$ _tag];
             script_parser.warn($"The JSDoc tag '{_preferred}' is preferred to '{_tag}'.");
             _tag = _preferred;
         }
