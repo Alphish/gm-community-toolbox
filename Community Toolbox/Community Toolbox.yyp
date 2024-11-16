@@ -58,6 +58,7 @@
   "name":"Community Toolbox",
   "resources":[
     {"id":{"name":"fnt_DemoInfo","path":"fonts/fnt_DemoInfo/fnt_DemoInfo.yy",},},
+    {"id":{"name":"fnt_TextInput","path":"fonts/fnt_TextInput/fnt_TextInput.yy",},},
     {"id":{"name":"fnt_VerrificLogLine","path":"fonts/fnt_VerrificLogLine/fnt_VerrificLogLine.yy",},},
     {"id":{"name":"ctrl_ArrayUtilities","path":"objects/ctrl_ArrayUtilities/ctrl_ArrayUtilities.yy",},},
     {"id":{"name":"ctrl_EuclideanDivision","path":"objects/ctrl_EuclideanDivision/ctrl_EuclideanDivision.yy",},},
@@ -67,6 +68,7 @@
     {"id":{"name":"ctrl_ReachingTargets","path":"objects/ctrl_ReachingTargets/ctrl_ReachingTargets.yy",},},
     {"id":{"name":"ctrl_ShaderUtilities","path":"objects/ctrl_ShaderUtilities/ctrl_ShaderUtilities.yy",},},
     {"id":{"name":"ctrl_StringUtilities","path":"objects/ctrl_StringUtilities/ctrl_StringUtilities.yy",},},
+    {"id":{"name":"ctrl_UiManager","path":"objects/ctrl_UiManager/ctrl_UiManager.yy",},},
     {"id":{"name":"ctrl_UnlerpRelerp","path":"objects/ctrl_UnlerpRelerp/ctrl_UnlerpRelerp.yy",},},
     {"id":{"name":"ctrl_VerrificLog","path":"objects/ctrl_VerrificLog/ctrl_VerrificLog.yy",},},
     {"id":{"name":"obj_ReachingTargetAlpha","path":"objects/obj_ReachingTargetAlpha/obj_ReachingTargetAlpha.yy",},},
@@ -79,6 +81,7 @@
     {"id":{"name":"ui_ReachingTargetsSlider","path":"objects/ui_ReachingTargetsSlider/ui_ReachingTargetsSlider.yy",},},
     {"id":{"name":"ui_Slider","path":"objects/ui_Slider/ui_Slider.yy",},},
     {"id":{"name":"ui_TextArea","path":"objects/ui_TextArea/ui_TextArea.yy",},},
+    {"id":{"name":"ui_TextBox","path":"objects/ui_TextBox/ui_TextBox.yy",},},
     {"id":{"name":"ui_TextDisplay","path":"objects/ui_TextDisplay/ui_TextDisplay.yy",},},
     {"id":{"name":"ui_UnlerpRelerpSlider","path":"objects/ui_UnlerpRelerpSlider/ui_UnlerpRelerpSlider.yy",},},
     {"id":{"name":"ui_VerrificLogView","path":"objects/ui_VerrificLogView/ui_VerrificLogView.yy",},},
