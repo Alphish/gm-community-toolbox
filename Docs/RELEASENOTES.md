@@ -12,6 +12,9 @@ Below is the releases history, with detailed information about specific function
     - [ds_list_add_from_array](Reference/Functions/ds_list_add_from_array.md) - Created a function to add items to a DS list from an array.
     - [ds_list_to_array](Reference/Functions/ds_list_to_array.md) - Created a function to create an array from a DS list.
     - [ds_list_add_to_array](Reference/Functions/ds_list_add_to_array.md) - Created a function to add items to an array from a DS list.
+- **JSON utilities**
+    - [json_load](Reference/Functions/json_load.md) - Added the `filter` and `raw` parameters to additionally process parsed values.
+    - [json_save](Reference/Functions/json_save.md) - Added the `filter` parameter to preprocess values before stringifying.
 
 ### 23.4.1
 
