@@ -52,4 +52,39 @@ function JsonLoadTests(_run, _method) : VerrificMethodTest(_run, _method) constr
         assert_equal(_expected.bar, _actual.bar, "json_load failed to handle JSON file with struct!");
         assert_equal(_expected.baz, _actual.baz, "json_load failed to handle JSON file with struct!");
     }
+
+    static should_read_json_struct_with_filter = function() {
+        var _expected = {
+            foo: true,
+            bar: 1166,
+            baz: "qux",
+        };
+		
+		var _filter = function(_key, _value) {
+			if (typeof(_value) == "number") {
+				return _value * 2;
+			} else {
+				return _value;
+			}
+		}
+		
+        var _actual = json_load("testing/teststruct.json", _filter, false);
+        assert_equal(_expected.foo, _actual.foo, "json_load failed to apply a filter properly!");
+        assert_equal(_expected.bar, _actual.bar, "json_load failed to apply a filter properly!");
+        assert_equal(_expected.baz, _actual.baz, "json_load failed to apply a filter properly!");
+		
+		show_debug_message(json_stringify({ "bignumber": 123456789123456789 }));
+    }
+	
+	static should_read_json_int64_value_when_not_raw = function() {
+		var _expected = 123456789123456789;
+        var _actual = json_load("testing/testint64.json", undefined, false);
+		assert_equal(_actual.bignumber, _expected, "json_load failed to parse int64 string into int64 when not raw!");
+	}
+	
+	static should_read_json_int64_string_when_raw = function() {
+		var _expected = "@i64@1b69b4bacd05f15$i64$";
+        var _actual = json_load("testing/testint64.json", undefined, true);
+		assert_equal(_actual.bignumber, _expected, "json_load failed to parse int64 string into int64 when not raw!");
+	}
 }
