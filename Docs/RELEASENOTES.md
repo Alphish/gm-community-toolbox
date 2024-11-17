@@ -3,6 +3,16 @@
 # Release notes
 Below is the releases history, with detailed information about specific functions affected.
 
+### 24.6.0
+
+**Download:** [YYMPS](https://github.com/Alphish/gm-community-toolbox/releases/download/v24.6.0/CommunityToolbox.24.6.0.yymps)
+
+- **DS List utilities**
+    - [ds_list_create_from_array](Reference/Functions/ds_list_create_from_array.md) - Created a function to create a DS list from an array.
+    - [ds_list_add_from_array](Reference/Functions/ds_list_add_from_array.md) - Created a function to add items to a DS list from an array.
+    - [ds_list_to_array](Reference/Functions/ds_list_to_array.md) - Created a function to create an array from a DS list.
+    - [ds_list_add_to_array](Reference/Functions/ds_list_add_to_array.md) - Created a function to add items to an array from a DS list.
+
 ### 23.4.1
 
 **Download:** [YYMPS](https://github.com/Alphish/gm-community-toolbox/releases/download/v23.4.1/CommunityToolbox.23.4.1.yymps)
