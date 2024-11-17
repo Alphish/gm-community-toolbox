@@ -18,8 +18,8 @@ load_file_uppercase = function() {
         return;
     
     var _data = json_load(_filename, function(_key, _value) {
-		return is_string(_value) ? string_upper(_value) : _value;
-	});
+        return is_string(_value) ? string_upper(_value) : _value;
+    });
     if (!is_undefined(_data))
         ui_JsonFileText.text = json_stringify(_data, true);
 }
@@ -70,6 +70,6 @@ save_file_uppercase = function() {
     }
     
     json_save(_filename, _data, true, function(_key, _value) {
-		return is_string(_value) ? string_upper(_value) : _value;
-	});
+        return is_string(_value) ? string_upper(_value) : _value;
+    });
 }
