@@ -28,6 +28,9 @@ function load_location() {
 }
 ```
 
+@update 24.6.0
+Added the `filter` and `raw` parameters to additionally process parsed values.
+
 @update 23.4.1
 Tweaked the JSDocs.
 
@@ -42,10 +45,13 @@ The following code shows a function to save game data into a JSON file.
 
 ```gml
 function save_location() {
-    var _save_data = { target_room: room, x: obj_Player.x, y: obj_Player.y };
+    var _save_data = { target_room: room_get_name(room), x: obj_Player.x, y: obj_Player.y };
     json_save("save.dat", _save_data);
 }
 ```
+
+@update 24.6.0
+Added the `filter` parameter to preprocess values before stringifying.
 
 @update 23.4.1
 Tweaked the JSDocs.

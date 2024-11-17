@@ -2,7 +2,7 @@
 
 # ds_list_add_to_array
 
-[Go to source](/Community%20Toolbox/scripts/utils_CommunityToolboxDsList/utils_CommunityToolboxDsList.gml#L39)
+[Go to source](/Community%20Toolbox/scripts/utils_CommunityToolboxDsList/utils_CommunityToolboxDsList.gml#L43)
 
 Adds items from the given given DS list to the given array.
 

@@ -46,6 +46,7 @@
     {"$GMIncludedFile":"","%Name":"testarray.json","CopyToMask":-1,"filePath":"datafiles/testing","name":"testarray.json","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"testblank.txt","CopyToMask":-1,"filePath":"datafiles/testing","name":"testblank.txt","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"testbool.json","CopyToMask":-1,"filePath":"datafiles/testing","name":"testbool.json","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
+    {"$GMIncludedFile":"","%Name":"testint64.json","CopyToMask":-1,"filePath":"datafiles/testing","name":"testint64.json","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"testnumber.json","CopyToMask":-1,"filePath":"datafiles/testing","name":"testnumber.json","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"teststring.json","CopyToMask":-1,"filePath":"datafiles/testing","name":"teststring.json","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"teststruct.json","CopyToMask":-1,"filePath":"datafiles/testing","name":"teststruct.json","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
