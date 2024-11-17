@@ -13,9 +13,13 @@ function ds_list_create_from_array(_array) {
 /// @arg {Id.DsList} list       The list to add the items to.
 /// @arg {Array} array          The array to get the items from.
 function ds_list_add_from_array(_list, _array) {
+    var _offset = ds_list_size(_list);
     var _length = array_length(_array);
-    for (var i = 0; i < _length; i++) {
-        ds_list_add(_list, _array[i]);
+    
+    // looping in the opposite order
+    // so that the first assignment will resize the list up to the expected size
+    for (var i = _length - 1; i >= 0; i--) {
+        _list[| _offset + i] = _array[i];
     }
 }
 

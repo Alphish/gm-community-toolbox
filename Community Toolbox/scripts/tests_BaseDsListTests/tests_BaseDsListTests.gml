@@ -7,7 +7,8 @@ function BaseDsListTests(_run, _method) : VerrificMethodTest(_run, _method) cons
     array = undefined;
     
     static test_cleanup = function() {
-        ds_list_destroy(list);
+        if (!is_undefined(list) && ds_exists(list, ds_type_list))
+            ds_list_destroy(list);
     }
     
     static given_empty_list = function() {
