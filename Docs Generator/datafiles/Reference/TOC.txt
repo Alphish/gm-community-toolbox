@@ -10,6 +10,7 @@
         @func <unlerp>
         @func <relerp>
 @script <String> StringUtils
+    @func <string_contains>
     @func <string_to_char_array>
 @script <Array> ArrayUtils
     @region <Array:Array-wide maths> ArrayUtils_Maths

@@ -1,5 +1,21 @@
 @script <String> String utilities
 
+@func <string_contains>
+
+@section Example
+
+The following example checks for an existence of a cuss word in the player name, and logs a message if one is found.
+
+```gml
+var _player_name = "Noname";
+if (string_contains(_player_name, "cuss")) {
+    show_debug_message("Indecent name entered! Please select another one...");
+}
+```
+
+@update 24.6.0
+Created a function to check whether a given string contains the given substring.
+
 @func <string_to_char_array>
 
 Creates an array of characters from a given string.
