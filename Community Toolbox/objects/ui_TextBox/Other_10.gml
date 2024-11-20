@@ -50,11 +50,15 @@ if (is_repeated(vk_delete) && insert_position < string_length(text)) {
     text = string_delete(text, insert_position + 1, 1);
 }
 
+if (is_defined(text_source))
+    text_source[$ text_property] = text;
+
 if (keyboard_check_pressed(vk_enter)) {
     if (!is_undefined(on_enter))
-		on_enter(text);
+        on_enter(text);
     else
-		show_debug_message(text);
+        show_debug_message(text);
     
-	text = "";
+    if (is_undefined(text_source))
+        text = "";
 }
