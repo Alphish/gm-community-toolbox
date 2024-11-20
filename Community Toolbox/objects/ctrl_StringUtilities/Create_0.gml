@@ -1,34 +1,17 @@
-// Action methods
+// string_contains
+
+contains_haystack = "Haystack";
+contains_needle = "Needle";
+contains_result = string_contains(contains_haystack, contains_needle) ? "Needle IS in haystack" : "Needle NOT in haystack";
+
+// string_to_char_array
+
+char_array_result = "Click on a string_to_char_array button to see the array..."
 
 do_string_to_char_array_0 = function() {
-    result = string(string_to_char_array(ui_StringText.text));
-    last_action = do_string_to_char_array_0;
+    char_array_result = string(string_to_char_array(ui_StringText.text));
 }
 
 do_string_to_char_array_1 = function() {
-    result = string(string_to_char_array(ui_StringText.text, true));
-    last_action = do_string_to_char_array_1;
+    char_array_result = string(string_to_char_array(ui_StringText.text, true));
 }
-
-// Creating UI controls
-
-instance_create_layer(32, 64, layer, ui_Button, {
-    text: "string_to_char_array\n(zero-indexed)",
-    on_click: do_string_to_char_array_0,
-    image_xscale: 6.5,
-    image_yscale: 2,
-});
-
-instance_create_layer(32, 160, layer, ui_Button, {
-    text: "string_to_char_array\n(one-indexed)",
-    on_click: do_string_to_char_array_1,
-    image_xscale: 6.5,
-    image_yscale: 2,
-});
-
-// Setup
-last_action = function() {
-    result = "";
-}
-last_step_text = "";
-result = "";
