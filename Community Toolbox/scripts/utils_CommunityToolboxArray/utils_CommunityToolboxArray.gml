@@ -223,7 +223,7 @@ function array_get_random(_array, _offset = 0, _length = undefined) {
     if (_length <= 0)
         return undefined;
     
-    // getting the random value	
+    // getting the random value
     var _index = irandom_range(_offset, _offset + _length - 1);
     return _array[_index];
 }
