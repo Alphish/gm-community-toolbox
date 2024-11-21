@@ -46,5 +46,6 @@ Below are listed various scripts and functions available in the Community Toolbo
 - [lerp_angle](/Docs/Reference/Functions/lerp_angle.md)
 - [relerp](/Docs/Reference/Functions/relerp.md)
 - [shader_set_uniform_color](/Docs/Reference/Functions/shader_set_uniform_color.md)
+- [string_contains](/Docs/Reference/Functions/string_contains.md)
 - [string_to_char_array](/Docs/Reference/Functions/string_to_char_array.md)
 - [unlerp](/Docs/Reference/Functions/unlerp.md)

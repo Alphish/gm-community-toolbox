@@ -7,6 +7,8 @@ Below is the releases history, with detailed information about specific function
 
 **Download:** [YYMPS](https://github.com/Alphish/gm-community-toolbox/releases/download/v24.6.0/CommunityToolbox.24.6.0.yymps)
 
+- **String utilities**
+    - [string_contains](Reference/Functions/string_contains.md) - Created a function to check whether a given string contains the given substring.
 - **DS List utilities**
     - [ds_list_create_from_array](Reference/Functions/ds_list_create_from_array.md) - Created a function to create a DS list from an array.
     - [ds_list_add_from_array](Reference/Functions/ds_list_add_from_array.md) - Created a function to add items to a DS list from an array.

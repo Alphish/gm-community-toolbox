@@ -153,6 +153,7 @@
     {"id":{"name":"tests_JsonLoadTests","path":"scripts/tests_JsonLoadTests/tests_JsonLoadTests.yy",},},
     {"id":{"name":"tests_LerpAngleTests","path":"scripts/tests_LerpAngleTests/tests_LerpAngleTests.yy",},},
     {"id":{"name":"tests_RelerpTests","path":"scripts/tests_RelerpTests/tests_RelerpTests.yy",},},
+    {"id":{"name":"tests_StringContainsTests","path":"scripts/tests_StringContainsTests/tests_StringContainsTests.yy",},},
     {"id":{"name":"tests_StringToCharArrayTests","path":"scripts/tests_StringToCharArrayTests/tests_StringToCharArrayTests.yy",},},
     {"id":{"name":"tests_UnlerpTests","path":"scripts/tests_UnlerpTests/tests_UnlerpTests.yy",},},
     {"id":{"name":"utils_CommunityToolboxArray","path":"scripts/utils_CommunityToolboxArray/utils_CommunityToolboxArray.yy",},},
