@@ -1,3 +1,24 @@
+#region Basic operations
+
+/// @func array_empty(array)
+/// @desc Checks if the given array has no items.
+/// @arg {Array} array          The array to check.
+/// @returns {Bool}
+function array_empty(_array) {
+    gml_pragma("forceinline");
+    return array_length(_array) == 0;
+}
+
+/// @func array_clear(array)
+/// @desc Removes all items from the array.
+/// @arg {Array} array          The array to clear.
+function array_clear(_array) {
+    gml_pragma("forceinline");
+    array_resize(_array, 0);
+}
+
+#endregion
+
 #region Array-wide maths
 
 /// @func array_max(array,[offset],[length])
@@ -202,7 +223,7 @@ function array_get_random(_array, _offset = 0, _length = undefined) {
     if (_length <= 0)
         return undefined;
     
-    // getting the random value	
+    // getting the random value
     var _index = irandom_range(_offset, _offset + _length - 1);
     return _array[_index];
 }

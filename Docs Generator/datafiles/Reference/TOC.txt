@@ -13,6 +13,9 @@
     @func <string_contains>
     @func <string_to_char_array>
 @script <Array> ArrayUtils
+    @region <Array:Basic operations> ArrayUtils_Basics
+        @func <array_empty>
+        @func <array_clear>
     @region <Array:Array-wide maths> ArrayUtils_Maths
         @func <array_max>
         @func <array_min>

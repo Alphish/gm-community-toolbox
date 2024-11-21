@@ -9,6 +9,9 @@ Below is the releases history, with detailed information about specific function
 
 - **String utilities**
     - [string_contains](Reference/Functions/string_contains.md) - Created a function to check whether a given string contains the given substring.
+- **Array utilities: Basic operations**
+    - [array_empty](Reference/Functions/array_empty.md) - Created a function to check if an array is empty.
+    - [array_clear](Reference/Functions/array_clear.md) - Created a function to clear arrays.
 - **DS List utilities**
     - [ds_list_create_from_array](Reference/Functions/ds_list_create_from_array.md) - Created a function to create a DS list from an array.
     - [ds_list_add_from_array](Reference/Functions/ds_list_add_from_array.md) - Created a function to add items to a DS list from an array.
