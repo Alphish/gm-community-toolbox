@@ -5,6 +5,7 @@
 /// @arg {Array} array          The array to check.
 /// @returns {Bool}
 function array_empty(_array) {
+    gml_pragma("forceinline");
     return array_length(_array) == 0;
 }
 
@@ -12,6 +13,7 @@ function array_empty(_array) {
 /// @desc Removes all items from the array.
 /// @arg {Array} array          The array to clear.
 function array_clear(_array) {
+    gml_pragma("forceinline");
     array_resize(_array, 0);
 }
 
