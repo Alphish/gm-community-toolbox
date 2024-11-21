@@ -134,6 +134,8 @@
     {"id":{"name":"suite_StringUtilsSuite","path":"scripts/suite_StringUtilsSuite/suite_StringUtilsSuite.yy",},},
     {"id":{"name":"tests_ApproachAngleTests","path":"scripts/tests_ApproachAngleTests/tests_ApproachAngleTests.yy",},},
     {"id":{"name":"tests_ApproachTests","path":"scripts/tests_ApproachTests/tests_ApproachTests.yy",},},
+    {"id":{"name":"tests_ArrayClearTests","path":"scripts/tests_ArrayClearTests/tests_ArrayClearTests.yy",},},
+    {"id":{"name":"tests_ArrayEmptyTests","path":"scripts/tests_ArrayEmptyTests/tests_ArrayEmptyTests.yy",},},
     {"id":{"name":"tests_ArrayGetRandomTests","path":"scripts/tests_ArrayGetRandomTests/tests_ArrayGetRandomTests.yy",},},
     {"id":{"name":"tests_ArrayMaxTests","path":"scripts/tests_ArrayMaxTests/tests_ArrayMaxTests.yy",},},
     {"id":{"name":"tests_ArrayMeanTests","path":"scripts/tests_ArrayMeanTests/tests_ArrayMeanTests.yy",},},
