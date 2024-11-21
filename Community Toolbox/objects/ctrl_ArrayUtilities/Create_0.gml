@@ -25,6 +25,7 @@ reset_defaults = function() {
 
     last_value_get = undefined;
     last_value_pop = undefined;
+    the_array_empty = "Array is not empty";
     
     recompute_values();
 }
@@ -57,6 +58,11 @@ pop_random_array = function() {
     recompute_values();
 }
 
+clear_the_array = function() {
+    array_clear(the_array);
+    recompute_values();
+}
+
 recompute_values = function() {
     the_array_display = string_join_ext(",", the_array);
     the_array_max = array_max(the_array, the_array_offset, the_array_length);
@@ -64,8 +70,8 @@ recompute_values = function() {
     the_array_median = array_median(the_array, the_array_offset, the_array_length);
     the_array_mean = array_mean(the_array, the_array_offset, the_array_length);
     the_array_sum = array_sum(the_array, the_array_offset, the_array_length);
+    the_array_empty = array_empty(the_array) ? "Array is empty" : "Array is not empty";
 }
-
 
 reset_defaults();
 
