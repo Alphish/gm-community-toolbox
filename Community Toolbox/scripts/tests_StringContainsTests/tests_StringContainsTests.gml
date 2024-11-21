@@ -50,6 +50,13 @@ function StringContainsTests(_run, _method) : VerrificMethodTest(_run, _method) 
         then_result_should_be_true();
     }
     
+    static should_not_match_different_case = function() {
+        given_haystack("lorem ipsum dolor");
+        given_needle("IPSUM");
+        when_checked();
+        then_result_should_be_false();
+    }
+    
     // -----
     // Setup
     // -----
