@@ -1,3 +1,22 @@
+#region Basic operations
+
+/// @func array_empty(array)
+/// @desc Checks if the given array has no items.
+/// @arg {Array} array          The array to check.
+/// @returns {Bool}
+function array_empty(_array) {
+    return array_length(_array) == 0;
+}
+
+/// @func array_clear(array)
+/// @desc Removes all items from the array.
+/// @arg {Array} array          The array to clear.
+function array_clear(_array) {
+    array_resize(_array, 0);
+}
+
+#endregion
+
 #region Array-wide maths
 
 /// @func array_max(array,[offset],[length])
