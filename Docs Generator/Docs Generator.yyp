@@ -29,6 +29,7 @@
     {"$GMFolder":"","%Name":"Reference","folderPath":"folders/Writing/Reference.yy","name":"Reference","resourceType":"GMFolder","resourceVersion":"2.0",},
   ],
   "IncludedFiles":[
+    {"$GMIncludedFile":"","%Name":"ArrayUtils_Basics.stub.md","CopyToMask":-1,"filePath":"datafiles/Reference","name":"ArrayUtils_Basics.stub.md","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"ArrayUtils_Math.stub.md","CopyToMask":-1,"filePath":"datafiles/Reference","name":"ArrayUtils_Math.stub.md","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"ArrayUtils_Random.stub.md","CopyToMask":-1,"filePath":"datafiles/Reference","name":"ArrayUtils_Random.stub.md","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"ArrayUtils.stub.md","CopyToMask":-1,"filePath":"datafiles/Reference","name":"ArrayUtils.stub.md","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
