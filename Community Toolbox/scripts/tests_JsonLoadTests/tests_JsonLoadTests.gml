@@ -72,8 +72,6 @@ function JsonLoadTests(_run, _method) : VerrificMethodTest(_run, _method) constr
         assert_equal(_expected.foo, _actual.foo, "json_load failed to apply a filter properly!");
         assert_equal(_expected.bar, _actual.bar, "json_load failed to apply a filter properly!");
         assert_equal(_expected.baz, _actual.baz, "json_load failed to apply a filter properly!");
-		
-		show_debug_message(json_stringify({ "bignumber": 123456789123456789 }));
     }
 	
 	static should_read_json_int64_value_when_not_raw = function() {

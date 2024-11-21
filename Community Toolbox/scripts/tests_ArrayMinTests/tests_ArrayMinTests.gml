@@ -114,8 +114,3 @@ function ArrayMinTests(_run, _method) : VerrificMethodTest(_run, _method) constr
         return new VerrificNumericAssertion(test_asserter, result);
     }
 }
-
-show_debug_message(string_height("."));
-show_debug_message(string_height("WHATEVER1234567890"));
-show_debug_message(string_height_ext("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam fermentum enim magna, eget ultrices libero cursus porta. Vestibulum gravida orci eu egestas rhoncus. Vivamus at dictum erat. Nunc vel magna sit amet diam ultrices condimentum. Praesent efficitur ipsum ac tempor lacinia. Vivamus eget sapien vulputate, consectetur eros vel, dignissim tortor. Nunc libero neque, cursus vitae consequat gravida, fermentum eu sem. Nunc sollicitudin, nibh vel gravida ornare, nibh lectus posuere mauris, eget ultricies sem tellus sit amet erat. Nullam imperdiet, tortor eu sodales molestie, dolor ex accumsan tortor, in sodales diam magna et augue. Nunc vitae erat nec eros egestas convallis. Mauris tincidunt, tortor et efficitur consectetur, nulla enim tempus ante, non scelerisque lectus est lacinia justo. Nulla sodales rhoncus urna, ut mattis neque pretium efficitur. Proin vitae fringilla odio. Suspendisse at sem risus. Donec massa sapien, posuere sed est at, condimentum gravida turpis.", -1, 300));
-show_debug_message(string_height_ext("Lorem ipsum", -1, 300));
