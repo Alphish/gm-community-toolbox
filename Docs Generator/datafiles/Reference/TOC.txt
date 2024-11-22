@@ -36,6 +36,8 @@
 @script <Json> JsonUtils
     @func <json_load>
     @func <json_save>
+@script <Collision> CollisionUtils
+    @func <instance_position_top>
 @script <Draw> DrawUtils
     @region <Draw:Settings> DrawUtils_Settings
         @func <draw_set_color_alpha>
