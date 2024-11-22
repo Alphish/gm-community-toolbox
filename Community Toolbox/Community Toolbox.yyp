@@ -82,6 +82,7 @@
     {"id":{"name":"ui_Button","path":"objects/ui_Button/ui_Button.yy",},},
     {"id":{"name":"ui_EuclideanDivisionSummary","path":"objects/ui_EuclideanDivisionSummary/ui_EuclideanDivisionSummary.yy",},},
     {"id":{"name":"ui_ReachingTargetsSlider","path":"objects/ui_ReachingTargetsSlider/ui_ReachingTargetsSlider.yy",},},
+    {"id":{"name":"ui_SelectButton","path":"objects/ui_SelectButton/ui_SelectButton.yy",},},
     {"id":{"name":"ui_Slider","path":"objects/ui_Slider/ui_Slider.yy",},},
     {"id":{"name":"ui_TextArea","path":"objects/ui_TextArea/ui_TextArea.yy",},},
     {"id":{"name":"ui_TextBox","path":"objects/ui_TextBox/ui_TextBox.yy",},},
