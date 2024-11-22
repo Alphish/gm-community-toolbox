@@ -10,7 +10,7 @@ function draw_set_color_alpha(_color, _alpha) {
     draw_set_alpha(_alpha);
 }
 
-/// @func draw_set_colour_alpha(color,alpha)
+/// @func draw_set_colour_alpha(colour,alpha)
 /// @desc Sets the drawing colour and alpha.
 /// @arg {Constant.Color} colour    The drawing colour to set.
 /// @arg {Real} alpha               The alpha to set (between 0 and 1).
