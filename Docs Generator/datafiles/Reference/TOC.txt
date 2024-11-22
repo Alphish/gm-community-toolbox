@@ -36,6 +36,10 @@
 @script <Json> JsonUtils
     @func <json_load>
     @func <json_save>
+@script <Drawing> DrawingUtils
+    @region <Drawing:Settings>
+        @func <draw_set_color_alpha>
+        @func <draw_set_align>
 @script <Shader> ShaderUtils
     @func <shader_set_uniform_color>
 @script <Misc> MiscUtils
