@@ -23,6 +23,11 @@ Below is the releases history, with detailed information about specific function
 - **Drawing utilities: Settings**
     - [draw_set_color_alpha](Reference/Functions/draw_set_color_alpha.md) - Created a function to set color and alpha at once.
     - [draw_set_align](Reference/Functions/draw_set_align.md) - Created a function to set horizontal and vertical text align at once.
+- **Drawing utilities: Shapes**
+    - [draw_arc](Reference/Functions/draw_arc.md) - Created a function to draw an arc line.
+    - [draw_pie](Reference/Functions/draw_pie.md) - Created a function to draw a pie slice shape.
+    - [draw_chord](Reference/Functions/draw_chord.md) - Created a function to draw a disk segment shape.
+    - [draw_arc_range](Reference/Functions/draw_arc_range.md) - Created a function to draw a pie slice shape.
 
 ### 23.4.1
 
