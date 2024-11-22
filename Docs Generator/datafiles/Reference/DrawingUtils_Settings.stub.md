@@ -11,6 +11,8 @@ draw_self();
 if (position_meeting(mouse_x, mouse_y, id)) {
     draw_set_color_alpha(c_yellow, 0.3);
     draw_rectangle(x, y, x + sprite_width, y + sprite_height, false);
+    
+    // reset the color
     draw_set_color_alpha(c_white, 1);
 }
 ```
@@ -30,6 +32,9 @@ draw_set_color_alpha(c_yellow, 1);
 draw_set_align(fa_center, fa_middle);
 draw_set_font(fnt_Button);
 draw_text(x + sprite_width div 2, y + sprite_height div 2, "Click me!");
+
+// reset the color
+draw_set_color_alpha(c_white, 1);
 ```
 
 @update 24.6.0
