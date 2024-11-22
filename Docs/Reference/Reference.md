@@ -18,6 +18,8 @@ Below are listed various scripts and functions available in the Community Toolbo
 - [DS List utilities](/Docs/Reference/Groups/DsList.md)
 - [File utilities](/Docs/Reference/Groups/FileUtils.md)
 - [JSON utilities](/Docs/Reference/Groups/JsonUtils.md)
+- [Drawing utilities](/Docs/Reference/Groups/DrawingUtils.md)
+    - [Settings](/Docs/Reference/Groups/Drawing:Settings.md)
 - [Shader utilities](/Docs/Reference/Groups/ShaderUtils.md)
 - [Other utilities](/Docs/Reference/Groups/MiscUtils.md)
 
@@ -34,6 +36,8 @@ Below are listed various scripts and functions available in the Community Toolbo
 - [array_min](/Docs/Reference/Functions/array_min.md)
 - [array_pop_random](/Docs/Reference/Functions/array_pop_random.md)
 - [array_sum](/Docs/Reference/Functions/array_sum.md)
+- [draw_set_align](/Docs/Reference/Functions/draw_set_align.md)
+- [draw_set_color_alpha](/Docs/Reference/Functions/draw_set_color_alpha.md)
 - [ds_list_add_from_array](/Docs/Reference/Functions/ds_list_add_from_array.md)
 - [ds_list_add_to_array](/Docs/Reference/Functions/ds_list_add_to_array.md)
 - [ds_list_create_from_array](/Docs/Reference/Functions/ds_list_create_from_array.md)

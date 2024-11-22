@@ -20,6 +20,9 @@ Below is the releases history, with detailed information about specific function
 - **JSON utilities**
     - [json_load](Reference/Functions/json_load.md) - Added the `filter` and `raw` parameters to additionally process parsed values.
     - [json_save](Reference/Functions/json_save.md) - Added the `filter` parameter to preprocess values before stringifying.
+- **Drawing utilities: Settings**
+    - [draw_set_color_alpha](Reference/Functions/draw_set_color_alpha.md) - Created a function to set color and alpha at once.
+    - [draw_set_align](Reference/Functions/draw_set_align.md) - Created a function to set horizontal and vertical text align at once.
 
 ### 23.4.1
 
