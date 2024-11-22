@@ -188,7 +188,7 @@ function draw_chord(_x, _y, _radius, _anglefrom, _angleto, _outline = false, _pr
     draw_primitive_end();
 }
 
-/// @func draw_arc_range(x,y,radius,anglefrom,angleto,[outline],[precision])
+/// @func draw_arc_range(x,y,r1,r2,anglefrom,angleto,[outline],[precision])
 /// @desc Draws a band-like shape between two arcs around the given center, with the given radii and between given angles.
 /// @arg {Real} x               The x coordinate of the chord center.
 /// @arg {Real} y               The y coordinate of the chord center.
