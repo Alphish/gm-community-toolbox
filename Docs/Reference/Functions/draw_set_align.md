@@ -26,6 +26,9 @@ draw_set_color_alpha(c_yellow, 1);
 draw_set_align(fa_center, fa_middle);
 draw_set_font(fnt_Button);
 draw_text(x + sprite_width div 2, y + sprite_height div 2, "Click me!");
+
+// reset the color
+draw_set_color_alpha(c_white, 1);
 ```
 
 ### Update history
