@@ -19,16 +19,20 @@ demo_draw_arc = function() {
     draw_arc(cx, cy, radius1, angle1, angle2, precision);
 }
 
-demo_draw_pie = function() {
-    draw_pie(cx, cy, radius1, angle1, angle2, outline, precision);
+demo_draw_circle_sector = function() {
+    draw_circle_sector(cx, cy, radius1, angle1, angle2, outline, precision);
 }
 
-demo_draw_chord = function() {
-    draw_chord(cx, cy, radius1, angle1, angle2, outline, precision);
+demo_draw_circle_segment = function() {
+    draw_circle_segment(cx, cy, radius1, angle1, angle2, outline, precision);
 }
 
-demo_draw_arc_range = function() {
-    draw_arc_range(cx, cy, radius1, radius2, angle1, angle2, outline, precision);
+demo_draw_ring = function() {
+    draw_ring(cx, cy, radius1, radius2, outline, precision);
+}
+
+demo_draw_ring_arc = function() {
+    draw_ring_arc(cx, cy, radius1, radius2, angle1, angle2, outline, precision);
 }
 
 draw_function = demo_draw_arc;

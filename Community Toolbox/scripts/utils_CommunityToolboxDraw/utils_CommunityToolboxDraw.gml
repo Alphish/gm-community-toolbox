@@ -122,16 +122,16 @@ function draw_arc(_x, _y, _radius, _anglefrom, _angleto, _precision = 24) {
     draw_primitive_end();
 }
 
-/// @func draw_pie(x,y,radius,anglefrom,angleto,[outline],[precision])
-/// @desc Draws a pie-like shape (i.e. a circle sector) around the given center, with the given radius and between given angles.
-/// @arg {Real} x               The x coordinate of the pie center.
-/// @arg {Real} y               The y coordinate of the pie center.
-/// @arg {Real} radius          The radius of the pie around the center.
-/// @arg {Real} anglefrom       The starting angle of the pie.
-/// @arg {Real} angleto         The ending angle of the pie.
-/// @arg {Bool} [outline]       Whether only the outline of the pie should be drawn or it should be filled.
-/// @arg {Real} [precision]     The precision of the circle the pie's arc is a part of.
-function draw_pie(_x, _y, _radius, _anglefrom, _angleto, _outline = false, _precision = 24) {
+/// @func draw_circle_sector(x,y,radius,anglefrom,angleto,[outline],[precision])
+/// @desc Draws a circle sector (i.e. a pie slice shape) around the given center, with the given radius and between given angles.
+/// @arg {Real} x               The x coordinate of the sector center.
+/// @arg {Real} y               The y coordinate of the sector center.
+/// @arg {Real} radius          The radius of the sector around the center.
+/// @arg {Real} anglefrom       The starting angle of the sector.
+/// @arg {Real} angleto         The ending angle of the sector.
+/// @arg {Bool} [outline]       Whether only the outline of the sector should be drawn or it should be filled.
+/// @arg {Real} [precision]     The precision of the circle the sector's arc is a part of.
+function draw_circle_sector(_x, _y, _radius, _anglefrom, _angleto, _outline = false, _precision = 24) {
     // making the initial "draw_arc" call to prepare its static struct
     static draw_arc_init = draw_arc(0, 0, 0, 0, 0);
     static normalize_angles = draw_arc.normalize_angles;
@@ -149,7 +149,7 @@ function draw_pie(_x, _y, _radius, _anglefrom, _angleto, _outline = false, _prec
         return;
     }
     
-    // draw the actual pie
+    // draw the actual sector
     draw_primitive_begin(_outline ? pr_linestrip : pr_trianglefan);
 
     draw_vertex(_x, _y);
@@ -160,16 +160,16 @@ function draw_pie(_x, _y, _radius, _anglefrom, _angleto, _outline = false, _prec
     draw_primitive_end();
 }
 
-/// @func draw_chord(x,y,radius,anglefrom,angleto,[outline],[precision])
-/// @desc Draws a chord-like shape (i.e. a circle segment) around the given center, with the given radius and between given angles.
-/// @arg {Real} x               The x coordinate of the chord center.
-/// @arg {Real} y               The y coordinate of the chord center.
-/// @arg {Real} radius          The radius of the chord around the center.
-/// @arg {Real} anglefrom       The starting angle of the chord.
-/// @arg {Real} angleto         The ending angle of the chord.
-/// @arg {Bool} [outline]       Whether only the outline of the chord should be drawn or it should be filled.
-/// @arg {Real} [precision]     The precision of the circle the chord's arc is a part of.
-function draw_chord(_x, _y, _radius, _anglefrom, _angleto, _outline = false, _precision = 24) {
+/// @func draw_circle_segment(x,y,radius,anglefrom,angleto,[outline],[precision])
+/// @desc Draws a circle segment (i.e. a bow-like shape) around the given center, with the given radius and between given angles.
+/// @arg {Real} x               The x coordinate of the segment center.
+/// @arg {Real} y               The y coordinate of the segment center.
+/// @arg {Real} radius          The radius of the segment around the center.
+/// @arg {Real} anglefrom       The starting angle of the segment.
+/// @arg {Real} angleto         The ending angle of the segment.
+/// @arg {Bool} [outline]       Whether only the outline of the segment should be drawn or it should be filled.
+/// @arg {Real} [precision]     The precision of the circle the segment's arc is a part of.
+function draw_circle_segment(_x, _y, _radius, _anglefrom, _angleto, _outline = false, _precision = 24) {
     // making the initial "draw_arc" call to prepare its static struct
     static draw_arc_init = draw_arc(0, 0, 0, 0, 0);
     static normalize_angles = draw_arc.normalize_angles;
@@ -188,22 +188,39 @@ function draw_chord(_x, _y, _radius, _anglefrom, _angleto, _outline = false, _pr
     draw_primitive_end();
 }
 
-/// @func draw_arc_range(x,y,r1,r2,anglefrom,angleto,[outline],[precision])
-/// @desc Draws a band-like shape between two arcs around the given center, with the given radii and between given angles.
-/// @arg {Real} x               The x coordinate of the chord center.
-/// @arg {Real} y               The y coordinate of the chord center.
-/// @arg {Real} r1              The first radius to draw the band between.
-/// @arg {Real} r2              The second radius to draw the band between.
-/// @arg {Real} anglefrom       The starting angle of the arcs.
-/// @arg {Real} angleto         The ending angle of the arcs.
-/// @arg {Bool} [outline]       Whether only the outline of the band should be drawn or it should be filled.
-/// @arg {Real} [precision]     The precision of the circles the band is drawn between.
-function draw_arc_range(_x, _y, _r1, _r2, _anglefrom, _angleto, _outline = false, _precision = 24) {
+/// @func draw_ring(x,y,r1,r2,[outline],[precision])
+/// @desc Draws a ring shape (an area between two circles) around the given center and with the given radii.
+/// @arg {Real} x               The x coordinate of the ring center.
+/// @arg {Real} y               The y coordinate of the ring center.
+/// @arg {Real} r1              The radius of the first ring edge.
+/// @arg {Real} r2              The radius of the second ring edge.
+/// @arg {Bool} [outline]       Whether only the outline of the ring should be drawn or it should be filled.
+/// @arg {Real} [precision]     The precision of the ring.
+function draw_ring(_x, _y, _r1, _r2, _outline = false, _precision = 24) {
+    if (_outline) {
+        draw_arc(_x, _y, _r1, 0, 360, _precision);
+        draw_arc(_x, _y, _r2, 0, 360, _precision);
+    } else {
+        draw_ring_arc(_x, _y, _r1, _r2, 0, 360, false, _precision);
+    }
+}
+
+/// @func draw_ring_arc(x,y,r1,r2,anglefrom,angleto,[outline],[precision])
+/// @desc Draws a ring slice around the given center, with the given radii and between given angles.
+/// @arg {Real} x               The x coordinate of the ring center.
+/// @arg {Real} y               The y coordinate of the ring center.
+/// @arg {Real} r1              The radius of the first ring edge.
+/// @arg {Real} r2              The radius of the second ring edge.
+/// @arg {Real} anglefrom       The starting angle of the arc.
+/// @arg {Real} angleto         The ending angle of the arc.
+/// @arg {Bool} [outline]       Whether only the outline of the ring slice should be drawn or it should be filled.
+/// @arg {Real} [precision]     The precision of the ring the arc is a part of.
+function draw_ring_arc(_x, _y, _r1, _r2, _anglefrom, _angleto, _outline = false, _precision = 24) {
     // making the initial "draw_arc" call to prepare its static struct
     static draw_arc_init = draw_arc(0, 0, 0, 0, 0);
     static normalize_angles = draw_arc.normalize_angles;
     
-    static draw_arc_range_vertices = method(static_get(draw_arc), function(_x, _y, _r1, _r2, _anglefrom, _angleto, _precision, _outline) {
+    static draw_ring_arc_vertices = method(static_get(draw_arc), function(_x, _y, _r1, _r2, _anglefrom, _angleto, _precision, _outline) {
         var _segment_angle = 360 / _precision;
         var _start_amount = get_segment_position(_anglefrom, _segment_angle);
         var _end_amount = get_segment_position(_angleto, _segment_angle);
@@ -257,9 +274,9 @@ function draw_arc_range(_x, _y, _r1, _r2, _anglefrom, _angleto, _outline = false
         return;
     }
     
-    // draw the actual arc range
+    // draw the actual ring arc
     draw_primitive_begin(_outline ? pr_linestrip : pr_trianglestrip);
-    draw_arc_range_vertices(_x, _y, _r1, _r2, _anglefrom, _angleto, _precision, _outline);
+    draw_ring_arc_vertices(_x, _y, _r1, _r2, _anglefrom, _angleto, _precision, _outline);
     draw_primitive_end();
 }
 
