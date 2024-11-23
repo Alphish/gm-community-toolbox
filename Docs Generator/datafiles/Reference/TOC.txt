@@ -44,9 +44,10 @@
         @func <draw_set_align>
     @region <Draw:Shapes> DrawUtils_Shapes
         @func <draw_arc>
-        @func <draw_pie>
-        @func <draw_chord>
-        @func <draw_arc_range>
+        @func <draw_circle_sector>
+        @func <draw_circle_segment>
+        @func <draw_ring>
+        @func <draw_ring_arc>
 @script <Shader> ShaderUtils
     @func <shader_set_uniform_color>
 @script <Misc> MiscUtils
