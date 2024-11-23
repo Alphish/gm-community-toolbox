@@ -38,10 +38,16 @@
     @func <json_save>
 @script <Collision> CollisionUtils
     @func <instance_position_top>
-@script <Drawing> DrawingUtils
-    @region <Drawing:Settings>
+@script <Draw> DrawUtils
+    @region <Draw:Settings> DrawUtils_Settings
         @func <draw_set_color_alpha>
         @func <draw_set_align>
+    @region <Draw:Shapes> DrawUtils_Shapes
+        @func <draw_arc>
+        @func <draw_circle_sector>
+        @func <draw_circle_segment>
+        @func <draw_ring>
+        @func <draw_ring_arc>
 @script <Shader> ShaderUtils
     @func <shader_set_uniform_color>
 @script <Misc> MiscUtils

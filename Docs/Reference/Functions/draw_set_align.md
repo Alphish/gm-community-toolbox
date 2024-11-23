@@ -1,8 +1,8 @@
-[Home](/README.md) > [Community Toolbox Reference](/Docs/Reference/Reference.md) > [Drawing utilities](/Docs/Reference/Groups/DrawingUtils.md) > [Settings](/Docs/Reference/Groups/Drawing:Settings.md)
+[Home](/README.md) > [Community Toolbox Reference](/Docs/Reference/Reference.md) > [Drawing utilities](/Docs/Reference/Groups/DrawUtils.md) > [Settings](/Docs/Reference/Groups/DrawUtils_Settings.md)
 
 # draw_set_align
 
-[Go to source](/Community%20Toolbox/scripts/utils_CommunityToolboxDrawing/utils_CommunityToolboxDrawing.gml#L27)
+[Go to source](/Community%20Toolbox/scripts/utils_CommunityToolboxDraw/utils_CommunityToolboxDraw.gml#L27)
 
 Sets the horizontal and vertical alignment of the drawn text.
 

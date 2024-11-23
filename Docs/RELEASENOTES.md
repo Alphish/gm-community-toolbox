@@ -25,6 +25,12 @@ Below is the releases history, with detailed information about specific function
 - **Drawing utilities: Settings**
     - [draw_set_color_alpha](Reference/Functions/draw_set_color_alpha.md) - Created a function to set color and alpha at once.
     - [draw_set_align](Reference/Functions/draw_set_align.md) - Created a function to set horizontal and vertical text align at once.
+- **Drawing utilities: Shapes**
+    - [draw_arc](Reference/Functions/draw_arc.md) - Created a function to draw an arc line.
+    - [draw_circle_sector](Reference/Functions/draw_circle_sector.md) - Created a function to draw a circle sector shape (i.e. a pie slice).
+    - [draw_circle_segment](Reference/Functions/draw_circle_segment.md) - Created a function to draw a circle segment shape (i.e. a bow).
+    - [draw_ring](Reference/Functions/draw_ring.md) - Created a function to draw a ring shape.
+    - [draw_ring_arc](Reference/Functions/draw_ring_arc.md) - Created a function to draw a ring slice shape.
 
 ### 23.4.1
 

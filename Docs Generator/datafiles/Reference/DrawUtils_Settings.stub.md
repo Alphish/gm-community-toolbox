@@ -1,4 +1,4 @@
-@region <Drawing:Settings> Settings
+@region <Draw:Settings> Settings
 
 @func <draw_set_color_alpha>
 
