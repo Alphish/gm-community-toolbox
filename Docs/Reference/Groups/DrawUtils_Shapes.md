@@ -7,6 +7,7 @@
 ### Defined functions
 
 - [draw_arc](/Docs/Reference/Functions/draw_arc.md)
-- [draw_pie](/Docs/Reference/Functions/draw_pie.md)
-- [draw_chord](/Docs/Reference/Functions/draw_chord.md)
-- [draw_arc_range](/Docs/Reference/Functions/draw_arc_range.md)
+- [draw_circle_sector](/Docs/Reference/Functions/draw_circle_sector.md)
+- [draw_circle_segment](/Docs/Reference/Functions/draw_circle_segment.md)
+- [draw_ring](/Docs/Reference/Functions/draw_ring.md)
+- [draw_ring_arc](/Docs/Reference/Functions/draw_ring_arc.md)
