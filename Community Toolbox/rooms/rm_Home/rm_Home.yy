@@ -21,6 +21,7 @@
     {"name":"inst_28ED7ABD","path":"rooms/rm_Home/rm_Home.yy",},
     {"name":"inst_1B1F20C1","path":"rooms/rm_Home/rm_Home.yy",},
     {"name":"inst_130363A3","path":"rooms/rm_Home/rm_Home.yy",},
+    {"name":"inst_51E8E2B","path":"rooms/rm_Home/rm_Home.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -82,6 +83,10 @@
             {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"ui_Button","path":"objects/ui_Button/ui_Button.yy",},"propertyId":{"name":"text","path":"objects/ui_Button/ui_Button.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Drawing shapes",},
             {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"ui_Button","path":"objects/ui_Button/ui_Button.yy",},"propertyId":{"name":"target_room","path":"objects/ui_Button/ui_Button.yy",},"resource":{"name":"demo_DrawingShapes","path":"rooms/demo_DrawingShapes/demo_DrawingShapes.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"demo_DrawingShapes",},
           ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":8.0,"scaleY":2.0,"x":32.0,"y":576.0,},
+        {"$GMRInstance":"v1","%Name":"inst_51E8E2B","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_51E8E2B","objectId":{"name":"ui_Button","path":"objects/ui_Button/ui_Button.yy",},"properties":[
+            {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"ui_Button","path":"objects/ui_Button/ui_Button.yy",},"propertyId":{"name":"text","path":"objects/ui_Button/ui_Button.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Collision arrays",},
+            {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"ui_Button","path":"objects/ui_Button/ui_Button.yy",},"propertyId":{"name":"target_room","path":"objects/ui_Button/ui_Button.yy",},"resource":{"name":"demo_ShapesCollision","path":"rooms/demo_ShapesCollision/demo_ShapesCollision.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"demo_ShapesCollision",},
+          ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":8.0,"scaleY":2.0,"x":352.0,"y":576.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRBackgroundLayer":"","%Name":"Background","animationFPS":15.0,"animationSpeedType":0,"colour":4278190080,"depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Background","properties":[],"resourceType":"GMRBackgroundLayer","resourceVersion":"2.0","spriteId":null,"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":0,"y":0,},
   ],
