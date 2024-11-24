@@ -38,6 +38,13 @@
     @func <json_save>
 @script <Collision> CollisionUtils
     @func <instance_position_top>
+    @func <instance_position_array>
+    @func <instance_place_array>
+    @func <collision_point_array>
+    @func <collision_circle_array>
+    @func <collision_line_array>
+    @func <collision_rectangle_array>
+    @func <collision_ellipse_array>
 @script <Draw> DrawUtils
     @region <Draw:Settings> DrawUtils_Settings
         @func <draw_set_color_alpha>

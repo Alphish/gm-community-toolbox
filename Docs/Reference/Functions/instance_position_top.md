@@ -4,7 +4,7 @@
 
 [Go to source](/Community%20Toolbox/scripts/utils_CommunityToolboxCollision/utils_CommunityToolboxCollision.gml#L7)
 
-Finds the instance colliding with the given point at the least depth. If none is found, noone is returned.
+Finds the instance at the given position with the least depth. If no instance is at the position, noone is returned.
 
 ###### Arguments
 
@@ -12,7 +12,7 @@ Finds the instance colliding with the given point at the least depth. If none is
 |:---:|:---:|:---:|:---|
 | **x** | **`Real`** | **Required** | The x coordinate of the point to check. |
 | **y** | **`Real`** | **Required** | The y coordinate of the point to check. |
-| **obj** | **`Asset.GMObject, Constant.All, Array`** | **Required** | The object(s) to find at the given point. |
+| **obj** | **`Asset.GMObject,Constant.All,Array`** | **Required** | The object(s) to find at the given position. |
 
 ###### Returns
 **`Id.Instance`**

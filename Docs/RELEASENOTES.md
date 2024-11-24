@@ -22,6 +22,13 @@ Below is the releases history, with detailed information about specific function
     - [json_save](Reference/Functions/json_save.md) - Added the `filter` parameter to preprocess values before stringifying.
 - **Collision utilities**
     - [instance_position_top](Reference/Functions/instance_position_top.md) - Created a function to find the least-depth instance at the given position.
+    - [instance_position_array](Reference/Functions/instance_position_array.md) - Created a function to populate an array with instances at the given position.
+    - [instance_place_array](Reference/Functions/instance_place_array.md) - Created a function to populate an array with instances colliding with the caller's mask at the given position.
+    - [collision_point_array](Reference/Functions/collision_point_array.md) - Created a function to populate an array with instances colliding with the given point.
+    - [collision_circle_array](Reference/Functions/collision_circle_array.md) - Created a function to populate an array with instances colliding with the given circle.
+    - [collision_line_array](Reference/Functions/collision_line_array.md) - Created a function to populate an array with instances colliding with the given line.
+    - [collision_rectangle_array](Reference/Functions/collision_rectangle_array.md) - Created a function to populate an array with instances colliding with the given rectangle.
+    - [collision_ellipse_array](Reference/Functions/collision_ellipse_array.md) - Created a function to populate an array with instances colliding with the given ellipse.
 - **Drawing utilities: Settings**
     - [draw_set_color_alpha](Reference/Functions/draw_set_color_alpha.md) - Created a function to set color and alpha at once.
     - [draw_set_align](Reference/Functions/draw_set_align.md) - Created a function to set horizontal and vertical text align at once.
