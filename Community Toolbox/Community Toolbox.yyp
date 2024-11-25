@@ -184,6 +184,7 @@
     {"id":{"name":"utils_CommunityToolboxMisc","path":"scripts/utils_CommunityToolboxMisc/utils_CommunityToolboxMisc.yy",},},
     {"id":{"name":"utils_CommunityToolboxShader","path":"scripts/utils_CommunityToolboxShader/utils_CommunityToolboxShader.yy",},},
     {"id":{"name":"utils_CommunityToolboxString","path":"scripts/utils_CommunityToolboxString/utils_CommunityToolboxString.yy",},},
+    {"id":{"name":"utils_CommunityToolboxStruct","path":"scripts/utils_CommunityToolboxStruct/utils_CommunityToolboxStruct.yy",},},
     {"id":{"name":"shd_overlay","path":"shaders/shd_overlay/shd_overlay.yy",},},
     {"id":{"name":"spr_Button","path":"sprites/spr_Button/spr_Button.yy",},},
     {"id":{"name":"spr_CollisionChecker","path":"sprites/spr_CollisionChecker/spr_CollisionChecker.yy",},},
