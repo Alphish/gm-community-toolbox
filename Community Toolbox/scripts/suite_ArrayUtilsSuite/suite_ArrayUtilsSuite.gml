@@ -2,6 +2,8 @@ function ArrayUtilsSuite() : VerrificSuiteGroup("Array utilities tests") constru
     array_foreach([
         ArrayEmptyTests,
         ArrayClearTests,
+        ArrayPushExtTests,
+        ArrayInsertExtTests,
         ArrayMaxTests,
         ArrayMinTests,
         ArrayMeanTests,
