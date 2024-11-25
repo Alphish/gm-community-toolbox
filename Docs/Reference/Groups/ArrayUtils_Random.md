@@ -2,7 +2,7 @@
 
 # Retrieving random items
 
-[Go to source](/Community%20Toolbox/scripts/utils_CommunityToolboxArray/utils_CommunityToolboxArray.gml#L201)
+[Go to source](/Community%20Toolbox/scripts/utils_CommunityToolboxArray/utils_CommunityToolboxArray.gml#L254)
 
 ### Defined functions
 
