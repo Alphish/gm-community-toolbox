@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"tests_StaticInitTests",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"tests_StaticInitTests",
+  "parent":{
+    "name":"Misc",
+    "path":"folders/Tests/Misc.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
