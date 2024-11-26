@@ -1,4 +1,4 @@
-/// @func struct_assign(destination,...sources)
+/// @func struct_assign(destination,[...sources])
 /// @desc Assigns properties from one or more source structs to a destination struct, and returns the destination struct.
 /// @arg {Struct} destination       The struct to assign properties to.
 /// @arg {Struct} [...sources]      The source structs to get properties values from.
