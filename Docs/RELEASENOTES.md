@@ -38,6 +38,9 @@ Below is the releases history, with detailed information about specific function
     - [draw_circle_segment](Reference/Functions/draw_circle_segment.md) - Created a function to draw a circle segment shape (i.e. a bow).
     - [draw_ring](Reference/Functions/draw_ring.md) - Created a function to draw a ring shape.
     - [draw_ring_arc](Reference/Functions/draw_ring_arc.md) - Created a function to draw a ring slice shape.
+- **Other utilities: Static initialization**
+    - [static_init](Reference/Functions/static_init.md) - Created a function to initialize static variables of other functions.
+    - [static_init_in_progress](Reference/Functions/static_init_in_progress.md) - Created a function to check if static variables initialization is in progress, in order to skip the non-static logic.
 
 ### 23.4.1
 
@@ -86,6 +89,6 @@ Below is the releases history, with detailed information about specific function
     - [json_save](Reference/Functions/json_save.md) - Created a function to write a given value to a JSON file.
 - **Shader utilities**
     - [shader_set_uniform_color](Reference/Functions/shader_set_uniform_color.md) - Created a function to easily pass colour parameters into shaders.
-- **Other utilities**
+- **Other utilities: Nullish checks**
     - [is_nullish](Reference/Functions/is_nullish.md) - Created a function to check if the given value is nullish.
     - [is_defined](Reference/Functions/is_defined.md) - Created a function to check if the given value is defined (not nullish).
