@@ -12,6 +12,8 @@ Below is the releases history, with detailed information about specific function
 - **Array utilities: Basic operations**
     - [array_empty](Reference/Functions/array_empty.md) - Created a function to check if an array is empty.
     - [array_clear](Reference/Functions/array_clear.md) - Created a function to clear arrays.
+- **Struct utilities**
+    - [struct_assign](Reference/Functions/struct_assign.md) - Created a function to assign contents of one struct (or sequence of structs) to another.
 - **DS List utilities**
     - [ds_list_create_from_array](Reference/Functions/ds_list_create_from_array.md) - Created a function to create a DS list from an array.
     - [ds_list_add_from_array](Reference/Functions/ds_list_add_from_array.md) - Created a function to add items to a DS list from an array.
