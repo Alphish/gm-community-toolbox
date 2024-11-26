@@ -20,9 +20,9 @@ function is_defined(_value) {
 
 #region Static initialization
 
-/// @func static_init(func)
+/// @func static_init(function)
 /// @desc Runs a given function in order to initialize its static values, then returns that function's static struct.
-/// @arg {Function} func        The function to initialize the static variables of.
+/// @arg {Function} function    The function to initialize the static variables of.
 /// @returns {Struct}
 function static_init(_function) {
     static static_init_context = script_execute(function() {
