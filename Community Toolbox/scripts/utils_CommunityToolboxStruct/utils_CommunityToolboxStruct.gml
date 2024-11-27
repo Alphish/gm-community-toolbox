@@ -4,10 +4,11 @@
 /// @arg {Struct} [...sources]      The source structs to get properties values from.
 /// @returns {Struct}
 function struct_assign(_destination) {
-    var _assign_method = method(_destination, function(_key, _value) {
+    static assign_function = function(_key, _value) {
         self[$ _key] = _value;
-    });
+    };
     
+    var _assign_method = method(_destination, assign_function);
     for (var i = 1; i < argument_count; i++) {
         struct_foreach(argument[i], _assign_method);
     }
