@@ -1,5 +1,5 @@
 point_x = 600;
-point_y = 100;
+point_y = 240;
 
 circle_x = 200;
 circle_y = 600;
