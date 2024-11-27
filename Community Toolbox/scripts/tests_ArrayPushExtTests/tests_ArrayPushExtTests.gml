@@ -135,6 +135,31 @@ function ArrayPushExtTests(_run, _method) : VerrificMethodTest(_run, _method) co
         then_destination_should_have_items(1, 2, 3, 4, 5);
     }
     
+    static should_push_array_to_itself = function() {
+        given_destination([1, 2, 3, 4, 5]);
+        given_source(destination);
+        when_source_pushed();
+        then_destination_should_have_items(1, 2, 3, 4, 5, 1, 2, 3, 4, 5);
+    }
+    
+    static should_push_array_section_to_itself = function() {
+        given_destination([1, 2, 3, 4, 5]);
+        given_source(destination);
+        given_offset(1);
+        given_length(3);
+        when_source_pushed();
+        then_destination_should_have_items(1, 2, 3, 4, 5, 2, 3, 4);
+    }
+    
+    static should_push_array_reverse_section_to_itself = function() {
+        given_destination([1, 2, 3, 4, 5]);
+        given_source(destination);
+        given_offset(3);
+        given_length(-3);
+        when_source_pushed();
+        then_destination_should_have_items(1, 2, 3, 4, 5, 4, 3, 2);
+    }
+    
     // -----
     // Setup
     // -----

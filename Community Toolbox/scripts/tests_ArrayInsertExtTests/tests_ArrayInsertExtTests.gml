@@ -167,6 +167,34 @@ function ArrayInsertExtTests(_run, _method) : VerrificMethodTest(_run, _method) 
         then_destination_should_have_items(1, 2, 3, 4, 5);
     }
     
+    static should_insert_array_into_itself = function() {
+        given_destination([1, 2, 3, 4, 5]);
+        given_destination_index(2);
+        given_source(destination);
+        when_source_inserted();
+        then_destination_should_have_items(1, 2, 1, 2, 3, 4, 5, 3, 4, 5);
+    }
+    
+    static should_insert_array_section_into_itself = function() {
+        given_destination([1, 2, 3, 4, 5]);
+        given_destination_index(2);
+        given_source(destination);
+        given_offset(1);
+        given_length(3);
+        when_source_inserted();
+        then_destination_should_have_items(1, 2, 2, 3, 4, 3, 4, 5);
+    }
+    
+    static should_insert_array_reverse_section_into_itself = function() {
+        given_destination([1, 2, 3, 4, 5]);
+        given_destination_index(2);
+        given_source(destination);
+        given_offset(3);
+        given_length(-3);
+        when_source_inserted();
+        then_destination_should_have_items(1, 2, 4, 3, 2, 3, 4, 5);
+    }
+    
     // -----
     // Setup
     // -----
