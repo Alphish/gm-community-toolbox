@@ -1,8 +1,8 @@
-[Home](/README.md) > [Community Toolbox Reference](/Docs/Reference/Reference.md) > [Other utilities](/Docs/Reference/Groups/MiscUtils.md)
+[Home](/README.md) > [Community Toolbox Reference](/Docs/Reference/Reference.md) > [Other utilities](/Docs/Reference/Groups/MiscUtils.md) > [Nullish checks](/Docs/Reference/Groups/MiscUtils_Nullish.md)
 
 # is_nullish
 
-[Go to source](/Community%20Toolbox/scripts/utils_CommunityToolboxMisc/utils_CommunityToolboxMisc.gml#L5)
+[Go to source](/Community%20Toolbox/scripts/utils_CommunityToolboxMisc/utils_CommunityToolboxMisc.gml#L7)
 
 Checks whether a given value is nullish (undefined or pointer_null) or not.
 

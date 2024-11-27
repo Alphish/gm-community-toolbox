@@ -24,6 +24,8 @@ Below are listed various scripts and functions available in the Community Toolbo
     - [Shapes](/Docs/Reference/Groups/DrawUtils_Shapes.md)
 - [Shader utilities](/Docs/Reference/Groups/ShaderUtils.md)
 - [Other utilities](/Docs/Reference/Groups/MiscUtils.md)
+    - [Nullish checks](/Docs/Reference/Groups/MiscUtils_Nullish.md)
+    - [Static initialization](/Docs/Reference/Groups/MiscUtils_Static.md)
 
 ### Functions list
 
@@ -70,6 +72,8 @@ Below are listed various scripts and functions available in the Community Toolbo
 - [lerp_angle](/Docs/Reference/Functions/lerp_angle.md)
 - [relerp](/Docs/Reference/Functions/relerp.md)
 - [shader_set_uniform_color](/Docs/Reference/Functions/shader_set_uniform_color.md)
+- [static_init](/Docs/Reference/Functions/static_init.md)
+- [static_init_in_progress](/Docs/Reference/Functions/static_init_in_progress.md)
 - [string_contains](/Docs/Reference/Functions/string_contains.md)
 - [string_to_char_array](/Docs/Reference/Functions/string_to_char_array.md)
 - [unlerp](/Docs/Reference/Functions/unlerp.md)
