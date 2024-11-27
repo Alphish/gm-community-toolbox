@@ -40,4 +40,6 @@ Also, people whose suggested features made it to the Community Toolbox include:
 - [tinkerer-red](https://github.com/tinkerer-red)
     - [array_push_ext and array_insert_ext](https://github.com/Alphish/gm-community-toolbox/issues/71) (originally posted as a [GameMaker feature request](https://github.com/YoYoGames/GameMaker-Bugs/issues/6170))
 
+Some of the functions included here were included by similar ones in [TurboGML](https://github.com/FoxyOfJungle/TurboGML) by [FoxyOfJungle](https://github.com/FoxyOfJungle).
+
 Finally, I appreciate everyone's involvement in feature discussions and feature/name voting across GM communities as well! Special mention goes to [GameMaker Kitchen Discord](https://discord.com/invite/bzXzzC38VN) that helped refine some of the features.
