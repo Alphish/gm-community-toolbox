@@ -54,6 +54,15 @@ function array_insert_ext(_dest, _index, _source, _offset = 0, _length = undefin
     _from = clamp(_from, 0, _source_length - 1);
     var _count = abs(_to - _from);
     
+    // for self-inserting the array, the data is copied to a temporary array
+    // so that other operations on the destination array don't corrupt the result
+    if (_dest == _source) {
+        _source = array_create(_count);
+        array_copy(_source, 0, _dest, _from, _to - _from);
+        _from = 0;
+        _to = _count;
+    }
+    
     var _dest_length = array_length(_dest);
     if (_index < 0)
         _index = max(_dest_length + _index, 0);
