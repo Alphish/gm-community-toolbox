@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"tests_ArrayPushExtTests",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"tests_ArrayPushExtTests",
+  "parent":{
+    "name":"Array",
+    "path":"folders/Tests/Array.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

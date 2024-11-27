@@ -35,3 +35,33 @@ function dialogue_jump(_branch) {
 
 @update 24.6.0
 Created a function to clear arrays.
+
+@func <array_push_ext>
+
+@section Example
+
+The following code moves all items from the chest to the inventory.
+
+```gml
+array_push_ext(global.inventory, chest_content);
+array_clear(chest_content);
+```
+
+@update 24.6.0
+Created a function to push items from an array to another array.
+
+@func <array_insert_ext>
+
+@section Example
+
+The following code inserts a commands block as upcoming dialogue commands, depending on the condition being met.
+
+```gml
+if (conditional_command.is_condition_met())
+    array_insert_ext(dialogue_commands, 0, conditional_command.then_block);
+else
+    array_insert_ext(dialogue_commands, 0, conditional_command.else_block);
+```
+
+@update 24.6.0
+Created a function to insert items from an array into another array.

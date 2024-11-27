@@ -25,6 +25,8 @@ Below are listed various scripts and functions available in the Community Toolbo
     - [Shapes](/Docs/Reference/Groups/DrawUtils_Shapes.md)
 - [Shader utilities](/Docs/Reference/Groups/ShaderUtils.md)
 - [Other utilities](/Docs/Reference/Groups/MiscUtils.md)
+    - [Nullish checks](/Docs/Reference/Groups/MiscUtils_Nullish.md)
+    - [Static initialization](/Docs/Reference/Groups/MiscUtils_Static.md)
 
 ### Functions list
 
@@ -33,11 +35,13 @@ Below are listed various scripts and functions available in the Community Toolbo
 - [array_clear](/Docs/Reference/Functions/array_clear.md)
 - [array_empty](/Docs/Reference/Functions/array_empty.md)
 - [array_get_random](/Docs/Reference/Functions/array_get_random.md)
+- [array_insert_ext](/Docs/Reference/Functions/array_insert_ext.md)
 - [array_max](/Docs/Reference/Functions/array_max.md)
 - [array_mean](/Docs/Reference/Functions/array_mean.md)
 - [array_median](/Docs/Reference/Functions/array_median.md)
 - [array_min](/Docs/Reference/Functions/array_min.md)
 - [array_pop_random](/Docs/Reference/Functions/array_pop_random.md)
+- [array_push_ext](/Docs/Reference/Functions/array_push_ext.md)
 - [array_sum](/Docs/Reference/Functions/array_sum.md)
 - [collision_circle_array](/Docs/Reference/Functions/collision_circle_array.md)
 - [collision_ellipse_array](/Docs/Reference/Functions/collision_ellipse_array.md)
@@ -69,6 +73,8 @@ Below are listed various scripts and functions available in the Community Toolbo
 - [lerp_angle](/Docs/Reference/Functions/lerp_angle.md)
 - [relerp](/Docs/Reference/Functions/relerp.md)
 - [shader_set_uniform_color](/Docs/Reference/Functions/shader_set_uniform_color.md)
+- [static_init](/Docs/Reference/Functions/static_init.md)
+- [static_init_in_progress](/Docs/Reference/Functions/static_init_in_progress.md)
 - [string_contains](/Docs/Reference/Functions/string_contains.md)
 - [string_to_char_array](/Docs/Reference/Functions/string_to_char_array.md)
 - [struct_assign](/Docs/Reference/Functions/struct_assign.md)

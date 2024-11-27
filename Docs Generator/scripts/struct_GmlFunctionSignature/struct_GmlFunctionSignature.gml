@@ -26,7 +26,7 @@ function GmlFunctionSignature(_name, _arguments, _line) constructor {
         
         // handling function without arguments
         if (string_trim(_args_string) == "")
-            return new GmlFunctionSignature(_name, []);
+            return new GmlFunctionSignature(_name, [], _line_number);
         
         // handling function with arguments
         var _arg_names = string_split(_args_string, ",");

@@ -16,6 +16,8 @@
     @region <Array:Basic operations> ArrayUtils_Basics
         @func <array_empty>
         @func <array_clear>
+        @func <array_push_ext>
+        @func <array_insert_ext>
     @region <Array:Array-wide maths> ArrayUtils_Maths
         @func <array_max>
         @func <array_min>
@@ -60,8 +62,12 @@
 @script <Shader> ShaderUtils
     @func <shader_set_uniform_color>
 @script <Misc> MiscUtils
-    @func <is_nullish>
-    @func <is_defined>
+    @region <Misc:Nullish checks> MiscUtils_Nullish
+        @func <is_nullish>
+        @func <is_defined>
+    @region <Misc:Static initialization> MiscUtils_Static
+        @func <static_init>
+        @func <static_init_in_progress>
 
 @release <24.6.0>
     @download <YYMPS> /releases/download/v24.6.0/CommunityToolbox.24.6.0.yymps

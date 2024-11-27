@@ -9,3 +9,5 @@ if (is_undefined(on_click)) {
 
 // set the initial state
 is_hovered = false;
+image_index = 0;
+image_speed = 0;
