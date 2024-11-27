@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"suite_StructUtilsSuite",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"suite_StructUtilsSuite",
+  "parent":{
+    "name":"Struct",
+    "path":"folders/Tests/Struct.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

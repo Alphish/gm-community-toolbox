@@ -41,6 +41,13 @@ function ToolboxFunctionResolver(_parser) constructor {
         var _jsdoc_details_count = array_length(_jsdoc_details_args);
         var _gml_signature_count = array_length(_gml_signature_args);
         
+        var _last_arg = array_last(_jsdoc_signature_args);
+        if (!is_undefined(_last_arg) && _last_arg.is_optional && string_starts_with(_last_arg.name, "...")) {
+            // compensating for GML signature not including "rest"-type arguments
+            array_push(_gml_signature_args, new GmlArgument(_last_arg.name, undefined));
+            _gml_signature_count += 1;
+        }
+        
         if (_gml_signature_count != _jsdoc_signature_count || _gml_signature_count != _jsdoc_details_count) {
             script_parser.fail($"Inconsistent argument counts: {_jsdoc_signature_count} in JSDoc @func annotation, {_jsdoc_details_args} in JSDoc @arg annotations and {_gml_signature_count} in GML function signature.");
             return false;

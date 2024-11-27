@@ -27,7 +27,9 @@
     @region <Array:Random elements> ArrayUtils_Random
         @func <array_get_random>
         @func <array_pop_random>
-@script <DsList>
+@script <Struct> StructUtils
+    @func <struct_assign>
+@script <DsList> DsListUtils
     @func <ds_list_create_from_array>
     @func <ds_list_add_from_array>
     @func <ds_list_to_array>
