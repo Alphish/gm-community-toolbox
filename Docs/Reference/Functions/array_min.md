@@ -2,7 +2,7 @@
 
 # array_min
 
-[Go to source](/Community%20Toolbox/scripts/utils_CommunityToolboxArray/utils_CommunityToolboxArray.gml#L118)
+[Go to source](/Community%20Toolbox/scripts/utils_CommunityToolboxArray/utils_CommunityToolboxArray.gml#L127)
 
 Returns the lowest number from the array or its subsection. If the array/subsection is empty, 0 is returned.
 
