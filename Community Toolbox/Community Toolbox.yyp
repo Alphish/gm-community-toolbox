@@ -125,6 +125,7 @@
     {"id":{"name":"rm_Home","path":"rooms/rm_Home/rm_Home.yy",},},
     {"id":{"name":"rm_Tests","path":"rooms/rm_Tests/rm_Tests.yy",},},
     {"id":{"name":"enum_VerrificStatus","path":"scripts/enum_VerrificStatus/enum_VerrificStatus.yy",},},
+    {"id":{"name":"feather_CommunityToolbox","path":"scripts/feather_CommunityToolbox/feather_CommunityToolbox.yy",},},
     {"id":{"name":"struct_VerrificAsserter","path":"scripts/struct_VerrificAsserter/struct_VerrificAsserter.yy",},},
     {"id":{"name":"struct_VerrificBreak","path":"scripts/struct_VerrificBreak/struct_VerrificBreak.yy",},},
     {"id":{"name":"struct_VerrificCrash","path":"scripts/struct_VerrificCrash/struct_VerrificCrash.yy",},},
