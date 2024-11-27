@@ -17,6 +17,68 @@ function array_clear(_array) {
     array_resize(_array, 0);
 }
 
+/// @func array_push_ext(dest,source,[offset],[length])
+/// @desc Pushes items from one array at the end of another array.
+/// @arg {Array} dest           The destination array to push the items to.
+/// @arg {Array} source         The source array with the items to push.
+/// @arg {Real} [offset]        The offset of the source array to start taking items from.
+/// @arg {Real} [length]        The length of the source array subsection to push.
+function array_push_ext(_dest, _source, _offset = 0, _length = undefined) {
+    var _source_length = array_length(_source);
+    _length ??= _source_length;
+    var _from = _offset >= 0 ? _offset : _source_length + _offset;
+    var _to = clamp(_from + _length, -1, _source_length);
+    if ((_from < 0 && _to <= 0) || (_from >= _source_length && _to >= _source_length - 1))
+        return;
+    
+    _from = clamp(_from, 0, _source_length - 1);
+    
+    array_copy(_dest, array_length(_dest), _source, _from, _to - _from);
+}
+
+/// @func array_insert_ext(dest,index,source,[offset],[length])
+/// @desc Inserts items from one array into another array.
+/// @arg {Array} dest           The destination array to insert the items into.
+/// @arg {Real} index           The index in the destination array where the items should be inserted.
+/// @arg {Array} source         The source array with the items to insert.
+/// @arg {Real} [offset]        The offset of the source array to start taking items from.
+/// @arg {Real} [length]        The length of the source array subsection to insert.
+function array_insert_ext(_dest, _index, _source, _offset = 0, _length = undefined) {
+    var _source_length = array_length(_source);
+    _length ??= _source_length;
+    var _from = _offset >= 0 ? _offset : _source_length + _offset;
+    var _to = clamp(_from + _length, -1, _source_length);
+    if ((_from < 0 && _to <= 0) || (_from >= _source_length && _to >= _source_length - 1))
+        return;
+    
+    _from = clamp(_from, 0, _source_length - 1);
+    var _count = abs(_to - _from);
+    
+    // for self-inserting the array, the data is copied to a temporary array
+    // so that other operations on the destination array don't corrupt the result
+    if (_dest == _source) {
+        _source = array_create(_count);
+        array_copy(_source, 0, _dest, _from, _to - _from);
+        _from = 0;
+        _to = _count;
+    }
+    
+    var _dest_length = array_length(_dest);
+    if (_index < 0)
+        _index = max(_dest_length + _index, 0);
+    
+    // the loop here is to ensure the destination array items are moved forward starting from the latest one
+    // to prevent earlier items overwriting the later items to be copied, corrupting the data
+    // I can't guarantee array_copy within the same array won't cause this sort of corruption
+    // so I don't use it here
+    array_resize(_dest, _dest_length + _count);
+    for (var i = _dest_length - 1; i >= _index; i--) {
+        _dest[i + _count] = _dest[i];
+    }
+    
+    array_copy(_dest, _index, _source, _from, _to - _from);
+}
+
 #endregion
 
 #region Array-wide maths

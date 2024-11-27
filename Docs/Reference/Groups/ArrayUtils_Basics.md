@@ -8,3 +8,5 @@
 
 - [array_empty](/Docs/Reference/Functions/array_empty.md)
 - [array_clear](/Docs/Reference/Functions/array_clear.md)
+- [array_push_ext](/Docs/Reference/Functions/array_push_ext.md)
+- [array_insert_ext](/Docs/Reference/Functions/array_insert_ext.md)

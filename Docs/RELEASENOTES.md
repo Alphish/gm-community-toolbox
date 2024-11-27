@@ -12,6 +12,8 @@ Below is the releases history, with detailed information about specific function
 - **Array utilities: Basic operations**
     - [array_empty](Reference/Functions/array_empty.md) - Created a function to check if an array is empty.
     - [array_clear](Reference/Functions/array_clear.md) - Created a function to clear arrays.
+    - [array_push_ext](Reference/Functions/array_push_ext.md) - Created a function to push items from an array to another array.
+    - [array_insert_ext](Reference/Functions/array_insert_ext.md) - Created a function to insert items from an array into another array.
 - **DS List utilities**
     - [ds_list_create_from_array](Reference/Functions/ds_list_create_from_array.md) - Created a function to create a DS list from an array.
     - [ds_list_add_from_array](Reference/Functions/ds_list_add_from_array.md) - Created a function to add items to a DS list from an array.

@@ -1,5 +1,4 @@
 function ArrayClearTests(_run, _method) : VerrificMethodTest(_run, _method) constructor {
-    
     static test_subject = "array_clear";
     
     static should_clear_0_items_array = function() {
