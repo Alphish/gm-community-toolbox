@@ -2,7 +2,7 @@
 
 # json_load
 
-[Go to source](/Community%20Toolbox/scripts/utils_CommunityToolboxJson/utils_CommunityToolboxJson.gml#L6)
+[Go to source](/Community%20Toolbox/scripts/utils_CommunityToolboxJson/utils_CommunityToolboxJson.gml#L7)
 
 Loads a given JSON file into a GML value (struct/array/string/real).
 
@@ -15,7 +15,7 @@ Loads a given JSON file into a GML value (struct/array/string/real).
 | **raw** | **`Bool`** | Default: `false` | Indicates whether special strings should be converted or treated as regular strings. |
 
 ###### Returns
-N/A
+**`Any`**
 
 ### Example
 
@@ -45,6 +45,7 @@ function load_location() {
 
 ### Update history
 
+- **24.6.1** - Fixed the JSDoc return type.
 - **24.6.0** - Added the `filter` and `raw` parameters to additionally process parsed values.
 - **23.4.1** - Tweaked the JSDocs.
 - **23.4.0** - Created a function to read a JSON value from a file.

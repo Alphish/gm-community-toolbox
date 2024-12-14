@@ -3,8 +3,9 @@
 /// @arg {String} version                               The release version.
 /// @arg {Array<Struct> downloads                       The release download data.
 /// @arg {Array<Struct.PackageReleaseGroup>} groups     The groups of updates included in the release.
-function PackageRelease(_version, _downloads, _groups) constructor {
+function PackageRelease(_version, _downloads, _groups, _gmver) constructor {
     version = _version;
     downloads = _downloads;
     groups = _groups;
+    gmver = _gmver;
 }

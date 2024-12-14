@@ -3,6 +3,7 @@
 /// @arg {String} filename      The path of the JSON file to load.
 /// @arg {Function} [filter]    A filter function allowing more fine-grained control over parsing specific values.
 /// @arg {Bool} [raw]           Indicates whether special strings should be converted or treated as regular strings.
+/// @returns {Any}
 function json_load(_filename, _filter = undefined, _raw = false) {
     var _json_content = file_read_all_text(_filename);
     if (is_undefined(_json_content))

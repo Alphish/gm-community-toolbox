@@ -2,6 +2,9 @@
 /// @desc A base for tools writing documentation files.
 function DocsFileWriter() constructor {
     var _generator_path = GM_project_filename;
+    root_path = file_path_resolve(
+        file_path_append(_generator_path, "..", "..")
+    );
     docs_path = file_path_resolve(
         file_path_append(_generator_path, "..", "..", "Docs")
     );

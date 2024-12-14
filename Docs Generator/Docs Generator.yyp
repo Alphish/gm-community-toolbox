@@ -29,6 +29,7 @@
     {"$GMFolder":"","%Name":"Reference","folderPath":"folders/Writing/Reference.yy","name":"Reference","resourceType":"GMFolder","resourceVersion":"2.0",},
   ],
   "IncludedFiles":[
+    {"$GMIncludedFile":"","%Name":"README.stub.md","CopyToMask":-1,"filePath":"datafiles","name":"README.stub.md","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"ArrayUtils_Basics.stub.md","CopyToMask":-1,"filePath":"datafiles/Reference","name":"ArrayUtils_Basics.stub.md","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"ArrayUtils_Math.stub.md","CopyToMask":-1,"filePath":"datafiles/Reference","name":"ArrayUtils_Math.stub.md","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"ArrayUtils_Random.stub.md","CopyToMask":-1,"filePath":"datafiles/Reference","name":"ArrayUtils_Random.stub.md","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
@@ -83,6 +84,7 @@
     {"id":{"name":"struct_PackageReleaseEntry","path":"scripts/struct_PackageReleaseEntry/struct_PackageReleaseEntry.yy",},},
     {"id":{"name":"struct_PackageReleaseGroup","path":"scripts/struct_PackageReleaseGroup/struct_PackageReleaseGroup.yy",},},
     {"id":{"name":"struct_ProjectLoadingState","path":"scripts/struct_ProjectLoadingState/struct_ProjectLoadingState.yy",},},
+    {"id":{"name":"struct_ReadmeWriter","path":"scripts/struct_ReadmeWriter/struct_ReadmeWriter.yy",},},
     {"id":{"name":"struct_ReferenceArgument","path":"scripts/struct_ReferenceArgument/struct_ReferenceArgument.yy",},},
     {"id":{"name":"struct_ReferenceArgumentStub","path":"scripts/struct_ReferenceArgumentStub/struct_ReferenceArgumentStub.yy",},},
     {"id":{"name":"struct_ReferenceFilesGenerator","path":"scripts/struct_ReferenceFilesGenerator/struct_ReferenceFilesGenerator.yy",},},
