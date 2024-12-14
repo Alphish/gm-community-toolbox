@@ -2,7 +2,7 @@
 
 # json_save
 
-[Go to source](/Community%20Toolbox/scripts/utils_CommunityToolboxJson/utils_CommunityToolboxJson.gml#L25)
+[Go to source](/Community%20Toolbox/scripts/utils_CommunityToolboxJson/utils_CommunityToolboxJson.gml#L26)
 
 Saves a given GML value (struct/array/string/real) into a JSON file.
 

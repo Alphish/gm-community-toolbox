@@ -3,6 +3,13 @@
 # Release notes
 Below is the releases history, with detailed information about specific functions affected.
 
+### 24.6.1
+
+**Download:** [YYMPS](https://github.com/Alphish/gm-community-toolbox/releases/download/v24.6.1/CommunityToolbox.24.6.1.yymps)
+
+- **JSON utilities**
+    - [json_load](Reference/Functions/json_load.md) - Fixed the JSDoc return type.
+
 ### 24.6.0
 
 **Download:** [YYMPS](https://github.com/Alphish/gm-community-toolbox/releases/download/v24.6.0/CommunityToolbox.24.6.0.yymps)
