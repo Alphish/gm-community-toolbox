@@ -71,7 +71,10 @@
 
 @release <24.6.0>
     @download <YYMPS> /releases/download/v24.6.0/CommunityToolbox.24.6.0.yymps
+    @gmver <2024.6.2>
 @release <23.4.1>
     @download <YYMPS> /releases/download/v23.4.1/CommunityToolbox.23.4.1.yymps
+    @gmver <2024.6.2>
 @release <23.4.0>
     @download <YYMPS> /releases/download/v23.4.0/CommunityToolbox.23.4.0.yymps
+    @gmver <2024.6.2>

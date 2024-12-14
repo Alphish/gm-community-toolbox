@@ -74,7 +74,7 @@ function ReleaseNotesAssembler(_docstoc, _reference) : MultiStepProcess() constr
         var _version = _release.version;
         var _release_data = releases_by_version[$ _version];
         var _groups = array_map(_release_data.groups, method(self, create_release_group));
-        return new PackageRelease(_version, _release.downloads, _groups);
+        return new PackageRelease(_version, _release.downloads, _groups, _release.gmver);
     }
     
     static create_release_group = function(_group) {

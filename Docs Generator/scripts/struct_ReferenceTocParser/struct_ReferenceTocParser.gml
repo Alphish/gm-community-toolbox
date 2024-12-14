@@ -64,13 +64,17 @@ function ReferenceTocParser(_path, _items) : MultiStepProcess() constructor {
                 register_download(_line_data);
                 break;
             
+            case "gmver":
+                register_gmver(_line_data);
+                break;
+            
             default:
                 throw $"No TOC line processing has been defined for '{_line_data.type}' node type.";
         }
     }
     
     static validate_line_data = function(_line_data) {
-        static allowed_types = ["script", "region", "func", "release", "download"];
+        static allowed_types = ["script", "region", "func", "release", "download", "gmver"];
         
         if (is_undefined(_line_data.keyname) || is_undefined(_line_data.type)) {
             fail($"Could not properly read the line '{_line_data.content}'.");
@@ -82,7 +86,7 @@ function ReferenceTocParser(_path, _items) : MultiStepProcess() constructor {
             return false;
         }
         
-        if (_line_data.type == "release" || _line_data.type == "download") {
+        if (_line_data.type == "release" || _line_data.type == "download" || _line_data.type == "gmver") {
             return true;
         }
         
@@ -136,7 +140,7 @@ function ReferenceTocParser(_path, _items) : MultiStepProcess() constructor {
     
     static register_release = function(_line_data) {
         var _keyname = _line_data.keyname;
-        array_push(releases, { version: _keyname, downloads: [] });
+        array_push(releases, { version: _keyname, downloads: [], gmver: undefined });
     }
     
     static register_download = function(_line_data) {
@@ -144,6 +148,12 @@ function ReferenceTocParser(_path, _items) : MultiStepProcess() constructor {
         var _link = _line_data.filename;
         var _release = array_last(releases);
         array_push(_release.downloads, { title: _title, link: _link });
+    }
+    
+    static register_gmver = function(_line_data) {
+        var _keyname = _line_data.keyname;
+        var _release = array_last(releases);
+        _release.gmver = _keyname;
     }
     
     static check_all_items_in_toc = function() {
