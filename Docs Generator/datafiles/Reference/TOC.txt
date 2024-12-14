@@ -69,6 +69,9 @@
         @func <static_init>
         @func <static_init_in_progress>
 
+@release <24.6.1>
+    @download <YYMPS> /releases/download/v24.6.1/CommunityToolbox.24.6.1.yymps
+    @gmver <2024.6.2>
 @release <24.6.0>
     @download <YYMPS> /releases/download/v24.6.0/CommunityToolbox.24.6.0.yymps
     @gmver <2024.6.2>

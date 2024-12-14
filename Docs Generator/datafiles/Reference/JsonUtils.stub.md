@@ -28,6 +28,9 @@ function load_location() {
 }
 ```
 
+@update 24.6.1
+Fixed the JSDoc return type.
+
 @update 24.6.0
 Added the `filter` and `raw` parameters to additionally process parsed values.
 
