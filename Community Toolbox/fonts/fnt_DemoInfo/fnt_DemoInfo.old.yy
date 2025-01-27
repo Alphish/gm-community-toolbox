@@ -115,7 +115,7 @@
   "italic":false,
   "kerningPairs":[],
   "last":0,
-  "lineHeight":16,
+  "lineHeight":0,
   "maintainGms1Font":false,
   "name":"fnt_DemoInfo",
   "parent":{
