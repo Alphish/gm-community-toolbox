@@ -1,3 +1,7 @@
+<p align="center">
+    <img src="Graphics/Logo.png" alt="GameMaker Community Toolbox Logo">
+</p>
+
 # Important links
 
 - [Community Toolbox 24.6.1 YYMPS package](https://github.com/Alphish/gm-community-toolbox/releases/download/v24.6.1/CommunityToolbox.24.6.1.yymps) - the most recent release
