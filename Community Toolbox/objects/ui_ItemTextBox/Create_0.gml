@@ -7,7 +7,7 @@ event_inherited();
 setter_property = "set_" + text_property;
 text = input_format.format(text_source[$ text_property]);
 
-focus_blend = #404040;
-hover_blend = $202020;
+focus_blend = #606060;
+hover_blend = $404040;
 basic_blend = c_black;
 image_blend = c_black;
