@@ -48,6 +48,7 @@
     {"$GMFolder":"","%Name":"Tools","folderPath":"folders/Tests/Verrific/Tools.yy","name":"Tools","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Log","folderPath":"folders/Tests/Verrific/Tools/Log.yy","name":"Log","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"UI Elements","folderPath":"folders/UI Elements.yy","name":"UI Elements","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Input","folderPath":"folders/UI Elements/Input.yy","name":"Input","resourceType":"GMFolder","resourceVersion":"2.0",},
   ],
   "IncludedFiles":[
     {"$GMIncludedFile":"","%Name":"testarray.json","CopyToMask":-1,"filePath":"datafiles/testing","name":"testarray.json","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
@@ -127,6 +128,9 @@
     {"id":{"name":"demo_UnlerpRelerp","path":"rooms/demo_UnlerpRelerp/demo_UnlerpRelerp.yy",},},
     {"id":{"name":"rm_Home","path":"rooms/rm_Home/rm_Home.yy",},},
     {"id":{"name":"rm_Tests","path":"rooms/rm_Tests/rm_Tests.yy",},},
+    {"id":{"name":"ctor_IntegerInputFormat","path":"scripts/ctor_IntegerInputFormat/ctor_IntegerInputFormat.yy",},},
+    {"id":{"name":"ctor_StringInputFormat","path":"scripts/ctor_StringInputFormat/ctor_StringInputFormat.yy",},},
+    {"id":{"name":"ctor_TextInputFormat","path":"scripts/ctor_TextInputFormat/ctor_TextInputFormat.yy",},},
     {"id":{"name":"enum_VerrificStatus","path":"scripts/enum_VerrificStatus/enum_VerrificStatus.yy",},},
     {"id":{"name":"feather_CommunityToolbox","path":"scripts/feather_CommunityToolbox/feather_CommunityToolbox.yy",},},
     {"id":{"name":"struct_VerrificAsserter","path":"scripts/struct_VerrificAsserter/struct_VerrificAsserter.yy",},},

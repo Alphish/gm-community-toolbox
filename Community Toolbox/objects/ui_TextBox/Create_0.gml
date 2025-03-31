@@ -2,6 +2,10 @@ text = "";
 insert_position = 0;
 keyboard_string = ""; // clean up the keyboard_string from earlier
 
+focus_blend = c_white;
+hover_blend = c_silver;
+basic_blend = c_gray;
+
 // handling the underscore "blinking" at the current input position
 blink = 0;
 blink_max = 40;
@@ -58,4 +62,20 @@ is_repeated = function(_key) {
         return false; // waiting for start of repetition
     else
         return (repeat_time - repeat_delay) mod repeat_period == 0; // performing repetition every X frames
+}
+
+update_source = function() {
+    if (!is_defined(text_source))
+        return;
+    
+    if (!input_format.can_parse(text))
+        return;
+    
+    var _value = input_format.parse(text);
+    if (is_defined(setter_property) && setter_property != "")
+        text_source[$ setter_property](_value);
+    else
+        text_source[$ text_property] = _value;
+    
+    text = input_format.format(text_source[$ text_property]);
 }
