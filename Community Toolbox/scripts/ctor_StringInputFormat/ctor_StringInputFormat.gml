@@ -1,6 +1,8 @@
-function StringInputFormat() : TextInputFormat() constructor {
+function StringInputFormat(_allowempty) : TextInputFormat() constructor {
+    allow_empty = _allowempty;
+    
     can_parse = function(_text) {
-        return true;
+        return allow_empty || _text != "";
     }
     
     parse = function(_text) {
@@ -12,4 +14,5 @@ function StringInputFormat() : TextInputFormat() constructor {
     }
 }
 
-StringInputFormat.instance = new StringInputFormat();
+StringInputFormat.instance = new StringInputFormat(true);
+StringInputFormat.non_empty = new StringInputFormat(false);

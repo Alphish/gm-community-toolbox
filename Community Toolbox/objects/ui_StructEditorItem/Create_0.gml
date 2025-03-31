@@ -26,7 +26,7 @@ key_text_box = instance_create_depth(x, y, depth - 1, ui_ItemTextBox, {
     text_property: nameof(collection_key),
     image_xscale: key_width / 32,
     image_yscale: height / 32,
-    input_format: StringInputFormat.instance,
+    input_format: StringInputFormat.non_empty,
 });
 
 item_text_box = instance_create_depth(x + key_width, y, depth - 1, ui_ItemTextBox, {
