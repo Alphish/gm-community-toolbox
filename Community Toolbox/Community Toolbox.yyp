@@ -49,6 +49,7 @@
     {"$GMFolder":"","%Name":"Log","folderPath":"folders/Tests/Verrific/Tools/Log.yy","name":"Log","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"UI Elements","folderPath":"folders/UI Elements.yy","name":"UI Elements","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Input","folderPath":"folders/UI Elements/Input.yy","name":"Input","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Layout","folderPath":"folders/UI Elements/Layout.yy","name":"Layout","resourceType":"GMFolder","resourceVersion":"2.0",},
   ],
   "IncludedFiles":[
     {"$GMIncludedFile":"","%Name":"testarray.json","CopyToMask":-1,"filePath":"datafiles/testing","name":"testarray.json","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
@@ -108,6 +109,7 @@
     {"id":{"name":"ui_TextArea","path":"objects/ui_TextArea/ui_TextArea.yy",},},
     {"id":{"name":"ui_TextBox","path":"objects/ui_TextBox/ui_TextBox.yy",},},
     {"id":{"name":"ui_TextDisplay","path":"objects/ui_TextDisplay/ui_TextDisplay.yy",},},
+    {"id":{"name":"ui_TitleBar","path":"objects/ui_TitleBar/ui_TitleBar.yy",},},
     {"id":{"name":"ui_UnlerpRelerpSlider","path":"objects/ui_UnlerpRelerpSlider/ui_UnlerpRelerpSlider.yy",},},
     {"id":{"name":"ui_VerrificLogView","path":"objects/ui_VerrificLogView/ui_VerrificLogView.yy",},},
     {"id":{"name":"demo_ArrayTransfer","path":"rooms/demo_ArrayTransfer/demo_ArrayTransfer.yy",},},
@@ -211,6 +213,7 @@
     {"id":{"name":"spr_CollisionChecker","path":"sprites/spr_CollisionChecker/spr_CollisionChecker.yy",},},
     {"id":{"name":"spr_CollisionSnake","path":"sprites/spr_CollisionSnake/spr_CollisionSnake.yy",},},
     {"id":{"name":"spr_ShaderDemo","path":"sprites/spr_ShaderDemo/spr_ShaderDemo.yy",},},
+    {"id":{"name":"spr_TitleBar","path":"sprites/spr_TitleBar/spr_TitleBar.yy",},},
     {"id":{"name":"spr_TopHoverable","path":"sprites/spr_TopHoverable/spr_TopHoverable.yy",},},
   ],
   "resourceType":"GMProject",
