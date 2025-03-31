@@ -114,6 +114,8 @@
     {"id":{"name":"ui_SelectButton","path":"objects/ui_SelectButton/ui_SelectButton.yy",},},
     {"id":{"name":"ui_Slider","path":"objects/ui_Slider/ui_Slider.yy",},},
     {"id":{"name":"ui_StructAssignButton","path":"objects/ui_StructAssignButton/ui_StructAssignButton.yy",},},
+    {"id":{"name":"ui_StructEditor","path":"objects/ui_StructEditor/ui_StructEditor.yy",},},
+    {"id":{"name":"ui_StructEditorItem","path":"objects/ui_StructEditorItem/ui_StructEditorItem.yy",},},
     {"id":{"name":"ui_TextArea","path":"objects/ui_TextArea/ui_TextArea.yy",},},
     {"id":{"name":"ui_TextBox","path":"objects/ui_TextBox/ui_TextBox.yy",},},
     {"id":{"name":"ui_TextDisplay","path":"objects/ui_TextDisplay/ui_TextDisplay.yy",},},
