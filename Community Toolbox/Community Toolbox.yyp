@@ -102,6 +102,8 @@
     {"id":{"name":"par_CollectionEditor","path":"objects/par_CollectionEditor/par_CollectionEditor.yy",},},
     {"id":{"name":"par_CollectionEditorItem","path":"objects/par_CollectionEditorItem/par_CollectionEditorItem.yy",},},
     {"id":{"name":"par_ReachingTargetPanel","path":"objects/par_ReachingTargetPanel/par_ReachingTargetPanel.yy",},},
+    {"id":{"name":"ui_ArrayEditor","path":"objects/ui_ArrayEditor/ui_ArrayEditor.yy",},},
+    {"id":{"name":"ui_ArrayEditorItem","path":"objects/ui_ArrayEditorItem/ui_ArrayEditorItem.yy",},},
     {"id":{"name":"ui_Button","path":"objects/ui_Button/ui_Button.yy",},},
     {"id":{"name":"ui_CollectionAdd","path":"objects/ui_CollectionAdd/ui_CollectionAdd.yy",},},
     {"id":{"name":"ui_CollectionRemove","path":"objects/ui_CollectionRemove/ui_CollectionRemove.yy",},},
