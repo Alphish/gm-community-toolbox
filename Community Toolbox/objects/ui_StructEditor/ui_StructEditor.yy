@@ -1,0 +1,47 @@
+{
+  "$GMObject":"",
+  "%Name":"ui_StructEditor",
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":10,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
+  "managed":true,
+  "name":"ui_StructEditor",
+  "overriddenProperties":[
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"par_CollectionEditor","path":"objects/par_CollectionEditor/par_CollectionEditor.yy",},"propertyId":{"name":"item_object","path":"objects/par_CollectionEditor/par_CollectionEditor.yy",},"resource":{"name":"ui_StructEditorItem","path":"objects/ui_StructEditorItem/ui_StructEditorItem.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"ui_StructEditorItem",},
+  ],
+  "parent":{
+    "name":"Collections",
+    "path":"folders/UI Elements/Collections.yy",
+  },
+  "parentObjectId":{
+    "name":"par_CollectionEditor",
+    "path":"objects/par_CollectionEditor/par_CollectionEditor.yy",
+  },
+  "persistent":false,
+  "physicsAngularDamping":0.1,
+  "physicsDensity":0.5,
+  "physicsFriction":0.2,
+  "physicsGroup":1,
+  "physicsKinematic":false,
+  "physicsLinearDamping":0.1,
+  "physicsObject":false,
+  "physicsRestitution":0.1,
+  "physicsSensor":false,
+  "physicsShape":1,
+  "physicsShapePoints":[],
+  "physicsStartAwake":true,
+  "properties":[
+    {"$GMObjectProperty":"v1","%Name":"default_key","filters":[],"listItems":[],"multiselect":false,"name":"default_key","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"key","varType":2,},
+    {"$GMObjectProperty":"v1","%Name":"default_item","filters":[],"listItems":[],"multiselect":false,"name":"default_item","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"undefined","varType":4,},
+    {"$GMObjectProperty":"v1","%Name":"key_field_width","filters":[],"listItems":[],"multiselect":false,"name":"key_field_width","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"sprite_width div 3","varType":0,},
+  ],
+  "resourceType":"GMObject",
+  "resourceVersion":"2.0",
+  "solid":false,
+  "spriteId":{
+    "name":"spr_CollectionEditor",
+    "path":"sprites/spr_CollectionEditor/spr_CollectionEditor.yy",
+  },
+  "spriteMaskId":null,
+  "visible":true,
+}
