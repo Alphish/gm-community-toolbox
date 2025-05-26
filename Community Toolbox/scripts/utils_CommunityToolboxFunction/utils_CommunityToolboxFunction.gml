@@ -51,7 +51,7 @@ function constructor_get_children(_function) {
 /// @arg {Array} [args]             Arguments to pass into the constructor (empty by default).
 /// @arg {Real} [offset]            The arguments array index to start taking arguments from (0 by default).
 /// @arg {Real} [length]            The number of arguments to take from the array (all by default).
-/// @return {Struct}
+/// @returns {Struct}
 function constructor_call(_constructor, _args = undefined, _offset = 0, _length = undefined) {
     if (is_undefined(_args) || array_length(_args) == 0)
         return new _constructor();

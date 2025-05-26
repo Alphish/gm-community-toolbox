@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"suite_FunctionUtilsSuite",
   "parent":{
-    "name":"Functions",
-    "path":"folders/Tests/Functions.yy",
+    "name":"Function",
+    "path":"folders/Tests/Function.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",
