@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"tests_StaticInitTests",
+  "%Name":"tests_ConstructorGetParentTests",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"tests_StaticInitTests",
+  "name":"tests_ConstructorGetParentTests",
   "parent":{
     "name":"Functions",
     "path":"folders/Tests/Functions.yy",
