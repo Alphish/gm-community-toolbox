@@ -29,6 +29,10 @@
         @func <array_pop_random>
 @script <Struct> StructUtils
     @func <struct_assign>
+@script <Function> FunctionUtils
+    @region <Function:Static initialization> FunctionUtils_Static
+        @func <static_init>
+        @func <static_init_in_progress>
 @script <DsList> DsListUtils
     @func <ds_list_create_from_array>
     @func <ds_list_add_from_array>
@@ -65,9 +69,6 @@
     @region <Misc:Nullish checks> MiscUtils_Nullish
         @func <is_nullish>
         @func <is_defined>
-    @region <Misc:Static initialization> MiscUtils_Static
-        @func <static_init>
-        @func <static_init_in_progress>
 
 @release <24.6.1>
     @download <YYMPS> /releases/download/v24.6.1/CommunityToolbox.24.6.1.yymps
