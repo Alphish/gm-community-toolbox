@@ -4,7 +4,7 @@
 
 # Important links
 
-- [Community Toolbox 24.6.1 YYMPS package](https://github.com/Alphish/gm-community-toolbox/releases/download/v24.6.1/CommunityToolbox.24.6.1.yymps) - the most recent release
+- [Community Toolbox 24.11.0 YYMPS package](https://github.com/Alphish/gm-community-toolbox/releases/download/v24.11.0/CommunityToolbox.24.11.0.yymps) - the most recent release
 - [Release notes](/Docs/RELEASENOTES.md)
 - [Functions reference](/Docs/Reference/Reference.md)
 - [Issues Page](https://github.com/Alphish/gm-community-toolbox/issues) - for requesting Community Toolbox functionality and reporting bugs
@@ -14,7 +14,7 @@
 
 # Installation
 
-- download the Community Toolbox local package (the YYMPS file); for the current package, GameMaker 2024.6.2 or later is recommended
+- download the Community Toolbox local package (the YYMPS file); for the current package, GameMaker 2024.11.0 or later is recommended
 - open your GameMaker project
 - from "Tools" menu, select "Import Local Package"
 - select whole package contents to import (or only some scripts) and click "Import"
@@ -27,7 +27,7 @@ GameMaker Community Toolbox aims to fill this niche. The selection of functions 
 
 Not only that, using the same utilities package would improve collaborations. Instead of two developers independently using their own variations of common utility functions (differently named, too), they can use the same set of utilities. By using common function names, they would understand each other's code more easily as well.
 
-Currently, a 24.6.1 version of Community Toolbox was released, designed to be compatible with GameMaker 2024.6.2. You can check out the links and the installation guide above for more information. 
+Currently, a 24.11.0 version of Community Toolbox was released, designed to be compatible with GameMaker 2024.11.0. You can check out the links and the installation guide above for more information. 
 
 **Note:** While GameMaker Community Toolbox is meant to be community-driven, I will still make the final decisions regarding whether to include a certain function in the package or not. This is to ensure that design guidelines will be adhered too, and also to avoid potential feature bloat, when many highly specific functions would be included.
 

@@ -3,6 +3,16 @@
 # Release notes
 Below is the releases history, with detailed information about specific functions affected.
 
+### 24.11.0
+
+**Download:** [YYMPS](https://github.com/Alphish/gm-community-toolbox/releases/download/v24.11.0/CommunityToolbox.24.11.0.yymps)
+
+- **Function utilities: Constructors**
+    - [is_constructor](Reference/Functions/is_constructor.md) - Created a function to check if the given function is a constructor.
+    - [constructor_get_parent](Reference/Functions/constructor_get_parent.md) - Created a function to retrieve the parent of a constructor, if any.
+    - [constructor_get_children](Reference/Functions/constructor_get_children.md) - Created a function to retrieve the children of a constructor, if any.
+    - [constructor_call](Reference/Functions/constructor_call.md) - Created a function to create a new instance of a constructor with arbitrary arguments.
+
 ### 24.6.1
 
 **Download:** [YYMPS](https://github.com/Alphish/gm-community-toolbox/releases/download/v24.6.1/CommunityToolbox.24.6.1.yymps)
