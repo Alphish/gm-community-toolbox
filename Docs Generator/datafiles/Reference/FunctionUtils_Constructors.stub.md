@@ -2,7 +2,7 @@
 
 @section Remarks
 
-The constructor information functions - `is_constructor`, `constructor_get_parent` and `constructor_get_children` - rely on the GameMaker-compiled tags **@@constructor** and **@@parent=<constructor name>**. However, these tags are only added to top-level constructors and not nested constructors, and there are no plans to change it. See this GameMaker report for more details: https://github.com/YoYoGames/GameMaker-Bugs/issues/10317
+The constructor information functions - `is_constructor`, `constructor_get_parent` and `constructor_get_children` - rely on the GameMaker-compiled tags **@@constructor** and **@@parent=&lt;constructor name&gt;**. However, these tags are only added to top-level constructors and not nested constructors, and there are no plans to change it. See this GameMaker report for more details: https://github.com/YoYoGames/GameMaker-Bugs/issues/10317
 
 Thus, if your project uses nested constructors, for them to properly benefit from Community Toolbox constructor information functions you may need to add add relevant tags manually or otherwise work around the issue.
 
