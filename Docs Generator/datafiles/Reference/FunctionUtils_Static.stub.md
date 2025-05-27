@@ -1,4 +1,4 @@
-@region <Misc:Static initialization> Static initialization
+@region <Function:Static initialization> Static initialization
 
 @func <static_init>
 

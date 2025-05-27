@@ -16,6 +16,9 @@ Below are listed various scripts and functions available in the Community Toolbo
     - [Number array statistics](/Docs/Reference/Groups/ArrayUtils_Maths.md)
     - [Retrieving random items](/Docs/Reference/Groups/ArrayUtils_Random.md)
 - [Struct utilities](/Docs/Reference/Groups/StructUtils.md)
+- [Function utilities](/Docs/Reference/Groups/FunctionUtils.md)
+    - [Constructors](/Docs/Reference/Groups/FunctionUtils_Constructors.md)
+    - [Static initialization](/Docs/Reference/Groups/FunctionUtils_Static.md)
 - [DS List utilities](/Docs/Reference/Groups/DsListUtils.md)
 - [File utilities](/Docs/Reference/Groups/FileUtils.md)
 - [JSON utilities](/Docs/Reference/Groups/JsonUtils.md)
@@ -26,7 +29,6 @@ Below are listed various scripts and functions available in the Community Toolbo
 - [Shader utilities](/Docs/Reference/Groups/ShaderUtils.md)
 - [Other utilities](/Docs/Reference/Groups/MiscUtils.md)
     - [Nullish checks](/Docs/Reference/Groups/MiscUtils_Nullish.md)
-    - [Static initialization](/Docs/Reference/Groups/MiscUtils_Static.md)
 
 ### Functions list
 
@@ -48,6 +50,9 @@ Below are listed various scripts and functions available in the Community Toolbo
 - [collision_line_array](/Docs/Reference/Functions/collision_line_array.md)
 - [collision_point_array](/Docs/Reference/Functions/collision_point_array.md)
 - [collision_rectangle_array](/Docs/Reference/Functions/collision_rectangle_array.md)
+- [constructor_call](/Docs/Reference/Functions/constructor_call.md)
+- [constructor_get_children](/Docs/Reference/Functions/constructor_get_children.md)
+- [constructor_get_parent](/Docs/Reference/Functions/constructor_get_parent.md)
 - [draw_arc](/Docs/Reference/Functions/draw_arc.md)
 - [draw_circle_sector](/Docs/Reference/Functions/draw_circle_sector.md)
 - [draw_circle_segment](/Docs/Reference/Functions/draw_circle_segment.md)
@@ -66,6 +71,7 @@ Below are listed various scripts and functions available in the Community Toolbo
 - [instance_place_array](/Docs/Reference/Functions/instance_place_array.md)
 - [instance_position_array](/Docs/Reference/Functions/instance_position_array.md)
 - [instance_position_top](/Docs/Reference/Functions/instance_position_top.md)
+- [is_constructor](/Docs/Reference/Functions/is_constructor.md)
 - [is_defined](/Docs/Reference/Functions/is_defined.md)
 - [is_nullish](/Docs/Reference/Functions/is_nullish.md)
 - [json_load](/Docs/Reference/Functions/json_load.md)

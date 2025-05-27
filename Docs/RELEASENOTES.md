@@ -3,6 +3,16 @@
 # Release notes
 Below is the releases history, with detailed information about specific functions affected.
 
+### 24.11.0
+
+**Download:** [YYMPS](https://github.com/Alphish/gm-community-toolbox/releases/download/v24.11.0/CommunityToolbox.24.11.0.yymps)
+
+- **Function utilities: Constructors**
+    - [is_constructor](Reference/Functions/is_constructor.md) - Created a function to check if the given function is a constructor.
+    - [constructor_get_parent](Reference/Functions/constructor_get_parent.md) - Created a function to retrieve the parent of a constructor, if any.
+    - [constructor_get_children](Reference/Functions/constructor_get_children.md) - Created a function to retrieve the children of a constructor, if any.
+    - [constructor_call](Reference/Functions/constructor_call.md) - Created a function to create a new instance of a constructor with arbitrary arguments.
+
 ### 24.6.1
 
 **Download:** [YYMPS](https://github.com/Alphish/gm-community-toolbox/releases/download/v24.6.1/CommunityToolbox.24.6.1.yymps)
@@ -23,6 +33,9 @@ Below is the releases history, with detailed information about specific function
     - [array_insert_ext](Reference/Functions/array_insert_ext.md) - Created a function to insert items from an array into another array.
 - **Struct utilities**
     - [struct_assign](Reference/Functions/struct_assign.md) - Created a function to assign contents of one struct (or sequence of structs) to another.
+- **Function utilities: Static initialization**
+    - [static_init](Reference/Functions/static_init.md) - Created a function to initialize static variables of other functions.
+    - [static_init_in_progress](Reference/Functions/static_init_in_progress.md) - Created a function to check if static variables initialization is in progress, in order to skip the non-static logic.
 - **DS List utilities**
     - [ds_list_create_from_array](Reference/Functions/ds_list_create_from_array.md) - Created a function to create a DS list from an array.
     - [ds_list_add_from_array](Reference/Functions/ds_list_add_from_array.md) - Created a function to add items to a DS list from an array.
@@ -49,9 +62,6 @@ Below is the releases history, with detailed information about specific function
     - [draw_circle_segment](Reference/Functions/draw_circle_segment.md) - Created a function to draw a circle segment shape (i.e. a bow).
     - [draw_ring](Reference/Functions/draw_ring.md) - Created a function to draw a ring shape.
     - [draw_ring_arc](Reference/Functions/draw_ring_arc.md) - Created a function to draw a ring slice shape.
-- **Other utilities: Static initialization**
-    - [static_init](Reference/Functions/static_init.md) - Created a function to initialize static variables of other functions.
-    - [static_init_in_progress](Reference/Functions/static_init_in_progress.md) - Created a function to check if static variables initialization is in progress, in order to skip the non-static logic.
 
 ### 23.4.1
 
