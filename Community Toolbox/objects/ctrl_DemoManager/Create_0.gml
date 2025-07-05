@@ -60,6 +60,10 @@ with (define_category("Structs")) {
     define_demo("Struct assignment", demo_StructAssign, "Showcasing a function that sets values from one struct to another struct.");
 }
 
+with (define_category("Layers")) {
+    define_demo("Layer utilities", demo_LayerUtilities);
+}
+
 with (define_category("Collisions")) {
     define_demo("Array-based collisions", demo_ShapesCollision, "Showcasing array-based counterparts to built-in collision functions that populate DS lists.");
     define_demo("Topmost instance", demo_TopHover, "Showcasing a function finding the topmost/least depth instance at the given point.");
