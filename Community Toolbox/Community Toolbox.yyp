@@ -220,6 +220,7 @@
     {"id":{"name":"utils_CommunityToolboxFile","path":"scripts/utils_CommunityToolboxFile/utils_CommunityToolboxFile.yy",},},
     {"id":{"name":"utils_CommunityToolboxFunction","path":"scripts/utils_CommunityToolboxFunction/utils_CommunityToolboxFunction.yy",},},
     {"id":{"name":"utils_CommunityToolboxJson","path":"scripts/utils_CommunityToolboxJson/utils_CommunityToolboxJson.yy",},},
+    {"id":{"name":"utils_CommunityToolboxLayer","path":"scripts/utils_CommunityToolboxLayer/utils_CommunityToolboxLayer.yy",},},
     {"id":{"name":"utils_CommunityToolboxMath","path":"scripts/utils_CommunityToolboxMath/utils_CommunityToolboxMath.yy",},},
     {"id":{"name":"utils_CommunityToolboxMisc","path":"scripts/utils_CommunityToolboxMisc/utils_CommunityToolboxMisc.yy",},},
     {"id":{"name":"utils_CommunityToolboxShader","path":"scripts/utils_CommunityToolboxShader/utils_CommunityToolboxShader.yy",},},
