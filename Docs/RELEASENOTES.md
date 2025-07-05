@@ -12,6 +12,12 @@ Below is the releases history, with detailed information about specific function
     - [constructor_get_parent](Reference/Functions/constructor_get_parent.md) - Created a function to retrieve the parent of a constructor, if any.
     - [constructor_get_children](Reference/Functions/constructor_get_children.md) - Created a function to retrieve the children of a constructor, if any.
     - [constructor_call](Reference/Functions/constructor_call.md) - Created a function to create a new instance of a constructor with arbitrary arguments.
+- **Layer utilities**
+    - [layer_destroy_sprites](Reference/Functions/layer_destroy_sprites.md) - Created a function to destroy all sprite elements in a given layer.
+    - [layer_destroy_text](Reference/Functions/layer_destroy_text.md) - Created a function to destroy all text elements in a given layer.
+    - [layer_destroy_sequences](Reference/Functions/layer_destroy_sequences.md) - Created a function to destroy all sequence elements in a given layer.
+    - [layer_destroy_backgrounds](Reference/Functions/layer_destroy_backgrounds.md) - Created a function to destroy all background elements in a given layer.
+    - [layer_destroy_tilemaps](Reference/Functions/layer_destroy_tilemaps.md) - Created a function to destroy all tilemap elements in a given layer.
 
 ### 24.6.1
 
