@@ -49,6 +49,12 @@
 @script <Json> JsonUtils
     @func <json_load>
     @func <json_save>
+@script <Layer> LayerUtils
+    @func <layer_destroy_sprites>
+    @func <layer_destroy_text>
+    @func <layer_destroy_sequences>
+    @func <layer_destroy_backgrounds>
+    @func <layer_destroy_tilemaps>
 @script <Collision> CollisionUtils
     @func <instance_position_top>
     @func <instance_position_array>
