@@ -2,6 +2,7 @@ function StringUtilsSuite() : VerrificSuiteGroup("String utilities tests") const
     array_foreach([
         StringContainsTests,
         StringToCharArrayTests,
+        StringInterpolateTests,
     ], function(_test) {
         add_methods_from(_test);
     });
