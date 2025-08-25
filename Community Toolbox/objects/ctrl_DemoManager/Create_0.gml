@@ -48,6 +48,7 @@ with (define_category("Maths")) {
 
 with (define_category("Strings")) {
     define_demo("Various string utilities", demo_StringUtilities);
+    define_demo("String interpolation", demo_StringInterpolation, "Showcasing a function for replacing placeholders in a template with given values.");
 }
 
 with (define_category("Arrays")) {
