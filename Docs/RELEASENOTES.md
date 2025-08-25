@@ -7,6 +7,8 @@ Below is the releases history, with detailed information about specific function
 
 **Download:** [YYMPS](https://github.com/Alphish/gm-community-toolbox/releases/download/v24.11.0/CommunityToolbox.24.11.0.yymps)
 
+- **String utilities**
+    - [string_interpolate](Reference/Functions/string_interpolate.md) - Created a function to replace placeholders with struct values in a string template.
 - **Function utilities: Constructors**
     - [is_constructor](Reference/Functions/is_constructor.md) - Created a function to check if the given function is a constructor.
     - [constructor_get_parent](Reference/Functions/constructor_get_parent.md) - Created a function to retrieve the parent of a constructor, if any.
