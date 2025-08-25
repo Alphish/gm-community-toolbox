@@ -127,7 +127,7 @@ This format makes `string_interpolate` similar to template strings, as described
 
 If the template needs to use curly braces verbatim, one may use double braces to replace them. Each pair of repeated braces counts as a single brace - e.g. four closing braces in a row will be replaced with two closing braces, six opening braces in a row will be replaced with three opening braces, and so on. Also, placeholders cannot contain curly braces. For example, a template of `"{outer{inner}outer}"` will attempt to replace only `{inner}` (with "inner" as placeholder content), as opposed to `{outer{inner}` or `{outer{inner}outer}`
 
-When simply replacing placeholders with corresponding struct values isn't enough, one may use a custom evaluator function, accepting values as the first argument and placeholder text as the second. A custom evaluator may be used e.g. to make searching for struct values case-insensitive, handle formatting specifiers (e.g. `"{month:2}` would be padded up to two digits), evaluate simple expressions and so on.
+When simply replacing placeholders with corresponding struct values isn't enough, one may use a custom evaluator function, accepting values as the first argument and placeholder text as the second. A custom evaluator may be used e.g. to make searching for struct values case-insensitive, handle formatting specifiers (e.g. `"{month:2}"` would be padded up to two digits), evaluate simple expressions and so on.
 
 @section Example 1: Basic usage
 
