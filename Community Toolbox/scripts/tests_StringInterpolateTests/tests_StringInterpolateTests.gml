@@ -33,6 +33,18 @@ function StringInterpolateTests(_run, _method) : VerrificMethodTest(_run, _metho
         then_result_should_be("There are 42 apples");
     }
     
+    static should_replace_inner_placeholder_only = function() {
+        given_template("{outer{inner}outer}");
+        given_values({});
+        
+        // using an evaluator that replaces any valid placeholder with its uppercase content
+        // so that results aren't spoiled by e.g. "{outer{inner}" key not existing and trying to find the next best thing
+        given_evaluator(function(_values, _placeholder) { return string_upper(_placeholder); });
+        
+        when_interpolated();
+        then_result_should_be("{outerINNERouter}");
+    }
+    
     static should_preserve_unmatched_placeholder = function() {
         given_template("Hello, {greetee}!");
         given_values({ apples: 42 });
@@ -88,11 +100,36 @@ function StringInterpolateTests(_run, _method) : VerrificMethodTest(_run, _metho
             var _split = string_split(_placeholder, ":");
             var _key = _split[0];
             var _digits = real(_split[1]);
-            return string_replace(string_format(_values[$ _key], _digits, 0), " ", "0");
+            return string_replace_all(string_format(_values[$ _key], _digits, 0), " ", "0");
         });
         
         when_interpolated();
         then_result_should_be("Current date: 2021-02-03");
+    }
+    
+    static should_allow_recursive_interpolation = function() {
+        given_template("Money: {money} | Score: {score} | Energy: {energy}");
+        given_values({
+            money: 6245.3, money_format: "${2.2}",
+            score: 15648, score_format: "{8.0}pts",
+            energy: 37.13, energy_format: "{0.0}/100"
+            });
+        given_evaluator(function(_values, _placeholder) {
+            if (!struct_exists(_values, _placeholder))
+                return undefined;
+            
+            var _amount = _values[$ _placeholder];
+            var _format = _values[$ _placeholder + "_format"];
+            return string_interpolate(_format, _amount, function(_value, _prec) {
+                var _split = string_split(_prec, ".");
+                var _total = real(_split[0]);
+                var _decimals = real(_split[1]);
+                return string_replace_all(string_format(_value, _total, _decimals), " ", "0");
+            });
+        });
+        
+        when_interpolated();
+        then_result_should_be("Money: $6245.30 | Score: 00015648pts | Energy: 37/100");
     }
     
     // -----
