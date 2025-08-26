@@ -32,17 +32,14 @@ function string_to_char_array(_str, _oneindexed = false) {
 /// @arg {Function} [evaluator]     A function returning the placeholder replacement based on given values and placeholder text. 
 /// @returns {String}
 function string_interpolate(_template, _values, _evaluator = struct_get) {
+    if (_template == "")
+        return "";
+    
     // an inner struct with methods for individual processing steps
-    static context = {
-        segments: undefined,
-        segments_count: 0,
-        segment_index: 0,
+    var _context = {
         
         // the entire string interpolation
         interpolate: function(_template, _values, _evaluator) {
-            if (_template == "")
-                return "";
-            
             segments = string_split(_template, "}");
             last_segment_index = array_length(segments) - 1;
             segment_index = 0;
@@ -125,5 +122,5 @@ function string_interpolate(_template, _values, _evaluator = struct_get) {
         }
     };
     
-    return context.interpolate(_template, _values, _evaluator);
+    return _context.interpolate(_template, _values, _evaluator);
 }
