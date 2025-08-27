@@ -53,7 +53,7 @@ function ToolboxFunctionJsdocSubparser(_parser) constructor {
     // ------------------
     
     static peeks_jsdoc_entry = function() {
-        return script_scanner.peeks_prefix("/// @") && !script_scanner.peeks_prefix("/// @ ");
+        return script_scanner.peeks_prefix("/// @");
     }
     
     static peek_jsdoc_tag = function() {
@@ -66,8 +66,8 @@ function ToolboxFunctionJsdocSubparser(_parser) constructor {
     
     static read_jsdoc_rest = function() {
         var _rest = "";
-        while (script_scanner.peeks_prefix("/// @ ")) {
-            _rest += "\n" + script_scanner.read_line_after_prefix("/// @ ");
+        while (script_scanner.peeks_prefix("/// ") && !script_scanner.peeks_prefix("/// @")) {
+            _rest += "\n" + script_scanner.read_line_after_prefix("/// ");
         }
         return _rest;
     }

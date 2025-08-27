@@ -12,6 +12,7 @@
 @script <String> StringUtils
     @func <string_contains>
     @func <string_to_char_array>
+    @func <string_interpolate>
 @script <Array> ArrayUtils
     @region <Array:Basic operations> ArrayUtils_Basics
         @func <array_empty>
