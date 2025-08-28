@@ -53,7 +53,7 @@ function VectorLengthDirTests(_run, _method) : VerrificMethodTest(_run, _method)
     
     static should_correctly_calculate_right_up_vector = function() {
         given_x_component(16);
-        given_y_component(12);
+        given_y_component(-12);
         
         when_vector_length_direction_calculated();
         then_length_should_be(20);

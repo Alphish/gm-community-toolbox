@@ -131,7 +131,7 @@ function vector_length(_x, _y) {
 }
 
 /// @func vector_direction(x,y)
-/// @desc Calculates the angle of a vector with given X/Y components.
+/// @desc Calculates the direction a vector with given X/Y components points towards.
 /// @arg {Real} x           The X (horizontal) component of the vector.
 /// @arg {Real} y           The Y (vertical) component of the vector.
 /// @returns {Real}
