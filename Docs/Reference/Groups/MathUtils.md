@@ -16,3 +16,6 @@
     - [lerp_angle](/Docs/Reference/Functions/lerp_angle.md)
     - [unlerp](/Docs/Reference/Functions/unlerp.md)
     - [relerp](/Docs/Reference/Functions/relerp.md)
+- [Geometry](/Docs/Reference/Groups/MathUtils_Geometry.md)
+    - [vector_length](/Docs/Reference/Functions/vector_length.md)
+    - [vector_direction](/Docs/Reference/Functions/vector_direction.md)

@@ -10,6 +10,7 @@ Below are listed various scripts and functions available in the Community Toolbo
     - [Euclidean division](/Docs/Reference/Groups/MethUtils_Euclidean.md)
     - [Fixed step approach](/Docs/Reference/Groups/MathUtils_Approach.md)
     - [Linear interpolation](/Docs/Reference/Groups/MathUtils_Lerp.md)
+    - [Geometry](/Docs/Reference/Groups/MathUtils_Geometry.md)
 - [String utilities](/Docs/Reference/Groups/StringUtils.md)
 - [Array utilities](/Docs/Reference/Groups/ArrayUtils.md)
     - [Basic operations](/Docs/Reference/Groups/ArrayUtils_Basics.md)
@@ -92,3 +93,5 @@ Below are listed various scripts and functions available in the Community Toolbo
 - [string_to_char_array](/Docs/Reference/Functions/string_to_char_array.md)
 - [struct_assign](/Docs/Reference/Functions/struct_assign.md)
 - [unlerp](/Docs/Reference/Functions/unlerp.md)
+- [vector_direction](/Docs/Reference/Functions/vector_direction.md)
+- [vector_length](/Docs/Reference/Functions/vector_length.md)

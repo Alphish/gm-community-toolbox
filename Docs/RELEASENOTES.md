@@ -7,6 +7,9 @@ Below is the releases history, with detailed information about specific function
 
 **Download:** [YYMPS](https://github.com/Alphish/gm-community-toolbox/releases/download/v24.11.0/CommunityToolbox.24.11.0.yymps)
 
+- **Math utilities: Geometry**
+    - [vector_length](Reference/Functions/vector_length.md) - Created a function to calculate vector length from its X/Y components.
+    - [vector_direction](Reference/Functions/vector_direction.md) - Created a function to calculate vector direction from its X/Y components.
 - **String utilities**
     - [string_interpolate](Reference/Functions/string_interpolate.md) - Created a function to replace placeholders with struct values in a string template.
 - **Function utilities: Constructors**
