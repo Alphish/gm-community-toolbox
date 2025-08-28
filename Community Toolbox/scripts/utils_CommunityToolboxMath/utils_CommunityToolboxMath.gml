@@ -117,3 +117,27 @@ function relerp(_oldfrom, _oldto, _oldvalue, _newfrom, _newto) {
 }
 
 #endregion
+
+#region Geometry
+
+/// @func vector_length(x,y)
+/// @desc Calculates the length of a vector with given X/Y components.
+/// @arg {Real} x           The X (horizontal) component of the vector.
+/// @arg {Real} y           The Y (vertical) component of the vector.
+/// @returns {Real}
+function vector_length(_x, _y) {
+    gml_pragma("forceinline");
+    return point_distance(0, 0, _x, _y);
+}
+
+/// @func vector_direction(x,y)
+/// @desc Calculates the angle of a vector with given X/Y components.
+/// @arg {Real} x           The X (horizontal) component of the vector.
+/// @arg {Real} y           The Y (vertical) component of the vector.
+/// @returns {Real}
+function vector_direction(_x, _y) {
+    gml_pragma("forceinline");
+    return point_direction(0, 0, _x, _y);
+}
+
+#endregion
