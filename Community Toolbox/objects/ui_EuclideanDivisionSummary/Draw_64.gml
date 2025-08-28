@@ -11,6 +11,7 @@ var _grid_mouse_y = mouse_y - ctrl_EuclideanDivision.y;
 
 draw_set_halign(fa_left);
 draw_set_valign(fa_middle);
+draw_set_font(fnt_DemoInfo);
 draw_text(
     x + 8,
     y + height div 2,

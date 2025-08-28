@@ -44,6 +44,7 @@ with (define_category("Maths")) {
     define_demo("Euclidean division", demo_EuclideanDivision, "Showcasing functions for calculating Euclidean quotient and remainder, properly cycling between negative and positive values.");
     define_demo("Reaching targets", demo_ReachingTargets, "Showcasing functions for calculating values closer to the target by a certain step or amount.");
     define_demo("Unlerp/relerp", demo_UnlerpRelerp, "Showcasing functions for extracting values in relation to ranges and remapping them to other ranges.");
+    define_demo("Geometry", demo_Geometry);
 }
 
 with (define_category("Strings")) {
