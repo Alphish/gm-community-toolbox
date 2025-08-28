@@ -48,6 +48,7 @@
     {"$GMIncludedFile":"","%Name":"LayerUtils.stub.md","CopyToMask":-1,"filePath":"datafiles/Reference","name":"LayerUtils.stub.md","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"MathUtils_Approach.stub.md","CopyToMask":-1,"filePath":"datafiles/Reference","name":"MathUtils_Approach.stub.md","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"MathUtils_Euclidean.stub.md","CopyToMask":-1,"filePath":"datafiles/Reference","name":"MathUtils_Euclidean.stub.md","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
+    {"$GMIncludedFile":"","%Name":"MathUtils_Geometry.stub.md","CopyToMask":-1,"filePath":"datafiles/Reference","name":"MathUtils_Geometry.stub.md","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"MathUtils_Lerp.stub.md","CopyToMask":-1,"filePath":"datafiles/Reference","name":"MathUtils_Lerp.stub.md","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"MathUtils.stub.md","CopyToMask":-1,"filePath":"datafiles/Reference","name":"MathUtils.stub.md","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"MiscUtils_Nullish.stub.md","CopyToMask":-1,"filePath":"datafiles/Reference","name":"MiscUtils_Nullish.stub.md","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
