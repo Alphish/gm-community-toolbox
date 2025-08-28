@@ -222,6 +222,7 @@
     {"id":{"name":"tests_StringToCharArrayTests","path":"scripts/tests_StringToCharArrayTests/tests_StringToCharArrayTests.yy",},},
     {"id":{"name":"tests_StructAssignTests","path":"scripts/tests_StructAssignTests/tests_StructAssignTests.yy",},},
     {"id":{"name":"tests_UnlerpTests","path":"scripts/tests_UnlerpTests/tests_UnlerpTests.yy",},},
+    {"id":{"name":"tests_VectorLengthDirTests","path":"scripts/tests_VectorLengthDirTests/tests_VectorLengthDirTests.yy",},},
     {"id":{"name":"utils_CommunityToolboxArray","path":"scripts/utils_CommunityToolboxArray/utils_CommunityToolboxArray.yy",},},
     {"id":{"name":"utils_CommunityToolboxCollision","path":"scripts/utils_CommunityToolboxCollision/utils_CommunityToolboxCollision.yy",},},
     {"id":{"name":"utils_CommunityToolboxDraw","path":"scripts/utils_CommunityToolboxDraw/utils_CommunityToolboxDraw.yy",},},
