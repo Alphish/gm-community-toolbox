@@ -20,7 +20,7 @@ Created a function to calculate vector length from its X/Y components.
 
 @func <vector_direction>
 
-Calculates the direction a vector with given X/Y components points towards. Note that the Y component follows the computer graphics coordinates system, with Y axis pointing downwards (unlike in mathematics where Y axis typically points upwards).
+Calculates the direction a vector with given X/Y components points towards. Note that the Y component follows the computer graphics coordinates system, with Y axis pointing downwards (unlike in mathematics where Y axis typically points upwards). If both components are 0 (resulting in a zero-length vector), the returned angle is also 0.
 
 @section Example
 
