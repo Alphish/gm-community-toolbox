@@ -10,7 +10,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Euclidean Division",
-    "path":"folders/Demo/Euclidean Division.yy",
+    "path":"folders/Demo/Maths/Euclidean Division.yy",
   },
   "parentObjectId":null,
   "persistent":false,
