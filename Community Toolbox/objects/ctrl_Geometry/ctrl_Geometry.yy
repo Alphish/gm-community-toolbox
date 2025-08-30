@@ -1,22 +1,19 @@
 {
   "$GMObject":"",
-  "%Name":"obj_ReachingTargetPosition",
+  "%Name":"ctrl_Geometry",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":2,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_ReachingTargetPosition",
+  "name":"ctrl_Geometry",
   "overriddenProperties":[],
   "parent":{
-    "name":"Reaching Targets",
-    "path":"folders/Demo/Maths/Reaching Targets.yy",
+    "name":"Geometry",
+    "path":"folders/Demo/Maths/Geometry.yy",
   },
-  "parentObjectId":{
-    "name":"par_ReachingTargetPanel",
-    "path":"objects/par_ReachingTargetPanel/par_ReachingTargetPanel.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -34,10 +31,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_Button",
-    "path":"sprites/spr_Button/spr_Button.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

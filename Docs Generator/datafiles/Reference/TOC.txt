@@ -9,6 +9,9 @@
         @func <lerp_angle>
         @func <unlerp>
         @func <relerp>
+    @region <Math:Geometry> MathUtils_Geometry
+        @func <vector_length>
+        @func <vector_direction>
 @script <String> StringUtils
     @func <string_contains>
     @func <string_to_char_array>

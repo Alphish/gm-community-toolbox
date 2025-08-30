@@ -20,7 +20,7 @@
   "name":"demo_UnlerpRelerp",
   "parent":{
     "name":"Unlerp and Relerp",
-    "path":"folders/Demo/Unlerp and Relerp.yy",
+    "path":"folders/Demo/Maths/Unlerp and Relerp.yy",
   },
   "parentRoom":null,
   "physicsSettings":{
