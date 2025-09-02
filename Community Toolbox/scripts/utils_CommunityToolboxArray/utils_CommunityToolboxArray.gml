@@ -9,12 +9,16 @@ function array_empty(_array) {
     return array_length(_array) == 0;
 }
 
-/// @func array_clear(array)
-/// @desc Removes all items from the array.
-/// @arg {Array} array          The array to clear.
-function array_clear(_array) {
-    gml_pragma("forceinline");
-    array_resize(_array, 0);
+/// @func array_find_item(array,predicate,[offset],[length])
+/// @desc Finds the first item in the given array or array subsection that satisfies the given condition. If no item is found, undefined is returned.
+/// @arg {Array} array          The array to find the item in.
+/// @arg {Function} predicate   The function to check the search condition with.
+/// @arg {Real} [offset]        The starting index of the searched array subsection.
+/// @arg {Real} [length]        The length of the searched array subsection.
+/// @returns {Any}
+function array_find_item(_array, _predicate, _offset = 0, _length = array_length(_array)) {
+    var _idx = array_find_index(_array, _predicate, _offset, _length);
+    return _idx >= 0 ? _array[_idx] : undefined;
 }
 
 /// @func array_push_ext(dest,source,[offset],[length])
@@ -77,6 +81,30 @@ function array_insert_ext(_dest, _index, _source, _offset = 0, _length = undefin
     }
     
     array_copy(_dest, _index, _source, _from, _to - _from);
+}
+
+/// @func array_delete_item(array,item,[offset],[length])
+/// @desc Removes the first occurrence of a given item in the array or array subsection, if any. Returns whether the item has been found and deleted.
+/// @arg {Array} array          The array to remove the item from.
+/// @arg {Any} item             The item to remove from the array.
+/// @arg {Real} [offset]        The starting index of the array subsection to remove from.
+/// @arg {Real} [length]        The length of the array subsection to remove from.
+/// @returns {Bool}
+function array_delete_item(_array, _item, _offset = 0, _length = array_length(_array)) {
+    var _idx = array_get_index(_array, _item, _offset, _length);
+    if (_idx < 0)
+        return false;
+    
+    array_delete(_array, _idx, 1);
+    return true;
+}
+
+/// @func array_clear(array)
+/// @desc Removes all items from the array.
+/// @arg {Array} array          The array to clear.
+function array_clear(_array) {
+    gml_pragma("forceinline");
+    array_resize(_array, 0);
 }
 
 #endregion
