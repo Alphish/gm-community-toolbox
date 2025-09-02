@@ -1,9 +1,11 @@
 function ArrayUtilsSuite() : VerrificSuiteGroup("Array utilities tests") constructor {
     array_foreach([
         ArrayEmptyTests,
-        ArrayClearTests,
+        ArrayFindItemTests,
         ArrayPushExtTests,
         ArrayInsertExtTests,
+        ArrayDeleteItemTests,
+        ArrayClearTests,
         ArrayMaxTests,
         ArrayMinTests,
         ArrayMeanTests,
