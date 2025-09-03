@@ -18,23 +18,19 @@ function get_next_target() {
 @update 24.6.0
 Created a function to check if an array is empty.
 
-@func <array_clear>
+@func <array_find_item>
 
 @section Example
 
-The following code clears pending dialogue commands before adding new ones.
+The following code finds the first empty slot in the inventory and adds a newly collected item to it.
 
 ```gml
-function dialogue_jump(_branch) {
-    array_clear(ctrl_Dialogue.pending_commands);
-    array_foreach(_branch.commands, function(_command) {
-        array_push(ctrl_Dialogue.pending_commands, _command);
-    });
-}
+var _free_slot = array_find_item(inventory, function(_slot) { return is_undefined(_slot.item); });
+_free_slot.item = _collected_item;
 ```
 
-@update 24.6.0
-Created a function to clear arrays.
+@update 24.11.0
+Created a function to find the first array item meeting a condition.
 
 @func <array_push_ext>
 
@@ -65,3 +61,35 @@ else
 
 @update 24.6.0
 Created a function to insert items from an array into another array.
+
+@func <array_delete_item>
+
+@section Example
+
+The following code removes a component from its parent multi-part object when destroyed.
+
+```gml
+if (instance_exists(parent))
+    array_delete(parent.components, id);
+```
+
+@update 24.11.0
+Created a function to remove the first occurrence of an item in an array.
+
+@func <array_clear>
+
+@section Example
+
+The following code clears pending dialogue commands before adding new ones.
+
+```gml
+function dialogue_jump(_branch) {
+    array_clear(ctrl_Dialogue.pending_commands);
+    array_foreach(_branch.commands, function(_command) {
+        array_push(ctrl_Dialogue.pending_commands, _command);
+    });
+}
+```
+
+@update 24.6.0
+Created a function to clear arrays.
