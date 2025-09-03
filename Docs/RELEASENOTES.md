@@ -12,6 +12,9 @@ Below is the releases history, with detailed information about specific function
     - [vector_direction](Reference/Functions/vector_direction.md) - Created a function to calculate vector direction from its X/Y components.
 - **String utilities**
     - [string_interpolate](Reference/Functions/string_interpolate.md) - Created a function to replace placeholders with struct values in a string template.
+- **Array utilities: Basic operations**
+    - [array_find_item](Reference/Functions/array_find_item.md) - Created a function to find the first array item meeting a condition.
+    - [array_delete_item](Reference/Functions/array_delete_item.md) - Created a function to remove the first occurrence of an item in an array.
 - **Function utilities: Constructors**
     - [is_constructor](Reference/Functions/is_constructor.md) - Created a function to check if the given function is a constructor.
     - [constructor_get_parent](Reference/Functions/constructor_get_parent.md) - Created a function to retrieve the parent of a constructor, if any.
@@ -39,9 +42,9 @@ Below is the releases history, with detailed information about specific function
     - [string_contains](Reference/Functions/string_contains.md) - Created a function to check whether a given string contains the given substring.
 - **Array utilities: Basic operations**
     - [array_empty](Reference/Functions/array_empty.md) - Created a function to check if an array is empty.
-    - [array_clear](Reference/Functions/array_clear.md) - Created a function to clear arrays.
     - [array_push_ext](Reference/Functions/array_push_ext.md) - Created a function to push items from an array to another array.
     - [array_insert_ext](Reference/Functions/array_insert_ext.md) - Created a function to insert items from an array into another array.
+    - [array_clear](Reference/Functions/array_clear.md) - Created a function to clear arrays.
 - **Struct utilities**
     - [struct_assign](Reference/Functions/struct_assign.md) - Created a function to assign contents of one struct (or sequence of structs) to another.
 - **Function utilities: Static initialization**

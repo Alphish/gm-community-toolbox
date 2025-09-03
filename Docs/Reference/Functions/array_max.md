@@ -2,7 +2,7 @@
 
 # array_max
 
-[Go to source](/Community%20Toolbox/scripts/utils_CommunityToolboxArray/utils_CommunityToolboxArray.gml#L92)
+[Go to source](/Community%20Toolbox/scripts/utils_CommunityToolboxArray/utils_CommunityToolboxArray.gml#L120)
 
 Returns the highest number from the array or its subsection. If the array/subsection is empty, 0 is returned.
 

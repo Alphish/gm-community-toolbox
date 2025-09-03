@@ -2,7 +2,7 @@
 
 # array_pop_random
 
-[Go to source](/Community%20Toolbox/scripts/utils_CommunityToolboxArray/utils_CommunityToolboxArray.gml#L300)
+[Go to source](/Community%20Toolbox/scripts/utils_CommunityToolboxArray/utils_CommunityToolboxArray.gml#L328)
 
 Pops a random element from the array or its subsection. If the array/subsection is empty, undefined is returned.
 
