@@ -19,9 +19,11 @@
 @script <Array> ArrayUtils
     @region <Array:Basic operations> ArrayUtils_Basics
         @func <array_empty>
-        @func <array_clear>
+        @func <array_find_item>
         @func <array_push_ext>
         @func <array_insert_ext>
+        @func <array_delete_item>
+        @func <array_clear>
     @region <Array:Array-wide maths> ArrayUtils_Maths
         @func <array_max>
         @func <array_min>

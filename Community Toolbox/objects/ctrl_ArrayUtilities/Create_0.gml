@@ -1,7 +1,8 @@
-the_array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+the_array = [123, 45, 678, 901, 234, 56, 78, 90];
 the_array_offset = 0;
 the_array_length = undefined;
 last_random_item = undefined;
+find_delete_input = 0;
 
 // ----------
 // Indicators
@@ -31,6 +32,12 @@ get_array_sum = function() {
     return array_sum(the_array, the_array_offset, the_array_length);
 }
 
+get_array_find_output = function() {
+    return array_find_item(the_array, function(_item) {
+        return string_contains(string(_item), string(find_delete_input))
+    }, the_array_offset, the_array_length);
+}
+
 // ----------
 // Operations
 // ----------
@@ -49,6 +56,11 @@ pop_random_item = function() {
     recompute_values();
 }
 
+delete_input_item = function() {
+    array_delete_item(the_array, find_delete_input, the_array_offset, the_array_length);
+    recompute_values();
+}
+
 recompute_values = function() {
     with (ui_ArrayEditor) {
         synchronize();
@@ -57,7 +69,7 @@ recompute_values = function() {
 
 reset_defaults = function() {
     array_clear(the_array);
-    array_push(the_array, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
+    array_push(the_array, 123, 45, 678, 901, 234, 56, 78, 90);
     
     the_array_offset = 0;
     the_array_length = undefined;
