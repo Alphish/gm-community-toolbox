@@ -1,6 +1,6 @@
 @script <Shader> Shader utilities
 
-@func <shader_set_uniform_color>
+@func <shader_set_uniform_color|shader_set_uniform_colour>
 
 Sets a shader uniform value to a 4-value vector representing an RGBA colour. Also available as `shader_set_uniform_colour`.
 

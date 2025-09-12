@@ -2,6 +2,8 @@
 
 # draw_set_color_alpha
 
+(also: `draw_set_colour_alpha`)
+
 [Go to source](/Community%20Toolbox/scripts/utils_CommunityToolboxDraw/utils_CommunityToolboxDraw.gml#L7)
 
 Sets the drawing color and alpha.

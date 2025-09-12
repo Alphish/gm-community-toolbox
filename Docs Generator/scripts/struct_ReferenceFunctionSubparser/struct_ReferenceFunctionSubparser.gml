@@ -17,6 +17,10 @@ function ReferenceFunctionSubparser(_parser) : ReferenceItemSubparser(_parser) c
             return undefined;
         }
         
+        var _aliases = string_split(_keyname, "|");
+        _keyname = _aliases[0];
+        array_shift(_aliases);
+        
         var _arguments = [];
         var _returns = undefined;
         var _sections = [];
@@ -56,7 +60,7 @@ function ReferenceFunctionSubparser(_parser) : ReferenceItemSubparser(_parser) c
             return undefined;
         }
         
-        return new ReferenceFunctionStub(_keyname, _summary, _arguments, _returns, _sections, _updates);
+        return new ReferenceFunctionStub(_keyname, _aliases, _summary, _arguments, _returns, _sections, _updates);
     }
     
     static skip_function_tags = function() {

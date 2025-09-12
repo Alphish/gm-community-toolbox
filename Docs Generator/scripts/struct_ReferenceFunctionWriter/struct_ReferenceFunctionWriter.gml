@@ -5,6 +5,7 @@ function ReferenceFunctionWriter() : ReferenceItemWriter() constructor {
         write_breadcrumbs(_function);
         
         write_title(_function.title);
+        write_aliases(_function.aliases);
         write_source_link(_function.get_source_path());
         write_summary(_function.summary);
         write_arguments(_function.arguments);
@@ -13,6 +14,14 @@ function ReferenceFunctionWriter() : ReferenceItemWriter() constructor {
         write_update_history(_function.updates);
         
         save_content(_function.get_page_path());
+    }
+    
+    static write_aliases = function(_aliases) {
+        if (array_length(_aliases) == 0)
+            return;
+        
+        write_line();
+        write_line($"(also: `{string_join_ext("`, `", _aliases)}`)");
     }
     
     // ---------
