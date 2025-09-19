@@ -1,3 +1,12 @@
+/// @func is_nonempty_string(value)
+/// @desc Checks if a given value is a string that's not empty.
+/// @arg {Any} value            The value to check.
+/// @returns {Bool}
+function is_nonempty_string(_value) {
+    gml_pragma("forceinline");
+    return is_string(_value) && _value != "";
+}
+
 /// @func string_contains(str,substr)
 /// @desc Checks whether the given string contains the substring or not. Always returns true for an empty substringg.
 /// @arg {String} str           The string to find the substring in.
