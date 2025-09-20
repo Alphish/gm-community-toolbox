@@ -6,6 +6,7 @@
 
 ### Defined functions
 
+- [is_nonempty_array](/Docs/Reference/Functions/is_nonempty_array.md)
 - [array_empty](/Docs/Reference/Functions/array_empty.md)
 - [array_find_item](/Docs/Reference/Functions/array_find_item.md)
 - [array_push_ext](/Docs/Reference/Functions/array_push_ext.md)

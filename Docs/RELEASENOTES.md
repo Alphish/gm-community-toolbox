@@ -11,10 +11,14 @@ Below is the releases history, with detailed information about specific function
     - [vector_length](Reference/Functions/vector_length.md) - Created a function to calculate vector length from its X/Y components.
     - [vector_direction](Reference/Functions/vector_direction.md) - Created a function to calculate vector direction from its X/Y components.
 - **String utilities**
+    - [is_nonempty_string](Reference/Functions/is_nonempty_string.md) - Created a function to check if a value is a string that's not empty.
     - [string_interpolate](Reference/Functions/string_interpolate.md) - Created a function to replace placeholders with struct values in a string template.
 - **Array utilities: Basic operations**
+    - [is_nonempty_array](Reference/Functions/is_nonempty_array.md) - Created a function to check if a value is an array that's not empty.
     - [array_find_item](Reference/Functions/array_find_item.md) - Created a function to find the first array item meeting a condition.
     - [array_delete_item](Reference/Functions/array_delete_item.md) - Created a function to remove the first occurrence of an item in an array.
+- **Struct utilities**
+    - [is_nonempty_struct](Reference/Functions/is_nonempty_struct.md) - Created a function to check if a value is a struct that's not empty.
 - **Function utilities: Constructors**
     - [is_constructor](Reference/Functions/is_constructor.md) - Created a function to check if the given function is a constructor.
     - [constructor_get_parent](Reference/Functions/constructor_get_parent.md) - Created a function to retrieve the parent of a constructor, if any.

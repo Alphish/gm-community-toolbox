@@ -2,7 +2,7 @@
 
 # array_mean
 
-[Go to source](/Community%20Toolbox/scripts/utils_CommunityToolboxArray/utils_CommunityToolboxArray.gml#L190)
+[Go to source](/Community%20Toolbox/scripts/utils_CommunityToolboxArray/utils_CommunityToolboxArray.gml#L199)
 
 Returns the average value of numbers in the array or its subsection. If the array/subsection is empty, 0 is returned.
 
