@@ -1,5 +1,18 @@
 @script <String> String utilities
 
+@func <is_nonempty_string>
+
+@section Example
+
+The following code loads a name from the save data, or uses a default name if the data name is empty or not a string.
+
+```gml
+name = is_nonempty_string(_save_data[$ "name"]) ? _save_data.name : "Cloud";
+```
+
+@update 24.11.0
+Created a function to check if a value is a string that's not empty.
+
 @func <string_contains>
 
 @section Example

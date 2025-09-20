@@ -1,5 +1,18 @@
 @script <Struct> Struct utilities
 
+@func <is_nonempty_struct>
+
+@section Example
+
+The following code checks if the save data contains a valid resources struct, and if not, uses a default one.
+
+```gml
+resources = is_nonempty_struct(_save_data[$ "resources"]) ? ResourcesStorage.create_from(_save_data.resources) : ResourcesStorage.create_default();
+```
+
+@update 24.11.0
+Created a function to check if a value is a struct that's not empty.
+
 @func <struct_assign>
 
 @section Example
