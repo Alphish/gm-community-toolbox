@@ -2,7 +2,7 @@
 
 # string_to_char_array
 
-[Go to source](/Community%20Toolbox/scripts/utils_CommunityToolboxString/utils_CommunityToolboxString.gml#L18)
+[Go to source](/Community%20Toolbox/scripts/utils_CommunityToolboxString/utils_CommunityToolboxString.gml#L27)
 
 Creates an array of characters from a given string.
 

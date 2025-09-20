@@ -13,11 +13,13 @@
         @func <vector_length>
         @func <vector_direction>
 @script <String> StringUtils
+    @func <is_nonempty_string>
     @func <string_contains>
     @func <string_to_char_array>
     @func <string_interpolate>
 @script <Array> ArrayUtils
     @region <Array:Basic operations> ArrayUtils_Basics
+        @func <is_nonempty_array>
         @func <array_empty>
         @func <array_find_item>
         @func <array_push_ext>
@@ -34,6 +36,7 @@
         @func <array_get_random>
         @func <array_pop_random>
 @script <Struct> StructUtils
+    @func <is_nonempty_struct>
     @func <struct_assign>
 @script <Function> FunctionUtils
     @region <Function:Constructors> FunctionUtils_Constructors

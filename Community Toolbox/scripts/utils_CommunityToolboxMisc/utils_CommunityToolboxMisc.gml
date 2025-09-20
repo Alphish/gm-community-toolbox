@@ -5,6 +5,7 @@
 /// @arg {Any} value        The value to check.
 /// @returns {Bool}
 function is_nullish(_value) {
+    gml_pragma("forceinline");
     return is_undefined(_value ?? undefined);
 }
 
@@ -13,6 +14,7 @@ function is_nullish(_value) {
 /// @arg {Any} value        The value to check.
 /// @returns {Bool}
 function is_defined(_value) {
+    gml_pragma("forceinline");
     return !is_undefined(_value ?? undefined);
 }
 

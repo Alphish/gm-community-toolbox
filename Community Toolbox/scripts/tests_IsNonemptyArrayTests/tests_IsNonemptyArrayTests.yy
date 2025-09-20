@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"tests_IsNonemptyArrayTests",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"tests_IsNonemptyArrayTests",
+  "parent":{
+    "name":"Array",
+    "path":"folders/Tests/Array.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

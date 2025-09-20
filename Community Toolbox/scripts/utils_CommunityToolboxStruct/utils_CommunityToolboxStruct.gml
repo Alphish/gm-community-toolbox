@@ -1,3 +1,12 @@
+/// @func is_nonempty_struct(value)
+/// @desc Checks if a given value is a struct that's not empty.
+/// @arg {Any} value            The value to check.
+/// @returns {Bool}
+function is_nonempty_struct(_value) {
+    gml_pragma("forceinline");
+    return is_struct(_value) && struct_names_count(_value) > 0;
+}
+
 /// @func struct_assign(destination,[...sources])
 /// @desc Assigns properties from one or more source structs to a destination struct, and returns the destination struct.
 /// @arg {Struct} destination       The struct to assign properties to.

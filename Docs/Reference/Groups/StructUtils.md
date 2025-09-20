@@ -6,4 +6,5 @@
 
 ### Defined functions
 
+- [is_nonempty_struct](/Docs/Reference/Functions/is_nonempty_struct.md)
 - [struct_assign](/Docs/Reference/Functions/struct_assign.md)

@@ -2,7 +2,7 @@
 
 # string_interpolate
 
-[Go to source](/Community%20Toolbox/scripts/utils_CommunityToolboxString/utils_CommunityToolboxString.gml#L34)
+[Go to source](/Community%20Toolbox/scripts/utils_CommunityToolboxString/utils_CommunityToolboxString.gml#L43)
 
 Creates a new string from a given template, replacing placeholders between curly braces with corresponding values. By default, placeholders are treated as struct keys to replace with corresponding struct values. Placeholder processing can be customised with an optional evaluator, taking the given values and placeholder text as arguments and returning the value to replace the placeholder with.
 

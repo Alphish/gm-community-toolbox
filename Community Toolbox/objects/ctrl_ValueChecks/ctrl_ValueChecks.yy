@@ -1,15 +1,16 @@
 {
   "$GMObject":"",
-  "%Name":"ctrl_NullishCheck",
+  "%Name":"ctrl_ValueChecks",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":64,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":2,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"ctrl_NullishCheck",
+  "name":"ctrl_ValueChecks",
   "overriddenProperties":[],
   "parent":{
-    "name":"Nullish Check",
-    "path":"folders/Demo/Nullish Check.yy",
+    "name":"Value Checks",
+    "path":"folders/Demo/Miscellaneous/Value Checks.yy",
   },
   "parentObjectId":null,
   "persistent":false,

@@ -1,5 +1,20 @@
 @region <Array:Basic operations> Basic operations
 
+@func <is_nonempty_array>
+
+@section Example
+
+The following code applies a tags filter from a query struct if a non-empty array of tags is present.
+
+```gml
+if (is_nonempty_array(_query.tags)) {
+    filter_assets_by_tags(_assets, _query.tags);
+}
+```
+
+@update 24.11.0
+Created a function to check if a value is an array that's not empty.
+
 @func <array_empty>
 
 @section Example

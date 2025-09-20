@@ -1,5 +1,14 @@
 #region Basic operations
 
+/// @func is_nonempty_array(value)
+/// @desc Checks if a given value is an array that's not empty.
+/// @arg {Any} value            The value to check.
+/// @returns {Bool}
+function is_nonempty_array(_value) {
+    gml_pragma("forceinline");
+    return is_array(_value) && array_length(_value) > 0;
+}
+
 /// @func array_empty(array)
 /// @desc Checks if the given array has no items.
 /// @arg {Array} array          The array to check.
