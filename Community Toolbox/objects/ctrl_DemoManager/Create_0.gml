@@ -83,5 +83,5 @@ with (define_category("Files")) {
 }
 
 with (define_category("Miscellaneous")) {
-    define_demo("Nullish checks", demo_NullishCheck, "Showcasing functions for checking if values are nullish (null/undefined) or not.");
+    define_demo("Value checks", demo_ValueChecks, "Showcasing functions for checking value kinds.");
 }
