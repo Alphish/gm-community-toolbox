@@ -1,5 +1,6 @@
 function ArrayUtilsSuite() : VerrificSuiteGroup("Array utilities tests") constructor {
     array_foreach([
+        IsNonemptyArrayTests,
         ArrayEmptyTests,
         ArrayFindItemTests,
         ArrayPushExtTests,

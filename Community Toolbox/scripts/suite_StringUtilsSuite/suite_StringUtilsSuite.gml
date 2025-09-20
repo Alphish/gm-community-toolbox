@@ -1,5 +1,6 @@
 function StringUtilsSuite() : VerrificSuiteGroup("String utilities tests") constructor {
     array_foreach([
+        IsNonemptyStringTests,
         StringContainsTests,
         StringToCharArrayTests,
         StringInterpolateTests,

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"tests_IsNonemptyStringTests",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"tests_IsNonemptyStringTests",
+  "parent":{
+    "name":"String",
+    "path":"folders/Tests/String.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

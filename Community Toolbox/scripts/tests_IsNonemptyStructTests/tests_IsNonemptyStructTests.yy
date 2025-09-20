@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"tests_IsNonemptyStructTests",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"tests_IsNonemptyStructTests",
+  "parent":{
+    "name":"Struct",
+    "path":"folders/Tests/Struct.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
