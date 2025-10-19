@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"struct_VerrificStringAssertion",
+  "%Name":"ctor_VerrificAsserter",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"struct_VerrificStringAssertion",
+  "name":"ctor_VerrificAsserter",
   "parent":{
     "name":"Assertions",
     "path":"folders/Tests/Verrific/Testing/Assertions.yy",

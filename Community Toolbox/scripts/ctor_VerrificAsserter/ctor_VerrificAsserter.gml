@@ -14,6 +14,7 @@ function VerrificAsserter(_run) constructor {
     /// @desc Confirms the test is asserted in the absence of more specific assertions. Doesn't erase already recorded failures.
     static assert_pass = function() {
         test_run.record_assertion();
+        return true;
     }
     
     /// @func assert_fail(message)
@@ -22,6 +23,7 @@ function VerrificAsserter(_run) constructor {
     static assert_fail = function(_message) {
         test_run.record_assertion();
         test_run.record_failure(_message);
+        return false;
     }
     
     /// @func assert_that(condition, onfailure)
@@ -328,12 +330,83 @@ function VerrificAsserter(_run) constructor {
     
     /// @func assert_equal(expected,actual,[onfailure])
     /// @desc Asserts that a given value is equal to another.
-    /// @arg {Any} expected         The expected value.
-    /// @arg {Any} actual           The actual value.
-    /// @arg {String} onfailure     A custom message to show in case of a failure.
+    /// @arg {Any} expected             The expected value.
+    /// @arg {Any} actual               The actual value.
+    /// @arg {String} [onfailure]       A custom message to show in case of a failure.
     static assert_equal = function(_expected, _actual, _onfailure = undefined) {
         _onfailure ??= $"The value should be '{_expected}' but is '{_actual}' instead.";
         return assert_that(_expected == _actual, _onfailure);
+    }
+    
+    /// @func assert_array_equal(expected,actual)
+    /// @desc Asserts that given arrays have the same items sequence.
+    /// @arg {Array} expected           The expected item sequence.
+    /// @arg {Array} actual             The actual array.
+    static assert_array_equal = function(_expected, _actual) {
+        var _expected_length = array_length(_expected);
+        var _actual_length = array_length(_actual);
+        var _length = min(_expected_length, _actual_length);
+        var _passed = true;
+        for (var i = 0; i < _length; i++) {
+            var _onfailure = $"The item #{i} should be '{_expected[i]}' but is '{_actual[i]}' instead.";
+            _passed = assert_that(_expected[i] == _actual[i], _onfailure) && _passed;
+        }
+        if (_expected_length < _actual_length) {
+            assert_fail($"Expected {_expected_length} items, but got {_actual_length} items instead. The first excess item: '{_actual[_expected_length]}'.");
+            _passed = false;
+        }
+        else if (_expected_length > _actual_length) {
+            assert_fail($"Expected {_expected_length} items, but got {_actual_length} items instead. The first missing item: '{_expected[_actual_length]}'.");
+            _passed = false;
+        }
+        
+        return _passed;
+    }
+    
+    /// @func assert_struct_equal(expected,actual)
+    /// @desc Asserts that given structs have the same entries.
+    /// @arg {Struct} expected          The expected struct entries.
+    /// @arg {Struct} actual            The actual struct entries.
+    static assert_struct_equal = function(_expected, _actual) {
+        var _expected_keys = struct_get_names(_expected);
+        var _actual_keys = struct_get_names(_actual);
+        var _common_keys = array_intersection(_expected_keys, _actual_keys);
+        
+        var _expected_count = array_length(_expected_keys);
+        var _actual_count = array_length(_actual_keys);
+        var _common_count = array_length(_common_keys);
+        
+        var _passed = true;
+        
+        if (_expected_count > _common_count) {
+            for (var i = 0; i < _expected_count; i++) {
+                if (struct_exists(_actual, _expected_keys[i]))
+                    continue;
+                
+                assert_fail($"Expected an entry with key '{_expected_keys[i]}', but none was found.");
+            }
+            _passed = false;
+        }
+        
+        if (_actual_count > _common_count) {
+            for (var i = 0; i < _actual_count; i++) {
+                if (struct_exists(_expected, _actual_keys[i]))
+                    continue;
+                
+                assert_fail($"Unexpected entry with key '{_actual_keys[i]}'.");
+            }
+            _passed = false;
+        }
+        
+        for (var i = 0; i < _common_count; i++) {
+            var _key = _common_keys[i];
+            var _expected_value = _expected[$ _key];
+            var _actual_value = _actual[$ _key];
+            var _onfailure = $"The entry '{_key}' should be '{_expected_value}' but is '{_actual_value}' instead.";
+            _passed = assert_that(_expected_value == _actual_value, _onfailure) && _passed;
+        }
+        
+        return _passed;
     }
     
     #endregion
@@ -344,14 +417,56 @@ function VerrificAsserter(_run) constructor {
     
     #region
     
-    /// @func assert_is_one_of(items,actual,onfailure)
+    /// @func assert_is_empty(value,[onfailure])
+    /// @desc Asserts that a given value is empty. Applicable to strings, arrays and structs only.
+    /// @arg {Any} value                The value to check.
+    /// @arg {String} [onfailure]       A custom message to show in case of a failure.
+    static assert_is_empty = function(_value, _onfailure) {
+        if (is_string(_value))
+            return assert_is_empty_string(_value, _onfailure);
+        else if (is_array(_value))
+            return assert_equal(0, array_length(_value), _onfailure ?? $"Expected an empty array, but got {array_length(_value)} items instead.");
+        else if (is_struct(_value))
+            return assert_equal(0, struct_names_count(_value), _onfailure ?? $"Expected an empty struct, but got {struct_names_count(_value)} entries instead.");
+        else
+            return assert_fail($"{_value} is a {typeof(_value)}; as neither a string, an array or a struct, it cannot be checked for emptiness.");
+    }
+    
+    /// @func assert_count(expected,collection,[onfailure])
+    /// @desc Asserts that a given collection has a given elements count. Applicable to arrays and structs only.
+    /// @arg {Real} expected            The expected number of elements.
+    /// @arg {Any} collection           The collection to check.
+    /// @arg {String} [onfailure]       A custom message to show in case of a failure.
+    static assert_count = function(_expected, _collection, _onfailure) {
+        if (is_array(_collection))
+            return assert_equal(_expected, array_length(_collection), $"Expected a count of {_expected}, but got {array_length(_collection)} instead.");
+        else if (is_struct(_collection))
+            return assert_equal(_expected, struct_names_count(_collection), $"Expected a count of {_expected}, but got {struct_names_count(_collection)} instead.");
+        else
+            return assert_fail($"{_collection} is a {typeof(_collection)}; only collection types as array and struct can have count to check.");
+    }
+    
+    /// @func assert_is_one_of(items,actual,[onfailure])
     /// @desc Asserts that a given value is equal to one of expected values.
-    /// @arg {Array} items          The possible expected values.
-    /// @arg {Any} actual           The actual value.
-    /// @arg {String} onfailure     A custom message to show in case of a failure.
+    /// @arg {Array} items              The possible expected values.
+    /// @arg {Any} actual               The actual value.
+    /// @arg {String} [onfailure]       A custom message to show in case of a failure.
     static assert_is_one_of = function(_items, _actual, _onfailure = undefined) {
-        _onfailure ??= $"The value should be oe of '{_items}' but is '{_actual}' instead.";
+        _onfailure ??= $"The value should be one of '{_items}' but is '{_actual}' instead.";
         return assert_that(array_contains(_items, _actual), _onfailure);
+    }
+    
+    /// @func assert_struct_has_entry(struct,key,value,[onfailure])
+    /// @desc Asserts that a given struct has the expected entry.
+    /// @arg {Struct} struct            The struct to find the entry in.
+    /// @arg {String} key               The key of the expected entry.
+    /// @arg {Any} value                The value of the expected entry.
+    /// @arg {String} [onfailure]       A custom message to show in case of a failure.
+    static assert_struct_has_entry = function(_struct, _key, _value, _onfailure = undefined) {
+        if (!struct_exists(_struct, _key))
+            return assert_fail(_onfailure ?? $"The struct doesn't contain the expected entry '{_key}'.");
+        else
+            return assert_equal(_value, _struct[$ _key], _onfailure ?? $"The entry of '{_key}' should be '{_value}' but is '{_struct[$ _key]}' instead.");
     }
     
     #endregion
