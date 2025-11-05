@@ -3,6 +3,7 @@ function ArrayUtilsSuite() : VerrificSuiteGroup("Array utilities tests") constru
         IsNonemptyArrayTests,
         ArrayEmptyTests,
         ArrayFindItemTests,
+        ArrayCloneTests,
         ArrayPushExtTests,
         ArrayInsertExtTests,
         ArrayDeleteItemTests,
