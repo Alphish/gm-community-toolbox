@@ -7,6 +7,22 @@ function is_nonempty_struct(_value) {
     return is_struct(_value) && struct_names_count(_value) > 0;
 }
 
+/// @func struct_clone(struct,[deep])
+/// @desc Creates a clone of the given struct. The clone may be shallow (values are same between structs) or deep (nested values are cloned, too).
+/// @arg {Struct} struct        The struct to clone.
+/// @arg {Bool} [deep]          Whether to make a deep or shallow clone (shallow by default).
+/// @returns {Struct}
+function struct_clone(_struct, _deep = false) {
+    if (!is_struct(_struct)) {
+        throw $"Trying to clone a struct, but the given value is {typeof(_struct)} instead.";
+    }
+    
+    if (_deep)
+        return variable_clone(_struct, 128); // note: 128 is the highest possible variable_clone depth
+    else
+        return struct_assign({}, _struct); // it should be doable with variable_clone, but it seems shallow copy is bugged on 2024.11
+}
+
 /// @func struct_assign(destination,[...sources])
 /// @desc Assigns properties from one or more source structs to a destination struct, and returns the destination struct.
 /// @arg {Struct} destination       The struct to assign properties to.

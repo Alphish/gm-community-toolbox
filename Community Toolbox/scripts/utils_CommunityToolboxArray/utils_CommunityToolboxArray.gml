@@ -30,6 +30,27 @@ function array_find_item(_array, _predicate, _offset = 0, _length = array_length
     return _idx >= 0 ? _array[_idx] : undefined;
 }
 
+/// @func array_clone(array,[deep])
+/// @desc Creates a clone of the given array. The clone may be shallow (items are same between arrays) or deep (nested items are cloned, too).
+/// @arg {Array} array          The array to clone.
+/// @arg {Bool} [deep]          Whether to make a deep or shallow clone (shallow by default).
+/// @returns {Array}
+function array_clone(_array, _deep = false) {
+    if (!is_array(_array)) {
+        throw $"Trying to clone an array, but the given value is {typeof(_array)} instead.";
+    }
+    
+    if (_deep)
+        // note: 128 is the highest possible variable_clone depth
+        return variable_clone(_array, 128);
+    else {
+        // it should be doable with variable_clone, but it seems shallow copy is bugged on 2024.11
+        var _clone = [];
+        array_push_ext(_clone, _array);
+        return _clone;
+    }
+}
+
 /// @func array_push_ext(dest,source,[offset],[length])
 /// @desc Pushes items from one array at the end of another array.
 /// @arg {Array} dest           The destination array to push the items to.
