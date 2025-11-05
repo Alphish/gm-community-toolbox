@@ -16,9 +16,11 @@ Below is the releases history, with detailed information about specific function
 - **Array utilities: Basic operations**
     - [is_nonempty_array](Reference/Functions/is_nonempty_array.md) - Created a function to check if a value is an array that's not empty.
     - [array_find_item](Reference/Functions/array_find_item.md) - Created a function to find the first array item meeting a condition.
+    - [array_clone](Reference/Functions/array_clone.md) - Created a function to make a shallow or deep clone of a given array.
     - [array_delete_item](Reference/Functions/array_delete_item.md) - Created a function to remove the first occurrence of an item in an array.
 - **Struct utilities**
     - [is_nonempty_struct](Reference/Functions/is_nonempty_struct.md) - Created a function to check if a value is a struct that's not empty.
+    - [struct_clone](Reference/Functions/struct_clone.md) - Created a function to make a shallow or deep clone of a given struct.
 - **Function utilities: Constructors**
     - [is_constructor](Reference/Functions/is_constructor.md) - Created a function to check if the given function is a constructor.
     - [constructor_get_parent](Reference/Functions/constructor_get_parent.md) - Created a function to retrieve the parent of a constructor, if any.

@@ -2,7 +2,7 @@
 
 # array_insert_ext
 
-[Go to source](/Community%20Toolbox/scripts/utils_CommunityToolboxArray/utils_CommunityToolboxArray.gml#L59)
+[Go to source](/Community%20Toolbox/scripts/utils_CommunityToolboxArray/utils_CommunityToolboxArray.gml#L80)
 
 Inserts items from one array into another array.
 

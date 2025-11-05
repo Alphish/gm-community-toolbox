@@ -2,7 +2,7 @@
 
 # struct_assign
 
-[Go to source](/Community%20Toolbox/scripts/utils_CommunityToolboxStruct/utils_CommunityToolboxStruct.gml#L15)
+[Go to source](/Community%20Toolbox/scripts/utils_CommunityToolboxStruct/utils_CommunityToolboxStruct.gml#L31)
 
 Assigns properties from one or more source structs to a destination struct, and returns the destination struct.
 
