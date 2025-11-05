@@ -47,6 +47,19 @@ _free_slot.item = _collected_item;
 @update 24.11.0
 Created a function to find the first array item meeting a condition.
 
+@func <array_clone>
+
+@section Example
+
+The following code clones commands to be processed from a dialogue branch. Because the array is cloned, the dialogue system can remove items from the remaining commands without destroying the original branch.
+
+```gml
+remaining_commands = array_clone(dialogue_branch.commands);
+```
+
+@update 24.11.0
+Created a function to make a shallow or deep clone of a given array.
+
 @func <array_push_ext>
 
 @section Example

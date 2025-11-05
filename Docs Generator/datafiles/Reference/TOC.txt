@@ -22,6 +22,7 @@
         @func <is_nonempty_array>
         @func <array_empty>
         @func <array_find_item>
+        @func <array_clone>
         @func <array_push_ext>
         @func <array_insert_ext>
         @func <array_delete_item>
@@ -37,6 +38,7 @@
         @func <array_pop_random>
 @script <Struct> StructUtils
     @func <is_nonempty_struct>
+    @func <struct_clone>
     @func <struct_assign>
 @script <Function> FunctionUtils
     @region <Function:Constructors> FunctionUtils_Constructors
