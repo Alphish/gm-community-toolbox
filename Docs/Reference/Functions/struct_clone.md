@@ -6,6 +6,8 @@
 
 Creates a clone of the given struct. The clone may be shallow (values are same between structs) or deep (nested values are cloned, too).
 
+When deep cloning, recursive references should be mirrored - if a structure refers to itself directly or through one of its nested item, then the corresponding clone should refer to itself through the same path.
+
 ###### Arguments
 
 | Argument | Type | Usage | Description |

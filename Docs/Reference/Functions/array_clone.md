@@ -6,6 +6,8 @@
 
 Creates a clone of the given array. The clone may be shallow (items are same between arrays) or deep (nested items are cloned, too).
 
+When deep cloning, recursive references should be mirrored - if a structure refers to itself directly or through one of its nested item, then the corresponding clone should refer to itself through the same path.
+
 ###### Arguments
 
 | Argument | Type | Usage | Description |

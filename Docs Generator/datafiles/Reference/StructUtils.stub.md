@@ -15,6 +15,10 @@ Created a function to check if a value is a struct that's not empty.
 
 @func <struct_clone>
 
+Creates a clone of the given struct. The clone may be shallow (values are same between structs) or deep (nested values are cloned, too).
+
+When deep cloning, recursive references should be mirrored - if a structure refers to itself directly or through one of its nested item, then the corresponding clone should refer to itself through the same path.
+
 @section Example
 
 The following code clones a random encounter monster data to serve as a base, then picks and applies random modifiers to change the monster's stats or attacks. Because the monster instance data is a deep clone of the base, the original data is unaffected while modifications are applied, including the attacks array.
