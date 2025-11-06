@@ -59,6 +59,17 @@ function ArrayCloneTests(_run, _method) : VerrificMethodTest(_run, _method) cons
         assert_array_equal(given[3], clone[3]);
     }
     
+    static should_mirror_recursive_reference = function() {
+        var _given = [{}];
+        _given[0].recursive = _given;
+        given_array(_given);
+        given_deep_cloning();
+        when_array_cloned();
+        then_clone_should_not_be_given();
+        
+        assert_equal(clone, clone[0].recursive, "Recursive nested array should match outer array.");
+    }
+    
     // -----
     // Setup
     // -----

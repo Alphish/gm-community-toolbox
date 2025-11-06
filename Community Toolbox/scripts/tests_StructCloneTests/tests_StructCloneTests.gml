@@ -62,6 +62,17 @@ function StructCloneTests(_run, _method) : VerrificMethodTest(_run, _method) con
         assert_array_equal(given.four, clone.four);
     }
     
+    static should_mirror_recursive_reference = function() {
+        var _given = { nested: {} };
+        _given.nested.recursive = _given;
+        given_struct(_given);
+        given_deep_cloning();
+        when_struct_cloned();
+        then_clone_should_not_be_given();
+        
+        assert_equal(clone, clone.nested.recursive, "Recursive nested struct should match outer struct.");
+    }
+    
     // -----
     // Setup
     // -----
