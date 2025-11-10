@@ -40,3 +40,22 @@ function struct_assign(_destination) {
     
     return _destination;
 }
+
+/// @func struct_filter(struct,predicate)
+/// @desc Creates a new filtered struct from existing one, with entries meeting the given predicate condition.
+/// @arg {Struct} struct            The struct to filter entries from.
+/// @arg {Function} predicate       The predicate to check struct entries (key-value pairs).
+/// @returns {Struct}
+function struct_filter(_struct, _predicate) {
+    var _result = {};
+    var _keys = struct_get_names(_struct);
+    
+    for (var i = 0, _count = array_length(_keys); i < _count; i++) {
+        var _key = _keys[i];
+        var _value = _struct[$ _key];
+        
+        if (_predicate(_key, _value))
+            _result[$ _key] = _value;
+    }
+    return _result;
+}
