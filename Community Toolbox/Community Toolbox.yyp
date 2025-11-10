@@ -236,6 +236,7 @@
     {"id":{"name":"tests_StringToCharArrayTests","path":"scripts/tests_StringToCharArrayTests/tests_StringToCharArrayTests.yy",},},
     {"id":{"name":"tests_StructAssignTests","path":"scripts/tests_StructAssignTests/tests_StructAssignTests.yy",},},
     {"id":{"name":"tests_StructCloneTests","path":"scripts/tests_StructCloneTests/tests_StructCloneTests.yy",},},
+    {"id":{"name":"tests_StructFilterTests","path":"scripts/tests_StructFilterTests/tests_StructFilterTests.yy",},},
     {"id":{"name":"tests_UnlerpTests","path":"scripts/tests_UnlerpTests/tests_UnlerpTests.yy",},},
     {"id":{"name":"tests_VectorLengthDirTests","path":"scripts/tests_VectorLengthDirTests/tests_VectorLengthDirTests.yy",},},
     {"id":{"name":"utils_CommunityToolboxArray","path":"scripts/utils_CommunityToolboxArray/utils_CommunityToolboxArray.yy",},},
