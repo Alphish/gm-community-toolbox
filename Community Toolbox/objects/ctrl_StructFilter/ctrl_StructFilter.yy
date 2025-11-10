@@ -1,15 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"ctrl_StructAssign",
+  "%Name":"ctrl_StructFilter",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"ctrl_StructAssign",
+  "name":"ctrl_StructFilter",
   "overriddenProperties":[],
   "parent":{
-    "name":"Struct Assign",
-    "path":"folders/Demo/Structs/Struct Assign.yy",
+    "name":"Struct Filter",
+    "path":"folders/Demo/Structs/Struct Filter.yy",
   },
   "parentObjectId":null,
   "persistent":false,
