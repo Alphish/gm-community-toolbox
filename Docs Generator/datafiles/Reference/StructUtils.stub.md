@@ -48,3 +48,17 @@ var _enemy = struct_assign(new WolfEnemy(), { name: "Howlington", hp: 500, atk: 
 
 @update 24.6.0
 Created a function to assign contents of one struct (or sequence of structs) to another.
+
+@func <struct_filter>
+
+@section Example
+
+The following code filters out struct entries with values other than true, so that the keys with the true value can be saved.
+
+```gml
+var _upgrades_collected = struct_filter(upgrades_state, function(_key, _value) { return _value == true; });
+var _upgrades_names = struct_get_names(_upgrades_collected); // get the upgrade names for saving
+```
+
+@update 24.11.0
+Created a function to make a struct with filtered entries.

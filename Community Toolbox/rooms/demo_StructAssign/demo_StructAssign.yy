@@ -55,7 +55,7 @@
   "name":"demo_StructAssign",
   "parent":{
     "name":"Struct Assign",
-    "path":"folders/Demo/Struct Assign.yy",
+    "path":"folders/Demo/Structs/Struct Assign.yy",
   },
   "parentRoom":null,
   "physicsSettings":{

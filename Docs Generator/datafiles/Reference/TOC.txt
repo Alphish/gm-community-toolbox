@@ -40,6 +40,7 @@
     @func <is_nonempty_struct>
     @func <struct_clone>
     @func <struct_assign>
+    @func <struct_filter>
 @script <Function> FunctionUtils
     @region <Function:Constructors> FunctionUtils_Constructors
         @func <is_constructor>

@@ -99,6 +99,7 @@ Below are listed various scripts and functions available in the Community Toolbo
 - [string_to_char_array](/Docs/Reference/Functions/string_to_char_array.md)
 - [struct_assign](/Docs/Reference/Functions/struct_assign.md)
 - [struct_clone](/Docs/Reference/Functions/struct_clone.md)
+- [struct_filter](/Docs/Reference/Functions/struct_filter.md)
 - [unlerp](/Docs/Reference/Functions/unlerp.md)
 - [vector_direction](/Docs/Reference/Functions/vector_direction.md)
 - [vector_length](/Docs/Reference/Functions/vector_length.md)

@@ -3,6 +3,7 @@ function StructUtilsSuite() : VerrificSuiteGroup("Struct utilities tests") const
         IsNonemptyStructTests,
         StructAssignTests,
         StructCloneTests,
+        StructFilterTests,
     ], function(test) {
         add_methods_from(test);
     });

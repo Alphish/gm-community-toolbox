@@ -21,6 +21,7 @@ Below is the releases history, with detailed information about specific function
 - **Struct utilities**
     - [is_nonempty_struct](Reference/Functions/is_nonempty_struct.md) - Created a function to check if a value is a struct that's not empty.
     - [struct_clone](Reference/Functions/struct_clone.md) - Created a function to make a shallow or deep clone of a given struct.
+    - [struct_filter](Reference/Functions/struct_filter.md) - Created a function to make a struct with filtered entries.
 - **Function utilities: Constructors**
     - [is_constructor](Reference/Functions/is_constructor.md) - Created a function to check if the given function is a constructor.
     - [constructor_get_parent](Reference/Functions/constructor_get_parent.md) - Created a function to retrieve the parent of a constructor, if any.

@@ -60,6 +60,7 @@ with (define_category("Arrays")) {
 
 with (define_category("Structs")) {
     define_demo("Struct assignment", demo_StructAssign, "Showcasing a function that sets values from one struct to another struct.");
+    define_demo("Struct filtering", demo_StructFilter, "Showcasing a function that filters struct entries.");
 }
 
 with (define_category("Layers")) {
