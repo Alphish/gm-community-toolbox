@@ -1,4 +1,5 @@
 /// @func json_load(filename,[filter],[raw])
+/// @url http://github.com/Alphish/gm-community-toolbox/blob/main/Docs/Reference/Functions/json_load.md
 /// @desc Loads a given JSON file into a GML value (struct/array/string/real).
 /// @arg {String} filename      The path of the JSON file to load.
 /// @arg {Function} [filter]    A filter function allowing more fine-grained control over parsing specific values.
@@ -18,6 +19,7 @@ function json_load(_filename, _filter = undefined, _raw = false) {
 }
 
 /// @func json_save(filename,value,[prettyprint],[filter])
+/// @url http://github.com/Alphish/gm-community-toolbox/blob/main/Docs/Reference/Functions/json_save.md
 /// @desc Saves a given GML value (struct/array/string/real) into a JSON file.
 /// @arg {String} filename      The path of the JSON file to save.
 /// @arg {Any} value            The value to save as a JSON file.

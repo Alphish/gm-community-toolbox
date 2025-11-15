@@ -1,4 +1,5 @@
 /// @func shader_set_uniform_color(uniform,color,[alpha])
+/// @url http://github.com/Alphish/gm-community-toolbox/blob/main/Docs/Reference/Functions/shader_set_uniform_color.md
 /// @desc Sets a shader uniform value to a vec4 representing an RGBA colour.
 /// @arg {Id.Uniform} uniform       The shader uniform to set the value of.
 /// @arg {Constant.Color} color     The RGB colour component.
@@ -11,6 +12,7 @@ function shader_set_uniform_color(_uniform, _color, _alpha = 1) {
 }
 
 /// @func shader_set_uniform_colour(uniform,colour,[alpha])
+/// @url http://github.com/Alphish/gm-community-toolbox/blob/main/Docs/Reference/Functions/shader_set_uniform_color.md
 /// @desc Sets a shader uniform value to a vec4 representing an RGBA colour.
 /// @arg {Id.Uniform} uniform       The shader uniform to set the value of.
 /// @arg {Constant.Color} colour    The RGB colour component.

@@ -1,4 +1,5 @@
 /// @func layer_destroy_sprites(layer)
+/// @url http://github.com/Alphish/gm-community-toolbox/blob/main/Docs/Reference/Functions/layer_destroy_sprites.md
 /// @desc Destroys all sprite elements from the given layer.
 /// @arg {String,Id.Layer} layer        The layer to remove the elements from.
 function layer_destroy_sprites(_layer) {
@@ -10,6 +11,7 @@ function layer_destroy_sprites(_layer) {
 }
 
 /// @func layer_destroy_text(layer)
+/// @url http://github.com/Alphish/gm-community-toolbox/blob/main/Docs/Reference/Functions/layer_destroy_text.md
 /// @desc Destroys all text elements from the given layer.
 /// @arg {String,Id.Layer} layer        The layer to remove the elements from.
 function layer_destroy_text(_layer) {
@@ -21,6 +23,7 @@ function layer_destroy_text(_layer) {
 }
 
 /// @func layer_destroy_sequences(layer)
+/// @url http://github.com/Alphish/gm-community-toolbox/blob/main/Docs/Reference/Functions/layer_destroy_sequences.md
 /// @desc Destroys all sequences from the given layer.
 /// @arg {String,Id.Layer} layer        The layer to remove the elements from.
 function layer_destroy_sequences(_layer) {
@@ -34,6 +37,7 @@ function layer_destroy_sequences(_layer) {
 }
 
 /// @func layer_destroy_backgrounds(layer)
+/// @url http://github.com/Alphish/gm-community-toolbox/blob/main/Docs/Reference/Functions/layer_destroy_backgrounds.md
 /// @desc Destroys all backgrounds from the given layer.
 /// @arg {String,Id.Layer} layer        The layer to remove the elements from.
 function layer_destroy_backgrounds(_layer) {
@@ -47,6 +51,7 @@ function layer_destroy_backgrounds(_layer) {
 }
 
 /// @func layer_destroy_tilemaps(layer)
+/// @url http://github.com/Alphish/gm-community-toolbox/blob/main/Docs/Reference/Functions/layer_destroy_tilemaps.md
 /// @desc Destroys all tilemaps from the given layer.
 /// @arg {String,Id.Layer} layer        The layer to remove the elements from.
 function layer_destroy_tilemaps(_layer) {

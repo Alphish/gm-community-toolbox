@@ -1,4 +1,5 @@
 /// @func is_nonempty_string(value)
+/// @url http://github.com/Alphish/gm-community-toolbox/blob/main/Docs/Reference/Functions/is_nonempty_string.md
 /// @desc Checks if a given value is a string that's not empty.
 /// @arg {Any} value            The value to check.
 /// @returns {Bool}
@@ -8,6 +9,7 @@ function is_nonempty_string(_value) {
 }
 
 /// @func string_contains(str,substr)
+/// @url http://github.com/Alphish/gm-community-toolbox/blob/main/Docs/Reference/Functions/string_contains.md
 /// @desc Checks whether the given string contains the substring or not. Always returns true for an empty substringg.
 /// @arg {String} str           The string to find the substring in.
 /// @arg {String} substr        The string to check.
@@ -20,6 +22,7 @@ function string_contains(_str, _substr) {
 }
 
 /// @func string_to_char_array(str,[oneindexed])
+/// @url http://github.com/Alphish/gm-community-toolbox/blob/main/Docs/Reference/Functions/string_to_char_array.md
 /// @desc Creates an array of characters from a given string. It may be 0-indexed or 1-indexed (it's 0-indexed by default).
 /// @arg {String} str           The string to convert to the array.
 /// @arg {Bool} [oneindexed]    Whether the first character should start at index of 0 (false) or index of 1 (true).
@@ -34,6 +37,7 @@ function string_to_char_array(_str, _oneindexed = false) {
 }
 
 /// @func string_interpolate(template,values,[evaluator])
+/// @url http://github.com/Alphish/gm-community-toolbox/blob/main/Docs/Reference/Functions/string_interpolate.md
 /// @desc Creates a new string from a given template, replacing placeholders between curly braces with corresponding values.
 ///       By default, placeholders are treated as struct keys to replace with corresponding struct values. Placeholder processing can be customised with an optional evaluator.
 /// @arg {String} template          The template to replace placeholders in.
