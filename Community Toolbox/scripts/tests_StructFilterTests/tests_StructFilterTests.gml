@@ -1,9 +1,9 @@
 function StructFilterTests(_run, _method) : VerrificMethodTest(_run, _method) constructor {
     static test_subject = "struct_filter";
     
-    static should_filter_empty_struct_into_empty_struct = function() {
+    static should_filter_empty_struct_into_empty_struct_without_entering_predicate = function() {
         given_source({});
-        given_predicate(function(_key, _value) { return true; });
+        given_predicate(function(_key, _value) { throw $"The filter predicate shouldn't have been called but it was."; });
         when_struct_filtered();
         then_result().should_equal_struct({});
     }
