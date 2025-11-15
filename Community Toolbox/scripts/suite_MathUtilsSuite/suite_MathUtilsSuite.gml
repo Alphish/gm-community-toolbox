@@ -5,4 +5,5 @@ function MathUtilsSuite() : VerrificSuiteGroup("Math utilities tests") construct
     add_methods_from(ApproachAngleTests);
     add_methods_from(UnlerpTests);
     add_methods_from(RelerpTests);
+    add_methods_from(VectorLengthDirTests);
 }

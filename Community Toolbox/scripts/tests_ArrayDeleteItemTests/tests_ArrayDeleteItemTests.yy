@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"tests_ArrayDeleteItemTests",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"tests_ArrayDeleteItemTests",
+  "parent":{
+    "name":"Array",
+    "path":"folders/Tests/Array.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

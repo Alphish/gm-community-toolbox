@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"suite_FunctionUtilsSuite",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"suite_FunctionUtilsSuite",
+  "parent":{
+    "name":"Function",
+    "path":"folders/Tests/Function.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

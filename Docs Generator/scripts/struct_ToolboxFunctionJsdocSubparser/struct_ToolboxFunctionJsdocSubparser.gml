@@ -22,6 +22,10 @@ function ToolboxFunctionJsdocSubparser(_parser) constructor {
                     _data_builder.accept_function_signature(_signature);
                     break;
                 
+                case "url":
+                    _data_builder.accept_url(_line);
+                    break;
+                
                 case "desc":
                     var _descrest = read_jsdoc_rest();
                     var _description = _line + _descrest;
@@ -53,7 +57,7 @@ function ToolboxFunctionJsdocSubparser(_parser) constructor {
     // ------------------
     
     static peeks_jsdoc_entry = function() {
-        return script_scanner.peeks_prefix("/// @") && !script_scanner.peeks_prefix("/// @ ");
+        return script_scanner.peeks_prefix("/// @");
     }
     
     static peek_jsdoc_tag = function() {
@@ -66,8 +70,8 @@ function ToolboxFunctionJsdocSubparser(_parser) constructor {
     
     static read_jsdoc_rest = function() {
         var _rest = "";
-        while (script_scanner.peeks_prefix("/// @ ")) {
-            _rest += "\n" + script_scanner.read_line_after_prefix("/// @ ");
+        while (script_scanner.peeks_prefix("/// ") && !script_scanner.peeks_prefix("/// @")) {
+            _rest += "\n" + script_scanner.read_line_after_prefix("/// ");
         }
         return _rest;
     }

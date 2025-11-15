@@ -7,6 +7,17 @@ function ReferenceMerger(_toc, _project) : MultiStepProcess() constructor {
     toc_entries = toc_home.list_descendants();
     toc_entries_by_name = array_key_by(toc_entries, get_keyname);
     
+    array_foreach(toc_entries, function(_entity) {
+        var _stub = _entity.stub;
+        if (!struct_exists(_stub, "aliases"))
+            return;
+        
+        for (var i = 0, _count = array_length(_stub.aliases); i < _count; i++) {
+            var _alias = _stub.aliases[i];
+            toc_entries_by_name[$ _alias] = _entity;
+        }
+    });
+    
     release_versions = array_map(_toc.releases, function(_release) { return _release.version });
     
     project = _project;

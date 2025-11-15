@@ -10,7 +10,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"String Utilities",
-    "path":"folders/Demo/String Utilities.yy",
+    "path":"folders/Demo/Strings/String Utilities.yy",
   },
   "parentObjectId":null,
   "persistent":false,

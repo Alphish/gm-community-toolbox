@@ -1,6 +1,6 @@
 @region <Draw:Settings> Settings
 
-@func <draw_set_color_alpha>
+@func <draw_set_color_alpha|draw_set_colour_alpha>
 
 @section Example
 

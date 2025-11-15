@@ -3,6 +3,37 @@
 # Release notes
 Below is the releases history, with detailed information about specific functions affected.
 
+### 24.11.0
+
+**Download:** [YYMPS](https://github.com/Alphish/gm-community-toolbox/releases/download/v24.11.0/CommunityToolbox.24.11.0.yymps)
+
+- **Math utilities: Geometry**
+    - [vector_length](Reference/Functions/vector_length.md) - Created a function to calculate vector length from its X/Y components.
+    - [vector_direction](Reference/Functions/vector_direction.md) - Created a function to calculate vector direction from its X/Y components.
+- **String utilities**
+    - [is_nonempty_string](Reference/Functions/is_nonempty_string.md) - Created a function to check if a value is a string that's not empty.
+    - [string_interpolate](Reference/Functions/string_interpolate.md) - Created a function to replace placeholders with struct values in a string template.
+- **Array utilities: Basic operations**
+    - [is_nonempty_array](Reference/Functions/is_nonempty_array.md) - Created a function to check if a value is an array that's not empty.
+    - [array_find_item](Reference/Functions/array_find_item.md) - Created a function to find the first array item meeting a condition.
+    - [array_clone](Reference/Functions/array_clone.md) - Created a function to make a shallow or deep clone of a given array.
+    - [array_delete_item](Reference/Functions/array_delete_item.md) - Created a function to remove the first occurrence of an item in an array.
+- **Struct utilities**
+    - [is_nonempty_struct](Reference/Functions/is_nonempty_struct.md) - Created a function to check if a value is a struct that's not empty.
+    - [struct_clone](Reference/Functions/struct_clone.md) - Created a function to make a shallow or deep clone of a given struct.
+    - [struct_filter](Reference/Functions/struct_filter.md) - Created a function to make a struct with filtered entries.
+- **Function utilities: Constructors**
+    - [is_constructor](Reference/Functions/is_constructor.md) - Created a function to check if the given function is a constructor.
+    - [constructor_get_parent](Reference/Functions/constructor_get_parent.md) - Created a function to retrieve the parent of a constructor, if any.
+    - [constructor_get_children](Reference/Functions/constructor_get_children.md) - Created a function to retrieve the children of a constructor, if any.
+    - [constructor_call](Reference/Functions/constructor_call.md) - Created a function to create a new instance of a constructor with arbitrary arguments.
+- **Layer utilities**
+    - [layer_destroy_sprites](Reference/Functions/layer_destroy_sprites.md) - Created a function to destroy all sprite elements in a given layer.
+    - [layer_destroy_text](Reference/Functions/layer_destroy_text.md) - Created a function to destroy all text elements in a given layer.
+    - [layer_destroy_sequences](Reference/Functions/layer_destroy_sequences.md) - Created a function to destroy all sequence elements in a given layer.
+    - [layer_destroy_backgrounds](Reference/Functions/layer_destroy_backgrounds.md) - Created a function to destroy all background elements in a given layer.
+    - [layer_destroy_tilemaps](Reference/Functions/layer_destroy_tilemaps.md) - Created a function to destroy all tilemap elements in a given layer.
+
 ### 24.6.1
 
 **Download:** [YYMPS](https://github.com/Alphish/gm-community-toolbox/releases/download/v24.6.1/CommunityToolbox.24.6.1.yymps)
@@ -18,11 +49,14 @@ Below is the releases history, with detailed information about specific function
     - [string_contains](Reference/Functions/string_contains.md) - Created a function to check whether a given string contains the given substring.
 - **Array utilities: Basic operations**
     - [array_empty](Reference/Functions/array_empty.md) - Created a function to check if an array is empty.
-    - [array_clear](Reference/Functions/array_clear.md) - Created a function to clear arrays.
     - [array_push_ext](Reference/Functions/array_push_ext.md) - Created a function to push items from an array to another array.
     - [array_insert_ext](Reference/Functions/array_insert_ext.md) - Created a function to insert items from an array into another array.
+    - [array_clear](Reference/Functions/array_clear.md) - Created a function to clear arrays.
 - **Struct utilities**
     - [struct_assign](Reference/Functions/struct_assign.md) - Created a function to assign contents of one struct (or sequence of structs) to another.
+- **Function utilities: Static initialization**
+    - [static_init](Reference/Functions/static_init.md) - Created a function to initialize static variables of other functions.
+    - [static_init_in_progress](Reference/Functions/static_init_in_progress.md) - Created a function to check if static variables initialization is in progress, in order to skip the non-static logic.
 - **DS List utilities**
     - [ds_list_create_from_array](Reference/Functions/ds_list_create_from_array.md) - Created a function to create a DS list from an array.
     - [ds_list_add_from_array](Reference/Functions/ds_list_add_from_array.md) - Created a function to add items to a DS list from an array.
@@ -49,9 +83,6 @@ Below is the releases history, with detailed information about specific function
     - [draw_circle_segment](Reference/Functions/draw_circle_segment.md) - Created a function to draw a circle segment shape (i.e. a bow).
     - [draw_ring](Reference/Functions/draw_ring.md) - Created a function to draw a ring shape.
     - [draw_ring_arc](Reference/Functions/draw_ring_arc.md) - Created a function to draw a ring slice shape.
-- **Other utilities: Static initialization**
-    - [static_init](Reference/Functions/static_init.md) - Created a function to initialize static variables of other functions.
-    - [static_init_in_progress](Reference/Functions/static_init_in_progress.md) - Created a function to check if static variables initialization is in progress, in order to skip the non-static logic.
 
 ### 23.4.1
 

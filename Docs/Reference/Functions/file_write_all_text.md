@@ -2,7 +2,7 @@
 
 # file_write_all_text
 
-[Go to source](/Community%20Toolbox/scripts/utils_CommunityToolboxFile/utils_CommunityToolboxFile.gml#L22)
+[Go to source](/Community%20Toolbox/scripts/utils_CommunityToolboxFile/utils_CommunityToolboxFile.gml#L24)
 
 Creates or overwrites a given file with the given string content.
 

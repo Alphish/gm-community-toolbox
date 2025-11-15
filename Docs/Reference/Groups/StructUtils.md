@@ -6,4 +6,7 @@
 
 ### Defined functions
 
+- [is_nonempty_struct](/Docs/Reference/Functions/is_nonempty_struct.md)
+- [struct_clone](/Docs/Reference/Functions/struct_clone.md)
 - [struct_assign](/Docs/Reference/Functions/struct_assign.md)
+- [struct_filter](/Docs/Reference/Functions/struct_filter.md)

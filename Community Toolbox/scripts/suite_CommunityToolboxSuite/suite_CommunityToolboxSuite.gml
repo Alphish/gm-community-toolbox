@@ -2,6 +2,7 @@ function CommunityToolboxSuite() : VerrificSuiteGroup("Community toolbox tests")
     add_suite(new ArrayUtilsSuite());
     add_suite(new DsListUtilsSuite());
     add_suite(new FileUtilsSuite());
+    add_suite(new FunctionUtilsSuite());
     add_suite(new JsonUtilsSuite());
     add_suite(new MathUtilsSuite());
     add_suite(new MiscUtilsSuite());

@@ -1,0 +1,97 @@
+{
+  "$GMRoom":"v1",
+  "%Name":"demo_StructFilter",
+  "creationCodeFile":"",
+  "inheritCode":false,
+  "inheritCreationOrder":false,
+  "inheritLayers":false,
+  "instanceCreationOrder":[
+    {"name":"inst_C159939","path":"rooms/demo_StructFilter/demo_StructFilter.yy",},
+    {"name":"inst_41240C5A_1_2","path":"rooms/demo_StructFilter/demo_StructFilter.yy",},
+    {"name":"inst_36F74760_2","path":"rooms/demo_StructFilter/demo_StructFilter.yy",},
+    {"name":"inst_44616A09_1","path":"rooms/demo_StructFilter/demo_StructFilter.yy",},
+    {"name":"inst_1558CB99_1","path":"rooms/demo_StructFilter/demo_StructFilter.yy",},
+    {"name":"inst_597656F1_2","path":"rooms/demo_StructFilter/demo_StructFilter.yy",},
+    {"name":"inst_4DEC5FDD","path":"rooms/demo_StructFilter/demo_StructFilter.yy",},
+    {"name":"inst_64945DE0","path":"rooms/demo_StructFilter/demo_StructFilter.yy",},
+  ],
+  "isDnd":false,
+  "layers":[
+    {"$GMRAssetLayer":"","%Name":"Text","assets":[
+        {"$GMRTextItem":"v1","%Name":"text_633329D7_2","alignment":256,"charSpacing":0.0,"colour":4294967295,"fontId":{"name":"fnt_DemoInfo","path":"fonts/fnt_DemoInfo/fnt_DemoInfo.yy",},"frameH":96.0,"frameW":1216.0,"frozen":false,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"lineSpacing":0.0,"name":"text_633329D7_2","paragraphSpacing":0.0,"resourceType":"GMRTextItem","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"text":"This shows the use of struct_filter function, which creates a new struct by taking entries from the source struct that meet a specific condition. The condition can check both the entry key and the entry value.","wrap":true,"x":32.0,"xorigin":0.0,"y":64.0,"yorigin":0.0,},
+      ],"depth":0,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Text","properties":[],"resourceType":"GMRAssetLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
+    {"$GMRInstanceLayer":"","%Name":"Instances","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
+        {"$GMRInstance":"v1","%Name":"inst_C159939","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_C159939","objectId":{"name":"ctrl_StructFilter","path":"objects/ctrl_StructFilter/ctrl_StructFilter.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":0.0,"y":0.0,},
+        {"$GMRInstance":"v1","%Name":"inst_41240C5A_1_2","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_41240C5A_1_2","objectId":{"name":"ui_Button","path":"objects/ui_Button/ui_Button.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":5.0,"scaleY":1.0,"x":1088.0,"y":16.0,},
+        {"$GMRInstance":"v1","%Name":"inst_36F74760_2","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_36F74760_2","objectId":{"name":"ui_StructEditor","path":"objects/ui_StructEditor/ui_StructEditor.yy",},"properties":[
+            {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"par_CollectionEditor","path":"objects/par_CollectionEditor/par_CollectionEditor.yy",},"propertyId":{"name":"collection","path":"objects/par_CollectionEditor/par_CollectionEditor.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"ctrl_StructFilter.source",},
+            {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"ui_StructEditor","path":"objects/ui_StructEditor/ui_StructEditor.yy",},"propertyId":{"name":"default_item","path":"objects/ui_StructEditor/ui_StructEditor.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"\"TEXT\"",},
+            {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"par_CollectionEditor","path":"objects/par_CollectionEditor/par_CollectionEditor.yy",},"propertyId":{"name":"header","path":"objects/par_CollectionEditor/par_CollectionEditor.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"SOURCE",},
+            {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"ui_StructEditor","path":"objects/ui_StructEditor/ui_StructEditor.yy",},"propertyId":{"name":"key_field_width","path":"objects/ui_StructEditor/ui_StructEditor.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"128",},
+          ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":5.5,"scaleY":7.0,"x":32.0,"y":224.0,},
+        {"$GMRInstance":"v1","%Name":"inst_44616A09_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_44616A09_1","objectId":{"name":"ui_StructEditor","path":"objects/ui_StructEditor/ui_StructEditor.yy",},"properties":[
+            {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"par_CollectionEditor","path":"objects/par_CollectionEditor/par_CollectionEditor.yy",},"propertyId":{"name":"collection","path":"objects/par_CollectionEditor/par_CollectionEditor.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"ctrl_StructFilter.result",},
+            {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"ui_StructEditor","path":"objects/ui_StructEditor/ui_StructEditor.yy",},"propertyId":{"name":"default_item","path":"objects/ui_StructEditor/ui_StructEditor.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"\"TEXT\"",},
+            {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"par_CollectionEditor","path":"objects/par_CollectionEditor/par_CollectionEditor.yy",},"propertyId":{"name":"header","path":"objects/par_CollectionEditor/par_CollectionEditor.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"FILTER RESULT",},
+            {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"ui_StructEditor","path":"objects/ui_StructEditor/ui_StructEditor.yy",},"propertyId":{"name":"key_field_width","path":"objects/ui_StructEditor/ui_StructEditor.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"128",},
+          ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":5.5,"scaleY":7.0,"x":448.0,"y":224.0,},
+        {"$GMRInstance":"v1","%Name":"inst_1558CB99_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_1558CB99_1","objectId":{"name":"ui_Button","path":"objects/ui_Button/ui_Button.yy",},"properties":[
+            {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"ui_Button","path":"objects/ui_Button/ui_Button.yy",},"propertyId":{"name":"on_click","path":"objects/ui_Button/ui_Button.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"ctrl_StructFilter.filter_by_key",},
+            {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"ui_Button","path":"objects/ui_Button/ui_Button.yy",},"propertyId":{"name":"text","path":"objects/ui_Button/ui_Button.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Filter all-lowercase key",},
+          ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":11.0,"scaleY":1.0,"x":896.0,"y":224.0,},
+        {"$GMRInstance":"v1","%Name":"inst_4DEC5FDD","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_4DEC5FDD","objectId":{"name":"ui_Button","path":"objects/ui_Button/ui_Button.yy",},"properties":[
+            {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"ui_Button","path":"objects/ui_Button/ui_Button.yy",},"propertyId":{"name":"on_click","path":"objects/ui_Button/ui_Button.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"ctrl_StructFilter.filter_by_value",},
+            {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"ui_Button","path":"objects/ui_Button/ui_Button.yy",},"propertyId":{"name":"text","path":"objects/ui_Button/ui_Button.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Filter letters-only value",},
+          ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":11.0,"scaleY":1.0,"x":896.0,"y":288.0,},
+        {"$GMRInstance":"v1","%Name":"inst_64945DE0","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_64945DE0","objectId":{"name":"ui_Button","path":"objects/ui_Button/ui_Button.yy",},"properties":[
+            {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"ui_Button","path":"objects/ui_Button/ui_Button.yy",},"propertyId":{"name":"on_click","path":"objects/ui_Button/ui_Button.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"ctrl_StructFilter.filter_by_key_value",},
+            {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"ui_Button","path":"objects/ui_Button/ui_Button.yy",},"propertyId":{"name":"text","path":"objects/ui_Button/ui_Button.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Filter by both",},
+          ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":11.0,"scaleY":1.0,"x":896.0,"y":352.0,},
+      ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
+    {"$GMRInstanceLayer":"","%Name":"Title","depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
+        {"$GMRInstance":"v1","%Name":"inst_597656F1_2","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_597656F1_2","objectId":{"name":"ui_TitleBar","path":"objects/ui_TitleBar/ui_TitleBar.yy",},"properties":[
+            {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"ui_TitleBar","path":"objects/ui_TitleBar/ui_TitleBar.yy",},"propertyId":{"name":"title","path":"objects/ui_TitleBar/ui_TitleBar.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Struct filtering",},
+          ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":20.0,"scaleY":1.0,"x":0.0,"y":0.0,},
+      ],"layers":[],"name":"Title","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
+    {"$GMRBackgroundLayer":"","%Name":"Background","animationFPS":15.0,"animationSpeedType":0,"colour":4278190080,"depth":300,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Background","properties":[],"resourceType":"GMRBackgroundLayer","resourceVersion":"2.0","spriteId":null,"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":0,"y":0,},
+  ],
+  "name":"demo_StructFilter",
+  "parent":{
+    "name":"Struct Filter",
+    "path":"folders/Demo/Structs/Struct Filter.yy",
+  },
+  "parentRoom":null,
+  "physicsSettings":{
+    "inheritPhysicsSettings":false,
+    "PhysicsWorld":false,
+    "PhysicsWorldGravityX":0.0,
+    "PhysicsWorldGravityY":10.0,
+    "PhysicsWorldPixToMetres":0.1,
+  },
+  "resourceType":"GMRoom",
+  "resourceVersion":"2.0",
+  "roomSettings":{
+    "Height":720,
+    "inheritRoomSettings":false,
+    "persistent":false,
+    "Width":1280,
+  },
+  "sequenceId":null,
+  "views":[
+    {"hborder":32,"hport":768,"hspeed":-1,"hview":768,"inherit":false,"objectId":null,"vborder":32,"visible":false,"vspeed":-1,"wport":1366,"wview":1366,"xport":0,"xview":0,"yport":0,"yview":0,},
+    {"hborder":32,"hport":768,"hspeed":-1,"hview":768,"inherit":false,"objectId":null,"vborder":32,"visible":false,"vspeed":-1,"wport":1366,"wview":1366,"xport":0,"xview":0,"yport":0,"yview":0,},
+    {"hborder":32,"hport":768,"hspeed":-1,"hview":768,"inherit":false,"objectId":null,"vborder":32,"visible":false,"vspeed":-1,"wport":1366,"wview":1366,"xport":0,"xview":0,"yport":0,"yview":0,},
+    {"hborder":32,"hport":768,"hspeed":-1,"hview":768,"inherit":false,"objectId":null,"vborder":32,"visible":false,"vspeed":-1,"wport":1366,"wview":1366,"xport":0,"xview":0,"yport":0,"yview":0,},
+    {"hborder":32,"hport":768,"hspeed":-1,"hview":768,"inherit":false,"objectId":null,"vborder":32,"visible":false,"vspeed":-1,"wport":1366,"wview":1366,"xport":0,"xview":0,"yport":0,"yview":0,},
+    {"hborder":32,"hport":768,"hspeed":-1,"hview":768,"inherit":false,"objectId":null,"vborder":32,"visible":false,"vspeed":-1,"wport":1366,"wview":1366,"xport":0,"xview":0,"yport":0,"yview":0,},
+    {"hborder":32,"hport":768,"hspeed":-1,"hview":768,"inherit":false,"objectId":null,"vborder":32,"visible":false,"vspeed":-1,"wport":1366,"wview":1366,"xport":0,"xview":0,"yport":0,"yview":0,},
+    {"hborder":32,"hport":768,"hspeed":-1,"hview":768,"inherit":false,"objectId":null,"vborder":32,"visible":false,"vspeed":-1,"wport":1366,"wview":1366,"xport":0,"xview":0,"yport":0,"yview":0,},
+  ],
+  "viewSettings":{
+    "clearDisplayBuffer":true,
+    "clearViewBackground":false,
+    "enableViews":false,
+    "inheritViewSettings":false,
+  },
+  "volume":1.0,
+}

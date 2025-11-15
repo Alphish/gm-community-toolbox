@@ -1,0 +1,46 @@
+{
+  "$GMObject":"",
+  "%Name":"ui_CollectionAdd",
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
+  "managed":true,
+  "name":"ui_CollectionAdd",
+  "overriddenProperties":[
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"ui_Button","path":"objects/ui_Button/ui_Button.yy",},"propertyId":{"name":"text","path":"objects/ui_Button/ui_Button.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"ui_Button","path":"objects/ui_Button/ui_Button.yy",},"propertyId":{"name":"target_room","path":"objects/ui_Button/ui_Button.yy",},"resource":{"name":"rm_Home","path":"rooms/rm_Home/rm_Home.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"undefined",},
+  ],
+  "parent":{
+    "name":"Collections",
+    "path":"folders/UI Elements/Collections.yy",
+  },
+  "parentObjectId":{
+    "name":"ui_Button",
+    "path":"objects/ui_Button/ui_Button.yy",
+  },
+  "persistent":false,
+  "physicsAngularDamping":0.1,
+  "physicsDensity":0.5,
+  "physicsFriction":0.2,
+  "physicsGroup":1,
+  "physicsKinematic":false,
+  "physicsLinearDamping":0.1,
+  "physicsObject":false,
+  "physicsRestitution":0.1,
+  "physicsSensor":false,
+  "physicsShape":1,
+  "physicsShapePoints":[],
+  "physicsStartAwake":true,
+  "properties":[
+    {"$GMObjectProperty":"v1","%Name":"collection_editor","filters":[],"listItems":[],"multiselect":false,"name":"collection_editor","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"","varType":5,},
+  ],
+  "resourceType":"GMObject",
+  "resourceVersion":"2.0",
+  "solid":false,
+  "spriteId":{
+    "name":"spr_CollectionAdd",
+    "path":"sprites/spr_CollectionAdd/spr_CollectionAdd.yy",
+  },
+  "spriteMaskId":null,
+  "visible":true,
+}

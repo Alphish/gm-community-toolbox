@@ -11,7 +11,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Unlerp and Relerp",
-    "path":"folders/Demo/Unlerp and Relerp.yy",
+    "path":"folders/Demo/Maths/Unlerp and Relerp.yy",
   },
   "parentObjectId":null,
   "persistent":false,

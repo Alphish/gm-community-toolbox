@@ -2,7 +2,7 @@
 
 # collision_circle_array
 
-[Go to source](/Community%20Toolbox/scripts/utils_CommunityToolboxCollision/utils_CommunityToolboxCollision.gml#L103)
+[Go to source](/Community%20Toolbox/scripts/utils_CommunityToolboxCollision/utils_CommunityToolboxCollision.gml#L108)
 
 Finds all instances of the given type colliding with the given circle, then populates the given array. Returns the number of colliding instances found.
 

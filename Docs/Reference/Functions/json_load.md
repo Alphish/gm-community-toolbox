@@ -2,7 +2,7 @@
 
 # json_load
 
-[Go to source](/Community%20Toolbox/scripts/utils_CommunityToolboxJson/utils_CommunityToolboxJson.gml#L7)
+[Go to source](/Community%20Toolbox/scripts/utils_CommunityToolboxJson/utils_CommunityToolboxJson.gml#L8)
 
 Loads a given JSON file into a GML value (struct/array/string/real).
 

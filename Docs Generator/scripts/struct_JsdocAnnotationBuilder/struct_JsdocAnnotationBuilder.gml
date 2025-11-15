@@ -8,6 +8,7 @@ function JsdocAnnotationBuilder(_parser) constructor {
     last_order = -1;
     
     function_signature = undefined;
+    url = undefined;
     description = undefined;
     arguments_details = [];
     return_type = undefined;
@@ -18,6 +19,7 @@ function JsdocAnnotationBuilder(_parser) constructor {
     
     static tag_order = [
         "func",
+        "url",
         "desc",
         "arg",
         "returns",
@@ -84,6 +86,14 @@ function JsdocAnnotationBuilder(_parser) constructor {
         function_signature = _signature;
     }
     
+    static accept_url = function(_url) {
+        if (!is_undefined(url)) {
+            script_parser.fail($"Multiple URL JSDoc annotations found.");
+            return;
+        }
+        url = _url;
+    }
+    
     static accept_description = function(_description) {
         if (!is_undefined(description)) {
             script_parser.fail($"Multiple description JSDoc annotations found.");
@@ -112,9 +122,12 @@ function JsdocAnnotationBuilder(_parser) constructor {
         if (is_undefined(function_signature))
             script_parser.fail("Missing @func annotation in the function's JSDoc.");
         
+        if (is_undefined(url))
+            script_parser.fail("Missing @url annotation in the function's JSDoc.");
+        
         if (is_undefined(description))
             script_parser.fail("Missing @desc annotation in the function's JSDoc.");
         
-        return new JsdocAnnotationData(function_signature, description, arguments_details, return_type);
+        return new JsdocAnnotationData(function_signature, url, description, arguments_details, return_type);
     }
 }

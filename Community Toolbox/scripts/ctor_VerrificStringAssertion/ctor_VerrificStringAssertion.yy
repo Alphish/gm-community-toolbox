@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"ctor_VerrificStringAssertion",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"ctor_VerrificStringAssertion",
+  "parent":{
+    "name":"Assertions",
+    "path":"folders/Tests/Verrific/Testing/Assertions.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -2,7 +2,7 @@
 
 # array_push_ext
 
-[Go to source](/Community%20Toolbox/scripts/utils_CommunityToolboxArray/utils_CommunityToolboxArray.gml#L26)
+[Go to source](/Community%20Toolbox/scripts/utils_CommunityToolboxArray/utils_CommunityToolboxArray.gml#L65)
 
 Pushes items from one array at the end of another array.
 

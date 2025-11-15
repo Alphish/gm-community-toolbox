@@ -2,7 +2,7 @@
 
 # unlerp
 
-[Go to source](/Community%20Toolbox/scripts/utils_CommunityToolboxMath/utils_CommunityToolboxMath.gml#L96)
+[Go to source](/Community%20Toolbox/scripts/utils_CommunityToolboxMath/utils_CommunityToolboxMath.gml#L102)
 
 Returns the interpolation amount such that lerp(from, to, amount) equals the given value.
 

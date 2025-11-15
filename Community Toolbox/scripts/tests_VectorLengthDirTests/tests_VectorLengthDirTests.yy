@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"tests_VectorLengthDirTests",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"tests_VectorLengthDirTests",
+  "parent":{
+    "name":"Math",
+    "path":"folders/Tests/Math.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

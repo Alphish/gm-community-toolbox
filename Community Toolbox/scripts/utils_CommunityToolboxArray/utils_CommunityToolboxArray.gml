@@ -1,6 +1,17 @@
 #region Basic operations
 
+/// @func is_nonempty_array(value)
+/// @url http://github.com/Alphish/gm-community-toolbox/blob/main/Docs/Reference/Functions/is_nonempty_array.md
+/// @desc Checks if a given value is an array that's not empty.
+/// @arg {Any} value            The value to check.
+/// @returns {Bool}
+function is_nonempty_array(_value) {
+    gml_pragma("forceinline");
+    return is_array(_value) && array_length(_value) > 0;
+}
+
 /// @func array_empty(array)
+/// @url http://github.com/Alphish/gm-community-toolbox/blob/main/Docs/Reference/Functions/array_empty.md
 /// @desc Checks if the given array has no items.
 /// @arg {Array} array          The array to check.
 /// @returns {Bool}
@@ -9,15 +20,43 @@ function array_empty(_array) {
     return array_length(_array) == 0;
 }
 
-/// @func array_clear(array)
-/// @desc Removes all items from the array.
-/// @arg {Array} array          The array to clear.
-function array_clear(_array) {
-    gml_pragma("forceinline");
-    array_resize(_array, 0);
+/// @func array_find_item(array,predicate,[offset],[length])
+/// @url http://github.com/Alphish/gm-community-toolbox/blob/main/Docs/Reference/Functions/array_find_item.md
+/// @desc Finds the first item in the given array or array subsection that satisfies the given condition. If no item is found, undefined is returned.
+/// @arg {Array} array          The array to find the item in.
+/// @arg {Function} predicate   The function to check the search condition with.
+/// @arg {Real} [offset]        The starting index of the searched array subsection.
+/// @arg {Real} [length]        The length of the searched array subsection.
+/// @returns {Any}
+function array_find_item(_array, _predicate, _offset = 0, _length = array_length(_array)) {
+    var _idx = array_find_index(_array, _predicate, _offset, _length);
+    return _idx >= 0 ? _array[_idx] : undefined;
+}
+
+/// @func array_clone(array,[deep])
+/// @url http://github.com/Alphish/gm-community-toolbox/blob/main/Docs/Reference/Functions/array_clone.md
+/// @desc Creates a clone of the given array. The clone may be shallow (items are same between arrays) or deep (nested items are cloned, too).
+/// @arg {Array} array          The array to clone.
+/// @arg {Bool} [deep]          Whether to make a deep or shallow clone (shallow by default).
+/// @returns {Array}
+function array_clone(_array, _deep = false) {
+    if (!is_array(_array)) {
+        throw $"Trying to clone an array, but the given value is {typeof(_array)} instead.";
+    }
+    
+    if (_deep)
+        // note: 128 is the highest possible variable_clone depth
+        return variable_clone(_array, 128);
+    else {
+        // it should be doable with variable_clone, but it seems shallow copy is bugged on 2024.11
+        var _clone = [];
+        array_push_ext(_clone, _array);
+        return _clone;
+    }
 }
 
 /// @func array_push_ext(dest,source,[offset],[length])
+/// @url http://github.com/Alphish/gm-community-toolbox/blob/main/Docs/Reference/Functions/array_push_ext.md
 /// @desc Pushes items from one array at the end of another array.
 /// @arg {Array} dest           The destination array to push the items to.
 /// @arg {Array} source         The source array with the items to push.
@@ -37,6 +76,7 @@ function array_push_ext(_dest, _source, _offset = 0, _length = undefined) {
 }
 
 /// @func array_insert_ext(dest,index,source,[offset],[length])
+/// @url http://github.com/Alphish/gm-community-toolbox/blob/main/Docs/Reference/Functions/array_insert_ext.md
 /// @desc Inserts items from one array into another array.
 /// @arg {Array} dest           The destination array to insert the items into.
 /// @arg {Real} index           The index in the destination array where the items should be inserted.
@@ -79,11 +119,38 @@ function array_insert_ext(_dest, _index, _source, _offset = 0, _length = undefin
     array_copy(_dest, _index, _source, _from, _to - _from);
 }
 
+/// @func array_delete_item(array,item,[offset],[length])
+/// @url http://github.com/Alphish/gm-community-toolbox/blob/main/Docs/Reference/Functions/array_delete_item.md
+/// @desc Removes the first occurrence of a given item in the array or array subsection, if any. Returns whether the item has been found and deleted.
+/// @arg {Array} array          The array to remove the item from.
+/// @arg {Any} item             The item to remove from the array.
+/// @arg {Real} [offset]        The starting index of the array subsection to remove from.
+/// @arg {Real} [length]        The length of the array subsection to remove from.
+/// @returns {Bool}
+function array_delete_item(_array, _item, _offset = 0, _length = array_length(_array)) {
+    var _idx = array_get_index(_array, _item, _offset, _length);
+    if (_idx < 0)
+        return false;
+    
+    array_delete(_array, _idx, 1);
+    return true;
+}
+
+/// @func array_clear(array)
+/// @url http://github.com/Alphish/gm-community-toolbox/blob/main/Docs/Reference/Functions/array_clear.md
+/// @desc Removes all items from the array.
+/// @arg {Array} array          The array to clear.
+function array_clear(_array) {
+    gml_pragma("forceinline");
+    array_resize(_array, 0);
+}
+
 #endregion
 
 #region Array-wide maths
 
 /// @func array_max(array,[offset],[length])
+/// @url http://github.com/Alphish/gm-community-toolbox/blob/main/Docs/Reference/Functions/array_max.md
 /// @desc Returns the highest number from the array or its subsection. If the array/subsection is empty, 0 is returned.
 /// @arg {Array<Real>} array    The array to get the maximum value of.
 /// @arg {Real} [offset]        The starting index of the subsection (for a negative offset, it will count from array end).
@@ -119,6 +186,7 @@ function array_max(_array, _offset = 0, _length = undefined) {
 } 
 
 /// @func array_min(array,[offset],[length])
+/// @url http://github.com/Alphish/gm-community-toolbox/blob/main/Docs/Reference/Functions/array_min.md
 /// @desc Returns the lowest number from the array or its subsection. If the array/subsection is empty, 0 is returned.
 /// @arg {Array<Real>} array    The array to get the minimum value of.
 /// @arg {Real} [offset]        The starting index of the subsection (for a negative offset, it will count from array end).
@@ -154,6 +222,7 @@ function array_min(_array, _offset = 0, _length = undefined) {
 }
 
 /// @func array_mean(array,[offset],[length])
+/// @url http://github.com/Alphish/gm-community-toolbox/blob/main/Docs/Reference/Functions/array_mean.md
 /// @desc Returns the average value of numbers in the array or its subsection. If the array/subsection is empty, 0 is returned.
 /// @arg {Array<Real>} array    The array to get the mean value of.
 /// @arg {Real} [offset]        The starting index of the subsection (for a negative offset, it will count from array end).
@@ -184,6 +253,7 @@ function array_mean(_array, _offset = 0, _length = undefined) {
 }
 
 /// @func array_median(array,[offset],[length])
+/// @url http://github.com/Alphish/gm-community-toolbox/blob/main/Docs/Reference/Functions/array_median.md
 /// @desc Returns the middle number from the array or its subsection. If two middle numbers are present, the higher is returned. If the array/subsection is empty, 0 is returned.
 /// @arg {Array<Real>} array    The array to get the median value of.
 /// @arg {Real} [offset]        The starting index of the subsection (for a negative offset, it will count from array end).
@@ -222,6 +292,7 @@ function array_median(_array, _offset = 0, _length = undefined) {
 }
 
 /// @func array_sum(array,[offset],[length])
+/// @url http://github.com/Alphish/gm-community-toolbox/blob/main/Docs/Reference/Functions/array_sum.md
 /// @desc Returns the sum of numbers in the array or its subsection. If the array/subsection is empty, 0 is returned.
 /// @arg {Array<Real>} array    The array to get the sum of.
 /// @arg {Real} [offset]        The starting index of the subsection (for a negative offset, it will count from array end).
@@ -263,6 +334,7 @@ function array_sum(_array, _offset = 0, _length = undefined) {
 #region Random elements
 
 /// @func array_get_random(array,[offset],[length])
+/// @url http://github.com/Alphish/gm-community-toolbox/blob/main/Docs/Reference/Functions/array_get_random.md
 /// @desc Returns a random element from the array or its subsection. If the array/subsection is empty, undefined is returned.
 /// @arg {Array} array          The array to get the random element from.
 /// @arg {Real} [offset]        The starting index of the subsection (for a negative offset, it will count from array end).
@@ -292,6 +364,7 @@ function array_get_random(_array, _offset = 0, _length = undefined) {
 
 
 /// @func array_pop_random(array,[offset],[length])
+/// @url http://github.com/Alphish/gm-community-toolbox/blob/main/Docs/Reference/Functions/array_pop_random.md
 /// @desc Pops a random element from the array or its subsection. If the array/subsection is empty, undefined is returned.
 /// @arg {Array} array          The array to pop the random element from.
 /// @arg {Real} [offset]        The starting index of the subsection (for a negative offset, it will count from array end).

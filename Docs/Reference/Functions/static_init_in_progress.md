@@ -1,8 +1,8 @@
-[Home](/README.md) > [Community Toolbox Reference](/Docs/Reference/Reference.md) > [Other utilities](/Docs/Reference/Groups/MiscUtils.md) > [Static initialization](/Docs/Reference/Groups/MiscUtils_Static.md)
+[Home](/README.md) > [Community Toolbox Reference](/Docs/Reference/Reference.md) > [Function utilities](/Docs/Reference/Groups/FunctionUtils.md) > [Static initialization](/Docs/Reference/Groups/FunctionUtils_Static.md)
 
 # static_init_in_progress
 
-[Go to source](/Community%20Toolbox/scripts/utils_CommunityToolboxMisc/utils_CommunityToolboxMisc.gml#L51)
+[Go to source](/Community%20Toolbox/scripts/utils_CommunityToolboxFunction/utils_CommunityToolboxFunction.gml#L113)
 
 Checks whether the code runs from the static initialization context. Use it to exit early from the function's non-static code.
 

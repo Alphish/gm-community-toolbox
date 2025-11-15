@@ -9,15 +9,24 @@
         @func <lerp_angle>
         @func <unlerp>
         @func <relerp>
+    @region <Math:Geometry> MathUtils_Geometry
+        @func <vector_length>
+        @func <vector_direction>
 @script <String> StringUtils
+    @func <is_nonempty_string>
     @func <string_contains>
     @func <string_to_char_array>
+    @func <string_interpolate>
 @script <Array> ArrayUtils
     @region <Array:Basic operations> ArrayUtils_Basics
+        @func <is_nonempty_array>
         @func <array_empty>
-        @func <array_clear>
+        @func <array_find_item>
+        @func <array_clone>
         @func <array_push_ext>
         @func <array_insert_ext>
+        @func <array_delete_item>
+        @func <array_clear>
     @region <Array:Array-wide maths> ArrayUtils_Maths
         @func <array_max>
         @func <array_min>
@@ -28,7 +37,19 @@
         @func <array_get_random>
         @func <array_pop_random>
 @script <Struct> StructUtils
+    @func <is_nonempty_struct>
+    @func <struct_clone>
     @func <struct_assign>
+    @func <struct_filter>
+@script <Function> FunctionUtils
+    @region <Function:Constructors> FunctionUtils_Constructors
+        @func <is_constructor>
+        @func <constructor_get_parent>
+        @func <constructor_get_children>
+        @func <constructor_call>
+    @region <Function:Static initialization> FunctionUtils_Static
+        @func <static_init>
+        @func <static_init_in_progress>
 @script <DsList> DsListUtils
     @func <ds_list_create_from_array>
     @func <ds_list_add_from_array>
@@ -40,6 +61,12 @@
 @script <Json> JsonUtils
     @func <json_load>
     @func <json_save>
+@script <Layer> LayerUtils
+    @func <layer_destroy_sprites>
+    @func <layer_destroy_text>
+    @func <layer_destroy_sequences>
+    @func <layer_destroy_backgrounds>
+    @func <layer_destroy_tilemaps>
 @script <Collision> CollisionUtils
     @func <instance_position_top>
     @func <instance_position_array>
@@ -65,10 +92,10 @@
     @region <Misc:Nullish checks> MiscUtils_Nullish
         @func <is_nullish>
         @func <is_defined>
-    @region <Misc:Static initialization> MiscUtils_Static
-        @func <static_init>
-        @func <static_init_in_progress>
 
+@release <24.11.0>
+    @download <YYMPS> /releases/download/v24.11.0/CommunityToolbox.24.11.0.yymps
+    @gmver <2024.11.0>
 @release <24.6.1>
     @download <YYMPS> /releases/download/v24.6.1/CommunityToolbox.24.6.1.yymps
     @gmver <2024.6.2>

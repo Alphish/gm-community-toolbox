@@ -2,7 +2,7 @@
 
 # ds_list_create_from_array
 
-[Go to source](/Community%20Toolbox/scripts/utils_CommunityToolboxDsList/utils_CommunityToolboxDsList.gml#L5)
+[Go to source](/Community%20Toolbox/scripts/utils_CommunityToolboxDsList/utils_CommunityToolboxDsList.gml#L6)
 
 Creates a new DS list with items from the given array.
 

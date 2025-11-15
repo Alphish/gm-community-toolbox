@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"tests_StaticInitTests",
   "parent":{
-    "name":"Misc",
-    "path":"folders/Tests/Misc.yy",
+    "name":"Function",
+    "path":"folders/Tests/Function.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

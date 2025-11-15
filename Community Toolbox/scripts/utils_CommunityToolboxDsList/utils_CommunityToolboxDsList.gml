@@ -1,4 +1,5 @@
 /// @func ds_list_create_from_array(array)
+/// @url http://github.com/Alphish/gm-community-toolbox/blob/main/Docs/Reference/Functions/ds_list_create_from_array.md
 /// @desc Creates a new DS list with items from the given array.
 /// @arg {Array} array      The array to get the items from.
 /// @returns {Id.DsList}
@@ -9,6 +10,7 @@ function ds_list_create_from_array(_array) {
 }
 
 /// @func ds_list_add_from_array(list,array)
+/// @url http://github.com/Alphish/gm-community-toolbox/blob/main/Docs/Reference/Functions/ds_list_add_from_array.md
 /// @desc Adds items from the given array to the given DS list.
 /// @arg {Id.DsList} list       The list to add the items to.
 /// @arg {Array} array          The array to get the items from.
@@ -24,6 +26,7 @@ function ds_list_add_from_array(_list, _array) {
 }
 
 /// @func ds_list_to_array(list)
+/// @url http://github.com/Alphish/gm-community-toolbox/blob/main/Docs/Reference/Functions/ds_list_to_array.md
 /// @desc Creates a new array with items from the given DS list.
 /// @arg {Id.DsList} list       The list to get the items from.
 /// @returns {Array}
@@ -37,6 +40,7 @@ function ds_list_to_array(_list) {
 }
 
 /// @func ds_list_add_to_array(list,array)
+/// @url http://github.com/Alphish/gm-community-toolbox/blob/main/Docs/Reference/Functions/ds_list_add_to_array.md
 /// @desc Adds items from the given given DS list to the given array.
 /// @arg {Id.DsList} list       The list to get the items from.
 /// @arg {Array} array          The array to add the items to.

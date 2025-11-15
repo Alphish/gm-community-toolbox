@@ -340,6 +340,22 @@ function VerrificTest(_run) constructor {
         return test_asserter.assert_equal(_expected, _actual, _onfailure)
     }
     
+    /// @func assert_array_equal(expected,actual)
+    /// @desc Asserts that given arrays have the same items sequence.
+    /// @arg {Array} expected           The expected item sequence.
+    /// @arg {Array} actual             The actual array.
+    static assert_array_equal = function(_expected, _actual) {
+        return test_asserter.assert_array_equal(_expected, _actual);
+    }
+    
+    /// @func assert_struct_equal(expected,actual)
+    /// @desc Asserts that given structs have the same entries.
+    /// @arg {Struct} expected          The expected struct entries.
+    /// @arg {Struct} actual            The actual struct entries.
+    static assert_struct_equal = function(_expected, _actual) {
+        return test_asserter.assert_struct_equal(_expected, _actual);
+    }
+    
     #endregion
     
     // --------------------
@@ -348,13 +364,40 @@ function VerrificTest(_run) constructor {
     
     #region
     
-    /// @func assert_is_one_of(items,actual,onfailure)
+    /// @func assert_is_empty(value,[onfailure])
+    /// @desc Asserts that a given value is empty. Applicable to strings, arrays and structs only.
+    /// @arg {Any} value            The value to check.
+    /// @arg {String} [onfailure]   A custom message to show in case of a failure.
+    static assert_is_empty = function(_value, _onfailure) {
+        return test_asserter.assert_is_empty(_value, _onfailure);
+    }
+    
+    /// @func assert_count(expected,collection,[onfailure])
+    /// @desc Asserts that a given collection has a given elements count. Applicable to arrays and structs only.
+    /// @arg {Real} expected            The expected number of elements.
+    /// @arg {Any} collection           The collection to check.
+    /// @arg {String} [onfailure]       A custom message to show in case of a failure.
+    static assert_count = function(_expected, _collection, _onfailure) {
+        return test_asserter.assert_count(_expected, _collection, _onfailure);
+    }
+    
+    /// @func assert_is_one_of(items,actual,[onfailure])
     /// @desc Asserts that a given value is equal to one of expected values.
     /// @arg {Array} items          The possible expected values.
     /// @arg {Any} actual           The actual value.
-    /// @arg {String} onfailure     A custom message to show in case of a failure.
+    /// @arg {String} [onfailure]   A custom message to show in case of a failure.
     static assert_is_one_of = function(_items, _actual, _onfailure = undefined) {
         return test_asserter.assert_is_one_of(_items, _actual, _onfailure);
+    }
+    
+    /// @func assert_struct_has_entry(struct,key,value,[onfailure])
+    /// @desc Asserts that a given struct has the expected entry.
+    /// @arg {Struct} struct            The struct to find the entry in.
+    /// @arg {String} key               The key of the expected entry.
+    /// @arg {Any} value                The value of the expected entry.
+    /// @arg {String} [onfailure]       A custom message to show in case of a failure.
+    static assert_struct_has_entry = function(_struct, _key, _value, _onfailure = undefined) {
+        return test_asserter.assert_struct_has_entry(_struct, _key, _value, _onfailure);
     }
     
     #endregion

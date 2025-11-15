@@ -6,7 +6,11 @@
 
 ### Defined functions
 
+- [is_nonempty_array](/Docs/Reference/Functions/is_nonempty_array.md)
 - [array_empty](/Docs/Reference/Functions/array_empty.md)
-- [array_clear](/Docs/Reference/Functions/array_clear.md)
+- [array_find_item](/Docs/Reference/Functions/array_find_item.md)
+- [array_clone](/Docs/Reference/Functions/array_clone.md)
 - [array_push_ext](/Docs/Reference/Functions/array_push_ext.md)
 - [array_insert_ext](/Docs/Reference/Functions/array_insert_ext.md)
+- [array_delete_item](/Docs/Reference/Functions/array_delete_item.md)
+- [array_clear](/Docs/Reference/Functions/array_clear.md)

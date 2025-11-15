@@ -2,7 +2,9 @@
 
 # shader_set_uniform_color
 
-[Go to source](/Community%20Toolbox/scripts/utils_CommunityToolboxShader/utils_CommunityToolboxShader.gml#L6)
+(also: `shader_set_uniform_colour`)
+
+[Go to source](/Community%20Toolbox/scripts/utils_CommunityToolboxShader/utils_CommunityToolboxShader.gml#L7)
 
 Sets a shader uniform value to a 4-value vector representing an RGBA colour. Also available as `shader_set_uniform_colour`.
 

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"tests_ConstructorCallTests",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"tests_ConstructorCallTests",
+  "parent":{
+    "name":"Function",
+    "path":"folders/Tests/Function.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

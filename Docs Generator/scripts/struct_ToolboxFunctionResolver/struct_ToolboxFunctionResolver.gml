@@ -11,6 +11,9 @@ function ToolboxFunctionResolver(_parser) constructor {
         if (!validate_function_name(_jsdoc_data, _gml_signature))
             return get_unresolved();
         
+        if (!validate_url(_jsdoc_data, _gml_signature))
+            return get_unresolved();
+        
         if (!validate_arguments(_jsdoc_data, _gml_signature))
             return get_unresolved();
         
@@ -26,6 +29,27 @@ function ToolboxFunctionResolver(_parser) constructor {
         var _gml_name = _gml_signature.name;
         if (_jsdoc_name != _gml_name) {
             script_parser.fail($"Inconsistent function name: the JSDoc function name is '{_jsdoc_name}' but the GML function name is '{_gml_name}.'");
+            return false;
+        }
+        
+        return true;
+    }
+    
+    static validate_url = function(_jsdoc_data, _gml_signature) {
+        static url_format = "http://github.com/Alphish/gm-community-toolbox/blob/main/Docs/Reference/Functions/{0}.md";
+        
+        static substitutions = {
+            "draw_set_colour_alpha": "draw_set_color_alpha",
+            "shader_set_uniform_colour": "shader_set_uniform_color",
+        };
+        
+        if (is_undefined(_jsdoc_data.url))
+            return true;
+        
+        var _name = substitutions[$ _gml_signature.name] ?? _gml_signature.name;
+        var _expected_url = string(url_format, _name);
+        if (_jsdoc_data.url != _expected_url) {
+            script_parser.fail($"Invalid URL. Expected URL:\n{_expected_url}");
             return false;
         }
         

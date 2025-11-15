@@ -3,14 +3,13 @@
   "%Name":"ctrl_StructAssign",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
   "name":"ctrl_StructAssign",
   "overriddenProperties":[],
   "parent":{
     "name":"Struct Assign",
-    "path":"folders/Demo/Struct Assign.yy",
+    "path":"folders/Demo/Structs/Struct Assign.yy",
   },
   "parentObjectId":null,
   "persistent":false,
