@@ -2,7 +2,7 @@
 
 # layer_destroy_sprites
 
-[Go to source](/Community%20Toolbox/scripts/utils_CommunityToolboxLayer/utils_CommunityToolboxLayer.gml#L4)
+[Go to source](/Community%20Toolbox/scripts/utils_CommunityToolboxLayer/utils_CommunityToolboxLayer.gml#L5)
 
 Destroys all sprite elements from the given layer.
 

@@ -2,7 +2,7 @@
 
 # layer_destroy_text
 
-[Go to source](/Community%20Toolbox/scripts/utils_CommunityToolboxLayer/utils_CommunityToolboxLayer.gml#L15)
+[Go to source](/Community%20Toolbox/scripts/utils_CommunityToolboxLayer/utils_CommunityToolboxLayer.gml#L17)
 
 Destroys all text elements from the given layer.
 

@@ -1,4 +1,5 @@
 /// @func instance_position_top(x,y,obj)
+/// @url http://github.com/Alphish/gm-community-toolbox/blob/main/Docs/Reference/Functions/instance_position_top.md
 /// @desc Finds the instance at the given position with the least depth. If no instance is at the position, noone is returned.
 /// @arg {Real} x                                       The x coordinate of the point to check.
 /// @arg {Real} y                                       The y coordinate of the point to check.
@@ -24,6 +25,7 @@ function instance_position_top(_x, _y, _obj) {
 }
 
 /// @func instance_position_array(x,y,obj,array,[ordered],[replace])
+/// @url http://github.com/Alphish/gm-community-toolbox/blob/main/Docs/Reference/Functions/instance_position_array.md
 /// @desc Finds all instances of the given type at the given position, then populates the given array. Returns the number of colliding instances found.
 /// @arg {Real} x                                                       The x coordinate of the checked position.
 /// @arg {Real} y                                                       The y coordinate of the checked position.
@@ -45,6 +47,7 @@ function instance_position_array(_x, _y, _obj, _array, _ordered = false, _replac
 }
 
 /// @func instance_place_array(x,y,obj,array,[ordered],[replace])
+/// @url http://github.com/Alphish/gm-community-toolbox/blob/main/Docs/Reference/Functions/instance_place_array.md
 /// @desc Finds all instances of the given type colliding with the caller's collision mask at the given position, then populates the given array. Returns the number of colliding instances found.
 /// @arg {Real} x                                                       The x coordinate of the checked placement
 /// @arg {Real} y                                                       The y coordinate of the checked placement.
@@ -66,6 +69,7 @@ function instance_place_array(_x, _y, _obj, _array, _ordered = false, _replace =
 }
 
 /// @func collision_point_array(x,y,obj,prec,notme,array,[ordered],[replace])
+/// @url http://github.com/Alphish/gm-community-toolbox/blob/main/Docs/Reference/Functions/collision_point_array.md
 /// @desc Finds all instances of the given type colliding with the given point, then populates the given array. Returns the number of colliding instances found.
 /// @arg {Real} x                                                       The x coordinate of the collision point.
 /// @arg {Real} y                                                       The y coordinate of the collision point.
@@ -89,6 +93,7 @@ function collision_point_array(_x, _y, _obj, _prec, _notme, _array, _ordered = f
 }
 
 /// @func collision_circle_array(x,y,radius,obj,prec,notme,array,[ordered],[replace])
+/// @url http://github.com/Alphish/gm-community-toolbox/blob/main/Docs/Reference/Functions/collision_circle_array.md
 /// @desc Finds all instances of the given type colliding with the given circle, then populates the given array. Returns the number of colliding instances found.
 /// @arg {Real} x                                                       The x coordinate of the circle center.
 /// @arg {Real} y                                                       The y coordinate of the circle center.
@@ -113,6 +118,7 @@ function collision_circle_array(_x, _y, _radius, _obj, _prec, _notme, _array, _o
 }
 
 /// @func collision_line_array(x1,y1,x2,y2,obj,prec,notme,array,[ordered],[replace])
+/// @url http://github.com/Alphish/gm-community-toolbox/blob/main/Docs/Reference/Functions/collision_line_array.md
 /// @desc Finds all instances of the given type colliding with the given line, then populates the given array. Returns the number of colliding instances found.
 /// @arg {Real} x1                                                      The x coordinate of the line starting point.
 /// @arg {Real} y1                                                      The y coordinate of the line starting point.
@@ -138,6 +144,7 @@ function collision_line_array(_x1, _y1, _x2, _y2, _obj, _prec, _notme, _array, _
 }
 
 /// @func collision_rectangle_array(x1,y1,x2,y2,obj,prec,notme,array,[ordered],[replace])
+/// @url http://github.com/Alphish/gm-community-toolbox/blob/main/Docs/Reference/Functions/collision_rectangle_array.md
 /// @desc Finds all instances of the given type colliding with the given rectangle, then populates the given array. Returns the number of colliding instances found.
 /// @arg {Real} x1                                                      The x coordinate of the rectangle's left side.
 /// @arg {Real} y1                                                      The y coordinate of the rectangle's top side.
@@ -163,6 +170,7 @@ function collision_rectangle_array(_x1, _y1, _x2, _y2, _obj, _prec, _notme, _arr
 }
 
 /// @func collision_ellipse_array(x1,y1,x2,y2,obj,prec,notme,array,[ordered],[replace])
+/// @url http://github.com/Alphish/gm-community-toolbox/blob/main/Docs/Reference/Functions/collision_ellipse_array.md
 /// @desc Finds all instances of the given type colliding with the given ellipse, then populates the given array. Returns the number of colliding instances found.
 /// @arg {Real} x1                                                      The x coordinate of the ellipse's left side.
 /// @arg {Real} y1                                                      The y coordinate of the ellipse's top side.

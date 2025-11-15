@@ -2,7 +2,7 @@
 
 # array_delete_item
 
-[Go to source](/Community%20Toolbox/scripts/utils_CommunityToolboxArray/utils_CommunityToolboxArray.gml#L123)
+[Go to source](/Community%20Toolbox/scripts/utils_CommunityToolboxArray/utils_CommunityToolboxArray.gml#L130)
 
 Removes the first occurrence of a given item in the array or array subsection, if any. Returns whether the item has been found and deleted.
 

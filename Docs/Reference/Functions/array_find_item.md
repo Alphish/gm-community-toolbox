@@ -2,7 +2,7 @@
 
 # array_find_item
 
-[Go to source](/Community%20Toolbox/scripts/utils_CommunityToolboxArray/utils_CommunityToolboxArray.gml#L28)
+[Go to source](/Community%20Toolbox/scripts/utils_CommunityToolboxArray/utils_CommunityToolboxArray.gml#L31)
 
 Finds the first item in the given array or array subsection that satisfies the given condition. If no item is found, undefined is returned.
 

@@ -2,7 +2,7 @@
 
 # layer_destroy_backgrounds
 
-[Go to source](/Community%20Toolbox/scripts/utils_CommunityToolboxLayer/utils_CommunityToolboxLayer.gml#L39)
+[Go to source](/Community%20Toolbox/scripts/utils_CommunityToolboxLayer/utils_CommunityToolboxLayer.gml#L43)
 
 Destroys all backgrounds from the given layer.
 

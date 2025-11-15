@@ -2,7 +2,7 @@
 
 # Linear interpolation
 
-[Go to source](/Community%20Toolbox/scripts/utils_CommunityToolboxMath/utils_CommunityToolboxMath.gml#L77)
+[Go to source](/Community%20Toolbox/scripts/utils_CommunityToolboxMath/utils_CommunityToolboxMath.gml#L81)
 
 ### Defined functions
 

@@ -1,6 +1,7 @@
 #region Constructors
 
 /// @func is_constructor(function)
+/// @url http://github.com/Alphish/gm-community-toolbox/blob/main/Docs/Reference/Functions/is_constructor.md
 /// @desc Checks if the given function is marked as a constructor.
 /// @arg {Function} function        The function to check.
 /// @returns {Bool}
@@ -12,6 +13,7 @@ function is_constructor(_function) {
 }
 
 /// @func constructor_get_parent(function)
+/// @url http://github.com/Alphish/gm-community-toolbox/blob/main/Docs/Reference/Functions/constructor_get_parent.md
 /// @desc Gets the parent constructor of the given function, or undefined if no such parent was found.
 /// @arg {Function} function        The function to get the parent constructor of.
 /// @returns {Function,Undefined}
@@ -32,6 +34,7 @@ function constructor_get_parent(_function) {
 }
 
 /// @func constructor_get_children(function)
+/// @url http://github.com/Alphish/gm-community-toolbox/blob/main/Docs/Reference/Functions/constructor_get_children.md
 /// @desc Gets the children constructors of the given constructor, or an empty array 
 /// @arg {Function} function        The function to get the children constructors of.
 /// @returns {Array<Function>}
@@ -46,6 +49,7 @@ function constructor_get_children(_function) {
 }
 
 /// @func constructor_call(constructor,[args],[offset],[length])
+/// @url http://github.com/Alphish/gm-community-toolbox/blob/main/Docs/Reference/Functions/constructor_call.md
 /// @desc Creates a new instance of the given constructor.
 /// @arg {Function} constructor     The constructor to create the instance of.
 /// @arg {Array} [args]             Arguments to pass into the constructor (empty by default).
@@ -77,6 +81,7 @@ function constructor_call(_constructor, _args = undefined, _offset = 0, _length 
 #region Static initialization
 
 /// @func static_init(function)
+/// @url http://github.com/Alphish/gm-community-toolbox/blob/main/Docs/Reference/Functions/static_init.md
 /// @desc Runs a given function in order to initialize its static values, then returns that function's static struct.
 /// @arg {Function} function    The function to initialize the static variables of.
 /// @returns {Struct}
@@ -102,6 +107,7 @@ function static_init(_function) {
 }
 
 /// @func static_init_in_progress()
+/// @url http://github.com/Alphish/gm-community-toolbox/blob/main/Docs/Reference/Functions/static_init_in_progress.md
 /// @desc Checks whether the code runs from the static initialization context. Use it to exit early from the function's non-static code.
 /// @returns {Bool}
 function static_init_in_progress() {

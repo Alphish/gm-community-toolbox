@@ -2,7 +2,7 @@
 
 # constructor_get_children
 
-[Go to source](/Community%20Toolbox/scripts/utils_CommunityToolboxFunction/utils_CommunityToolboxFunction.gml#L38)
+[Go to source](/Community%20Toolbox/scripts/utils_CommunityToolboxFunction/utils_CommunityToolboxFunction.gml#L41)
 
 Gets the children constructors of the given constructor, or an empty array
 

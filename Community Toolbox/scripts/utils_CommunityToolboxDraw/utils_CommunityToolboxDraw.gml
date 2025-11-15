@@ -1,6 +1,7 @@
 #region Settings
 
 /// @func draw_set_color_alpha(color,alpha)
+/// @url http://github.com/Alphish/gm-community-toolbox/blob/main/Docs/Reference/Functions/draw_set_color_alpha.md
 /// @desc Sets the drawing color and alpha.
 /// @arg {Constant.Color} color     The drawing color to set.
 /// @arg {Real} alpha               The alpha to set (between 0 and 1).
@@ -11,6 +12,7 @@ function draw_set_color_alpha(_color, _alpha) {
 }
 
 /// @func draw_set_colour_alpha(colour,alpha)
+/// @url http://github.com/Alphish/gm-community-toolbox/blob/main/Docs/Reference/Functions/draw_set_color_alpha.md
 /// @desc Sets the drawing colour and alpha.
 /// @arg {Constant.Color} colour    The drawing colour to set.
 /// @arg {Real} alpha               The alpha to set (between 0 and 1).
@@ -21,6 +23,7 @@ function draw_set_colour_alpha(_colour, _alpha) {
 }
 
 /// @func draw_set_align(halign,valign)
+/// @url http://github.com/Alphish/gm-community-toolbox/blob/main/Docs/Reference/Functions/draw_set_align.md
 /// @desc Sets the horizontal and vertical alignment of the drawn text.
 /// @arg {Constant.HAlign} halign       The horizontal alignment to set.
 /// @arg {Constant.VAlign} valign       The vertical alignment to set.
@@ -35,6 +38,7 @@ function draw_set_align(_halign, _valign) {
 #region Shapes
 
 /// @func draw_arc(x,y,radius,anglefrom,angleto,[precision])
+/// @url http://github.com/Alphish/gm-community-toolbox/blob/main/Docs/Reference/Functions/draw_arc.md
 /// @desc Draws a circular line around the given center, with the given radius and between given angles.
 /// @arg {Real} x               The x coordinate of the arc center.
 /// @arg {Real} y               The y coordinate of the arc center.
@@ -123,6 +127,7 @@ function draw_arc(_x, _y, _radius, _anglefrom, _angleto, _precision = 24) {
 }
 
 /// @func draw_circle_sector(x,y,radius,anglefrom,angleto,[outline],[precision])
+/// @url http://github.com/Alphish/gm-community-toolbox/blob/main/Docs/Reference/Functions/draw_circle_sector.md
 /// @desc Draws a circle sector (i.e. a pie slice shape) around the given center, with the given radius and between given angles.
 /// @arg {Real} x               The x coordinate of the sector center.
 /// @arg {Real} y               The y coordinate of the sector center.
@@ -161,6 +166,7 @@ function draw_circle_sector(_x, _y, _radius, _anglefrom, _angleto, _outline = fa
 }
 
 /// @func draw_circle_segment(x,y,radius,anglefrom,angleto,[outline],[precision])
+/// @url http://github.com/Alphish/gm-community-toolbox/blob/main/Docs/Reference/Functions/draw_circle_segment.md
 /// @desc Draws a circle segment (i.e. a bow-like shape) around the given center, with the given radius and between given angles.
 /// @arg {Real} x               The x coordinate of the segment center.
 /// @arg {Real} y               The y coordinate of the segment center.
@@ -189,6 +195,7 @@ function draw_circle_segment(_x, _y, _radius, _anglefrom, _angleto, _outline = f
 }
 
 /// @func draw_ring(x,y,r1,r2,[outline],[precision])
+/// @url http://github.com/Alphish/gm-community-toolbox/blob/main/Docs/Reference/Functions/draw_ring.md
 /// @desc Draws a ring shape (an area between two circles) around the given center and with the given radii.
 /// @arg {Real} x               The x coordinate of the ring center.
 /// @arg {Real} y               The y coordinate of the ring center.
@@ -206,6 +213,7 @@ function draw_ring(_x, _y, _r1, _r2, _outline = false, _precision = 24) {
 }
 
 /// @func draw_ring_arc(x,y,r1,r2,anglefrom,angleto,[outline],[precision])
+/// @url http://github.com/Alphish/gm-community-toolbox/blob/main/Docs/Reference/Functions/draw_ring_arc.md
 /// @desc Draws a ring slice around the given center, with the given radii and between given angles.
 /// @arg {Real} x               The x coordinate of the ring center.
 /// @arg {Real} y               The y coordinate of the ring center.

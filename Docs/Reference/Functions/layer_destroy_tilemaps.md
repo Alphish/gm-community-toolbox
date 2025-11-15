@@ -2,7 +2,7 @@
 
 # layer_destroy_tilemaps
 
-[Go to source](/Community%20Toolbox/scripts/utils_CommunityToolboxLayer/utils_CommunityToolboxLayer.gml#L52)
+[Go to source](/Community%20Toolbox/scripts/utils_CommunityToolboxLayer/utils_CommunityToolboxLayer.gml#L57)
 
 Destroys all tilemaps from the given layer.
 

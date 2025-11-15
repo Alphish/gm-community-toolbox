@@ -2,7 +2,7 @@
 
 # constructor_get_parent
 
-[Go to source](/Community%20Toolbox/scripts/utils_CommunityToolboxFunction/utils_CommunityToolboxFunction.gml#L18)
+[Go to source](/Community%20Toolbox/scripts/utils_CommunityToolboxFunction/utils_CommunityToolboxFunction.gml#L20)
 
 Gets the parent constructor of the given function, or undefined if no such parent was found.
 

@@ -2,7 +2,7 @@
 
 # draw_ring_arc
 
-[Go to source](/Community%20Toolbox/scripts/utils_CommunityToolboxDraw/utils_CommunityToolboxDraw.gml#L218)
+[Go to source](/Community%20Toolbox/scripts/utils_CommunityToolboxDraw/utils_CommunityToolboxDraw.gml#L226)
 
 Draws a ring slice around the given center, with the given radii and between given angles.
 

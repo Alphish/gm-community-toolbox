@@ -2,7 +2,7 @@
 
 # approach_angle
 
-[Go to source](/Community%20Toolbox/scripts/utils_CommunityToolboxMath/utils_CommunityToolboxMath.gml#L57)
+[Go to source](/Community%20Toolbox/scripts/utils_CommunityToolboxMath/utils_CommunityToolboxMath.gml#L61)
 
 Calculates the angle (in degrees) a step closer to the target angle. If the target is close enough, returns the target.
 

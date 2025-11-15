@@ -2,7 +2,7 @@
 
 # Static initialization
 
-[Go to source](/Community%20Toolbox/scripts/utils_CommunityToolboxFunction/utils_CommunityToolboxFunction.gml#L77)
+[Go to source](/Community%20Toolbox/scripts/utils_CommunityToolboxFunction/utils_CommunityToolboxFunction.gml#L81)
 
 ### Defined functions
 

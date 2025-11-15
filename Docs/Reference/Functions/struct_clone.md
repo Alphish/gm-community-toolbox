@@ -2,7 +2,7 @@
 
 # struct_clone
 
-[Go to source](/Community%20Toolbox/scripts/utils_CommunityToolboxStruct/utils_CommunityToolboxStruct.gml#L15)
+[Go to source](/Community%20Toolbox/scripts/utils_CommunityToolboxStruct/utils_CommunityToolboxStruct.gml#L17)
 
 Creates a clone of the given struct. The clone may be shallow (values are same between structs) or deep (nested values are cloned, too).
 

@@ -2,7 +2,7 @@
 
 # constructor_call
 
-[Go to source](/Community%20Toolbox/scripts/utils_CommunityToolboxFunction/utils_CommunityToolboxFunction.gml#L55)
+[Go to source](/Community%20Toolbox/scripts/utils_CommunityToolboxFunction/utils_CommunityToolboxFunction.gml#L59)
 
 Creates a new instance of the given constructor.
 

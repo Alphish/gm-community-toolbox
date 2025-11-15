@@ -2,7 +2,7 @@
 
 # is_nonempty_string
 
-[Go to source](/Community%20Toolbox/scripts/utils_CommunityToolboxString/utils_CommunityToolboxString.gml#L5)
+[Go to source](/Community%20Toolbox/scripts/utils_CommunityToolboxString/utils_CommunityToolboxString.gml#L6)
 
 Checks if a given value is a string that's not empty.
 

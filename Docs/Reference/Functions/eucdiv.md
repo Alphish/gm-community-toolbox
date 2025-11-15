@@ -2,7 +2,7 @@
 
 # eucdiv
 
-[Go to source](/Community%20Toolbox/scripts/utils_CommunityToolboxMath/utils_CommunityToolboxMath.gml#L24)
+[Go to source](/Community%20Toolbox/scripts/utils_CommunityToolboxMath/utils_CommunityToolboxMath.gml#L26)
 
 Calculates an integer quotient of the Euclidian division (i.e. the division with always non-negative remainder).
 

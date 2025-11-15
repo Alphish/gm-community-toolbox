@@ -2,7 +2,7 @@
 
 # instance_place_array
 
-[Go to source](/Community%20Toolbox/scripts/utils_CommunityToolboxCollision/utils_CommunityToolboxCollision.gml#L56)
+[Go to source](/Community%20Toolbox/scripts/utils_CommunityToolboxCollision/utils_CommunityToolboxCollision.gml#L59)
 
 Finds all instances of the given type colliding with the caller's collision mask at the given position, then populates the given array. Returns the number of colliding instances found.
 

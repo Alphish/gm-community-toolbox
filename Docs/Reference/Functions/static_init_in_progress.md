@@ -2,7 +2,7 @@
 
 # static_init_in_progress
 
-[Go to source](/Community%20Toolbox/scripts/utils_CommunityToolboxFunction/utils_CommunityToolboxFunction.gml#L107)
+[Go to source](/Community%20Toolbox/scripts/utils_CommunityToolboxFunction/utils_CommunityToolboxFunction.gml#L113)
 
 Checks whether the code runs from the static initialization context. Use it to exit early from the function's non-static code.
 

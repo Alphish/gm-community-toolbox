@@ -2,7 +2,7 @@
 
 # is_defined
 
-[Go to source](/Community%20Toolbox/scripts/utils_CommunityToolboxMisc/utils_CommunityToolboxMisc.gml#L16)
+[Go to source](/Community%20Toolbox/scripts/utils_CommunityToolboxMisc/utils_CommunityToolboxMisc.gml#L18)
 
 Checks whether a given value is not nullish (neither undefined nor pointer_null).
 

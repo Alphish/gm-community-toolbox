@@ -2,7 +2,7 @@
 
 # draw_circle_segment
 
-[Go to source](/Community%20Toolbox/scripts/utils_CommunityToolboxDraw/utils_CommunityToolboxDraw.gml#L172)
+[Go to source](/Community%20Toolbox/scripts/utils_CommunityToolboxDraw/utils_CommunityToolboxDraw.gml#L178)
 
 Draws a circle segment (i.e. a bow-like shape) around the given center, with the given radius and between given angles.
 

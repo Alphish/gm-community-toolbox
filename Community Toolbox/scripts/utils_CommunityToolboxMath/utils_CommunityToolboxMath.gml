@@ -1,6 +1,7 @@
 #region Euclidean division
 
 /// @func eucmod(dividend,divisor)
+/// @url http://github.com/Alphish/gm-community-toolbox/blob/main/Docs/Reference/Functions/eucmod.md
 /// @desc Calculates a remainder from the Euclidian division (the remainder will always be non-negative).
 /// @arg {Real} dividend        The dividend (i.e. the value to get the remainder of).
 /// @arg {Real} divisor         The divisor (i.e. the value to divide by).
@@ -17,6 +18,7 @@ function eucmod(_dividend, _divisor) {
 }
 
 /// @func eucdiv(dividend,divisor)
+/// @url http://github.com/Alphish/gm-community-toolbox/blob/main/Docs/Reference/Functions/eucdiv.md
 /// @desc Calculates an integer quotient of the Euclidian division (i.e. the division with always non-negative remainder).
 /// @arg {Real} dividend        The dividend (i.e. the value to be divided).
 /// @arg {Real} divisor         The divisor (i.e. the value to divide by).
@@ -32,6 +34,7 @@ function eucdiv(_dividend, _divisor) {
 #region Fixed step approach
 
 /// @func approach(current,target,[step])
+/// @url http://github.com/Alphish/gm-community-toolbox/blob/main/Docs/Reference/Functions/approach.md
 /// @desc Calculates the value a step closer to the target value. If the target is close enough, returns the target.
 /// @arg {Real} current         The current value.
 /// @arg {Real} target          The target value.
@@ -50,6 +53,7 @@ function approach(_current, _target, _step = 1) {
 }
 
 /// @func approach_angle(current,target,[step])
+/// @url http://github.com/Alphish/gm-community-toolbox/blob/main/Docs/Reference/Functions/approach_angle.md
 /// @desc Calculates the angle (in degrees) a step closer to the target angle. If the target is close enough, returns the target.
 /// @arg {Real} current         The current angle.
 /// @arg {Real} target          The target angle.
@@ -77,6 +81,7 @@ function approach_angle(_current, _target, _step = 1) {
 #region Linear interpolation
 
 /// @func lerp_angle(from,to,amount)
+/// @url http://github.com/Alphish/gm-community-toolbox/blob/main/Docs/Reference/Functions/lerp_angle.md
 /// @desc Calculates the angle (in degrees) interpolated between a starting and destination angle for the given fraction amount.
 /// @arg {Real} from            The starting angle.
 /// @arg {Real} to              The destination angle.
@@ -88,6 +93,7 @@ function lerp_angle(_from, _to, _amount) {
 }
 
 /// @func unlerp(from,to,value)
+/// @url http://github.com/Alphish/gm-community-toolbox/blob/main/Docs/Reference/Functions/unlerp.md
 /// @desc Returns the interpolation amount such that lerp(from, to, amount) equals the given value.
 /// @arg {Real} from        The first value.
 /// @arg {Real} to          The second value.
@@ -101,6 +107,7 @@ function unlerp(_from, _to, _value) {
 }
 
 /// @func relerp(oldfrom,oldto,oldvalue,newfrom,newto)
+/// @url http://github.com/Alphish/gm-community-toolbox/blob/main/Docs/Reference/Functions/relerp.md
 /// @desc Given an interpolated value in the old range (oldfrom, oldto), returns its equivalent value in the new range (newfrom, newto).
 /// @arg {Real} oldfrom     The old range's first value.
 /// @arg {Real} oldto       The old range's second value.
@@ -121,6 +128,7 @@ function relerp(_oldfrom, _oldto, _oldvalue, _newfrom, _newto) {
 #region Geometry
 
 /// @func vector_length(x,y)
+/// @url http://github.com/Alphish/gm-community-toolbox/blob/main/Docs/Reference/Functions/vector_length.md
 /// @desc Calculates the length of a vector with given X/Y components.
 /// @arg {Real} x           The X (horizontal) component of the vector.
 /// @arg {Real} y           The Y (vertical) component of the vector.
@@ -131,6 +139,7 @@ function vector_length(_x, _y) {
 }
 
 /// @func vector_direction(x,y)
+/// @url http://github.com/Alphish/gm-community-toolbox/blob/main/Docs/Reference/Functions/vector_direction.md
 /// @desc Calculates the direction a vector with given X/Y components points towards.
 /// @arg {Real} x           The X (horizontal) component of the vector.
 /// @arg {Real} y           The Y (vertical) component of the vector.
