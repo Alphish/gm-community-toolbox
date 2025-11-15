@@ -22,6 +22,10 @@ function ToolboxFunctionJsdocSubparser(_parser) constructor {
                     _data_builder.accept_function_signature(_signature);
                     break;
                 
+                case "url":
+                    _data_builder.accept_url(_line);
+                    break;
+                
                 case "desc":
                     var _descrest = read_jsdoc_rest();
                     var _description = _line + _descrest;

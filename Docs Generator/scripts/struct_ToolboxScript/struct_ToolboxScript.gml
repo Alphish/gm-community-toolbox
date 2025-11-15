@@ -1,7 +1,7 @@
-/// @func ToolboxScript(name,path,regions)
+/// @func ToolboxScript(project,name)
 /// @desc A structure representing a Community Toolbox script.
-/// @arg {Struct.ToolboxProject}    The project the script belongs to.
-/// @arg {String} name              The script name (without utils_CommunityToolbox prefix).
+/// @arg {Struct.ToolboxProject} project    The project the script belongs to.
+/// @arg {String} name                      The script name (without utils_CommunityToolbox prefix).
 function ToolboxScript(_project, _name) constructor {
     type = "script";
     name = _name;
