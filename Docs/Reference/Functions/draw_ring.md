@@ -2,7 +2,7 @@
 
 # draw_ring
 
-[Go to source](/Community%20Toolbox/scripts/utils_CommunityToolboxDraw/utils_CommunityToolboxDraw.gml#L199)
+[Go to source](/Community%20Toolbox/scripts/utils_CommunityToolboxDraw/utils_CommunityToolboxDraw.gml#L206)
 
 Draws a ring shape (an area between two circles) around the given center and with the given radii.
 

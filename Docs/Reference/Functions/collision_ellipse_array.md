@@ -2,7 +2,7 @@
 
 # collision_ellipse_array
 
-[Go to source](/Community%20Toolbox/scripts/utils_CommunityToolboxCollision/utils_CommunityToolboxCollision.gml#L178)
+[Go to source](/Community%20Toolbox/scripts/utils_CommunityToolboxCollision/utils_CommunityToolboxCollision.gml#L186)
 
 Finds all instances of the given type colliding with the given ellipse, then populates the given array. Returns the number of colliding instances found.
 

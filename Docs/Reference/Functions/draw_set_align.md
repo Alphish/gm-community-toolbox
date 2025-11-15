@@ -2,7 +2,7 @@
 
 # draw_set_align
 
-[Go to source](/Community%20Toolbox/scripts/utils_CommunityToolboxDraw/utils_CommunityToolboxDraw.gml#L27)
+[Go to source](/Community%20Toolbox/scripts/utils_CommunityToolboxDraw/utils_CommunityToolboxDraw.gml#L30)
 
 Sets the horizontal and vertical alignment of the drawn text.
 

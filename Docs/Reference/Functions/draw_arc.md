@@ -2,7 +2,7 @@
 
 # draw_arc
 
-[Go to source](/Community%20Toolbox/scripts/utils_CommunityToolboxDraw/utils_CommunityToolboxDraw.gml#L45)
+[Go to source](/Community%20Toolbox/scripts/utils_CommunityToolboxDraw/utils_CommunityToolboxDraw.gml#L49)
 
 Draws a circular line around the given center, with the given radius and between given angles.
 

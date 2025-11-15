@@ -2,7 +2,7 @@
 
 # is_nonempty_struct
 
-[Go to source](/Community%20Toolbox/scripts/utils_CommunityToolboxStruct/utils_CommunityToolboxStruct.gml#L5)
+[Go to source](/Community%20Toolbox/scripts/utils_CommunityToolboxStruct/utils_CommunityToolboxStruct.gml#L6)
 
 Checks if a given value is a struct that's not empty.
 

@@ -2,7 +2,7 @@
 
 # is_constructor
 
-[Go to source](/Community%20Toolbox/scripts/utils_CommunityToolboxFunction/utils_CommunityToolboxFunction.gml#L7)
+[Go to source](/Community%20Toolbox/scripts/utils_CommunityToolboxFunction/utils_CommunityToolboxFunction.gml#L8)
 
 Checks if the given function is marked as a constructor.
 

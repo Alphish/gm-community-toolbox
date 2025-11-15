@@ -2,7 +2,7 @@
 
 # draw_circle_sector
 
-[Go to source](/Community%20Toolbox/scripts/utils_CommunityToolboxDraw/utils_CommunityToolboxDraw.gml#L134)
+[Go to source](/Community%20Toolbox/scripts/utils_CommunityToolboxDraw/utils_CommunityToolboxDraw.gml#L139)
 
 Draws a circle sector (i.e. a pie slice shape) around the given center, with the given radius and between given angles.
 

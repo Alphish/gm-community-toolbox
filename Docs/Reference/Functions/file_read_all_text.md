@@ -2,7 +2,7 @@
 
 # file_read_all_text
 
-[Go to source](/Community%20Toolbox/scripts/utils_CommunityToolboxFile/utils_CommunityToolboxFile.gml#L5)
+[Go to source](/Community%20Toolbox/scripts/utils_CommunityToolboxFile/utils_CommunityToolboxFile.gml#L6)
 
 Reads entire content of a given file as a string, or returns undefined if the file couldn't be read.
 

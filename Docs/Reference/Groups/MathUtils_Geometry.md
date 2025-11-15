@@ -2,7 +2,7 @@
 
 # Geometry
 
-[Go to source](/Community%20Toolbox/scripts/utils_CommunityToolboxMath/utils_CommunityToolboxMath.gml#L121)
+[Go to source](/Community%20Toolbox/scripts/utils_CommunityToolboxMath/utils_CommunityToolboxMath.gml#L128)
 
 ### Defined functions
 

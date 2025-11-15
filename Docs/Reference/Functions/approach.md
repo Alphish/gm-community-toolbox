@@ -2,7 +2,7 @@
 
 # approach
 
-[Go to source](/Community%20Toolbox/scripts/utils_CommunityToolboxMath/utils_CommunityToolboxMath.gml#L40)
+[Go to source](/Community%20Toolbox/scripts/utils_CommunityToolboxMath/utils_CommunityToolboxMath.gml#L43)
 
 Calculates the value a step closer to the target value. If the target is close enough, returns the target.
 

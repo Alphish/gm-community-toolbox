@@ -2,7 +2,7 @@
 
 # vector_length
 
-[Go to source](/Community%20Toolbox/scripts/utils_CommunityToolboxMath/utils_CommunityToolboxMath.gml#L128)
+[Go to source](/Community%20Toolbox/scripts/utils_CommunityToolboxMath/utils_CommunityToolboxMath.gml#L136)
 
 Calculates the length of a vector with given X/Y components.
 

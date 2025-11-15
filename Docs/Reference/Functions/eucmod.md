@@ -2,7 +2,7 @@
 
 # eucmod
 
-[Go to source](/Community%20Toolbox/scripts/utils_CommunityToolboxMath/utils_CommunityToolboxMath.gml#L8)
+[Go to source](/Community%20Toolbox/scripts/utils_CommunityToolboxMath/utils_CommunityToolboxMath.gml#L9)
 
 Calculates a remainder from the Euclidian division (the remainder will always be non-negative).
 

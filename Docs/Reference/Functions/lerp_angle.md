@@ -2,7 +2,7 @@
 
 # lerp_angle
 
-[Go to source](/Community%20Toolbox/scripts/utils_CommunityToolboxMath/utils_CommunityToolboxMath.gml#L85)
+[Go to source](/Community%20Toolbox/scripts/utils_CommunityToolboxMath/utils_CommunityToolboxMath.gml#L90)
 
 Calculates the angle (in degrees) interpolated between a starting and destination angle for the given fraction amount.
 

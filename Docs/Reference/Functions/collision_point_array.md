@@ -2,7 +2,7 @@
 
 # collision_point_array
 
-[Go to source](/Community%20Toolbox/scripts/utils_CommunityToolboxCollision/utils_CommunityToolboxCollision.gml#L79)
+[Go to source](/Community%20Toolbox/scripts/utils_CommunityToolboxCollision/utils_CommunityToolboxCollision.gml#L83)
 
 Finds all instances of the given type colliding with the given point, then populates the given array. Returns the number of colliding instances found.
 

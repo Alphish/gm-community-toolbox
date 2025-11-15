@@ -2,7 +2,7 @@
 
 # relerp
 
-[Go to source](/Community%20Toolbox/scripts/utils_CommunityToolboxMath/utils_CommunityToolboxMath.gml#L111)
+[Go to source](/Community%20Toolbox/scripts/utils_CommunityToolboxMath/utils_CommunityToolboxMath.gml#L118)
 
 Given an interpolated value in the old range (oldfrom, oldto), returns its equivalent value in the new range (newfrom, newto).
 

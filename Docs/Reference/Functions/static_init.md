@@ -2,7 +2,7 @@
 
 # static_init
 
-[Go to source](/Community%20Toolbox/scripts/utils_CommunityToolboxFunction/utils_CommunityToolboxFunction.gml#L83)
+[Go to source](/Community%20Toolbox/scripts/utils_CommunityToolboxFunction/utils_CommunityToolboxFunction.gml#L88)
 
 Runs a given function in order to initialize its static values, then returns that function's static struct.
 

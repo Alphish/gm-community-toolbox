@@ -2,7 +2,7 @@
 
 # instance_position_array
 
-[Go to source](/Community%20Toolbox/scripts/utils_CommunityToolboxCollision/utils_CommunityToolboxCollision.gml#L35)
+[Go to source](/Community%20Toolbox/scripts/utils_CommunityToolboxCollision/utils_CommunityToolboxCollision.gml#L37)
 
 Finds all instances of the given type at the given position, then populates the given array. Returns the number of colliding instances found.
 

@@ -2,7 +2,7 @@
 
 # string_contains
 
-[Go to source](/Community%20Toolbox/scripts/utils_CommunityToolboxString/utils_CommunityToolboxString.gml#L15)
+[Go to source](/Community%20Toolbox/scripts/utils_CommunityToolboxString/utils_CommunityToolboxString.gml#L17)
 
 Checks whether the given string contains the substring or not. Always returns true for an empty substringg.
 

@@ -2,7 +2,7 @@
 
 # instance_position_top
 
-[Go to source](/Community%20Toolbox/scripts/utils_CommunityToolboxCollision/utils_CommunityToolboxCollision.gml#L7)
+[Go to source](/Community%20Toolbox/scripts/utils_CommunityToolboxCollision/utils_CommunityToolboxCollision.gml#L8)
 
 Finds the instance at the given position with the least depth. If no instance is at the position, noone is returned.
 

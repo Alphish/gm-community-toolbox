@@ -2,7 +2,7 @@
 
 # collision_line_array
 
-[Go to source](/Community%20Toolbox/scripts/utils_CommunityToolboxCollision/utils_CommunityToolboxCollision.gml#L128)
+[Go to source](/Community%20Toolbox/scripts/utils_CommunityToolboxCollision/utils_CommunityToolboxCollision.gml#L134)
 
 Finds all instances of the given type colliding with the given line, then populates the given array. Returns the number of colliding instances found.
 

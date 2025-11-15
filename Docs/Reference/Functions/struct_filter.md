@@ -2,7 +2,7 @@
 
 # struct_filter
 
-[Go to source](/Community%20Toolbox/scripts/utils_CommunityToolboxStruct/utils_CommunityToolboxStruct.gml#L49)
+[Go to source](/Community%20Toolbox/scripts/utils_CommunityToolboxStruct/utils_CommunityToolboxStruct.gml#L53)
 
 Creates a new filtered struct from existing one, with entries meeting the given predicate condition.
 

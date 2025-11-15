@@ -2,7 +2,7 @@
 
 # is_nullish
 
-[Go to source](/Community%20Toolbox/scripts/utils_CommunityToolboxMisc/utils_CommunityToolboxMisc.gml#L7)
+[Go to source](/Community%20Toolbox/scripts/utils_CommunityToolboxMisc/utils_CommunityToolboxMisc.gml#L8)
 
 Checks whether a given value is nullish (undefined or pointer_null) or not.
 

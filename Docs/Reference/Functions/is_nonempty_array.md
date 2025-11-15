@@ -2,7 +2,7 @@
 
 # is_nonempty_array
 
-[Go to source](/Community%20Toolbox/scripts/utils_CommunityToolboxArray/utils_CommunityToolboxArray.gml#L7)
+[Go to source](/Community%20Toolbox/scripts/utils_CommunityToolboxArray/utils_CommunityToolboxArray.gml#L8)
 
 Checks if a given value is an array that's not empty.
 

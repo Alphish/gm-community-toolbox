@@ -2,7 +2,7 @@
 
 # layer_destroy_sequences
 
-[Go to source](/Community%20Toolbox/scripts/utils_CommunityToolboxLayer/utils_CommunityToolboxLayer.gml#L26)
+[Go to source](/Community%20Toolbox/scripts/utils_CommunityToolboxLayer/utils_CommunityToolboxLayer.gml#L29)
 
 Destroys all sequences from the given layer.
 

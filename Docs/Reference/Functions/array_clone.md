@@ -2,7 +2,7 @@
 
 # array_clone
 
-[Go to source](/Community%20Toolbox/scripts/utils_CommunityToolboxArray/utils_CommunityToolboxArray.gml#L38)
+[Go to source](/Community%20Toolbox/scripts/utils_CommunityToolboxArray/utils_CommunityToolboxArray.gml#L42)
 
 Creates a clone of the given array. The clone may be shallow (items are same between arrays) or deep (nested items are cloned, too).
 
