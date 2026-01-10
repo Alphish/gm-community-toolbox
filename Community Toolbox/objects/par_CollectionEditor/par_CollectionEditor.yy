@@ -31,14 +31,14 @@
   "physicsShapePoints":[],
   "physicsStartAwake":true,
   "properties":[
-    {"$GMObjectProperty":"v1","%Name":"collection","filters":[],"listItems":[],"multiselect":false,"name":"collection","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"undefined","varType":4,},
-    {"$GMObjectProperty":"v1","%Name":"header","filters":[],"listItems":[],"multiselect":false,"name":"header","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"Items","varType":2,},
-    {"$GMObjectProperty":"v1","%Name":"item_height","filters":[],"listItems":[],"multiselect":false,"name":"item_height","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"24","varType":0,},
-    {"$GMObjectProperty":"v1","%Name":"item_object","filters":[
+    {"$GMObjectProperty":"v2","%Name":"collection","filters":[],"listItems":[],"multiselect":false,"name":"collection","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"undefined","varType":4,},
+    {"$GMObjectProperty":"v2","%Name":"header","filters":[],"listItems":[],"multiselect":false,"name":"header","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"Items","varType":2,},
+    {"$GMObjectProperty":"v2","%Name":"item_height","filters":[],"listItems":[],"multiselect":false,"name":"item_height","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"24","varType":0,},
+    {"$GMObjectProperty":"v2","%Name":"item_object","filters":[
         "GMObject",
       ],"listItems":[],"multiselect":false,"name":"item_object","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"","varType":5,},
-    {"$GMObjectProperty":"v1","%Name":"input_format","filters":[],"listItems":[],"multiselect":false,"name":"input_format","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"StringInputFormat.instance","varType":4,},
-    {"$GMObjectProperty":"v1","%Name":"on_collection_change","filters":[],"listItems":[],"multiselect":false,"name":"on_collection_change","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"undefined","varType":4,},
+    {"$GMObjectProperty":"v2","%Name":"input_format","filters":[],"listItems":[],"multiselect":false,"name":"input_format","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"StringInputFormat.instance","varType":4,},
+    {"$GMObjectProperty":"v2","%Name":"on_collection_change","filters":[],"listItems":[],"multiselect":false,"name":"on_collection_change","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"undefined","varType":4,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
