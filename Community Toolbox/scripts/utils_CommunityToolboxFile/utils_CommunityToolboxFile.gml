@@ -8,10 +8,7 @@ function file_read_all_text(_filename) {
     if (!buffer_exists(_buffer))
         return undefined;
     
-    if (buffer_get_size(_buffer) == 0)
-        return "";
-    
-    var _result = buffer_read(_buffer, buffer_text);
+    var _result = buffer_get_size(_buffer) != 0 ? buffer_read(_buffer, buffer_text) : "";
     buffer_delete(_buffer);
     return _result;
 }
