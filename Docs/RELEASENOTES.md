@@ -3,6 +3,13 @@
 # Release notes
 Below is the releases history, with detailed information about specific functions affected.
 
+### GMS2.1.0.0
+
+**Download:** [YYMPS](https://github.com/Alphish/gm-community-toolbox/releases/download/vGMS2.1.0.0/CommunityToolbox.GMS2.1.0.0.yymps)
+
+- **File utilities**
+    - [file_read_all_text](Reference/Functions/file_read_all_text.md) - Fixed a memory leak when reading empty files.
+
 ### 24.11.0
 
 **Download:** [YYMPS](https://github.com/Alphish/gm-community-toolbox/releases/download/v24.11.0/CommunityToolbox.24.11.0.yymps)
