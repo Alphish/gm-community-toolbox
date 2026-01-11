@@ -93,6 +93,9 @@
         @func <is_nullish>
         @func <is_defined>
 
+@release <GMS2.1.0.0>
+    @download <YYMPS> /releases/download/vGMS2.1.0.0/CommunityToolbox.GMS2.1.0.0.yymps
+    @gmver <2026.0.0>
 @release <24.11.0>
     @download <YYMPS> /releases/download/v24.11.0/CommunityToolbox.24.11.0.yymps
     @gmver <2024.11.0>

@@ -20,6 +20,9 @@ function progress_load() {
 }
 ```
 
+@update GMS2.1.0.0
+Fixed a memory leak when reading empty files.
+
 @update 23.4.1
 Tweaked the JSDocs.
 
