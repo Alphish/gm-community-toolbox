@@ -28,6 +28,9 @@ function string_contains(_str, _substr) {
 /// @arg {Bool} [oneindexed]    Whether the first character should start at index of 0 (false) or index of 1 (true).
 /// @returns {Array<String>}
 function string_to_char_array(_str, _oneindexed = false) {
+    if (string_length(_str) == 0)
+        return _oneindexed ? [""] : [];
+    
     var _result = array_create(string_length(_str) + (_oneindexed ? 1 : 0), "");
     var _foreach_context = { result: _result, offset: _oneindexed ? 0 : -1 };
     string_foreach(_str, method(_foreach_context, function(_char, i) {
