@@ -12,6 +12,9 @@ function ReferenceItemStubsScanner(_lines) : LineScanner(_lines) constructor {
     }
     
     static get_tag = function() {
+        if (current_line == "")
+            return "";
+        
         var _tag = string_between(current_line, "@", " ") ?? string_delete(current_line, 1, 1);
         return string_lower(_tag);
     }
