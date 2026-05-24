@@ -122,6 +122,9 @@ string_char_at processing through 100000 characters: 2158.981ms
 string_to_char_array processing through 100000 characters: 30.385ms
 ```
 
+@update GMS2.1.0.0
+Added early exit on empty strings.
+
 @update 23.4.1
 Tweaked the JSDocs.
 
