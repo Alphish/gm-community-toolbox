@@ -7,8 +7,11 @@ Below is the releases history, with detailed information about specific function
 
 **Download:** [YYMPS](https://github.com/Alphish/gm-community-toolbox/releases/download/vGMS2.1.0.0/CommunityToolbox.GMS2.1.0.0.yymps)
 
+- **String utilities**
+    - [string_to_char_array](Reference/Functions/string_to_char_array.md) - Added early exit on empty strings.
 - **File utilities**
     - [file_read_all_text](Reference/Functions/file_read_all_text.md) - Fixed a memory leak when reading empty files.
+    - [file_write_all_text](Reference/Functions/file_write_all_text.md) - Fixed the size the file buffer was created with.
 
 ### 24.11.0
 

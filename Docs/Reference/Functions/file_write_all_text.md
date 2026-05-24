@@ -29,4 +29,5 @@ function progress_save() {
 
 ### Update history
 
+- **GMS2.1.0.0** - Fixed the size the file buffer was created with.
 - **23.4.0** - Created a function to replace file contents with a given string.
